@@ -1,0 +1,4306 @@
+{
+  "schemaVersion": "1.0.0",
+  "language": "hr",
+  "defaultLanguage": "hr",
+  "supportedLanguages": [
+    {
+      "code": "hr",
+      "label": "Hrvatski",
+      "printLabel": "HR"
+    },
+    {
+      "code": "en",
+      "label": "English",
+      "printLabel": "EN"
+    },
+    {
+      "code": "sv",
+      "label": "Svenska",
+      "printLabel": "SV"
+    },
+    {
+      "code": "fi",
+      "label": "Suomi",
+      "printLabel": "FI"
+    },
+    {
+      "code": "no",
+      "label": "Norsk",
+      "printLabel": "NO"
+    },
+    {
+      "code": "pl",
+      "label": "Polski",
+      "printLabel": "PL"
+    },
+    {
+      "code": "de",
+      "label": "Deutsch",
+      "printLabel": "DE"
+    },
+    {
+      "code": "da",
+      "label": "Dansk",
+      "printLabel": "DA"
+    }
+  ],
+  "currency": "EUR",
+  "brand": {
+    "name": "Bistro Putnik",
+    "location": "Baška Voda",
+    "tagline": "From Baška Voda, with Heart",
+    "primaryColor": "#103F4D",
+    "background": "transparent-white",
+    "typography": {
+      "heading": "Cormorant Garamond",
+      "body": "Montserrat"
+    }
+  },
+  "business": {
+    "companyName": "EPIPHANY TSC j.d.o.o. za ugostiteljstvo",
+    "registeredAddress": "Ulica Grgura Ninskog 31, 31221 Josipovac",
+    "oib": "51396948929",
+    "mbs": "030315167",
+    "registrationNumber": "06233511",
+    "email": "epiphany-tsc@proton.me",
+    "website": "epiphany-tsc.hr",
+    "venue": "Bistro Putnik · Baška Voda"
+  },
+  "allergens": [
+    {
+      "code": "G",
+      "name": "Žitarice koje sadrže gluten: pšenica, raž, ječam, zob, pir, kamut ili njihovi križanci"
+    },
+    {
+      "code": "R",
+      "name": "Rakovi i proizvodi od rakova"
+    },
+    {
+      "code": "J",
+      "name": "Jaja i proizvodi od jaja"
+    },
+    {
+      "code": "RI",
+      "name": "Riba i riblji proizvodi"
+    },
+    {
+      "code": "K",
+      "name": "Kikiriki i proizvodi od kikirikija"
+    },
+    {
+      "code": "S",
+      "name": "Zrna soje i proizvodi od soje"
+    },
+    {
+      "code": "M",
+      "name": "Mlijeko i mliječni proizvodi (uključujući laktozu)"
+    },
+    {
+      "code": "O",
+      "name": "Orašasto voće: bademi, lješnjaci, orasi, indijski oraščići, pekan orasi, brazilski orasi, pistacije, makadamije ili kvinslandski orasi"
+    },
+    {
+      "code": "C",
+      "name": "Celer i njegovi proizvodi"
+    },
+    {
+      "code": "GU",
+      "name": "Gorušica i proizvodi od gorušice"
+    },
+    {
+      "code": "SE",
+      "name": "Sjeme sezama i proizvodi od sjemena sezama"
+    },
+    {
+      "code": "SO₂",
+      "name": "Sumporni dioksid i sulfiti (više od 10 mg/kg ili 10 mg/L kao ukupni SO₂)"
+    },
+    {
+      "code": "L",
+      "name": "Lupina i proizvodi od lupine"
+    },
+    {
+      "code": "ME",
+      "name": "Mekušci i proizvodi od mekušaca"
+    }
+  ],
+  "notices": [
+    {
+      "id": "prices-eur",
+      "text": "Sve cijene su izražene u eurima (€)."
+    },
+    {
+      "id": "vat-included",
+      "text": "PDV je uključen u cijenu."
+    },
+    {
+      "id": "allergen-on-request",
+      "text": "Detaljne informacije o alergenima dostupne su na upit."
+    },
+    {
+      "id": "ask-staff-ingredients",
+      "text": "Za informacije o sastojcima i alergenima obratite se osoblju."
+    },
+    {
+      "id": "frozen-products",
+      "text": "Neka jela mogu sadržavati smrznute proizvode, ovisno o dostupnosti i sezoni."
+    },
+    {
+      "id": "offer-changes",
+      "text": "Pridržavamo pravo izmjene ponude ovisno o dostupnosti namirnica."
+    },
+    {
+      "id": "allergen-warning",
+      "text": "Informacije o alergenima označene su prema standardnoj recepturi i dostupnim podacima. Zbog mogućnosti promjena u pripremi, sezonske dostupnosti, dobavljača i tragova alergena, za točne informacije obratite se osoblju prije narudžbe."
+    },
+    {
+      "id": "bread-gluten",
+      "text": "Domaći kruh sadrži gluten (G)."
+    }
+  ],
+  "story": {
+    "title": "NAŠA PRIČA ZA STOLOM",
+    "paragraphs": [
+      "U Bistrou Putnik njegujemo hrvatske recepte, običaje i gostoljubivost. Naš jelovnik spaja poznate domaće okuse, tradicionalne pripreme i mediteranski duh Baške Vode.",
+      "Uz odabrana jela poslužujemo naš domaći kruh, pripremljen s posebnom pažnjom. Namirnice biramo promišljeno i, kad god je moguće, surađujemo s lokalnim hrvatskim dobavljačima."
+    ],
+    "closing": "Jednostavno, iskreno i puno okusa koji podsjećaju na dom."
+  },
+  "pages": [
+    {
+      "id": "food",
+      "title": "MENU",
+      "type": "menu",
+      "printOrder": 1,
+      "showHeader": true,
+      "showFooter": true,
+      "sections": [
+        {
+          "id": "hladna-predjela",
+          "title": "HLADNA PREDJELA",
+          "note": null,
+          "layout": "wide-grid",
+          "sortOrder": 10,
+          "items": [
+            {
+              "id": "slavonska-plata",
+              "name": "Slavonska plata",
+              "description": "Slavonska šunka, kulen, slanina, čvarci, kravlji sir, kiselo povrće & domaći kruh",
+              "price": 15,
+              "priceDisplay": "15€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "M"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "dalmatinska-plata",
+              "name": "Dalmatinska plata",
+              "description": "Pršut, buđola, kozji sir, masline, domaći kruh",
+              "price": 17,
+              "priceDisplay": "17€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "M"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "riblja-plata",
+              "name": "Riblja plata",
+              "description": "File skuše, inćuni, hobotnica na salatu, paški sir, domaći kruh",
+              "price": 17,
+              "priceDisplay": "17€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "RI",
+                "ME",
+                "M"
+              ],
+              "dietary": [
+                "pescatarian",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3
+            },
+            {
+              "id": "pate-mix",
+              "name": "Pate mix",
+              "description": "3 vrste domaće paštete — pileća, tuna, vegetarijanska, uz domaći kruh",
+              "price": 12,
+              "priceDisplay": "12€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "RI"
+              ],
+              "dietary": [
+                "contains-meat",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4
+            },
+            {
+              "id": "porchetta",
+              "name": "Porchetta",
+              "description": "Rolana prasetina na talijanski način, servirana uz domaći kruh i salatu",
+              "price": 16,
+              "priceDisplay": "16€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5
+            }
+          ]
+        },
+        {
+          "id": "juhe",
+          "title": "JUHE",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 20,
+          "items": [
+            {
+              "id": "krem-juha-od-rajcice",
+              "name": "Krem juha od rajčice",
+              "description": null,
+              "price": 6,
+              "priceDisplay": "6€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [
+                "vegetarian"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "krem-juha-od-celera-i-kokosa",
+              "name": "Krem juha od celera i kokosa",
+              "description": null,
+              "price": 6,
+              "priceDisplay": "6€",
+              "currency": "EUR",
+              "allergens": [
+                "C"
+              ],
+              "dietary": [
+                "vegan"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "bistra-riblja-juha",
+              "name": "Bistra riblja juha",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [
+                "RI"
+              ],
+              "dietary": [
+                "pescatarian",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3
+            },
+            {
+              "id": "bistra-goveda-juha",
+              "name": "Bistra goveđa juha",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti temeljac, rezance i celer prije finalnog označavanja alergena."
+              ],
+              "sortOrder": 4
+            }
+          ]
+        },
+        {
+          "id": "tjestenine-rizoti",
+          "title": "TJESTENINE & RIŽOTI",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 30,
+          "items": [
+            {
+              "id": "bolognese",
+              "name": "Bolognese",
+              "description": null,
+              "price": 13,
+              "priceDisplay": "13€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti recept ragùa prije dodavanja C, M ili SO₂."
+              ],
+              "sortOrder": 1
+            },
+            {
+              "id": "carbonara",
+              "name": "Carbonara",
+              "description": null,
+              "price": 13,
+              "priceDisplay": "13€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "J",
+                "M"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "lazagne-bolognese",
+              "name": "Lazagne bolognese",
+              "description": null,
+              "price": 16,
+              "priceDisplay": "16€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "J",
+                "M"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti recept ragùa i bešamela prije dodavanja C ili SO₂."
+              ],
+              "sortOrder": 3
+            },
+            {
+              "id": "zelene-tagliatelle-s-morskim-plodovima",
+              "name": "Zelene tagliatelle s morskim plodovima",
+              "description": null,
+              "price": 19,
+              "priceDisplay": "19€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "J",
+                "R",
+                "RI",
+                "ME"
+              ],
+              "dietary": [
+                "pescatarian",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti koristi li se vino ili vrhnje u umaku prije dodavanja SO₂ ili M."
+              ],
+              "sortOrder": 4
+            }
+          ]
+        },
+        {
+          "id": "arancini-putnik",
+          "title": "ARANCINI PUTNIK",
+          "note": null,
+          "layout": "feature",
+          "sortOrder": 35,
+          "translations": {
+            "en": {
+              "title": "PUTNIK ARANCINI"
+            },
+            "de": {
+              "title": "PUTNIK ARANCINI"
+            },
+            "it": {
+              "title": "ARANCINI PUTNIK"
+            }
+          },
+          "items": [
+            {
+              "id": "arancini-od-crnog-rizota",
+              "name": "Arancini od crnog rižota i sipe",
+              "description": "domaći arancini od crnog rižota sa sipom",
+              "price": 25,
+              "priceDisplay": "25€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "J",
+                "ME"
+              ],
+              "dietary": [
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti koristi li se riblji temeljac prije dodavanja RI; provjeriti vino prije dodavanja SO₂."
+              ],
+              "sortOrder": 1,
+              "translations": {
+                "en": {
+                  "name": "Black risotto and cuttlefish arancini",
+                  "description": "homemade arancini with black risotto and cuttlefish"
+                },
+                "de": {
+                  "name": "Arancini vom schwarzen Risotto mit Sepia",
+                  "description": "hausgemachte Arancini mit schwarzem Risotto und Sepia"
+                },
+                "it": {
+                  "name": "Arancini di risotto nero con seppia",
+                  "description": "arancini fatti in casa con risotto nero e seppia"
+                }
+              }
+            },
+            {
+              "id": "vege-arancini",
+              "name": "Vege arancini",
+              "description": "vegetarijansko",
+              "price": 19,
+              "priceDisplay": "19€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "J"
+              ],
+              "dietary": [
+                "vegetarian"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Ako recept sadrži sir, dodati M nakon potvrde kuhinje."
+              ],
+              "sortOrder": 2,
+              "translations": {
+                "en": {
+                  "name": "Vegetarian arancini",
+                  "description": "vegetarian"
+                },
+                "de": {
+                  "name": "Vegetarische Arancini",
+                  "description": "vegetarisch"
+                },
+                "it": {
+                  "name": "Arancini vegetariani",
+                  "description": "vegetariano"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "grill-mesna-jela",
+          "title": "GRILL & MESNA JELA",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 40,
+          "items": [
+            {
+              "id": "cevapi-uz-dollar-chips-i-vrhnje",
+              "name": "Ćevapi uz dollar chips i vrhnje",
+              "description": null,
+              "price": 16,
+              "priceDisplay": "16€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti marinadu i ulje za prženje priloga prije dodatnih oznaka."
+              ],
+              "sortOrder": 1
+            },
+            {
+              "id": "punjena-pljeskavica-uz-dollar-chips-i-vrhnje",
+              "name": "Rolani uštipci u slanini uz dollar chips i vrhnje",
+              "description": null,
+              "price": 19,
+              "priceDisplay": "19€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti marinadu i ulje za prženje priloga prije dodatnih oznaka."
+              ],
+              "sortOrder": 2,
+              "translations": {
+                "en": {
+                  "name": "Rolled meat fritters in bacon with dollar chips and sour cream"
+                },
+                "de": {
+                  "name": "Gerollte Fleischlaibchen im Speckmantel mit Dollar Chips und Sauerrahm"
+                },
+                "it": {
+                  "name": "Polpette arrotolate in pancetta con dollar chips e panna acida"
+                }
+              }
+            },
+            {
+              "id": "dvije-kobasice-uz-krumpir-s-povrcem",
+              "name": "Slavonska domaća roštilj kobasica uz krumpir s povrćem",
+              "description": null,
+              "price": 18,
+              "priceDisplay": "18€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti deklaraciju dobavljača za kobasice."
+              ],
+              "sortOrder": 3,
+              "translations": {
+                "en": {
+                  "name": "Slavonian homemade grill sausage with potatoes and vegetables"
+                },
+                "de": {
+                  "name": "Hausgemachte slawonische Grillwurst mit Kartoffeln und Gemüse"
+                },
+                "it": {
+                  "name": "Salsiccia slavona alla griglia con patate e verdure"
+                }
+              }
+            },
+            {
+              "id": "pileci-file-uz-dollar-chips",
+              "name": "Pileći file uz dollar chips",
+              "description": null,
+              "price": 18,
+              "priceDisplay": "18€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti marinadu i ulje za prženje prije dodatnih oznaka."
+              ],
+              "sortOrder": 4
+            },
+            {
+              "id": "ramstek-uz-krumpir-i-wok-povrce",
+              "name": "Ramstek uz krumpir i wok povrće",
+              "description": null,
+              "price": 26,
+              "priceDisplay": "26€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti marinadu, umak i wok pripremu prije dodatnih oznaka."
+              ],
+              "sortOrder": 5
+            },
+            {
+              "id": "biftek-uz-krumpir-i-wok-povrce",
+              "name": "Biftek uz krumpir i wok povrće",
+              "description": null,
+              "price": 32,
+              "priceDisplay": "32€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti marinadu, umak i wok pripremu prije dodatnih oznaka."
+              ],
+              "sortOrder": 6
+            }
+          ]
+        },
+        {
+          "id": "dalmatinski-specijaliteti",
+          "title": "DALMATINSKI SPECIJALITETI",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 45,
+          "translations": {
+            "en": {
+              "title": "DALMATIAN SPECIALTIES"
+            },
+            "de": {
+              "title": "DALMATINISCHE SPEZIALITÄTEN"
+            },
+            "it": {
+              "title": "SPECIALITÀ DALMATE"
+            }
+          },
+          "items": [
+            {
+              "id": "dalmatinska-pasticada",
+              "name": "Dalmatinska pašticada",
+              "description": "tradicionalno dalmatinsko jelo uz domaće priloge",
+              "price": 19,
+              "priceDisplay": "19€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "J",
+                "C",
+                "SO₂"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1,
+              "translations": {
+                "en": {
+                  "name": "Dalmatian pašticada",
+                  "description": "traditional Dalmatian beef dish with homemade sides"
+                },
+                "de": {
+                  "name": "Dalmatinische Pašticada",
+                  "description": "traditionelles dalmatinisches Rindfleischgericht mit hausgemachten Beilagen"
+                },
+                "it": {
+                  "name": "Pašticada dalmata",
+                  "description": "piatto tradizionale dalmata di manzo con contorni fatti in casa"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "pohana-jela",
+          "title": "POHANA JELA",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 50,
+          "items": [
+            {
+              "id": "pileci-becki-uz-prilog",
+              "name": "Pileći bečki uz prilog",
+              "description": null,
+              "allergens": [
+                "G",
+                "J"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "sortOrder": 1,
+              "price": 12,
+              "priceDisplay": "12€",
+              "currency": "EUR",
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "translations": {
+                "en": {
+                  "name": "Chicken schnitzel with side dish"
+                },
+                "de": {
+                  "name": "Hähnchenschnitzel mit Beilage"
+                },
+                "it": {
+                  "name": "Cotoletta di pollo con contorno"
+                }
+              }
+            },
+            {
+              "id": "svinjski-becki-uz-prilog",
+              "name": "Svinjski bečki uz prilog",
+              "description": null,
+              "allergens": [
+                "G",
+                "J"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "sortOrder": 2,
+              "price": 15,
+              "priceDisplay": "15€",
+              "currency": "EUR",
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "translations": {
+                "en": {
+                  "name": "Pork schnitzel with side dish"
+                },
+                "de": {
+                  "name": "Schweineschnitzel mit Beilage"
+                },
+                "it": {
+                  "name": "Cotoletta di maiale con contorno"
+                }
+              }
+            },
+            {
+              "id": "teleci-becki-uz-prilog",
+              "name": "Teleći bečki uz prilog",
+              "description": null,
+              "allergens": [
+                "G",
+                "J"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "sortOrder": 3,
+              "price": 19,
+              "priceDisplay": "19€",
+              "currency": "EUR",
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "translations": {
+                "en": {
+                  "name": "Veal schnitzel with side dish"
+                },
+                "de": {
+                  "name": "Kalbsschnitzel mit Beilage"
+                },
+                "it": {
+                  "name": "Cotoletta di vitello con contorno"
+                }
+              }
+            },
+            {
+              "id": "pileci-punjeni-odrezak-uz-prilog",
+              "name": "Pileći punjeni odrezak uz prilog",
+              "description": null,
+              "allergens": [
+                "G",
+                "J",
+                "M"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "sortOrder": 4,
+              "price": 14,
+              "priceDisplay": "14€",
+              "currency": "EUR",
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "translations": {
+                "en": {
+                  "name": "Stuffed chicken cutlet with side dish"
+                },
+                "de": {
+                  "name": "Gefülltes Hähnchenschnitzel mit Beilage"
+                },
+                "it": {
+                  "name": "Cotoletta di pollo ripiena con contorno"
+                }
+              }
+            },
+            {
+              "id": "svinjski-punjeni-odrezak-uz-prilog",
+              "name": "Svinjski punjeni odrezak uz prilog",
+              "description": null,
+              "allergens": [
+                "G",
+                "J",
+                "M"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "sortOrder": 5,
+              "price": 17,
+              "priceDisplay": "17€",
+              "currency": "EUR",
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "translations": {
+                "en": {
+                  "name": "Stuffed pork cutlet with side dish"
+                },
+                "de": {
+                  "name": "Gefülltes Schweineschnitzel mit Beilage"
+                },
+                "it": {
+                  "name": "Cotoletta di maiale ripiena con contorno"
+                }
+              }
+            },
+            {
+              "id": "teleci-punjeni-odrezak-uz-prilog",
+              "name": "Teleći punjeni odrezak uz prilog",
+              "description": null,
+              "allergens": [
+                "G",
+                "J",
+                "M"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "sortOrder": 6,
+              "price": 21,
+              "priceDisplay": "21€",
+              "currency": "EUR",
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "translations": {
+                "en": {
+                  "name": "Stuffed veal cutlet with side dish"
+                },
+                "de": {
+                  "name": "Gefülltes Kalbsschnitzel mit Beilage"
+                },
+                "it": {
+                  "name": "Cotoletta di vitello ripiena con contorno"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "riba-morska-jela",
+          "title": "RIBA & MORSKA JELA",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 60,
+          "items": [
+            {
+              "id": "lignje-na-zaru-uz-blitvu-i-krumpir",
+              "name": "Lignje na žaru uz blitvu i krumpir",
+              "description": null,
+              "price": 22,
+              "priceDisplay": "22€",
+              "currency": "EUR",
+              "allergens": [
+                "ME"
+              ],
+              "dietary": [
+                "pescatarian",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "lignje-przene-s-pommesom",
+              "name": "Lignje pržene s pommesom",
+              "description": null,
+              "price": 20,
+              "priceDisplay": "20€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "ME"
+              ],
+              "dietary": [
+                "pescatarian",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "bijela-riba-na-grillu",
+              "name": "Bijela riba na grillu",
+              "description": "orada, brancin · blitva i krumpir",
+              "price": null,
+              "priceDisplay": "20–22€",
+              "currency": "EUR",
+              "allergens": [
+                "RI"
+              ],
+              "dietary": [
+                "pescatarian",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3,
+              "priceMin": 20,
+              "priceMax": 22
+            },
+            {
+              "id": "losos-na-zaru-uz-blitvu-i-krumpir",
+              "name": "Losos na žaru uz blitvu i krumpir",
+              "description": null,
+              "price": 22,
+              "priceDisplay": "22€",
+              "currency": "EUR",
+              "allergens": [
+                "RI"
+              ],
+              "dietary": [
+                "pescatarian",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4
+            },
+            {
+              "id": "tuna-steak-na-zaru-uz-blitvu-i-krumpir",
+              "name": "Tuna steak na žaru uz blitvu i krumpir",
+              "description": null,
+              "price": 22,
+              "priceDisplay": "22€",
+              "currency": "EUR",
+              "allergens": [
+                "RI"
+              ],
+              "dietary": [
+                "pescatarian",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5
+            },
+            {
+              "id": "dagnje-na-buzaru",
+              "name": "Dagnje na tradicionalnu buzaru 1 kg",
+              "description": null,
+              "price": 22,
+              "priceDisplay": "22€",
+              "currency": "EUR",
+              "allergens": [
+                "ME",
+                "G",
+                "SO₂"
+              ],
+              "dietary": [
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti recept buzare: brašno/krušne mrvice i vino."
+              ],
+              "sortOrder": 6,
+              "translations": {
+                "en": {
+                  "name": "Mussels in traditional buzara sauce 1 kg",
+                  "description": "traditional Dalmatian mussels in white wine, garlic and parsley sauce"
+                },
+                "de": {
+                  "name": "Miesmuscheln nach traditioneller Buzara-Art 1 kg",
+                  "description": "traditionelle dalmatinische Muscheln in Weißwein, Knoblauch und Petersilie"
+                },
+                "it": {
+                  "name": "Cozze alla buzara tradizionale 1 kg",
+                  "description": "cozze alla dalmata con vino bianco, aglio e prezzemolo"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "vegetarijansko-vegansko",
+          "title": "VEGETARIJANSKO & VEGANSKO",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 70,
+          "items": [
+            {
+              "id": "arabiata",
+              "name": "Arabiata",
+              "description": "vegansko",
+              "price": 10,
+              "priceDisplay": "10€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [
+                "vegan"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "aglio-olio",
+              "name": "Aglio & Olio",
+              "description": "vegansko",
+              "price": 12,
+              "priceDisplay": "12€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [
+                "vegan"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "steak-od-karfiola",
+              "name": "Steak od karfiola",
+              "description": "vegansko",
+              "price": 15,
+              "priceDisplay": "15€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [
+                "vegan"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti marinadu ili pohanje prije finalnih oznaka alergena."
+              ],
+              "sortOrder": 3
+            },
+            {
+              "id": "tofu-steak",
+              "name": "Tofu steak",
+              "description": "vegansko",
+              "price": 16,
+              "priceDisplay": "16€",
+              "currency": "EUR",
+              "allergens": [
+                "S"
+              ],
+              "dietary": [
+                "vegan"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4
+            },
+            {
+              "id": "vege-salata",
+              "name": "Vege salata",
+              "description": "tofu steak · vegansko",
+              "price": 18,
+              "priceDisplay": "18€",
+              "currency": "EUR",
+              "allergens": [
+                "S"
+              ],
+              "dietary": [
+                "vegan"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5
+            }
+          ]
+        },
+        {
+          "id": "djecji-meni",
+          "title": "DJEČJI MENI",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 80,
+          "items": [
+            {
+              "id": "pileci-nuggets-pommes",
+              "name": "Pileći nuggets + pommes",
+              "description": null,
+              "price": 9,
+              "priceDisplay": "9€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "J"
+              ],
+              "dietary": [
+                "kids",
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "mali-bolognese",
+              "name": "Mali bolognese",
+              "description": null,
+              "price": 9,
+              "priceDisplay": "9€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [
+                "kids",
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti recept ragùa prije dodavanja C, M ili SO₂."
+              ],
+              "sortOrder": 2
+            },
+            {
+              "id": "mali-cevapi-uz-dollar-chips-i-vrhnje",
+              "name": "Mali ćevapi uz dollar chips i vrhnje",
+              "description": null,
+              "price": 8,
+              "priceDisplay": "8€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [
+                "kids",
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti marinadu i ulje za prženje priloga prije dodatnih oznaka."
+              ],
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "id": "salate-kao-obrok",
+          "title": "SALATE KAO OBROK",
+          "note": "servirane uz topli domaći kruh",
+          "layout": "default",
+          "sortOrder": 90,
+          "items": [
+            {
+              "id": "salata-od-skuse-tunjevine",
+              "name": "Salata od skuše / tunjevine",
+              "description": null,
+              "price": 17,
+              "priceDisplay": "17€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "RI"
+              ],
+              "dietary": [
+                "pescatarian",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "slavonska-salata",
+              "name": "Slavonska salata",
+              "description": "slanina grill",
+              "price": 18,
+              "priceDisplay": "18€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "cezar-salata",
+              "name": "Cezar salata",
+              "description": "pileći file",
+              "price": 14,
+              "priceDisplay": "14€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "J",
+                "RI",
+                "M"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "id": "salate",
+          "title": "SALATE",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 100,
+          "items": [
+            {
+              "id": "sezonska-salata-mix",
+              "name": "Sezonska salata mix",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [
+                "vegan"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "kupus-salata",
+              "name": "Kupus salata",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [
+                "vegan"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "krastavci-u-vrhnju",
+              "name": "Krastavci u vrhnju",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [
+                "vegetarian"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3
+            },
+            {
+              "id": "cikla-karamelizirani-luk",
+              "name": "Cikla & karamelizirani luk",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [
+                "vegan"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4
+            }
+          ]
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "MENU"
+        },
+        "de": {
+          "title": "SPEISEKARTE"
+        },
+        "it": {
+          "title": "MENU"
+        }
+      }
+    },
+    {
+      "id": "prvosvibanjski-jelovnik",
+      "title": "PRVOSVIBANJSKI JELOVNIK",
+      "type": "seasonal-menu",
+      "printOrder": 2,
+      "showHeader": true,
+      "showFooter": true,
+      "intro": "Posebna ponuda povodom 1. svibnja.",
+      "translations": {
+        "en": {
+          "title": "MAY DAY MENU",
+          "intro": "Special offer for May Day."
+        },
+        "de": {
+          "title": "MAI-FEiertagskarte",
+          "intro": "Sonderangebot zum 1. Mai."
+        },
+        "it": {
+          "title": "MENU DEL PRIMO MAGGIO",
+          "intro": "Offerta speciale per il Primo Maggio."
+        }
+      },
+      "sections": [
+        {
+          "id": "prvosvibanjska-ponuda",
+          "title": "PRVOSVIBANJSKA PONUDA",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 10,
+          "translations": {
+            "en": {
+              "title": "MAY DAY SELECTION"
+            },
+            "de": {
+              "title": "AUSWAHL ZUM 1. MAI"
+            },
+            "it": {
+              "title": "SELEZIONE DEL PRIMO MAGGIO"
+            }
+          },
+          "items": [
+            {
+              "id": "prvosvibanjska-salata-od-skuse",
+              "name": "Salata od skuše",
+              "description": null,
+              "price": 16,
+              "priceDisplay": "16€",
+              "currency": "EUR",
+              "allergens": [
+                "RI"
+              ],
+              "dietary": [
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1,
+              "translations": {
+                "en": {
+                  "name": "Mackerel salad"
+                },
+                "de": {
+                  "name": "Makrelensalat"
+                },
+                "it": {
+                  "name": "Insalata di sgombro"
+                }
+              }
+            },
+            {
+              "id": "prvosvibanjske-lignje-frigane",
+              "name": "Lignje frigane",
+              "description": null,
+              "price": 18,
+              "priceDisplay": "18€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "ME"
+              ],
+              "dietary": [
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2,
+              "translations": {
+                "en": {
+                  "name": "Fried squid"
+                },
+                "de": {
+                  "name": "Frittierte Calamari"
+                },
+                "it": {
+                  "name": "Calamari fritti"
+                }
+              }
+            },
+            {
+              "id": "prvosvibanjske-lignje-na-zaru",
+              "name": "Lignje na žaru",
+              "description": null,
+              "price": 20,
+              "priceDisplay": "20€",
+              "currency": "EUR",
+              "allergens": [
+                "ME"
+              ],
+              "dietary": [
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3,
+              "translations": {
+                "en": {
+                  "name": "Grilled squid"
+                },
+                "de": {
+                  "name": "Calamari vom Grill"
+                },
+                "it": {
+                  "name": "Calamari alla griglia"
+                }
+              }
+            },
+            {
+              "id": "prvosvibanjski-losos-grill",
+              "name": "Losos grill",
+              "description": null,
+              "price": 22,
+              "priceDisplay": "22€",
+              "currency": "EUR",
+              "allergens": [
+                "RI"
+              ],
+              "dietary": [
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4,
+              "translations": {
+                "en": {
+                  "name": "Grilled salmon"
+                },
+                "de": {
+                  "name": "Gegrillter Lachs"
+                },
+                "it": {
+                  "name": "Salmone alla griglia"
+                }
+              }
+            },
+            {
+              "id": "prvosvibanjski-arancini-crni-rizot-sipa",
+              "name": "Arancini od crnog rižota sa sipom",
+              "description": "domaći arancini od crnog rižota sa sipom",
+              "price": 22,
+              "priceDisplay": "22€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "J",
+                "ME"
+              ],
+              "dietary": [
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5,
+              "translations": {
+                "en": {
+                  "name": "Black risotto arancini with cuttlefish",
+                  "description": "homemade arancini with black risotto and cuttlefish"
+                },
+                "de": {
+                  "name": "Arancini vom schwarzen Risotto mit Sepia",
+                  "description": "hausgemachte Arancini mit schwarzem Risotto und Sepia"
+                },
+                "it": {
+                  "name": "Arancini di risotto nero con seppia",
+                  "description": "arancini fatti in casa con risotto nero e seppia"
+                }
+              }
+            },
+            {
+              "id": "prvosvibanjske-dagnje-1kg",
+              "name": "Dagnje 1 kg",
+              "description": null,
+              "price": 20,
+              "priceDisplay": "20€",
+              "currency": "EUR",
+              "allergens": [
+                "ME",
+                "G",
+                "SO₂"
+              ],
+              "dietary": [
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 6,
+              "translations": {
+                "en": {
+                  "name": "Mussels 1 kg"
+                },
+                "de": {
+                  "name": "Miesmuscheln 1 kg"
+                },
+                "it": {
+                  "name": "Cozze 1 kg"
+                }
+              }
+            },
+            {
+              "id": "prvosvibanjska-dalmatinska-pasticada",
+              "name": "Dalmatinska pašticada",
+              "description": "tradicionalno dalmatinsko jelo",
+              "price": 16,
+              "priceDisplay": "16€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "J",
+                "C",
+                "SO₂"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 7,
+              "translations": {
+                "en": {
+                  "name": "Dalmatian pašticada",
+                  "description": "traditional Dalmatian beef dish"
+                },
+                "de": {
+                  "name": "Dalmatinische Pašticada",
+                  "description": "traditionelles dalmatinisches Rindfleischgericht"
+                },
+                "it": {
+                  "name": "Pašticada dalmata",
+                  "description": "piatto tradizionale dalmata di manzo"
+                }
+              }
+            },
+            {
+              "id": "prvosvibanjska-porketa",
+              "name": "Porketa",
+              "description": "rolana prasetina servirana uz domaći kruh",
+              "price": 20,
+              "priceDisplay": "20€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 8,
+              "translations": {
+                "en": {
+                  "name": "Porchetta",
+                  "description": "rolled roast pork served with homemade bread"
+                },
+                "de": {
+                  "name": "Porchetta",
+                  "description": "gerollter Schweinebraten mit hausgemachtem Brot"
+                },
+                "it": {
+                  "name": "Porchetta",
+                  "description": "porchetta servita con pane fatto in casa"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "special-order",
+      "title": "JELA PO NARUDŽBI",
+      "type": "special-order",
+      "printOrder": 3,
+      "showHeader": true,
+      "showFooter": true,
+      "intro": "Dostupno uz prethodnu narudžbu, najmanje 24 sata ranije, uz dogovor broja osoba.",
+      "closing": "Za veća društva i posebne prigode rado ćemo preporučiti način posluživanja i priloge prema sezoni.",
+      "sections": [
+        {
+          "id": "posebna-priprema",
+          "title": "POSEBNA PRIPREMA",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 10,
+          "items": [
+            {
+              "id": "hobotnica-ispod-peke-uz-prilog",
+              "name": "Hobotnica ispod peke uz prilog",
+              "description": null,
+              "price": null,
+              "priceDisplay": "€ __,__",
+              "currency": "EUR",
+              "allergens": [
+                "ME"
+              ],
+              "dietary": [
+                "special-order",
+                "contains-seafood",
+                "pescatarian"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": true,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "rolana-teletina-uz-prilog",
+              "name": "Rolana teletina uz prilog",
+              "description": null,
+              "price": null,
+              "priceDisplay": "€ __,__",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [
+                "special-order",
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": true,
+              "notes": [
+                "Provjeriti punjenje, umak i prilog prije finalnog označavanja alergena."
+              ],
+              "sortOrder": 2
+            },
+            {
+              "id": "rolana-janjetina-uz-prilog",
+              "name": "Rolana janjetina uz prilog",
+              "description": null,
+              "price": null,
+              "priceDisplay": "€ __,__",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [
+                "special-order",
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": true,
+              "notes": [
+                "Provjeriti punjenje, umak i prilog prije finalnog označavanja alergena."
+              ],
+              "sortOrder": 3
+            },
+            {
+              "id": "beef-wellington",
+              "name": "Beef Wellington",
+              "description": null,
+              "price": null,
+              "priceDisplay": "€ __,__",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "J",
+                "M"
+              ],
+              "dietary": [
+                "special-order",
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": true,
+              "notes": [],
+              "sortOrder": 4
+            }
+          ]
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "DISHES BY ORDER",
+          "intro": "Available by advance order, at least 24 hours in advance, with agreement on the number of guests.",
+          "closing": "For larger groups and special occasions, we will gladly recommend serving style and seasonal sides."
+        },
+        "de": {
+          "title": "GERICHTE AUF VORBESTELLUNG",
+          "intro": "Erhältlich auf Vorbestellung, mindestens 24 Stunden im Voraus, mit Absprache der Personenzahl.",
+          "closing": "Für größere Gruppen und besondere Anlässe empfehlen wir gerne Servierart und saisonale Beilagen."
+        },
+        "it": {
+          "title": "PIATTI SU ORDINAZIONE",
+          "intro": "Disponibile su prenotazione, almeno 24 ore prima, concordando il numero di persone.",
+          "closing": "Per gruppi più numerosi e occasioni speciali saremo lieti di consigliare il servizio e i contorni di stagione."
+        }
+      }
+    },
+    {
+      "id": "information",
+      "title": "INFORMACIJE",
+      "type": "information",
+      "printOrder": 4,
+      "showHeader": true,
+      "showFooter": true,
+      "sections": [],
+      "translations": {
+        "en": {
+          "title": "INFORMATION"
+        },
+        "de": {
+          "title": "INFORMATIONEN"
+        },
+        "it": {
+          "title": "INFORMAZIONI"
+        }
+      }
+    },
+    {
+      "id": "drinks",
+      "title": "PIĆE",
+      "type": "menu",
+      "printOrder": 5,
+      "showHeader": true,
+      "showFooter": true,
+      "sections": [
+        {
+          "id": "topli-napitci",
+          "title": "KAVE & TOPLI NAPITCI",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 10,
+          "items": [
+            {
+              "id": "espresso",
+              "name": "Espresso",
+              "description": null,
+              "price": 2,
+              "priceDisplay": "2€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1,
+              "translations": {
+                "en": {
+                  "name": "Espresso"
+                },
+                "de": {
+                  "name": "Espresso"
+                },
+                "it": {
+                  "name": "Espresso"
+                }
+              }
+            },
+            {
+              "id": "kava-s-mlijekom-slagom",
+              "name": "Kava s mlijekom / šlagom",
+              "description": null,
+              "price": 2.4,
+              "priceDisplay": "2,40€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2,
+              "translations": {
+                "en": {
+                  "name": "Coffee with milk / whipped cream"
+                },
+                "de": {
+                  "name": "Kaffee mit Milch / Schlagsahne"
+                },
+                "it": {
+                  "name": "Caffè con latte / panna"
+                }
+              }
+            },
+            {
+              "id": "cappuccino",
+              "name": "Cappuccino",
+              "description": null,
+              "price": 2.8,
+              "priceDisplay": "2,80€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3,
+              "translations": {
+                "en": {
+                  "name": "Cappuccino"
+                },
+                "de": {
+                  "name": "Cappuccino"
+                },
+                "it": {
+                  "name": "Cappuccino"
+                }
+              }
+            },
+            {
+              "id": "bijela-kava",
+              "name": "Bijela kava",
+              "description": null,
+              "price": 3.2,
+              "priceDisplay": "3,20€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4,
+              "translations": {
+                "en": {
+                  "name": "White coffee"
+                },
+                "de": {
+                  "name": "Milchkaffee"
+                },
+                "it": {
+                  "name": "Caffè latte"
+                }
+              }
+            },
+            {
+              "id": "latte-macchiato",
+              "name": "Latte macchiato",
+              "description": null,
+              "price": 3.2,
+              "priceDisplay": "3,20€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5,
+              "translations": {
+                "en": {
+                  "name": "Latte macchiato"
+                },
+                "de": {
+                  "name": "Latte macchiato"
+                },
+                "it": {
+                  "name": "Latte macchiato"
+                }
+              }
+            },
+            {
+              "id": "nescafe",
+              "name": "Nescafé",
+              "description": null,
+              "price": 3,
+              "priceDisplay": "3€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 6,
+              "translations": {
+                "en": {
+                  "name": "Nescafé"
+                },
+                "de": {
+                  "name": "Nescafé"
+                },
+                "it": {
+                  "name": "Nescafé"
+                }
+              }
+            },
+            {
+              "id": "caj",
+              "name": "Čaj",
+              "description": null,
+              "price": 2,
+              "priceDisplay": "2€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 7,
+              "translations": {
+                "en": {
+                  "name": "Tea"
+                },
+                "de": {
+                  "name": "Tee"
+                },
+                "it": {
+                  "name": "Tè"
+                }
+              }
+            },
+            {
+              "id": "instant-cappuccino",
+              "name": "Instant cappuccino",
+              "description": null,
+              "price": 3,
+              "priceDisplay": "3€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 8,
+              "translations": {
+                "en": {
+                  "name": "Instant cappuccino"
+                },
+                "de": {
+                  "name": "Instant-Cappuccino"
+                },
+                "it": {
+                  "name": "Cappuccino istantaneo"
+                }
+              }
+            },
+            {
+              "id": "ice-latte",
+              "name": "Ice latte",
+              "description": null,
+              "price": 3.3,
+              "priceDisplay": "3,30€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 9,
+              "translations": {
+                "en": {
+                  "name": "Iced latte"
+                },
+                "de": {
+                  "name": "Iced Latte"
+                },
+                "it": {
+                  "name": "Latte freddo"
+                }
+              }
+            },
+            {
+              "id": "ice-latte-matcha",
+              "name": "Ice latte matcha",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 10,
+              "translations": {
+                "en": {
+                  "name": "Iced matcha latte"
+                },
+                "de": {
+                  "name": "Iced Matcha Latte"
+                },
+                "it": {
+                  "name": "Latte matcha freddo"
+                }
+              }
+            },
+            {
+              "id": "ice-latte-matcha-s-okusom",
+              "name": "Ice latte matcha s okusom",
+              "description": null,
+              "price": 6,
+              "priceDisplay": "6€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 11,
+              "translations": {
+                "en": {
+                  "name": "Iced matcha latte with flavor"
+                },
+                "de": {
+                  "name": "Iced Matcha Latte mit Aroma"
+                },
+                "it": {
+                  "name": "Latte matcha freddo aromatizzato"
+                }
+              }
+            },
+            {
+              "id": "espresso-tonic",
+              "name": "Espresso tonic",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 12,
+              "translations": {
+                "en": {
+                  "name": "Espresso tonic"
+                },
+                "de": {
+                  "name": "Espresso Tonic"
+                },
+                "it": {
+                  "name": "Espresso tonic"
+                }
+              }
+            },
+            {
+              "id": "affogato",
+              "name": "Affogato",
+              "description": null,
+              "price": 6.5,
+              "priceDisplay": "6,50€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 13,
+              "translations": {
+                "en": {
+                  "name": "Affogato"
+                },
+                "de": {
+                  "name": "Affogato"
+                },
+                "it": {
+                  "name": "Affogato"
+                }
+              }
+            },
+            {
+              "id": "irish-baileys-coffee",
+              "name": "Irish / Baileys coffee",
+              "description": null,
+              "price": 9,
+              "priceDisplay": "9€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 14,
+              "translations": {
+                "en": {
+                  "name": "Irish / Baileys coffee"
+                },
+                "de": {
+                  "name": "Irish / Baileys Coffee"
+                },
+                "it": {
+                  "name": "Caffè Irish / Baileys"
+                }
+              }
+            },
+            {
+              "id": "ice-coffee",
+              "name": "Ice coffee",
+              "description": null,
+              "price": 8,
+              "priceDisplay": "8€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 15,
+              "translations": {
+                "en": {
+                  "name": "Iced coffee"
+                },
+                "de": {
+                  "name": "Eiskaffee"
+                },
+                "it": {
+                  "name": "Caffè freddo"
+                }
+              }
+            }
+          ],
+          "translations": {
+            "en": {
+              "title": "COFFEE & HOT DRINKS"
+            },
+            "de": {
+              "title": "KAFFEE & HEISSE GETRÄNKE"
+            },
+            "it": {
+              "title": "CAFFÈ & BEVANDE CALDE"
+            }
+          }
+        },
+        {
+          "id": "vode",
+          "title": "VODE",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 20,
+          "items": [
+            {
+              "id": "romerquelle-negazirana-033",
+              "name": "Römerquelle negazirana 0,33 l",
+              "description": null,
+              "price": 3,
+              "priceDisplay": "3€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "romerquelle-gazirana-033",
+              "name": "Römerquelle gazirana 0,33 l",
+              "description": null,
+              "price": 3,
+              "priceDisplay": "3€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "romerquelle-negazirana-075",
+              "name": "Römerquelle negazirana 0,75 l",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3
+            },
+            {
+              "id": "romerquelle-gazirana-075",
+              "name": "Römerquelle gazirana 0,75 l",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4
+            },
+            {
+              "id": "romerquelle-limunska-trava",
+              "name": "Römerquelle limunska trava",
+              "description": null,
+              "price": 3.2,
+              "priceDisplay": "3,20€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5
+            }
+          ]
+        },
+        {
+          "id": "bezalkoholna-pica",
+          "title": "BEZALKOHOLNA PIĆA",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 30,
+          "items": [
+            {
+              "id": "coca-cola-025",
+              "name": "Coca-Cola 0,25 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "coca-cola-zero-025",
+              "name": "Coca-Cola Zero 0,25 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "fanta-025",
+              "name": "Fanta 0,25 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3
+            },
+            {
+              "id": "sprite-025",
+              "name": "Sprite 0,25 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4
+            },
+            {
+              "id": "schweppes-tonic-025",
+              "name": "Schweppes Tonic 0,25 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5
+            },
+            {
+              "id": "schweppes-bitter-lemon-025",
+              "name": "Schweppes Bitter Lemon 0,25 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 6
+            },
+            {
+              "id": "schweppes-tangerina-025",
+              "name": "Schweppes Tangerina 0,25 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 7
+            },
+            {
+              "id": "thomas-henry-spicy-ginger-beer-020",
+              "name": "Thomas Henry Spicy Ginger Beer 0,20 l",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 8
+            }
+          ]
+        },
+        {
+          "id": "sokovi-ledeni-cajevi",
+          "title": "SOKOVI I LEDENI ČAJEVI",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 40,
+          "items": [
+            {
+              "id": "cedevita-limun",
+              "name": "Cedevita limun",
+              "description": null,
+              "price": 3,
+              "priceDisplay": "3€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "cedevita-naranca",
+              "name": "Cedevita naranča",
+              "description": null,
+              "price": 3,
+              "priceDisplay": "3€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "hidra-limun-050",
+              "name": "Hidra limun 0,50 l",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3
+            },
+            {
+              "id": "hidra-naranca-050",
+              "name": "Hidra naranča 0,50 l",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4
+            },
+            {
+              "id": "hidra-ananas-limeta-050",
+              "name": "Hidra ananas-limeta 0,50 l",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5
+            },
+            {
+              "id": "ledeni-caj-breskva",
+              "name": "Ledeni čaj breskva",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 6
+            },
+            {
+              "id": "ledeni-caj-sumsko-voce",
+              "name": "Ledeni čaj šumsko voće",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 7
+            },
+            {
+              "id": "pago-jabuka-020",
+              "name": "Pago jabuka 0,20 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 8
+            },
+            {
+              "id": "pago-naranca-020",
+              "name": "Pago naranča 0,20 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 9
+            },
+            {
+              "id": "pago-visnja-020",
+              "name": "Pago višnja 0,20 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 10
+            },
+            {
+              "id": "pago-marelica-020",
+              "name": "Pago marelica 0,20 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 11
+            },
+            {
+              "id": "pago-ananas-020",
+              "name": "Pago ananas 0,20 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 12
+            },
+            {
+              "id": "pago-crni-ribiz-020",
+              "name": "Pago crni ribiz 0,20 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 13
+            }
+          ]
+        },
+        {
+          "id": "piva-cider",
+          "title": "PIVA I CIDER",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 50,
+          "items": [
+            {
+              "id": "ozujsko-toceno-030",
+              "name": "Ožujsko točeno 0,30 l",
+              "description": null,
+              "price": 3,
+              "priceDisplay": "3€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "ozujsko-toceno-050",
+              "name": "Ožujsko točeno 0,50 l",
+              "description": null,
+              "price": 4.5,
+              "priceDisplay": "4,50€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "ozujsko-033",
+              "name": "Ožujsko 0,33 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3
+            },
+            {
+              "id": "stella-033",
+              "name": "Stella 0,33 l",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4
+            },
+            {
+              "id": "becks-033",
+              "name": "Beck’s 0,33 l",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5
+            },
+            {
+              "id": "tomislav-050",
+              "name": "Tomislav 0,50 l",
+              "description": null,
+              "price": 5.5,
+              "priceDisplay": "5,50€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 6
+            },
+            {
+              "id": "vukovarsko-050",
+              "name": "Vukovarsko 0,50 l",
+              "description": null,
+              "price": 4.5,
+              "priceDisplay": "4,50€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 7
+            },
+            {
+              "id": "ozujsko-radler-limun-050",
+              "name": "Ožujsko Radler limun 0,50 l",
+              "description": null,
+              "price": 4.5,
+              "priceDisplay": "4,50€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 8
+            },
+            {
+              "id": "somersby-jabuka",
+              "name": "Somersby jabuka",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 9
+            },
+            {
+              "id": "somersby-kruska",
+              "name": "Somersby kruška",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 10
+            },
+            {
+              "id": "somersby-00-jagoda-limeta",
+              "name": "Somersby 0.0 jagoda-limeta",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 11
+            }
+          ]
+        },
+        {
+          "id": "mix-pica",
+          "title": "MIX PIĆA",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 60,
+          "translations": {
+            "en": {
+              "title": "MIXED DRINKS"
+            },
+            "de": {
+              "title": "MISCHGETRÄNKE"
+            },
+            "it": {
+              "title": "BEVANDE MISTE"
+            }
+          },
+          "items": [
+            {
+              "id": "radla-030",
+              "name": "Radla 0,30 l",
+              "description": null,
+              "price": 3,
+              "priceDisplay": "3€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1,
+              "translations": {
+                "en": {
+                  "name": "Radler 0.30 l"
+                },
+                "de": {
+                  "name": "Radler 0,30 l"
+                },
+                "it": {
+                  "name": "Radler 0,30 l"
+                }
+              }
+            },
+            {
+              "id": "radla-050",
+              "name": "Radla 0,50 l",
+              "description": null,
+              "price": 4.5,
+              "priceDisplay": "4,50€",
+              "currency": "EUR",
+              "allergens": [
+                "G"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2,
+              "translations": {
+                "en": {
+                  "name": "Radler 0.50 l"
+                },
+                "de": {
+                  "name": "Radler 0,50 l"
+                },
+                "it": {
+                  "name": "Radler 0,50 l"
+                }
+              }
+            },
+            {
+              "id": "mis-mas-030",
+              "name": "Miš-maš 0,30 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3,
+              "translations": {
+                "en": {
+                  "name": "Miš-maš 0.30 l"
+                },
+                "de": {
+                  "name": "Miš-maš 0,30 l"
+                },
+                "it": {
+                  "name": "Miš-maš 0,30 l"
+                }
+              }
+            },
+            {
+              "id": "mis-mas-050",
+              "name": "Miš-maš 0,50 l",
+              "description": null,
+              "price": 6,
+              "priceDisplay": "6€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4,
+              "translations": {
+                "en": {
+                  "name": "Miš-maš 0.50 l"
+                },
+                "de": {
+                  "name": "Miš-maš 0,50 l"
+                },
+                "it": {
+                  "name": "Miš-maš 0,50 l"
+                }
+              }
+            },
+            {
+              "id": "bambus-030",
+              "name": "Bambus 0,30 l",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5,
+              "translations": {
+                "en": {
+                  "name": "Bambus 0.30 l"
+                },
+                "de": {
+                  "name": "Bambus 0,30 l"
+                },
+                "it": {
+                  "name": "Bambus 0,30 l"
+                }
+              }
+            },
+            {
+              "id": "bambus-050",
+              "name": "Bambus 0,50 l",
+              "description": null,
+              "price": 6,
+              "priceDisplay": "6€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 6,
+              "translations": {
+                "en": {
+                  "name": "Bambus 0.50 l"
+                },
+                "de": {
+                  "name": "Bambus 0,50 l"
+                },
+                "it": {
+                  "name": "Bambus 0,50 l"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "DRINKS"
+        },
+        "de": {
+          "title": "GETRÄNKE"
+        },
+        "it": {
+          "title": "BEVANDE"
+        }
+      }
+    },
+    {
+      "id": "wines-spirits-cocktails",
+      "title": "VINA, ŽESTOKA PIĆA & KOKTELI",
+      "type": "menu",
+      "printOrder": 6,
+      "showHeader": true,
+      "showFooter": true,
+      "sections": [
+        {
+          "id": "vina-na-case",
+          "title": "VINA NA ČAŠE",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 10,
+          "items": [
+            {
+              "id": "malvazija-1dcl",
+              "name": "Malvazija 1 dcl",
+              "description": null,
+              "price": 2.2,
+              "priceDisplay": "2,20€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "peljesac-1dcl",
+              "name": "Pelješac 1 dcl",
+              "description": null,
+              "price": 2.2,
+              "priceDisplay": "2,20€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "rose-benkovac-1dcl",
+              "name": "Rosé Benkovac 1 dcl",
+              "description": null,
+              "price": 2.2,
+              "priceDisplay": "2,20€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3
+            },
+            {
+              "id": "dalmatinski-prosek-1dcl",
+              "name": "Dalmatinski prošek 1 dcl",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4
+            },
+            {
+              "id": "muskat-bric-1dcl",
+              "name": "Muškat BRIČ 1 dcl",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5,
+              "translations": {
+                "en": {
+                  "name": "Muškat BRIČ 1 dcl"
+                },
+                "de": {
+                  "name": "Muškat BRIČ 1 dcl"
+                },
+                "it": {
+                  "name": "Muškat BRIČ 1 dcl"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "vina-u-boci",
+          "title": "VINA VRHUNSKA",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 20,
+          "items": [
+            {
+              "id": "zlatan-posip-075",
+              "name": "Zlatan Pošip 0,75 l",
+              "description": null,
+              "price": 32,
+              "priceDisplay": "32€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "galic-sauvignon-blanc-075",
+              "name": "Galić Sauvignon Blanc 0,75 l",
+              "description": null,
+              "price": 35,
+              "priceDisplay": "35€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "muskat-bric-075",
+              "name": "Muškat BRIČ 0,75 l",
+              "description": null,
+              "price": 35,
+              "priceDisplay": "35€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3
+            },
+            {
+              "id": "korta-katarina-rose-075",
+              "name": "Korta Katarina Rosé 0,75 l",
+              "description": null,
+              "price": 40,
+              "priceDisplay": "40€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4
+            },
+            {
+              "id": "zlatan-plavac-075",
+              "name": "Zlatan Plavac 0,75 l",
+              "description": null,
+              "price": 35,
+              "priceDisplay": "35€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5
+            },
+            {
+              "id": "zlatan-crljenak-075",
+              "name": "Zlatan Crljenak 0,75 l",
+              "description": null,
+              "price": 40,
+              "priceDisplay": "40€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 6
+            }
+          ],
+          "translations": {
+            "en": {
+              "title": "PREMIUM WINES"
+            },
+            "de": {
+              "title": "PREMIUMWEINE"
+            },
+            "it": {
+              "title": "VINI PREGIATI"
+            }
+          }
+        },
+        {
+          "id": "pjenusci",
+          "title": "PJENUŠCI",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 30,
+          "items": [
+            {
+              "id": "prosecco-1dcl",
+              "name": "Prosecco 1 dcl",
+              "description": null,
+              "price": 7,
+              "priceDisplay": "7€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1,
+              "translations": {
+                "en": {
+                  "name": "Prosecco 1 dcl"
+                },
+                "de": {
+                  "name": "Prosecco 1 dcl"
+                },
+                "it": {
+                  "name": "Prosecco 1 dcl"
+                }
+              }
+            },
+            {
+              "id": "prosecco-075",
+              "name": "Prosecco 0,75 l",
+              "description": null,
+              "price": 40,
+              "priceDisplay": "40€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2,
+              "translations": {
+                "en": {
+                  "name": "Prosecco 0.75 l"
+                },
+                "de": {
+                  "name": "Prosecco 0,75 l"
+                },
+                "it": {
+                  "name": "Prosecco 0,75 l"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "aperitivi-rakije-likeri",
+          "title": "APERITIVI, RAKIJE I LIKERI",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 40,
+          "items": [
+            {
+              "id": "pelinkovac-dalmacija",
+              "name": "Pelinkovac Dalmacija",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1,
+              "translations": {
+                "en": {
+                  "name": "Pelinkovac Dalmacija"
+                },
+                "de": {
+                  "name": "Pelinkovac Dalmacija"
+                },
+                "it": {
+                  "name": "Pelinkovac Dalmacija"
+                }
+              }
+            },
+            {
+              "id": "pelinkovac-antik",
+              "name": "Pelinkovac Antique",
+              "description": null,
+              "price": 5.5,
+              "priceDisplay": "5,50€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2,
+              "translations": {
+                "en": {
+                  "name": "Pelinkovac Antique"
+                },
+                "de": {
+                  "name": "Pelinkovac Antique"
+                },
+                "it": {
+                  "name": "Pelinkovac Antique"
+                }
+              }
+            },
+            {
+              "id": "sibenska-travarica",
+              "name": "Šibenska travarica",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3,
+              "translations": {
+                "en": {
+                  "name": "Šibenik herbal brandy"
+                },
+                "de": {
+                  "name": "Šibeniker Kräuterschnaps"
+                },
+                "it": {
+                  "name": "Grappa alle erbe di Šibenik"
+                }
+              }
+            },
+            {
+              "id": "williams-viljamovka",
+              "name": "Williams viljamovka",
+              "description": null,
+              "price": 6,
+              "priceDisplay": "6€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4,
+              "translations": {
+                "en": {
+                  "name": "Williams pear brandy"
+                },
+                "de": {
+                  "name": "Williams-Birnenschnaps"
+                },
+                "it": {
+                  "name": "Williams pera"
+                }
+              }
+            },
+            {
+              "id": "maraska-visnjevac",
+              "name": "Maraska višnjevac",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5,
+              "translations": {
+                "en": {
+                  "name": "Maraska cherry liqueur"
+                },
+                "de": {
+                  "name": "Maraska Kirschlikör"
+                },
+                "it": {
+                  "name": "Liquore alla ciliegia Maraska"
+                }
+              }
+            },
+            {
+              "id": "maraska-orahovac",
+              "name": "Maraska orahovac",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 6,
+              "translations": {
+                "en": {
+                  "name": "Maraska walnut liqueur"
+                },
+                "de": {
+                  "name": "Maraska Walnusslikör"
+                },
+                "it": {
+                  "name": "Liquore alle noci Maraska"
+                }
+              }
+            },
+            {
+              "id": "teranino-korlat",
+              "name": "Teranino Korlat",
+              "description": null,
+              "price": 5.5,
+              "priceDisplay": "5,50€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 7,
+              "translations": {
+                "en": {
+                  "name": "Teranino Korlat"
+                },
+                "de": {
+                  "name": "Teranino Korlat"
+                },
+                "it": {
+                  "name": "Teranino Korlat"
+                }
+              }
+            },
+            {
+              "id": "dalmatinski-prosek",
+              "name": "Dalmatinski prošek",
+              "description": null,
+              "price": 6,
+              "priceDisplay": "6€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 8,
+              "translations": {
+                "en": {
+                  "name": "Dalmatian prošek"
+                },
+                "de": {
+                  "name": "Dalmatinischer Prošek"
+                },
+                "it": {
+                  "name": "Prošek dalmata"
+                }
+              }
+            },
+            {
+              "id": "jagermeister",
+              "name": "Jägermeister",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 9,
+              "translations": {
+                "en": {
+                  "name": "Jägermeister"
+                },
+                "de": {
+                  "name": "Jägermeister"
+                },
+                "it": {
+                  "name": "Jägermeister"
+                }
+              }
+            },
+            {
+              "id": "limoncello",
+              "name": "Limoncello",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 10,
+              "translations": {
+                "en": {
+                  "name": "Limoncello"
+                },
+                "de": {
+                  "name": "Limoncello"
+                },
+                "it": {
+                  "name": "Limoncello"
+                }
+              }
+            },
+            {
+              "id": "baileys",
+              "name": "Baileys",
+              "description": null,
+              "price": 6,
+              "priceDisplay": "6€",
+              "currency": "EUR",
+              "allergens": [
+                "M"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 11,
+              "translations": {
+                "en": {
+                  "name": "Baileys"
+                },
+                "de": {
+                  "name": "Baileys"
+                },
+                "it": {
+                  "name": "Baileys"
+                }
+              }
+            },
+            {
+              "id": "aperol",
+              "name": "Aperol",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 12,
+              "translations": {
+                "en": {
+                  "name": "Aperol"
+                },
+                "de": {
+                  "name": "Aperol"
+                },
+                "it": {
+                  "name": "Aperol"
+                }
+              }
+            },
+            {
+              "id": "campari",
+              "name": "Campari",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 13,
+              "translations": {
+                "en": {
+                  "name": "Campari"
+                },
+                "de": {
+                  "name": "Campari"
+                },
+                "it": {
+                  "name": "Campari"
+                }
+              }
+            },
+            {
+              "id": "martini-bianco",
+              "name": "Martini Bianco",
+              "description": null,
+              "price": 6,
+              "priceDisplay": "6€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 14,
+              "translations": {
+                "en": {
+                  "name": "Martini Bianco"
+                },
+                "de": {
+                  "name": "Martini Bianco"
+                },
+                "it": {
+                  "name": "Martini Bianco"
+                }
+              }
+            },
+            {
+              "id": "martini-rosso",
+              "name": "Martini Rosso",
+              "description": null,
+              "price": 6,
+              "priceDisplay": "6€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 15,
+              "translations": {
+                "en": {
+                  "name": "Martini Rosso"
+                },
+                "de": {
+                  "name": "Martini Rosso"
+                },
+                "it": {
+                  "name": "Martini Rosso"
+                }
+              }
+            }
+          ],
+          "translations": {
+            "en": {
+              "title": "APERITIFS, BRANDIES & LIQUEURS"
+            },
+            "de": {
+              "title": "APERITIFS, SCHNÄPSE & LIKÖRE"
+            },
+            "it": {
+              "title": "APERITIVI, GRAPPE E LIQUORI"
+            }
+          }
+        },
+        {
+          "id": "whiskey-cognac-zestoka",
+          "title": "WHISKEY, COGNAC I OSTALA ŽESTOKA PIĆA",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 50,
+          "items": [
+            {
+              "id": "jameson",
+              "name": "Jameson",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "jim-beam",
+              "name": "Jim Beam",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "hennessy",
+              "name": "Hennessy",
+              "description": null,
+              "price": 8,
+              "priceDisplay": "8€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3
+            },
+            {
+              "id": "smirnoff-vodka",
+              "name": "Smirnoff Vodka",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4
+            },
+            {
+              "id": "sierra-tequila",
+              "name": "Sierra Tequila",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5
+            },
+            {
+              "id": "bacardi-white",
+              "name": "Bacardi White",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 6
+            },
+            {
+              "id": "bacardi-black",
+              "name": "Bacardi Black",
+              "description": null,
+              "price": 5,
+              "priceDisplay": "5€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 7
+            },
+            {
+              "id": "malibu",
+              "name": "Malibu",
+              "description": null,
+              "price": 6,
+              "priceDisplay": "6€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 8
+            }
+          ]
+        },
+        {
+          "id": "gin",
+          "title": "GIN",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 60,
+          "items": [
+            {
+              "id": "sax-gin",
+              "name": "SAX Gin",
+              "description": null,
+              "price": 4,
+              "priceDisplay": "4€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1
+            },
+            {
+              "id": "bulldog-gin",
+              "name": "Bulldog Gin",
+              "description": null,
+              "price": 5.5,
+              "priceDisplay": "5,50€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2
+            },
+            {
+              "id": "hendricks-gin",
+              "name": "Hendrick’s Gin",
+              "description": null,
+              "price": 7,
+              "priceDisplay": "7€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "id": "kokteli",
+          "title": "KOKTELI",
+          "note": null,
+          "layout": "default",
+          "sortOrder": 70,
+          "items": [
+            {
+              "id": "aperol-spritz",
+              "name": "Aperol Spritz",
+              "description": "Aperol, prosecco, soda, naranča",
+              "price": 11,
+              "priceDisplay": "11€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 1,
+              "translations": {
+                "en": {
+                  "name": "Aperol Spritz",
+                  "description": "Aperol, prosecco, soda, orange"
+                },
+                "de": {
+                  "name": "Aperol Spritz",
+                  "description": "Aperol, Prosecco, Soda, Orange"
+                },
+                "it": {
+                  "name": "Aperol Spritz",
+                  "description": "Aperol, prosecco, soda, arancia"
+                }
+              }
+            },
+            {
+              "id": "hugo",
+              "name": "Hugo",
+              "description": "prosecco, bazga, soda, limeta, menta",
+              "price": 12,
+              "priceDisplay": "12€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 2,
+              "translations": {
+                "en": {
+                  "name": "Hugo",
+                  "description": "prosecco, elderflower, soda, lime, mint"
+                },
+                "de": {
+                  "name": "Hugo",
+                  "description": "Prosecco, Holunderblüte, Soda, Limette, Minze"
+                },
+                "it": {
+                  "name": "Hugo",
+                  "description": "prosecco, sambuco, soda, lime, menta"
+                }
+              }
+            },
+            {
+              "id": "mojito",
+              "name": "Mojito",
+              "description": "bijeli rum, limeta, menta, šećerni sirup, soda",
+              "price": 13,
+              "priceDisplay": "13€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3,
+              "translations": {
+                "en": {
+                  "name": "Mojito",
+                  "description": "white rum, lime, mint, sugar syrup, soda"
+                },
+                "de": {
+                  "name": "Mojito",
+                  "description": "weißer Rum, Limette, Minze, Zuckersirup, Soda"
+                },
+                "it": {
+                  "name": "Mojito",
+                  "description": "rum bianco, lime, menta, sciroppo di zucchero, soda"
+                }
+              }
+            },
+            {
+              "id": "gin-tonic",
+              "name": "Gin Tonic",
+              "description": "gin, tonic, citrusi",
+              "price": 10,
+              "priceDisplay": "10€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4,
+              "translations": {
+                "en": {
+                  "name": "Gin Tonic",
+                  "description": "gin, tonic, citrus"
+                },
+                "de": {
+                  "name": "Gin Tonic",
+                  "description": "Gin, Tonic, Zitrus"
+                },
+                "it": {
+                  "name": "Gin Tonic",
+                  "description": "gin, tonica, agrumi"
+                }
+              }
+            },
+            {
+              "id": "cuba-libre",
+              "name": "Cuba Libre",
+              "description": "rum, Coca-Cola, limeta",
+              "price": 11,
+              "priceDisplay": "11€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 5,
+              "translations": {
+                "en": {
+                  "name": "Cuba Libre",
+                  "description": "rum, Coca-Cola, lime"
+                },
+                "de": {
+                  "name": "Cuba Libre",
+                  "description": "Rum, Coca-Cola, Limette"
+                },
+                "it": {
+                  "name": "Cuba Libre",
+                  "description": "rum, Coca-Cola, lime"
+                }
+              }
+            },
+            {
+              "id": "moscow-mule",
+              "name": "Moscow Mule",
+              "description": "vodka, spicy ginger beer, limeta",
+              "price": 15,
+              "priceDisplay": "15€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 6,
+              "translations": {
+                "en": {
+                  "name": "Moscow Mule",
+                  "description": "vodka, spicy ginger beer, lime"
+                },
+                "de": {
+                  "name": "Moscow Mule",
+                  "description": "Wodka, Spicy Ginger Beer, Limette"
+                },
+                "it": {
+                  "name": "Moscow Mule",
+                  "description": "vodka, spicy ginger beer, lime"
+                }
+              }
+            },
+            {
+              "id": "espresso-martini",
+              "name": "Espresso Martini",
+              "description": "vodka, Kahlúa, espresso",
+              "price": 12,
+              "priceDisplay": "12€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [
+                "Provjeriti deklaraciju likera i dodataka prije finalnih oznaka alergena."
+              ],
+              "sortOrder": 7,
+              "translations": {
+                "en": {
+                  "name": "Espresso Martini",
+                  "description": "vodka, Kahlúa, espresso"
+                },
+                "de": {
+                  "name": "Espresso Martini",
+                  "description": "Wodka, Kahlúa, Espresso"
+                },
+                "it": {
+                  "name": "Espresso Martini",
+                  "description": "vodka, Kahlúa, espresso"
+                }
+              }
+            },
+            {
+              "id": "negroni",
+              "name": "Negroni",
+              "description": "gin, Campari, Martini Rosso",
+              "price": 15,
+              "priceDisplay": "15€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 8,
+              "translations": {
+                "en": {
+                  "name": "Negroni",
+                  "description": "gin, Campari, Martini Rosso"
+                },
+                "de": {
+                  "name": "Negroni",
+                  "description": "Gin, Campari, Martini Rosso"
+                },
+                "it": {
+                  "name": "Negroni",
+                  "description": "gin, Campari, Martini Rosso"
+                }
+              }
+            },
+            {
+              "id": "mojito-strawberry-passion",
+              "name": "Mojito Strawberry / Passion",
+              "description": "bijeli rum, limeta, menta, jagoda ili passion fruit",
+              "price": 15,
+              "priceDisplay": "15€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 9,
+              "translations": {
+                "en": {
+                  "name": "Strawberry / Passion Mojito",
+                  "description": "white rum, lime, mint, strawberry or passion fruit"
+                },
+                "de": {
+                  "name": "Strawberry / Passion Mojito",
+                  "description": "weißer Rum, Limette, Minze, Erdbeere oder Passionsfrucht"
+                },
+                "it": {
+                  "name": "Mojito fragola / passion fruit",
+                  "description": "rum bianco, lime, menta, fragola o passion fruit"
+                }
+              }
+            },
+            {
+              "id": "limoncello-spritz",
+              "name": "Limoncello Spritz",
+              "description": "limoncello, prosecco, soda, citrusi",
+              "price": 11,
+              "priceDisplay": "11€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 10,
+              "translations": {
+                "en": {
+                  "name": "Limoncello Spritz",
+                  "description": "limoncello, prosecco, soda, citrus"
+                },
+                "de": {
+                  "name": "Limoncello Spritz",
+                  "description": "Limoncello, Prosecco, Soda, Zitrus"
+                },
+                "it": {
+                  "name": "Limoncello Spritz",
+                  "description": "limoncello, prosecco, soda, agrumi"
+                }
+              }
+            },
+            {
+              "id": "london-mule",
+              "name": "London Mule",
+              "description": "gin, spicy ginger beer, limeta",
+              "price": 15,
+              "priceDisplay": "15€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 11,
+              "translations": {
+                "en": {
+                  "name": "London Mule",
+                  "description": "gin, spicy ginger beer, lime"
+                },
+                "de": {
+                  "name": "London Mule",
+                  "description": "Gin, Spicy Ginger Beer, Limette"
+                },
+                "it": {
+                  "name": "London Mule",
+                  "description": "gin, spicy ginger beer, lime"
+                }
+              }
+            },
+            {
+              "id": "my-favourite-spritz",
+              "name": "My Favourite Spritz",
+              "description": "Malibu, passion fruit pire, prosecco, citrus mix",
+              "price": 14,
+              "priceDisplay": "14€",
+              "currency": "EUR",
+              "allergens": [
+                "SO₂"
+              ],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 12,
+              "translations": {
+                "en": {
+                  "name": "My Favourite Spritz",
+                  "description": "Malibu, passion fruit purée, prosecco, citrus mix"
+                },
+                "de": {
+                  "name": "My Favourite Spritz",
+                  "description": "Malibu, Passionsfruchtpüree, Prosecco, Citrus-Mix"
+                },
+                "it": {
+                  "name": "My Favourite Spritz",
+                  "description": "Malibu, purea di passion fruit, prosecco, mix di agrumi"
+                }
+              }
+            },
+            {
+              "id": "karamello-espresso-martini",
+              "name": "Karamello Espresso Martini",
+              "description": "vodka, Kahlúa, espresso, karamela",
+              "price": 15,
+              "priceDisplay": "15€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 13,
+              "translations": {
+                "en": {
+                  "name": "Karamello Espresso Martini",
+                  "description": "vodka, Kahlúa, espresso, caramel"
+                },
+                "de": {
+                  "name": "Karamello Espresso Martini",
+                  "description": "Wodka, Kahlúa, Espresso, Karamell"
+                },
+                "it": {
+                  "name": "Karamello Espresso Martini",
+                  "description": "vodka, Kahlúa, espresso, caramello"
+                }
+              }
+            }
+          ],
+          "translations": {
+            "en": {
+              "title": "COCKTAILS"
+            },
+            "de": {
+              "title": "COCKTAILS"
+            },
+            "it": {
+              "title": "COCKTAIL"
+            }
+          }
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "WINES, SPIRITS & COCKTAILS"
+        },
+        "de": {
+          "title": "WEINE, SPIRITUOSEN & COCKTAILS"
+        },
+        "it": {
+          "title": "VINI, DISTILLATI & COCKTAIL"
+        }
+      }
+    }
+  ]
+}

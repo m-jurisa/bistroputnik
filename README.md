@@ -1,181 +1,70 @@
-# Bistro Putnik
+# Bistro Putnik Menu
 
-Dark premium under-construction landing page for Bistro Putnik, built with:
+Static menu tools for Bistro Putnik. The menu is rendered from `menu/menu-data.json`.
 
-- Next.js 16
-- App Router
-- Tailwind CSS
-- JavaScript only
-- Static export
+## 1. How Menu Data Works
 
-The public site currently publishes only the main hero page.
+`menu/menu-data.json` is the source of truth for the printed menu. Pages are rendered by `printOrder`, sections by `sortOrder`, and items by `sortOrder`.
 
-## Project Structure
-
-```text
-app/
-  icon.svg
-  layout.js
-  page.js
-  globals.css
-components/
-  BrandDivider.js
-  LogoLockupPlaceholder.js
-  UnderConstructionHero.js
-data/
-  site.js
-public/
-next.config.mjs
-postcss.config.js
-tailwind.config.js
-package.json
-```
-
-## How To Run
-
-Install dependencies:
+Run locally from the `menu/` directory:
 
 ```bash
-npm install
+cd menu
+python3 -m http.server 8000
 ```
 
-Start local development:
-
-```bash
-npm run dev
-```
-
-Create the production export:
-
-```bash
-npm run build
-```
-
-The static site is generated into:
+Open:
 
 ```text
-out/
+http://localhost:8000/index.html
 ```
 
-## What To Edit Most Often
+## 2. How Prices Remain Source Of Truth
 
-Main homepage content:
+Prices live only in base item objects in `menu-data.json`.
 
-- [components/UnderConstructionHero.js](/home/epiphany/2026/bistroputnik/components/UnderConstructionHero.js:1)
+Use:
 
-Logo placeholder component:
+- `priceDisplay` for exact guest-facing text such as `15€` or `€ __,__`
+- `price` for numeric EUR formatting if `priceDisplay` is not present
 
-- [components/LogoLockupPlaceholder.js](/home/epiphany/2026/bistroputnik/components/LogoLockupPlaceholder.js:1)
+Do not add prices to translation objects.
 
-Current live logo asset:
+## 3. How Translations Work
 
-- [logo-primary.png](/home/epiphany/2026/bistroputnik/public/logo-primary.png)
-
-Favicon / browser tab icon:
-
-- [app/icon.svg](/home/epiphany/2026/bistroputnik/app/icon.svg:1)
-
-Global colors, spacing, and dark theme styling:
-
-- [app/globals.css](/home/epiphany/2026/bistroputnik/app/globals.css:1)
-- [tailwind.config.js](/home/epiphany/2026/bistroputnik/tailwind.config.js:1)
-
-Small site metadata / slogan:
-
-- [data/site.js](/home/epiphany/2026/bistroputnik/data/site.js:1)
-
-## Logo Setup
-
-The homepage is now wired to use your real logo file directly:
-
-- [logo-primary.png](/home/epiphany/2026/bistroputnik/public/logo-primary.png)
-
-The component that renders it is:
-
-- [components/LogoLockupPlaceholder.js](/home/epiphany/2026/bistroputnik/components/LogoLockupPlaceholder.js:1)
-
-### If you want to replace the logo later
-
-Simplest option:
-
-1. Keep the same filename
-2. Replace this file:
+Croatian (`hr`) is the source language. Visible menu languages are:
 
 ```text
-public/logo-primary.png
+HR EN SV FI NO PL DE DA
 ```
 
-No code changes are needed if the filename stays the same.
+The renderer uses:
 
-### If you want to use a different filename
+1. Croatian base fields for `hr`
+2. `translations[language][field]` when present
+3. Croatian fallback when a translation is missing
 
-Edit this path in [components/LogoLockupPlaceholder.js](/home/epiphany/2026/bistroputnik/components/LogoLockupPlaceholder.js:1):
+Missing translation fallbacks are logged in the browser console. Italian legacy translations may remain in data but are not shown in the visible selector.
 
-```jsx
-src="/logo-primary.png"
-```
+## 4. How To Export Missing Translations
 
-For example:
+Open `menu/index.html` and click `Export Missing Translations`.
 
-```jsx
-src="/my-final-logo.png"
-```
+This downloads `missing-translations.json` with paths, IDs, source Croatian text, fields, and target languages that still need translation.
 
-### Notes
+## 5. How To Import Translations
 
-- Files inside `public/` are available from the site root.
-- `public/logo-primary.png` becomes `/logo-primary.png`.
-- The current hero logo uses `next/image` and is already set up for static export.
-- The image is displayed with `object-contain`, so it will not be stretched.
+Open `menu/index.html` and click `Import Translations`.
 
-## How To Replace The Small Browser Icon
+The browser merges uploaded translations into the in-memory menu copy. Then click `Export JSON` to download the updated full `menu-data.json`.
 
-The browser tab icon is here:
+Supported import entries may use `path` or `id` plus `field`, with translations in a `translations` or `values` object.
 
-- [app/icon.svg](/home/epiphany/2026/bistroputnik/app/icon.svg:1)
+## 6. Final Print Checks
 
-To replace it:
+Before final print, verify:
 
-1. Open [app/icon.svg](/home/epiphany/2026/bistroputnik/app/icon.svg:1)
-2. Replace its SVG markup with your own icon SVG
-
-This is the best place for:
-
-- a statue-only icon
-- a simplified mark
-- a favicon-safe brand symbol
-
-## How To Change The Homepage Text
-
-Edit:
-
-- [components/UnderConstructionHero.js](/home/epiphany/2026/bistroputnik/components/UnderConstructionHero.js:1)
-
-The main editable lines are:
-
-- eyebrow label
-- `We are under construction`
-- opening message
-- supporting slogan
-
-## Design Notes
-
-- Backgrounds are intentionally dark-only.
-- The main visual system uses teal variants.
-- Sand gold is the primary text accent.
-- Premium off-white and muted gray are used sparingly for supporting text.
-- The site currently has no public navigation and no inner published pages.
-
-## Build Note
-
-Fonts are loaded with `next/font/google`.
-
-If you build in a restricted environment, the build may need outbound access to fetch Google Fonts once during the build process.
-
-## Current Public Output
-
-After build, the only public page exported is:
-
-- `/`
-
-There is no public About, Menu, Gallery, or Contact route in the current published version.
+- Menu translations are correct in every selected language
+- Allergens are complete and legally verified
+- Prices are correct in base item objects
+- Placeholder prices are intentional

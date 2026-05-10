@@ -22,7 +22,7 @@ export const metadata = {
     template: '%s | Bistro Putnik',
   },
   description:
-    'A premium Mediterranean bistro website concept rooted in Baška Voda and Croatian coastal hospitality.',
+    'Bistro Putnik opens in Baška Voda with Croatian coastal cooking, drinks, and opening details from 1.5.2026.',
 };
 
 export default function RootLayout({ children }) {

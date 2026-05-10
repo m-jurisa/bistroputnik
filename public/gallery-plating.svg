@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <rect width="1200" height="760" fill="#0E3743"/>
+  <rect width="1200" height="760" fill="url(#wash)"/>
+  <circle cx="600" cy="390" r="234" fill="#0A2730" stroke="#E4C995" stroke-opacity=".28" stroke-width="3"/>
+  <circle cx="600" cy="390" r="176" fill="#103F4D" stroke="#D8C8A8" stroke-opacity=".42" stroke-width="2"/>
+  <ellipse cx="600" cy="392" rx="104" ry="62" fill="#E4C995" fill-opacity=".14"/>
+  <path d="M534 352C563 329 589 318 612 318C636 318 663 329 696 352" stroke="#E4C995" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M474 420C522 395 564 382 600 382C636 382 678 395 728 420" stroke="#DCE3E3" stroke-opacity=".75" stroke-width="2.1" stroke-linecap="round"/>
+  <circle cx="462" cy="324" r="19" fill="#E4C995"/>
+  <circle cx="720" cy="470" r="16" fill="#E4C995" fill-opacity=".68"/>
+  <rect x="94" y="86" width="332" height="80" rx="40" fill="#082830" fill-opacity=".46"/>
+  <text x="142" y="137" fill="#E4C995" font-family="Georgia, serif" font-size="38">Coastal Plating</text>
+  <defs>
+    <linearGradient id="wash" x1="600" y1="0" x2="600" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A6A78" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#0E3743" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

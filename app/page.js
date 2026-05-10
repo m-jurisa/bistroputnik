@@ -1,5 +1,11 @@
-import UnderConstructionHero from '../components/UnderConstructionHero';
+import HomePageContent from '../components/HomePageContent';
+import { LanguageProvider } from '../components/LanguageProvider';
+import { menuData } from '../data/menu';
 
 export default function HomePage() {
-  return <UnderConstructionHero />;
+  return (
+    <LanguageProvider>
+      <HomePageContent menu={menuData} />
+    </LanguageProvider>
+  );
 }

@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bistro Putnik Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./brand.css">
+</head>
+<body>
+  <header class="screen-toolbar no-print" aria-label="Menu tools">
+    <div id="language-selector" class="language-selector" aria-label="Language"></div>
+    <div class="tool-group" aria-label="Menu actions">
+      <button type="button" data-action="print" data-ui="printPdf">Print / PDF</button>
+      <button type="button" data-action="export-json" data-ui="exportJson">Export JSON</button>
+      <button type="button" data-action="export-current-json" data-ui="exportCurrentJson">Export current language JSON</button>
+      <button type="button" data-action="export-missing" data-ui="exportMissingTranslations">Export Missing Translations</button>
+      <label class="file-button">
+        <span data-ui="importTranslations">Import Translations</span>
+        <input id="translation-import" type="file" accept="application/json,.json">
+      </label>
+    </div>
+  </header>
+
+  <main id="menu-root" class="page-stack" aria-live="polite"></main>
+
+  <script type="module">
+    import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES, getUiLabel } from "./ui-translations.js";
+
+    const root = document.getElementById("menu-root");
+    const languageSelector = document.getElementById("language-selector");
+    const translationImport = document.getElementById("translation-import");
+    const storageKey = "bistro-putnik-menu-language";
+    const warnedFallbacks = new Set();
+
+    let menuData = null;
+    let activeLanguage = localStorage.getItem(storageKey) || DEFAULT_LANGUAGE;
+
+    const escaper = {
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      "\"": "&quot;",
+      "'": "&#39;"
+    };
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (char) => escaper[char]);
+    }
+
+    function sortByOrder(items, key = "sortOrder") {
+      return [...(items || [])].sort((a, b) => {
+        const left = Number.isFinite(a?.[key]) ? a[key] : 0;
+        const right = Number.isFinite(b?.[key]) ? b[key] : 0;
+        return left - right;
+      });
+    }
+
+    function supportedLanguages() {
+      return Array.isArray(menuData?.supportedLanguages) && menuData.supportedLanguages.length
+        ? menuData.supportedLanguages
+        : SUPPORTED_LANGUAGES;
+    }
+
+    function targetLanguages() {
+      const defaultLanguage = menuData?.defaultLanguage || menuData?.language || DEFAULT_LANGUAGE;
+      return supportedLanguages().map((language) => language.code).filter((code) => code !== defaultLanguage);
+    }
+
+    function t(key) {
+      return getUiLabel(activeLanguage, key);
+    }
+
+    function hasTranslation(entity, field, lang) {
+      const value = entity?.translations?.[lang]?.[field];
+      if (Array.isArray(value)) {
+        return value.length > 0;
+      }
+      return value !== undefined && value !== null && value !== "";
+    }
+
+    function warnMissingTranslation(entity, field, lang) {
+      if (lang === (menuData?.defaultLanguage || DEFAULT_LANGUAGE)) {
+        return;
+      }
+      const id = entity?.id || entity?.code || "unknown";
+      const key = `${lang}:${id}:${field}`;
+      if (!warnedFallbacks.has(key)) {
+        warnedFallbacks.add(key);
+        console.warn(`Missing ${lang} translation for ${id}.${field}; using Croatian fallback.`);
+      }
+    }
+
+    function getLocalizedText(entity, field, lang) {
+      if (!entity) {
+        console.warn(`Missing entity for ${field}.`);
+        return "";
+      }
+      const defaultLanguage = menuData?.defaultLanguage || menuData?.language || DEFAULT_LANGUAGE;
+      if (lang === defaultLanguage) {
+        const baseValue = entity[field];
+        if (baseValue === undefined || baseValue === null) {
+          console.warn(`Missing source text for ${entity.id || entity.code || "entity"}.${field}.`);
+          return "";
+        }
+        return baseValue;
+      }
+      if (hasTranslation(entity, field, lang)) {
+        return entity.translations[lang][field];
+      }
+      const fallbackValue = entity[field];
+      if (fallbackValue !== undefined && fallbackValue !== null && fallbackValue !== "") {
+        warnMissingTranslation(entity, field, lang);
+        return fallbackValue;
+      }
+      console.warn(`Missing translation and source text for ${entity.id || entity.code || "entity"}.${field}.`);
+      return "";
+    }
+
+    function getOptionalText(entity, field, lang) {
+      const value = entity?.[field];
+      if (value === undefined || value === null || value === "") {
+        return "";
+      }
+      return getLocalizedText(entity, field, lang);
+    }
+
+    function formatPrice(item, lang) {
+      if (item?.priceDisplay) {
+        return item.priceDisplay;
+      }
+      if (typeof item?.price === "number") {
+        return new Intl.NumberFormat(lang || activeLanguage, {
+          style: "currency",
+          currency: item.currency || menuData?.currency || "EUR"
+        }).format(item.price);
+      }
+      return "";
+    }
+
+    function allergenMap() {
+      return new Map((menuData?.allergens || []).map((allergen) => [allergen.code, allergen]));
+    }
+
+    function renderLanguageSelector() {
+      const languages = supportedLanguages();
+      if (!languages.some((language) => language.code === activeLanguage)) {
+        activeLanguage = menuData?.defaultLanguage || DEFAULT_LANGUAGE;
+      }
+      languageSelector.innerHTML = languages.map((language) => `
+        <button
+          type="button"
+          data-language="${escapeHtml(language.code)}"
+          aria-pressed="${language.code === activeLanguage ? "true" : "false"}"
+          aria-label="${escapeHtml(language.label)}"
+        >${escapeHtml(language.printLabel || language.code.toUpperCase())}</button>
+      `).join("");
+    }
+
+    function updateInterfaceLabels() {
+      document.documentElement.lang = activeLanguage;
+      document.querySelectorAll("[data-ui]").forEach((element) => {
+        element.textContent = t(element.dataset.ui);
+      });
+    }
+
+    function renderHeader(page) {
+      const brand = menuData.brand || {};
+      const title = getLocalizedText(page, "title", activeLanguage);
+      return `
+        <header class="menu-header">
+          <p class="eyebrow">${escapeHtml(brand.tagline || "")}</p>
+          <h1 class="brand-title">${escapeHtml(brand.name || "Bistro Putnik")}</h1>
+          <p class="page-title">${escapeHtml(title)}</p>
+          <div class="divider" aria-hidden="true"></div>
+        </header>
+      `;
+    }
+
+    function renderStory() {
+      const story = menuData.story;
+      if (!story) {
+        return "";
+      }
+      const title = getLocalizedText(story, "title", activeLanguage);
+      const paragraphs = getLocalizedText(story, "paragraphs", activeLanguage);
+      const closing = getLocalizedText(story, "closing", activeLanguage);
+      const paragraphMarkup = Array.isArray(paragraphs)
+        ? paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")
+        : (paragraphs ? `<p>${escapeHtml(paragraphs)}</p>` : "");
+
+      return `
+        <section class="story-block">
+          ${title ? `<h2>${escapeHtml(title)}</h2>` : ""}
+          ${paragraphMarkup}
+          ${closing ? `<p class="story-closing">${escapeHtml(closing)}</p>` : ""}
+        </section>
+      `;
+    }
+
+    function renderIntro(page) {
+      const intro = getOptionalText(page, "intro", activeLanguage);
+      const note = getOptionalText(page, "note", activeLanguage);
+      if (!intro && !note) {
+        return "";
+      }
+      return `
+        <section class="intro-block">
+          ${intro ? `<p>${escapeHtml(intro)}</p>` : ""}
+          ${note ? `<p>${escapeHtml(note)}</p>` : ""}
+        </section>
+      `;
+    }
+
+    function renderMenuItem(item) {
+      const name = getLocalizedText(item, "name", activeLanguage);
+      const description = getOptionalText(item, "description", activeLanguage);
+      const price = formatPrice(item, activeLanguage);
+      const allergens = allergenMap();
+      const allergenMarkup = Array.isArray(item.allergens) && item.allergens.length
+        ? `<div class="item-meta">${item.allergens.map((code) => {
+          const allergen = allergens.get(code);
+          const label = allergen ? getLocalizedText(allergen, "name", activeLanguage) : code;
+          return `<span class="allergen-code" title="${escapeHtml(label)}">${escapeHtml(code)}</span>`;
+        }).join("")}</div>`
+        : "";
+
+      return `
+        <article class="menu-item${price ? "" : " no-price"}">
+          <div class="menu-item-main">
+            ${name ? `<h3 class="item-name">${escapeHtml(name)}</h3>` : ""}
+            ${description ? `<p class="item-description">${escapeHtml(description)}</p>` : ""}
+            ${allergenMarkup}
+          </div>
+          ${price ? `<div class="price">${escapeHtml(price)}</div>` : ""}
+        </article>
+      `;
+    }
+
+    function renderSection(section) {
+      const title = getLocalizedText(section, "title", activeLanguage);
+      const note = getOptionalText(section, "note", activeLanguage);
+      const items = sortByOrder(section.items || []);
+      const isWide = section.layout === "wide-grid" || items.length > 6;
+      const noteOnly = section.layout === "divider" || (!items.length && note);
+
+      if (noteOnly) {
+        return `
+          <section class="menu-section note-only">
+            ${title ? `<h2>${escapeHtml(title)}</h2>` : ""}
+            ${note ? `<p class="section-note">${escapeHtml(note)}</p>` : ""}
+          </section>
+        `;
+      }
+
+      return `
+        <section class="menu-section${isWide ? " wide" : ""}">
+          ${title ? `<h2>${escapeHtml(title)}</h2>` : ""}
+          ${note ? `<p class="section-note">${escapeHtml(note)}</p>` : ""}
+          <div class="menu-list">
+            ${items.map(renderMenuItem).join("")}
+          </div>
+        </section>
+      `;
+    }
+
+    function renderInformationPage(page) {
+      const notices = menuData.notices || [];
+      const allergens = menuData.allergens || [];
+      const business = menuData.business || {};
+      const noticeTitle = activeLanguage === "hr" ? "Napomene" : t("notices");
+      const allergenTitle = activeLanguage === "hr" ? "Alergeni" : t("allergens");
+
+      return `
+        <article class="print-page menu-page information-page" id="${escapeHtml(page.id)}">
+          <div class="print-page-inner">
+            ${page.showHeader === false ? "" : renderHeader(page)}
+            <section class="notice-block">
+              <h2>${escapeHtml(noticeTitle)}</h2>
+              ${notices.map((notice) => `<p>${escapeHtml(getLocalizedText(notice, "text", activeLanguage))}</p>`).join("")}
+            </section>
+            <section class="notice-block">
+              <h2>${escapeHtml(allergenTitle)}</h2>
+              <div class="menu-list">
+                ${allergens.map((allergen) => `
+                  <article class="menu-item">
+                    <div class="menu-item-main">
+                      <h3 class="item-name">${escapeHtml(allergen.code)}</h3>
+                      <p class="item-description">${escapeHtml(getLocalizedText(allergen, "name", activeLanguage))}</p>
+                    </div>
+                  </article>
+                `).join("")}
+              </div>
+            </section>
+            <footer class="business-details">
+              ${business.companyName ? `<span>${escapeHtml(business.companyName)}</span>` : ""}
+              ${business.registeredAddress ? `<span>${escapeHtml(business.registeredAddress)}</span>` : ""}
+              ${business.oib ? `<span>OIB ${escapeHtml(business.oib)}</span>` : ""}
+              ${business.mbs ? `<span>MBS ${escapeHtml(business.mbs)}</span>` : ""}
+              ${business.email ? `<span>${escapeHtml(business.email)}</span>` : ""}
+              ${business.website ? `<span>${escapeHtml(business.website)}</span>` : ""}
+            </footer>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderPage(page) {
+      if (page.type === "information" || page.id === "information") {
+        return renderInformationPage(page);
+      }
+      const closing = getOptionalText(page, "closing", activeLanguage);
+      const sections = sortByOrder(page.sections || []);
+      return `
+        <article class="print-page menu-page ${escapeHtml(page.type || "menu")}" id="${escapeHtml(page.id)}">
+          <div class="print-page-inner">
+            ${page.showHeader === false ? "" : renderHeader(page)}
+            ${page.id === "food" ? renderStory() : ""}
+            ${renderIntro(page)}
+            <div class="content-grid">
+              ${sections.map(renderSection).join("")}
+            </div>
+            ${closing ? `<p class="page-closing">${escapeHtml(closing)}</p>` : ""}
+            ${page.showFooter === false ? "" : `<footer class="page-footer">${escapeHtml(menuData.business?.venue || menuData.brand?.name || "Bistro Putnik")}</footer>`}
+          </div>
+        </article>
+      `;
+    }
+
+    function renderMenu() {
+      if (!menuData) {
+        return;
+      }
+      warnedFallbacks.clear();
+      renderLanguageSelector();
+      updateInterfaceLabels();
+      root.innerHTML = sortByOrder(menuData.pages || [], "printOrder").map(renderPage).join("");
+    }
+
+    function stripTranslations(entity) {
+      const copy = { ...entity };
+      delete copy.translations;
+      return copy;
+    }
+
+    function localizeEntity(entity, fields, lang) {
+      const copy = stripTranslations(entity);
+      fields.forEach((field) => {
+        if (Object.prototype.hasOwnProperty.call(entity, field)) {
+          copy[field] = entity[field] === null || entity[field] === undefined || entity[field] === ""
+            ? entity[field]
+            : getLocalizedText(entity, field, lang);
+        }
+      });
+      return copy;
+    }
+
+    function localizedMenuData(lang) {
+      return {
+        ...stripTranslations(menuData),
+        language: lang,
+        sourceLanguage: menuData.defaultLanguage || menuData.language || DEFAULT_LANGUAGE,
+        brand: menuData.brand,
+        business: menuData.business,
+        allergens: (menuData.allergens || []).map((allergen) => localizeEntity(allergen, ["name"], lang)),
+        story: menuData.story ? localizeEntity(menuData.story, ["title", "paragraphs", "closing"], lang) : undefined,
+        notices: (menuData.notices || []).map((notice) => localizeEntity(notice, ["text"], lang)),
+        pages: sortByOrder(menuData.pages || [], "printOrder").map((page) => ({
+          ...localizeEntity(page, ["title", "intro", "closing", "note"], lang),
+          sections: sortByOrder(page.sections || []).map((section) => ({
+            ...localizeEntity(section, ["title", "note"], lang),
+            items: sortByOrder(section.items || []).map((item) => localizeEntity(item, ["name", "description"], lang))
+          }))
+        }))
+      };
+    }
+
+    function downloadJson(filename, data) {
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = filename;
+      link.click();
+      URL.revokeObjectURL(link.href);
+    }
+
+    function sourceTextFor(entity, field) {
+      const value = entity?.[field];
+      if (Array.isArray(value)) {
+        return value.join("\n\n");
+      }
+      return value ?? "";
+    }
+
+    function collectTranslationTargets() {
+      const targets = [];
+      const add = (entity, field, path) => {
+        const sourceText = sourceTextFor(entity, field);
+        if (sourceText === "") {
+          return;
+        }
+        targets.push({ entity, field, path, id: entity.id || entity.code || path, sourceText });
+      };
+
+      if (menuData.story) {
+        add(menuData.story, "title", "story.title");
+        add(menuData.story, "paragraphs", "story.paragraphs");
+        add(menuData.story, "closing", "story.closing");
+      }
+
+      (menuData.notices || []).forEach((notice) => add(notice, "text", `notices.${notice.id}.text`));
+      (menuData.allergens || []).forEach((allergen) => add(allergen, "name", `allergens.${allergen.code}.name`));
+
+      (menuData.pages || []).forEach((page) => {
+        add(page, "title", `pages.${page.id}.title`);
+        add(page, "intro", `pages.${page.id}.intro`);
+        add(page, "closing", `pages.${page.id}.closing`);
+        add(page, "note", `pages.${page.id}.note`);
+        (page.sections || []).forEach((section) => {
+          add(section, "title", `pages.${page.id}.sections.${section.id}.title`);
+          add(section, "note", `pages.${page.id}.sections.${section.id}.note`);
+          (section.items || []).forEach((item) => {
+            add(item, "name", `pages.${page.id}.sections.${section.id}.items.${item.id}.name`);
+            add(item, "description", `pages.${page.id}.sections.${section.id}.items.${item.id}.description`);
+          });
+        });
+      });
+
+      return targets;
+    }
+
+    function buildMissingTranslations() {
+      const languages = targetLanguages();
+      const missing = collectTranslationTargets().map((target) => ({
+        path: target.path,
+        id: target.id,
+        field: target.field,
+        sourceText: target.sourceText,
+        targets: languages.filter((lang) => !hasTranslation(target.entity, target.field, lang))
+      })).filter((entry) => entry.targets.length);
+
+      return {
+        generatedAt: new Date().toISOString(),
+        sourceLanguage: menuData.defaultLanguage || menuData.language || DEFAULT_LANGUAGE,
+        targetLanguages: languages,
+        missing
+      };
+    }
+
+    function translationIndex() {
+      const byPath = new Map();
+      const byIdField = new Map();
+      collectTranslationTargets().forEach((target) => {
+        byPath.set(target.path, target);
+        byIdField.set(`${target.id}:${target.field}`, target);
+      });
+      return { byPath, byIdField };
+    }
+
+    function mergeTranslationsPayload(payload) {
+      if (payload?.schemaVersion && Array.isArray(payload.pages)) {
+        menuData = payload;
+        return 1;
+      }
+
+      const { byPath, byIdField } = translationIndex();
+      const entries = Array.isArray(payload) ? payload : (payload.translations || payload.missing || []);
+      let merged = 0;
+
+      entries.forEach((entry) => {
+        const target = byPath.get(entry.path) || byIdField.get(`${entry.id}:${entry.field}`);
+        if (!target) {
+          return;
+        }
+        const values = entry.translations || entry.values || {};
+        if (entry.language && entry.value) {
+          values[entry.language] = entry.value;
+        }
+        Object.entries(values).forEach(([lang, value]) => {
+          if (!targetLanguages().includes(lang) || value === undefined || value === null || value === "") {
+            return;
+          }
+          target.entity.translations = target.entity.translations || {};
+          target.entity.translations[lang] = target.entity.translations[lang] || {};
+          target.entity.translations[lang][target.field] = value;
+          merged += 1;
+        });
+      });
+
+      return merged;
+    }
+
+    async function importTranslations(file) {
+      if (!file) {
+        return;
+      }
+      const payload = JSON.parse(await file.text());
+      const merged = mergeTranslationsPayload(payload);
+      renderMenu();
+      alert(merged ? t("importComplete") : t("noMissingTranslations"));
+      translationImport.value = "";
+    }
+
+    document.addEventListener("click", (event) => {
+      const languageButton = event.target.closest("[data-language]");
+      if (languageButton) {
+        activeLanguage = languageButton.dataset.language;
+        localStorage.setItem(storageKey, activeLanguage);
+        renderMenu();
+        return;
+      }
+
+      const action = event.target.closest("[data-action]")?.dataset.action;
+      if (!action || !menuData) {
+        return;
+      }
+      if (action === "print") {
+        window.print();
+      }
+      if (action === "export-json") {
+        downloadJson("menu-data.json", menuData);
+      }
+      if (action === "export-current-json") {
+        downloadJson(`menu-data.${activeLanguage}.json`, localizedMenuData(activeLanguage));
+      }
+      if (action === "export-missing") {
+        downloadJson("missing-translations.json", buildMissingTranslations());
+      }
+    });
+
+    translationImport.addEventListener("change", (event) => {
+      importTranslations(event.target.files[0]).catch((error) => {
+        console.error(error);
+        alert(error.message);
+      });
+    });
+
+    async function init() {
+      try {
+        const response = await fetch("./menu-data.json", { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error(`Could not load menu-data.json (${response.status})`);
+        }
+        menuData = await response.json();
+        const codes = supportedLanguages().map((language) => language.code);
+        if (!codes.includes(activeLanguage)) {
+          activeLanguage = menuData.defaultLanguage || DEFAULT_LANGUAGE;
+        }
+        renderMenu();
+      } catch (error) {
+        console.error(error);
+        root.innerHTML = `<article class="print-page"><div class="print-page-inner"><p>${escapeHtml(error.message)}</p></div></article>`;
+      }
+    }
+
+    window.BistroPutnikMenu = {
+      get data() {
+        return menuData;
+      },
+      getLocalizedText,
+      formatPrice,
+      buildMissingTranslations,
+      localizedMenuData
+    };
+
+    init();
+  </script>
+</body>
+</html>

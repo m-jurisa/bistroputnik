@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1200" fill="none">
+  <rect width="960" height="1200" fill="#082830"/>
+  <rect width="960" height="1200" fill="url(#wash)"/>
+  <circle cx="754" cy="188" r="78" fill="#E4C995" fill-opacity=".18"/>
+  <rect x="118" y="176" width="724" height="824" rx="42" fill="#103F4D" stroke="#E4C995" stroke-opacity=".25"/>
+  <path d="M188 352H772" stroke="#E4C995" stroke-width="2" opacity=".28"/>
+  <path d="M220 958V604C220 555.399 259.399 516 308 516H652C700.601 516 740 555.399 740 604V958" stroke="#E4C995" stroke-width="3"/>
+  <path d="M274 958V682C274 647.758 301.758 620 336 620H624C658.242 620 686 647.758 686 682V958" stroke="#D7DEDE" stroke-opacity=".8" stroke-width="2"/>
+  <rect x="170" y="98" width="618" height="84" rx="42" fill="#0B2F3A" fill-opacity=".54"/>
+  <text x="252" y="148" fill="#E4C995" font-family="Georgia, serif" font-size="40">Terrace Light</text>
+  <defs>
+    <linearGradient id="wash" x1="480" y1="0" x2="480" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A5667" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#082830" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
