@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "defaultLanguage": "hr",
-  "date": "2026-05-10",
-  "dateDisplay": "10.5.26",
+  "date": "2026-05-11",
+  "dateDisplay": "11.5.26",
   "label": "Dnevna ponuda",
   "labelTranslations": {
     "en": "Daily offer",
@@ -16,9 +16,9 @@
   "noteEnabled": true,
 "items": [
   {
-    "id": "grasak-varivo-s-piletinom",
-    "name": "Grašak varivo s piletinom",
-    "description": "Domaće varivo od graška s piletinom, polako kuhano i posluženo toplo.",
+    "id": "grah-s-kobasicom",
+    "name": "Grah s kobasicom",
+    "description": "Domaći grah s domaćom slavonskom kobasicom, poslužen kao toplo dnevno jelo.",
     "price": 10,
     "priceDisplay": "10 €",
     "allergens": [
@@ -26,115 +26,110 @@
     ],
     "translations": {
       "en": {
-        "name": "Pea stew with chicken",
-        "description": "Homemade pea stew with chicken, slowly cooked and served warm."
+        "name": "Bean stew with sausage",
+        "description": "Homemade bean stew with homemade Slavonian sausage, served as a warm daily dish."
       },
       "sv": {
-        "name": "Ärtgryta med kyckling",
-        "description": "Hemlagad ärtgryta med kyckling, långsamt tillagad och serverad varm."
+        "name": "Böngryta med korv",
+        "description": "Hemlagad böngryta med hemlagad slavonsk korv, serverad som en varm dagens rätt."
       },
       "fi": {
-        "name": "Hernepata kanalla",
-        "description": "Kotitekoinen hernepata kanalla, hitaasti kypsennetty ja lämpimänä tarjoiltu."
+        "name": "Papupata makkaralla",
+        "description": "Kotitekoinen papupata kotitekoisella slavonialaisella makkaralla, tarjoiltuna lämpimänä päivän annoksena."
       },
       "no": {
-        "name": "Ertestuing med kylling",
-        "description": "Hjemmelaget ertestuing med kylling, langsomt tilberedt og servert varm."
+        "name": "Bønnegryte med pølse",
+        "description": "Hjemmelaget bønnegryte med hjemmelaget slavonsk pølse, servert som en varm dagens rett."
       },
       "pl": {
-        "name": "Gulasz z groszku z kurczakiem",
-        "description": "Domowy gulasz z groszku z kurczakiem, wolno gotowany i podawany na ciepło."
+        "name": "Gulasz fasolowy z kiełbasą",
+        "description": "Domowy gulasz fasolowy z domową kiełbasą slawońską, podawany jako ciepłe danie dnia."
       },
       "de": {
-        "name": "Erbseneintopf mit Hähnchen",
-        "description": "Hausgemachter Erbseneintopf mit Hähnchen, langsam gekocht und warm serviert."
+        "name": "Bohneneintopf mit Wurst",
+        "description": "Hausgemachter Bohneneintopf mit hausgemachter slawonischer Wurst, als warmes Tagesgericht serviert."
       },
       "da": {
-        "name": "Ærtegryde med kylling",
-        "description": "Hjemmelavet ærtegryde med kylling, langsomt tilberedt og serveret varm."
+        "name": "Bønnegryde med pølse",
+        "description": "Hjemmelavet bønnegryde med hjemmelavet slavonsk pølse, serveret som en varm dagens ret."
       }
     }
   },
   {
-    "id": "ustipci-u-slanini-uz-pommes",
-    "name": "Uštipci u slanini uz pommes",
-    "description": "Uštipci u slanini posluženi uz pommes.",
+    "id": "cevapi-s-prilogom",
+    "name": "Ćevapi s prilogom",
+    "description": "Ćevapi od biranog hrvatskog mesa, posluženi uz dnevni prilog.",
     "price": 12,
     "priceDisplay": "12 €",
-    "allergens": [
-      "G",
-      "J"
-    ],
+    "allergens": [],
     "translations": {
       "en": {
-        "name": "Bacon-wrapped fritters with fries",
-        "description": "Bacon-wrapped fritters served with fries."
+        "name": "Ćevapi with side dish",
+        "description": "Ćevapi made from selected Croatian meat, served with the daily side dish."
       },
       "sv": {
-        "name": "Baconlindade friterade bollar med pommes frites",
-        "description": "Baconlindade friterade bollar serverade med pommes frites."
+        "name": "Ćevapi med tillbehör",
+        "description": "Ćevapi gjorda på utvalt kroatiskt kött, serverade med dagens tillbehör."
       },
       "fi": {
-        "name": "Pekoniin käärityt fritterit ranskalaisten kanssa",
-        "description": "Pekoniin käärityt fritterit tarjoiltuna ranskalaisten kanssa."
+        "name": "Ćevapit lisukkeella",
+        "description": "Valikoidusta kroatialaisesta lihasta valmistetut ćevapit, tarjoiltuna päivän lisukkeen kanssa."
       },
       "no": {
-        "name": "Baconsurrede fritter med pommes frites",
-        "description": "Baconsurrede fritter servert med pommes frites."
+        "name": "Ćevapi med tilbehør",
+        "description": "Ćevapi laget av utvalgt kroatisk kjøtt, servert med dagens tilbehør."
       },
       "pl": {
-        "name": "Placuszki zawijane w boczek z frytkami",
-        "description": "Placuszki zawijane w boczek podawane z frytkami."
+        "name": "Ćevapi z dodatkiem",
+        "description": "Ćevapi z wyselekcjonowanego chorwackiego mięsa, podawane z dodatkiem dnia."
       },
       "de": {
-        "name": "Speckumwickelte Uštipci mit Pommes frites",
-        "description": "Speckumwickelte Uštipci mit Pommes frites serviert."
+        "name": "Ćevapi mit Beilage",
+        "description": "Ćevapi aus ausgewähltem kroatischem Fleisch, mit der Tagesbeilage serviert."
       },
       "da": {
-        "name": "Baconsvøbte fritter med pommes frites",
-        "description": "Baconsvøbte fritter serveret med pommes frites."
+        "name": "Ćevapi med tilbehør",
+        "description": "Ćevapi lavet af udvalgt kroatisk kød, serveret med dagens tilbehør."
       }
     }
   },
   {
-    "id": "njoki-u-umaku-od-sira",
-    "name": "Njoki u umaku od sira",
-    "description": "Njoki u kremastom umaku od sira, posluženi kao toplo dnevno jelo.",
-    "price": 12,
-    "priceDisplay": "10 €",
+    "id": "sarma",
+    "name": "Sarma",
+    "description": "Domaća sarma od kiselog kupusa, punjena začinjenim mljevenim mesom i rižom, polako kuhana i poslužena topla.",
+    "price": 11,
+    "priceDisplay": "11 €",
     "allergens": [
-      "G",
-      "J",
-      "M"
+      "C"
     ],
     "translations": {
       "en": {
-        "name": "Gnocchi in cheese sauce",
-        "description": "Gnocchi in a creamy cheese sauce, served as a warm daily dish."
+        "name": "Sarma",
+        "description": "Homemade stuffed sour cabbage rolls with seasoned minced meat and rice, slowly cooked and served warm."
       },
       "sv": {
-        "name": "Gnocchi i ostsås",
-        "description": "Gnocchi i krämig ostsås, serverad som en varm dagens rätt."
+        "name": "Sarma",
+        "description": "Hemlagade kåldolmar av surkål, fyllda med kryddad köttfärs och ris, långsamt tillagade och serverade varma."
       },
       "fi": {
-        "name": "Gnocchit juustokastikkeessa",
-        "description": "Gnocchit kermaisessa juustokastikkeessa, tarjoiltuna lämpimänä päivän annoksena."
+        "name": "Sarma",
+        "description": "Kotitekoisia hapankaalikääryleitä, täytetty maustetulla jauhelihalla ja riisillä, hitaasti haudutettuina ja lämpiminä tarjoiltuina."
       },
       "no": {
-        "name": "Gnocchi i ostesaus",
-        "description": "Gnocchi i kremet ostesaus, servert som en varm dagens rett."
+        "name": "Sarma",
+        "description": "Hjemmelagde surkålruller fylt med krydret kjøttdeig og ris, langsomt kokt og servert varme."
       },
       "pl": {
-        "name": "Gnocchi w sosie serowym",
-        "description": "Gnocchi w kremowym sosie serowym, podawane jako ciepłe danie dnia."
+        "name": "Sarma",
+        "description": "Domowe gołąbki z kiszonej kapusty, faszerowane doprawionym mięsem mielonym i ryżem, wolno gotowane i podawane na ciepło."
       },
       "de": {
-        "name": "Gnocchi in Käsesauce",
-        "description": "Gnocchi in cremiger Käsesauce, als warmes Tagesgericht serviert."
+        "name": "Sarma",
+        "description": "Hausgemachte Sauerkrautrouladen, gefüllt mit gewürztem Hackfleisch und Reis, langsam gekocht und warm serviert."
       },
       "da": {
-        "name": "Gnocchi i ostesauce",
-        "description": "Gnocchi i cremet ostesauce, serveret som en varm dagens ret."
+        "name": "Sarma",
+        "description": "Hjemmelavede surkålsroulader fyldt med krydret hakket kød og ris, langsomt tilberedt og serveret varme."
       }
     }
   }
