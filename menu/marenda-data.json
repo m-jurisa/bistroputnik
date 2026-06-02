@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "defaultLanguage": "hr",
-  "date": "2026-05-18",
-  "dateDisplay": "18.5.26",
+  "date": "2026-06-02",
+  "dateDisplay": "02.6.26",
   "label": "Dnevna ponuda",
   "labelTranslations": {
     "en": "Daily offer",
@@ -14,122 +14,122 @@
     "da": "Dagens tilbud"
   },
   "noteEnabled": true,
- "items": [
-    {
-      "id": "sataras",
-      "name": "Sataraš",
-      "description": "Domaći sataraš od sezonskog povrća, lagano kuhan i poslužen topao kao dnevno jelo.",
-      "price": 13,
-      "priceDisplay": "13 €",
-      "allergens": [],
-      "translations": {
-        "en": {
-          "name": "Ratatouille",
-          "description": "A warm vegetable stew made with seasonal vegetables, gently cooked and served as a daily dish."
-        },
-        "sv": {
-          "name": "Ratatouille",
-          "description": "En varm grönsaksgryta med säsongens grönsaker, varsamt tillagad och serverad som dagens rätt."
-        },
-        "fi": {
-          "name": "Ratatouille",
-          "description": "Lämmin kasvispata kauden vihanneksista, miedosti kypsennetty ja tarjoiltu päivän annoksena."
-        },
-        "no": {
-          "name": "Ratatouille",
-          "description": "En varm grønnsaksgryte med sesongens grønnsaker, skånsomt tilberedt og servert som dagens rett."
-        },
-        "pl": {
-          "name": "Ratatouille",
-          "description": "Ciepły gulasz warzywny z sezonowych warzyw, delikatnie gotowany i podawany jako danie dnia."
-        },
-        "de": {
-          "name": "Ratatouille",
-          "description": "Ein warmes Gemüsegericht aus saisonalem Gemüse, schonend gekocht und als Tagesgericht serviert."
-        },
-        "da": {
-          "name": "Ratatouille",
-          "description": "En varm grøntsagsgryde med sæsonens grøntsager, nænsomt tilberedt og serveret som dagens ret."
-        }
-      }
-    },
-    {
-      "id": "punjene-paprike",
-      "name": "Punjene paprike",
-      "description": "Punjene paprike sa začinjenim mljevenim mesom i rižom, lagano kuhane i poslužene tople.",
-      "price": 10,
-      "priceDisplay": "10 €",
-      "allergens": ["C"],
-      "translations": {
-        "en": {
-          "name": "Stuffed peppers",
-          "description": "Stuffed peppers with seasoned minced meat and rice, gently cooked and served warm."
-        },
-        "sv": {
-          "name": "Fyllda paprikor",
-          "description": "Fyllda paprikor med kryddad köttfärs och ris, varsamt tillagade och serverade varma."
-        },
-        "fi": {
-          "name": "Täytetyt paprikat",
-          "description": "Täytetyt paprikat maustetulla jauhelihalla ja riisillä, miedosti kypsennettyinä ja lämpiminä tarjoiltuina."
-        },
-        "no": {
-          "name": "Fylte paprikaer",
-          "description": "Fylte paprikaer med krydret kjøttdeig og ris, skånsomt tilberedt og servert varme."
-        },
-        "pl": {
-          "name": "Faszerowane papryki",
-          "description": "Faszerowane papryki doprawionym mięsem mielonym i ryżem, delikatnie gotowane i podawane na ciepło."
-        },
-        "de": {
-          "name": "Gefüllte Paprika",
-          "description": "Gefüllte Paprika mit gewürztem Hackfleisch und Reis, schonend gegart und warm serviert."
-        },
-        "da": {
-          "name": "Fyldte peberfrugter",
-          "description": "Fyldte peberfrugter med krydret hakket kød og ris, nænsomt tilberedt og serveret varme."
-        }
-      }
-    },
-    {
-      "id": "becki",
-      "name": "Bečki",
-      "description": "Hrskavo panirani odrezak zlatne boje, poslužen topao uz dnevni prilog.",
-      "price": 12,
-      "priceDisplay": "12 €",
-      "allergens": ["G", "J"],
-      "translations": {
-        "en": {
-          "name": "Vienna-style schnitzel",
-          "description": "A crispy, golden breaded schnitzel, served warm with the daily side dish."
-        },
-        "sv": {
-          "name": "Wienerschnitzel",
-          "description": "En krispig, gyllene panerad schnitzel, serverad varm med dagens tillbehör."
-        },
-        "fi": {
-          "name": "Wieninleike",
-          "description": "Rapea, kullanruskea paneroitu leike, tarjoiltuna lämpimänä päivän lisukkeen kanssa."
-        },
-        "no": {
-          "name": "Wienerschnitzel",
-          "description": "En sprø, gyllenpanert schnitzel, servert varm med dagens tilbehør."
-        },
-        "pl": {
-          "name": "Kotlet wiedeński",
-          "description": "Chrupiący, złocisty panierowany kotlet, podawany na ciepło z dodatkiem dnia."
-        },
-        "de": {
-          "name": "Wiener Schnitzel",
-          "description": "Ein knusprig goldbraun paniertes Schnitzel, warm mit der Tagesbeilage serviert."
-        },
-        "da": {
-          "name": "Wienerschnitzel",
-          "description": "En sprød, gyldenpaneret schnitzel, serveret varm med dagens tilbehør."
-        }
+"items": [
+  {
+    "id": "pileci-rizoto",
+    "name": "Pileći rižoto",
+    "description": "Kremasti pileći rižoto, pripremljen kao lagano i zasitno dnevno jelo.",
+    "price": 12,
+    "priceDisplay": "12 €",
+    "allergens": ["C", "M"],
+    "translations": {
+      "en": {
+        "name": "Chicken risotto",
+        "description": "Creamy chicken risotto, prepared as a light yet satisfying daily dish."
+      },
+      "sv": {
+        "name": "Kycklingrisotto",
+        "description": "Krämig kycklingrisotto, tillagad som en lätt men mättande dagens rätt."
+      },
+      "fi": {
+        "name": "Kanarisotto",
+        "description": "Kermainen kanarisotto, valmistettu kevyeksi mutta täyttäväksi päivän annokseksi."
+      },
+      "no": {
+        "name": "Kyllingrisotto",
+        "description": "Kremet kyllingrisotto, tilberedt som en lett men mettende dagens rett."
+      },
+      "pl": {
+        "name": "Risotto z kurczakiem",
+        "description": "Kremowe risotto z kurczakiem, przygotowane jako lekkie, ale sycące danie dnia."
+      },
+      "de": {
+        "name": "Hähnchenrisotto",
+        "description": "Cremiges Hähnchenrisotto, als leichtes aber sättigendes Tagesgericht zubereitet."
+      },
+      "da": {
+        "name": "Kyllingerisotto",
+        "description": "Cremet kyllingerisotto, tilberedt som en let men mættende dagens ret."
       }
     }
-  ],
+  },
+  {
+    "id": "fazol-s-kobasicom-i-slaninom",
+    "name": "Fažol s kobasicom i slaninom",
+    "description": "Domaći fažol s kobasicom i slaninom, lagano kuhan i poslužen kao zasitno dnevno jelo.",
+    "price": 10,
+    "priceDisplay": "10 €",
+    "allergens": ["C"],
+    "translations": {
+      "en": {
+        "name": "Bean stew with sausage and bacon",
+        "description": "Homemade bean stew with sausage and bacon, gently cooked and served as a hearty daily dish."
+      },
+      "sv": {
+        "name": "Böngryta med korv och bacon",
+        "description": "Hemlagad böngryta med korv och bacon, varsamt tillagad och serverad som en mättande dagens rätt."
+      },
+      "fi": {
+        "name": "Papupata makkaralla ja pekonilla",
+        "description": "Kotitekoinen papupata makkaralla ja pekonilla, miedosti kypsennetty ja tarjoiltu täyttävänä päivän annoksena."
+      },
+      "no": {
+        "name": "Bønnegryte med pølse og bacon",
+        "description": "Hjemmelaget bønnegryte med pølse og bacon, skånsomt tilberedt og servert som en mettende dagens rett."
+      },
+      "pl": {
+        "name": "Gulasz fasolowy z kiełbasą i boczkiem",
+        "description": "Domowy gulasz fasolowy z kiełbasą i boczkiem, delikatnie gotowany i podawany jako sycące danie dnia."
+      },
+      "de": {
+        "name": "Bohneneintopf mit Wurst und Speck",
+        "description": "Hausgemachter Bohneneintopf mit Wurst und Speck, schonend gekocht und als sättigendes Tagesgericht serviert."
+      },
+      "da": {
+        "name": "Bønnegryde med pølse og bacon",
+        "description": "Hjemmelavet bønnegryde med pølse og bacon, nænsomt tilberedt og serveret som en mættende dagens ret."
+      }
+    }
+  },
+  {
+    "id": "rostilj-kobasice-s-pireom",
+    "name": "Roštilj kobasice s pireom",
+    "description": "Roštilj kobasice poslužene s kremastim pireom kao zasitno dnevno jelo.",
+    "price": 13,
+    "priceDisplay": "13 €",
+    "allergens": ["M"],
+    "translations": {
+      "en": {
+        "name": "Grilled sausages with mashed potatoes",
+        "description": "Grilled sausages served with creamy mashed potatoes as a hearty daily dish."
+      },
+      "sv": {
+        "name": "Grillkorv med potatismos",
+        "description": "Grillkorv serverad med krämigt potatismos som en mättande dagens rätt."
+      },
+      "fi": {
+        "name": "Grillimakkarat perunamuusilla",
+        "description": "Grillimakkarat tarjoiltuna kermaisen perunamuusin kanssa täyttävänä päivän annoksena."
+      },
+      "no": {
+        "name": "Grillpølser med potetmos",
+        "description": "Grillpølser servert med kremet potetmos som en mettende dagens rett."
+      },
+      "pl": {
+        "name": "Grillowane kiełbaski z puree ziemniaczanym",
+        "description": "Grillowane kiełbaski podawane z kremowym puree ziemniaczanym jako sycące danie dnia."
+      },
+      "de": {
+        "name": "Grillwürste mit Kartoffelpüree",
+        "description": "Grillwürste mit cremigem Kartoffelpüree, als sättigendes Tagesgericht serviert."
+      },
+      "da": {
+        "name": "Grillpølser med kartoffelmos",
+        "description": "Grillpølser serveret med cremet kartoffelmos som en mættende dagens ret."
+      }
+    }
+  }
+],
   "translations": {
     "hr": {
       "eyebrow": "Dnevna ponuda",

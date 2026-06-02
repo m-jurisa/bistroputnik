@@ -107,6 +107,8 @@ export default function MarendaPageContent({ business, marenda }) {
   const copy = getMarendaCopy(marenda, language);
   const dishes = getDishes(copy, marenda, language);
   const introText = marendaIntroText[language] || marendaIntroText.en;
+  const printOfferLabel = t.marenda.printOffer || 'Print offer';
+  const venueLabel = business.venue || 'Bistro Putnik · Baška Voda';
   const dailyOfferMeta = [
     getDailyOfferLabel(marenda, language),
     marenda.dateDisplay,
@@ -115,12 +117,14 @@ export default function MarendaPageContent({ business, marenda }) {
     .join(' · ');
 
   return (
-    <div className="relative min-h-svh overflow-hidden">
-      <div className="absolute inset-0 hero-wash" />
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-deep/70 to-transparent" />
-      <Header />
+    <div className="marenda-page relative min-h-svh overflow-hidden">
+      <div className="marenda-screen-only absolute inset-0 hero-wash" />
+      <div className="marenda-screen-only absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-deep/70 to-transparent" />
+      <div className="marenda-screen-only">
+        <Header />
+      </div>
 
-      <main className="relative z-10">
+      <main className="marenda-screen-only relative z-10">
         <section
           id="top"
           className="relative flex min-h-[calc(100svh-5rem)] items-start justify-center overflow-hidden px-4 pb-16 pt-8 sm:min-h-[90svh] sm:items-center sm:px-8 sm:py-16 lg:px-12"
@@ -193,14 +197,81 @@ export default function MarendaPageContent({ business, marenda }) {
 
             <p className="body-copy max-w-2xl text-sm">{copy.explanation}</p>
 
-            <a href="/" className="brand-button-secondary">
-              {t.marenda.backToHome}
-            </a>
+            <div className="flex flex-col items-center gap-3 sm:flex-row">
+              <button
+                type="button"
+                className="brand-button"
+                onClick={() => window.print()}
+              >
+                {printOfferLabel}
+              </button>
+              <a href="/" className="brand-button-secondary">
+                {t.marenda.backToHome}
+              </a>
+            </div>
           </div>
         </section>
       </main>
 
-      <Footer business={business} />
+      <section className="marenda-print-sheet" aria-label={printOfferLabel}>
+        <header className="marenda-print-header">
+          <p className="marenda-print-brand">{venueLabel}</p>
+          {dailyOfferMeta ? (
+            <p className="marenda-print-meta">{dailyOfferMeta}</p>
+          ) : null}
+        </header>
+
+        <div className="marenda-print-title-block">
+          <p className="marenda-print-eyebrow">{copy.eyebrow}</p>
+          <h1 className="marenda-print-title">{copy.pageTitle}</h1>
+          {copy.intro ? (
+            <p className="marenda-print-intro">{copy.intro}</p>
+          ) : null}
+        </div>
+
+        <div className="marenda-print-menu">
+          <p className="marenda-print-section-label">{copy.dishLabel}</p>
+          <ol className="marenda-print-list">
+            {dishes.map((dish) => (
+              <li
+                key={`print-${dish.id || `${dish.title}-${dish.price || marenda.price}`}`}
+                className="marenda-print-item"
+              >
+                <div>
+                  <h2>{dish.title}</h2>
+                  {dish.description ? <p>{dish.description}</p> : null}
+                  {dish.allergens?.length ? (
+                    <ul className="marenda-print-allergens">
+                      {dish.allergens.map((allergen) => (
+                        <li key={`print-${dish.id}-${allergen}`}>
+                          {allergen}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </div>
+                <div className="marenda-print-price-block">
+                  <p>{copy.priceLabel}</p>
+                  <strong>{dish.price || marenda.price}</strong>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        {marenda.noteEnabled && copy.note ? (
+          <p className="marenda-print-note">{copy.note}</p>
+        ) : null}
+
+        <footer className="marenda-print-footer">
+          {copy.allergenNote ? <p>{copy.allergenNote}</p> : null}
+          {business.website ? <p>{business.website}</p> : null}
+        </footer>
+      </section>
+
+      <div className="marenda-screen-only">
+        <Footer business={business} />
+      </div>
     </div>
   );
 }

@@ -65,6 +65,18 @@ export const translations = {
     },
     marenda: {
       backToHome: 'Povratak na početnu',
+      printOffer: 'Ispis ponude',
+    },
+    review: {
+      eyebrow: 'Hvala na posjeti',
+      title: 'Podijelite svoje iskustvo',
+      intro:
+        'Ako ste uživali kod nas, značilo bi nam da ostavite kratku recenziju.',
+      googleCta: 'Ostavite recenziju na Googleu',
+      tripadvisorCta: 'Ostavite recenziju na Tripadvisoru',
+      thanks: 'Hvala vam na vremenu i podršci.',
+      contactPrompt: 'Želite nam se javiti izravno?',
+      contactLink: 'Pošaljite poruku',
     },
   },
   en: {
@@ -120,6 +132,18 @@ export const translations = {
     },
     marenda: {
       backToHome: 'Back to homepage',
+      printOffer: 'Print offer',
+    },
+    review: {
+      eyebrow: 'Thank you for visiting',
+      title: 'Share your experience',
+      intro:
+        'If you enjoyed your time with us, we would be grateful for a short review.',
+      googleCta: 'Leave a review on Google',
+      tripadvisorCta: 'Leave a review on Tripadvisor',
+      thanks: 'Thank you for your time and support.',
+      contactPrompt: 'Prefer to contact us directly?',
+      contactLink: 'Send us a note',
     },
   },
   sv: {
@@ -175,6 +199,18 @@ export const translations = {
     },
     marenda: {
       backToHome: 'Till startsidan',
+      printOffer: 'Skriv ut erbjudande',
+    },
+    review: {
+      eyebrow: 'Tack för ditt besök',
+      title: 'Dela din upplevelse',
+      intro:
+        'Om du trivdes hos oss skulle vi uppskatta en kort recension.',
+      googleCta: 'Lämna en recension på Google',
+      tripadvisorCta: 'Lämna en recension på Tripadvisor',
+      thanks: 'Tack för din tid och ditt stöd.',
+      contactPrompt: 'Vill du kontakta oss direkt?',
+      contactLink: 'Skicka ett meddelande',
     },
   },
   fi: {
@@ -230,6 +266,18 @@ export const translations = {
     },
     marenda: {
       backToHome: 'Takaisin etusivulle',
+      printOffer: 'Tulosta tarjous',
+    },
+    review: {
+      eyebrow: 'Kiitos vierailustasi',
+      title: 'Jaa kokemuksesi',
+      intro:
+        'Jos viihdyit meillä, arvostaisimme lyhyttä arvostelua.',
+      googleCta: 'Jätä arvostelu Googleen',
+      tripadvisorCta: 'Jätä arvostelu Tripadvisoriin',
+      thanks: 'Kiitos ajastasi ja tuestasi.',
+      contactPrompt: 'Haluatko ottaa yhteyttä suoraan?',
+      contactLink: 'Lähetä viesti',
     },
   },
   no: {
@@ -285,6 +333,18 @@ export const translations = {
     },
     marenda: {
       backToHome: 'Til forsiden',
+      printOffer: 'Skriv ut tilbudet',
+    },
+    review: {
+      eyebrow: 'Takk for besøket',
+      title: 'Del opplevelsen din',
+      intro:
+        'Hvis du hadde en fin stund hos oss, setter vi pris på en kort anmeldelse.',
+      googleCta: 'Legg igjen en anmeldelse på Google',
+      tripadvisorCta: 'Legg igjen en anmeldelse på Tripadvisor',
+      thanks: 'Takk for tiden din og støtten.',
+      contactPrompt: 'Vil du kontakte oss direkte?',
+      contactLink: 'Send oss en melding',
     },
   },
   pl: {
@@ -340,6 +400,18 @@ export const translations = {
     },
     marenda: {
       backToHome: 'Powrót na stronę główną',
+      printOffer: 'Drukuj ofertę',
+    },
+    review: {
+      eyebrow: 'Dziękujemy za wizytę',
+      title: 'Podziel się wrażeniami',
+      intro:
+        'Jeśli miło spędzili Państwo u nas czas, będziemy wdzięczni za krótką opinię.',
+      googleCta: 'Zostaw opinię w Google',
+      tripadvisorCta: 'Zostaw opinię w Tripadvisor',
+      thanks: 'Dziękujemy za poświęcony czas i wsparcie.',
+      contactPrompt: 'Wolisz skontaktować się bezpośrednio?',
+      contactLink: 'Wyślij wiadomość',
     },
   },
   de: {
@@ -395,6 +467,18 @@ export const translations = {
     },
     marenda: {
       backToHome: 'Zur Startseite',
+      printOffer: 'Angebot drucken',
+    },
+    review: {
+      eyebrow: 'Danke für Ihren Besuch',
+      title: 'Teilen Sie Ihre Erfahrung',
+      intro:
+        'Wenn es Ihnen bei uns gefallen hat, freuen wir uns über eine kurze Bewertung.',
+      googleCta: 'Bewertung auf Google abgeben',
+      tripadvisorCta: 'Bewertung auf Tripadvisor abgeben',
+      thanks: 'Vielen Dank für Ihre Zeit und Unterstützung.',
+      contactPrompt: 'Möchten Sie uns direkt kontaktieren?',
+      contactLink: 'Nachricht senden',
     },
   },
   da: {
@@ -450,6 +534,18 @@ export const translations = {
     },
     marenda: {
       backToHome: 'Til forsiden',
+      printOffer: 'Print tilbud',
+    },
+    review: {
+      eyebrow: 'Tak for besøget',
+      title: 'Del din oplevelse',
+      intro:
+        'Hvis du nød dit besøg hos os, vil vi sætte pris på en kort anmeldelse.',
+      googleCta: 'Skriv en anmeldelse på Google',
+      tripadvisorCta: 'Skriv en anmeldelse på Tripadvisor',
+      thanks: 'Tak for din tid og støtte.',
+      contactPrompt: 'Vil du kontakte os direkte?',
+      contactLink: 'Send os en besked',
     },
   },
 };

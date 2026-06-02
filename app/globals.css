@@ -151,3 +151,212 @@ body {
     text-wrap: balance;
   }
 }
+
+.marenda-print-sheet {
+  display: none;
+}
+
+@page {
+  size: A4;
+  margin: 14mm;
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    background: #fff !important;
+    color: #103F4D !important;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .marenda-page {
+    min-height: auto !important;
+    overflow: visible !important;
+    background: #fff !important;
+    color: #103F4D !important;
+  }
+
+  .marenda-page .marenda-screen-only {
+    display: none !important;
+  }
+
+  .marenda-print-sheet {
+    display: block;
+    min-height: 269mm;
+    background: #fff;
+    color: #103F4D;
+    font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+  }
+
+  .marenda-print-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12mm;
+    padding-bottom: 6mm;
+    border-bottom: 0.5pt solid rgba(16, 63, 77, 0.28);
+  }
+
+  .marenda-print-brand,
+  .marenda-print-meta,
+  .marenda-print-eyebrow,
+  .marenda-print-section-label,
+  .marenda-print-price-block p {
+    margin: 0;
+    color: #103F4D;
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1.35;
+    text-transform: uppercase;
+  }
+
+  .marenda-print-brand {
+    max-width: 85mm;
+  }
+
+  .marenda-print-meta {
+    text-align: right;
+  }
+
+  .marenda-print-title-block {
+    margin-top: 14mm;
+  }
+
+  .marenda-print-title {
+    margin: 3mm 0 0;
+    color: #103F4D;
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-size: 42pt;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 0.95;
+  }
+
+  .marenda-print-intro {
+    max-width: 150mm;
+    margin: 6mm 0 0;
+    color: #103F4D;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+
+  .marenda-print-menu {
+    margin-top: 12mm;
+  }
+
+  .marenda-print-list {
+    display: grid;
+    gap: 6mm;
+    margin: 5mm 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .marenda-print-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12mm;
+    padding-top: 6mm;
+    border-top: 0.5pt solid rgba(16, 63, 77, 0.24);
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .marenda-print-item:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .marenda-print-item h2 {
+    margin: 0;
+    color: #103F4D;
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-size: 26pt;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+
+  .marenda-print-item h2 + p {
+    margin: 3mm 0 0;
+    color: #103F4D;
+    font-size: 10.5pt;
+    line-height: 1.5;
+  }
+
+  .marenda-print-price-block {
+    min-width: 24mm;
+    text-align: right;
+  }
+
+  .marenda-print-price-block strong {
+    display: block;
+    margin-top: 2mm;
+    color: #103F4D;
+    font-size: 18pt;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .marenda-print-allergens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2mm;
+    margin: 4mm 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .marenda-print-allergens li {
+    border: 0.5pt solid rgba(16, 63, 77, 0.35);
+    border-radius: 999px;
+    padding: 1.2mm 2mm;
+    color: #103F4D;
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .marenda-print-note,
+  .marenda-print-footer {
+    margin-top: 9mm;
+    padding-top: 5mm;
+    border-top: 0.5pt solid rgba(16, 63, 77, 0.22);
+    color: #103F4D;
+    font-size: 9pt;
+    line-height: 1.45;
+  }
+
+  .marenda-print-note {
+    font-style: italic;
+  }
+
+  .marenda-print-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 8mm;
+    font-size: 8pt;
+  }
+
+  .marenda-print-footer p {
+    margin: 0;
+  }
+}
