@@ -16,6 +16,7 @@ export const translations = {
     nav: {
       about: 'O nama',
       menu: 'Jelovnik',
+      guides: 'Vodiči',
       marenda: 'Marenda',
       contact: 'Kontakt',
     },
@@ -57,6 +58,7 @@ export const translations = {
     footer: {
       contact: 'Kontakt',
       company: 'Tvrtka',
+      location: 'Lokacija',
       address: 'Sjedište',
       oib: 'OIB',
       mbs: 'MBS',
@@ -83,6 +85,7 @@ export const translations = {
     nav: {
       about: 'About',
       menu: 'Menu',
+      guides: 'Guides',
       marenda: 'Daily Lunch',
       contact: 'Contact',
     },
@@ -124,6 +127,7 @@ export const translations = {
     footer: {
       contact: 'Contact',
       company: 'Company',
+      location: 'Location',
       address: 'Registered address',
       oib: 'OIB',
       mbs: 'MBS',
@@ -150,6 +154,7 @@ export const translations = {
     nav: {
       about: 'Om oss',
       menu: 'Meny',
+      guides: 'Guider',
       marenda: 'Dagens lunch',
       contact: 'Kontakt',
     },
@@ -191,6 +196,7 @@ export const translations = {
     footer: {
       contact: 'Kontakt',
       company: 'Företag',
+      location: 'Plats',
       address: 'Registrerad adress',
       oib: 'OIB',
       mbs: 'MBS',
@@ -217,6 +223,7 @@ export const translations = {
     nav: {
       about: 'Meistä',
       menu: 'Menu',
+      guides: 'Oppaat',
       marenda: 'Päivän lounas',
       contact: 'Yhteys',
     },
@@ -258,6 +265,7 @@ export const translations = {
     footer: {
       contact: 'Yhteys',
       company: 'Yritys',
+      location: 'Sijainti',
       address: 'Rekisteröity osoite',
       oib: 'OIB',
       mbs: 'MBS',
@@ -284,6 +292,7 @@ export const translations = {
     nav: {
       about: 'Om oss',
       menu: 'Meny',
+      guides: 'Guider',
       marenda: 'Dagens lunsj',
       contact: 'Kontakt',
     },
@@ -325,6 +334,7 @@ export const translations = {
     footer: {
       contact: 'Kontakt',
       company: 'Selskap',
+      location: 'Beliggenhet',
       address: 'Registrert adresse',
       oib: 'OIB',
       mbs: 'MBS',
@@ -351,6 +361,7 @@ export const translations = {
     nav: {
       about: 'O nas',
       menu: 'Menu',
+      guides: 'Przewodniki',
       marenda: 'Lunch dnia',
       contact: 'Kontakt',
     },
@@ -392,6 +403,7 @@ export const translations = {
     footer: {
       contact: 'Kontakt',
       company: 'Firma',
+      location: 'Lokalizacja',
       address: 'Adres rejestrowy',
       oib: 'OIB',
       mbs: 'MBS',
@@ -418,6 +430,7 @@ export const translations = {
     nav: {
       about: 'Über uns',
       menu: 'Speisekarte',
+      guides: 'Guides',
       marenda: 'Mittagstisch',
       contact: 'Kontakt',
     },
@@ -459,6 +472,7 @@ export const translations = {
     footer: {
       contact: 'Kontakt',
       company: 'Unternehmen',
+      location: 'Lage',
       address: 'Eingetragene Adresse',
       oib: 'OIB',
       mbs: 'MBS',
@@ -485,6 +499,7 @@ export const translations = {
     nav: {
       about: 'Om os',
       menu: 'Menu',
+      guides: 'Guides',
       marenda: 'Dagens frokost',
       contact: 'Kontakt',
     },
@@ -526,6 +541,7 @@ export const translations = {
     footer: {
       contact: 'Kontakt',
       company: 'Virksomhed',
+      location: 'Beliggenhed',
       address: 'Registreret adresse',
       oib: 'OIB',
       mbs: 'MBS',

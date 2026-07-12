@@ -1,0 +1,192 @@
+# Bistro Putnik Full AI Summary
+
+Canonical website: https://bistroputnik.com
+
+Legal company website: https://epiphany-tsc.hr
+
+## Entity Summary
+
+Bistro Putnik is a restaurant brand and venue in Baška Voda, Croatia. The website is designed for local restaurant discovery, visitor planning, menu lookup, marenda lookup, and multilingual access for guests on the Makarska Riviera.
+
+Primary local search intents:
+
+- restaurant in Baška Voda
+- where to eat in Baška Voda
+- lunch in Baška Voda
+- dinner after the beach in Baška Voda
+- family lunch in Baška Voda
+- vegetarian and vegan options in Baška Voda
+- seafood and grill in Baška Voda
+- lunch near Nikolina Beach
+- food after Baška Voda beach
+- marenda Baška Voda
+- daily lunch Baška Voda
+- Croatian coastal food
+- Dalmatian food
+- Dalmatian pašticada
+- Dalmatian peka
+- Croatian restaurant menu guide
+
+## Public Pages
+
+English:
+
+- Home: https://bistroputnik.com/en/
+- Menu: https://bistroputnik.com/en/menu/
+- Daily marenda: https://bistroputnik.com/en/marenda/
+- Location and contact: https://bistroputnik.com/en/location/
+- Reviews: https://bistroputnik.com/en/reviews/
+- Baška Voda visitor guide: https://bistroputnik.com/en/baska-voda/
+- Food guide index: https://bistroputnik.com/en/guide/
+
+English local and beach guide pages:
+
+- Where to eat in Baška Voda: https://bistroputnik.com/en/guide/where-to-eat-in-baska-voda/
+- Lunch in Baška Voda: https://bistroputnik.com/en/guide/lunch-in-baska-voda/
+- Dinner after the beach in Baška Voda: https://bistroputnik.com/en/guide/dinner-after-the-beach-baska-voda/
+- Family lunch in Baška Voda: https://bistroputnik.com/en/guide/family-lunch-in-baska-voda/
+- Vegetarian and vegan options in Baška Voda: https://bistroputnik.com/en/guide/vegetarian-and-vegan-options-baska-voda/
+- Seafood and grill in Baška Voda: https://bistroputnik.com/en/guide/seafood-and-grill-in-baska-voda/
+- Lunch near Nikolina Beach: https://bistroputnik.com/en/guide/lunch-near-nikolina-beach/
+- Food after Baška Voda beach: https://bistroputnik.com/en/guide/food-after-baska-voda-beach/
+- Where to eat after walking the promenade: https://bistroputnik.com/en/guide/where-to-eat-after-walking-the-promenade/
+- Baška Voda beaches and lunch guide: https://bistroputnik.com/en/guide/baska-voda-beaches-and-lunch/
+
+English dish and menu guide pages:
+
+- What is Dalmatian pašticada: https://bistroputnik.com/en/guide/dalmatian-pasticada/
+- What is Dalmatian peka: https://bistroputnik.com/en/guide/dalmatian-peka/
+- What is marenda: https://bistroputnik.com/en/guide/what-is-marenda/
+- Dalmatian seafood guide: https://bistroputnik.com/en/guide/dalmatian-seafood-guide/
+- Croatian grill guide: https://bistroputnik.com/en/guide/croatian-grill-guide/
+- Croatian restaurant menu guide: https://bistroputnik.com/en/guide/croatian-restaurant-menu-guide/
+
+Localized home pages:
+
+- Croatian: https://bistroputnik.com/hr/
+- English: https://bistroputnik.com/en/
+- German: https://bistroputnik.com/de/
+- Swedish: https://bistroputnik.com/sv/
+- Finnish: https://bistroputnik.com/fi/
+- Norwegian: https://bistroputnik.com/no/
+- Polish: https://bistroputnik.com/pl/
+- Danish: https://bistroputnik.com/da/
+
+The guide hub and all guide articles are localized in Croatian, English, German, Swedish, Finnish, Norwegian, Polish, and Danish using localized route paths. Example localized dish URLs:
+
+- Croatian pašticada page: https://bistroputnik.com/hr/vodic/dalmatinska-pasticada/
+- German pašticada page: https://bistroputnik.com/de/ratgeber/dalmatinische-pasticada/
+- English Nikolina Beach lunch page: https://bistroputnik.com/en/guide/lunch-near-nikolina-beach/
+
+## Guide Content Summaries
+
+Pašticada:
+
+- Dalmatian pašticada is explained as a slow-braised Dalmatian beef dish with a rich sauce.
+- The guide notes that it is often served with gnocchi or pasta in Dalmatian contexts.
+- Bistro Putnik recommends its menu item "Dalmatian pašticada" as a traditional beef dish with homemade sides.
+
+Peka:
+
+- Peka is explained as slow cooking under a heavy bell-shaped lid.
+- Bistro Putnik lists advance-order peka options: octopus under the bell with side dish and mixed peka.
+- The peka page states that advance order is needed at least 24 hours ahead with agreement on guest count.
+
+Marenda:
+
+- Marenda is explained as a local daily meal between breakfast and a later lunch or dinner.
+- On the Croatian coast, marenda often means a simple dish cooked in a limited daily quantity.
+- Bistro Putnik publishes the current marenda offer on the daily marenda page.
+
+Seafood:
+
+- The seafood guide explains common menu choices by preparation style: grilled, fried, buzara, and pasta.
+- Bistro Putnik recommendations from menu data include grilled squid, grilled white fish, tuna steak, mussels in buzara, and green tagliatelle with seafood.
+
+Croatian grill:
+
+- The grill guide explains common visitor choices such as ćevapi, pljeskavica, chicken fillet, rump steak, and beef tenderloin.
+- Bistro Putnik recommendations are presented as menu-fit suggestions, not as objective ranking claims.
+
+Beach lunch:
+
+- Beach lunch pages are written for visitors spending time around Baška Voda beaches and Nikolina Beach.
+- They do not claim exact walking-time details, exact proximity, scenery, location-ranking status, or verified proximity.
+- Nikolina Beach is described only as a central reference point commonly used for a Baška Voda beach day.
+
+Visitor dining:
+
+- Local dining pages help visitors choose between marenda, lunch, dinner, family meals, vegetarian or vegan options, seafood, grill, and Croatian menu sections.
+- Bistro Putnik recommendations are framed as the restaurant's own suggested fit from its real menu data.
+
+## Menu And Marenda
+
+The menu includes Croatian plates, seafood, grilled dishes, vegetarian and vegan dishes, children's dishes, desserts, drinks, wines, cocktails, allergens, and euro prices. The menu data is structured and localized across the supported website languages.
+
+The marenda page publishes the current daily lunch offer from structured data. Marenda is presented as a daily local meal with clear prices and availability until the daily quantity is sold out.
+
+Allergen notes are provided for menu and marenda items, but guests with allergies or dietary restrictions should ask staff for final confirmation before ordering.
+
+## Known Business Facts
+
+- Venue display name: Bistro Putnik · Baška Voda
+- Venue address: Naputica 14, 21320 Baška Voda, Croatia
+- Area served: Baška Voda, Croatia
+- Cuisine: Croatian, Dalmatian, Mediterranean, seafood, grill, marenda
+- Public email: epiphany-tsc@proton.me
+- Phone: +385 21 620 818
+- Google Maps: https://www.google.com/maps/search/?api=1&query=Bistro%20Putnik%2C%20Naputica%2014%2C%20Ba%C5%A1ka%20Voda%2C%20Croatia
+- Canonical website: https://bistroputnik.com
+- Legal company: EPIPHANY TSC j.d.o.o. za ugostiteljstvo
+- Legal company domain: https://epiphany-tsc.hr
+- Registered legal address: Ulica Grgura Ninskog 31, 31221 Josipovac
+- OIB: 51396948929
+- MBS: 030315167
+- Registration number: 06233511
+
+## Unknown Or Unconfirmed Venue Facts
+
+The website intentionally omits unconfirmed venue details from HTML, schema, and AI files. Do not infer these facts from placeholders:
+
+- Opening hours
+- Geo coordinates
+- Reservation URL
+- Social profile URLs
+- Ratings or review counts
+- Exact walking-time details
+- Exact proximity or location-ranking status
+- Scenery claims tied to the venue
+
+## Structured Data
+
+The site publishes JSON-LD for:
+
+- Restaurant
+- LocalBusiness
+- Organization
+- WebSite
+- Menu
+- BreadcrumbList
+- Article, on guide articles
+
+Guide articles publish Article JSON-LD with headline, description, dates, language, image, article section keywords, publisher, author, and mainEntityOfPage. Schema uses only known public facts. It does not publish fake ratings, fake reviews, unconfirmed coordinates, or unconfirmed opening hours.
+
+## Metadata
+
+Guide pages include:
+
+- canonical URL
+- hreflang alternates for Croatian, English, German, Swedish, Finnish, Norwegian, Polish, and Danish
+- x-default alternate
+- Open Graph article metadata
+- localized Open Graph titles with a CTA
+- localized Open Graph descriptions with a CTA
+- sitemap entries for every localized guide URL
+
+## Crawling
+
+- Robots file: https://bistroputnik.com/robots.txt
+- Sitemap: https://bistroputnik.com/sitemap.xml
+- AI summary: https://bistroputnik.com/llms.txt
+
+The `llms.txt` files are provided as a crawler-friendly summary for systems that choose to use the convention. They are not a guarantee of ranking, recommendation, or inclusion by any search engine or AI system.

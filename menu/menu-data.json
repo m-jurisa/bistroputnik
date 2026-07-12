@@ -47,7 +47,7 @@
   "currency": "EUR",
   "brand": {
     "name": "Bistro Putnik",
-    "location": "Baška Voda",
+    "location": "Naputica 14, Baška Voda",
     "tagline": "Iz Baške Vode, srcem",
     "primaryColor": "#103F4D",
     "background": "transparent-white",
@@ -86,8 +86,10 @@
     "mbs": "030315167",
     "registrationNumber": "06233511",
     "email": "epiphany-tsc@proton.me",
+    "phone": "+385 21 620 818",
     "website": "epiphany-tsc.hr",
-    "venue": "Bistro Putnik · Baška Voda"
+    "venue": "Bistro Putnik · Baška Voda",
+    "venueAddress": "Naputica 14, 21320 Baška Voda"
   },
   "allergens": [
     {

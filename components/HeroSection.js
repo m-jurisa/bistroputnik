@@ -4,9 +4,10 @@ import BrandDivider from './BrandDivider';
 import LanguageSelector from './LanguageSelector';
 import LogoLockupPlaceholder from './LogoLockupPlaceholder';
 import { useLanguage } from './LanguageProvider';
+import { getLocalizedPath } from '../data/site-config';
 
 export default function HeroSection() {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
 
   return (
     <section
@@ -33,7 +34,7 @@ export default function HeroSection() {
         </div>
 
         <div className="flex w-full max-w-xs flex-col items-center gap-3 sm:w-auto sm:max-w-none sm:flex-row">
-          <a href="#menu" className="brand-button w-full sm:w-auto">
+          <a href={getLocalizedPath(language, 'menu')} className="brand-button w-full sm:w-auto">
             {t.hero.cta}
           </a>
         </div>

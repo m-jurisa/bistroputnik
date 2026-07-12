@@ -1,8 +1,3 @@
-import {
-  getLocalizedItem,
-  getLocalizedMenuText,
-} from '../data/translations';
-
 function joinClasses(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -33,8 +28,7 @@ function hasPlaceholderPrice(item, price) {
   );
 }
 
-function MenuItem({ item, labels, language }) {
-  const localizedItem = getLocalizedItem(item, language);
+function MenuItem({ item, labels }) {
   const price = displayPrice(item);
   const isPlaceholder = hasPlaceholderPrice(item, price);
 
@@ -42,11 +36,11 @@ function MenuItem({ item, labels, language }) {
     <li className="grid gap-2 border-t border-brand-line/15 pt-4 first:border-t-0 first:pt-0 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-5">
       <div className="min-w-0">
         <p className="break-words text-sm font-semibold leading-6 text-[#f4eee0]">
-          {localizedItem.name}
+          {item.name}
         </p>
-        {localizedItem.description ? (
+        {item.description ? (
           <p className="mt-1 max-w-2xl text-sm leading-6 text-[#cdd8d9]">
-            {localizedItem.description}
+            {item.description}
           </p>
         ) : null}
         <AllergenLine allergens={item.allergens} label={labels.allergens} />
@@ -89,51 +83,37 @@ function SectionSummary({ title, meta }) {
   );
 }
 
-function MenuDivider({ section, language, labels }) {
+function MenuDivider({ section, labels }) {
   return (
     <section className="my-8 border-y border-brand-line/25 py-6">
       <p className="fine-print">{labels.section}</p>
       <h3 className="mt-2 font-display text-3xl leading-none text-brand-sand">
-        {getLocalizedMenuText(
-          language,
-          'sections',
-          section.id,
-          section.title,
-          section,
-          'title'
-        )}
+        {section.title}
       </h3>
     </section>
   );
 }
 
-function InfoSection({ section, defaultOpen, labels, language }) {
+function InfoSection({ section, defaultOpen, labels }) {
   return (
     <details
       className="group border-t border-brand-line/20 first:border-t-0"
       open={defaultOpen}
     >
       <SectionSummary
-        title={getLocalizedMenuText(
-          language,
-          'sections',
-          section.id,
-          section.title,
-          section,
-          'title'
-        )}
+        title={section.title}
         meta={labels.section}
       />
       <div className="pb-7">
         <div className="space-y-4">
-          {section.paragraphs.map((paragraph) => (
+          {(section.paragraphs || []).map((paragraph) => (
             <p key={paragraph} className="body-copy max-w-3xl text-sm">
               {paragraph}
             </p>
           ))}
         </div>
 
-        {section.items.length ? (
+        {section.items?.length ? (
           <ul className="mt-6 grid gap-3 text-sm leading-6 text-[#d8dfdf] sm:grid-cols-2">
             {section.items.map((item) => (
               <li key={item}>{item}</li>
@@ -141,7 +121,7 @@ function InfoSection({ section, defaultOpen, labels, language }) {
           </ul>
         ) : null}
 
-        {section.allergens.length ? (
+        {section.allergens?.length ? (
           <ul className="mt-6 grid gap-3 text-sm leading-6 text-[#d8dfdf] sm:grid-cols-2 lg:grid-cols-3">
             {section.allergens.map((allergen) => (
               <li key={allergen.code} className="grid grid-cols-[2.7rem_1fr] gap-2">
@@ -162,11 +142,10 @@ export default function MenuCategory({
   section,
   defaultOpen = false,
   labels,
-  language,
 }) {
   if (section.layout === 'divider' || !section.items?.length) {
     return (
-      <MenuDivider section={section} language={language} labels={labels} />
+      <MenuDivider section={section} labels={labels} />
     );
   }
 
@@ -176,7 +155,6 @@ export default function MenuCategory({
         section={section}
         defaultOpen={defaultOpen}
         labels={labels}
-        language={language}
       />
     );
   }
@@ -190,27 +168,13 @@ export default function MenuCategory({
       open={defaultOpen}
     >
       <SectionSummary
-        title={getLocalizedMenuText(
-          language,
-          'sections',
-          section.id,
-          section.title,
-          section,
-          'title'
-        )}
+        title={section.title}
         meta={labels.itemCount(section.items.length)}
       />
 
       {section.note ? (
         <p className="body-copy -mt-2 pb-5 text-sm">
-          {getLocalizedMenuText(
-            language,
-            'sectionNotes',
-            section.id,
-            section.note,
-            section,
-            'note'
-          )}
+          {section.note}
         </p>
       ) : null}
 
@@ -220,7 +184,6 @@ export default function MenuCategory({
             key={`${section.id}-${item.id}`}
             item={item}
             labels={labels}
-            language={language}
           />
         ))}
       </ol>

@@ -4,7 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",
-    "build": "next build --webpack"
+    "build": "next build --webpack && node scripts/prune-static-export.mjs",
+    "build:next": "next build --webpack",
+    "prune:export": "node scripts/prune-static-export.mjs",
+    "start": "node server/static-server.mjs",
+    "start:ssg": "node server/static-server.mjs"
   },
   "dependencies": {
     "next": "^16.2.3",

@@ -4,18 +4,22 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import LogoLockupPlaceholder from './LogoLockupPlaceholder';
 import { useLanguage } from './LanguageProvider';
+import { getLocalizedPath, resolvePathname } from '../data/site-config';
 
 const links = [
-  { key: 'about', href: '#about', homeSection: true },
-  { key: 'menu', href: '#menu', homeSection: true },
-  { key: 'marenda', href: '/marenda' },
-  { key: 'contact', href: '#contact' },
+  { key: 'about', routeKey: 'home', hash: '#about' },
+  { key: 'menu', routeKey: 'menu' },
+  { key: 'guides', routeKey: 'blog' },
+  { key: 'marenda', routeKey: 'marenda' },
+  { key: 'contact', routeKey: 'location' },
 ];
 
 export default function Header() {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   const pathname = usePathname();
-  const isHome = pathname === '/';
+  const resolved = resolvePathname(pathname);
+  const isHome = resolved.routeKey === 'home';
+  const homeHref = getLocalizedPath(language, 'home');
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -41,7 +45,7 @@ export default function Header() {
     <header className="sticky top-0 z-30 border-b border-brand-line/15 bg-brand-deep/70 backdrop-blur-md">
       <div className="container-shell py-3">
         <div className="flex items-center gap-4">
-          <a href={isHome ? '#top' : '/'} aria-label={t.ui.logoHome}>
+          <a href={isHome ? '#top' : homeHref} aria-label={t.ui.logoHome}>
             <LogoLockupPlaceholder compact />
           </a>
 
@@ -50,8 +54,11 @@ export default function Header() {
             className="ml-auto hidden min-w-0 gap-x-7 overflow-x-auto whitespace-nowrap text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-[#d5dddd] lg:flex"
           >
             {links.map((link) => {
-              const href = link.homeSection && !isHome ? `/${link.href}` : link.href;
-              const active = pathname === link.href;
+              const href =
+                link.hash && isHome
+                  ? link.hash
+                  : `${getLocalizedPath(language, link.routeKey)}${link.hash || ''}`;
+              const active = resolved.routeKey === link.routeKey;
 
               return (
                 <a
@@ -107,9 +114,12 @@ export default function Header() {
             className="min-h-0 overflow-hidden"
           >
             <div className="mt-3 grid gap-1 border-t border-brand-line/15 pt-3 text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-[#d5dddd]">
-              {links.map((link) => {
-                const href = link.homeSection && !isHome ? `/${link.href}` : link.href;
-                const active = pathname === link.href;
+            {links.map((link) => {
+                const href =
+                  link.hash && isHome
+                    ? link.hash
+                    : `${getLocalizedPath(language, link.routeKey)}${link.hash || ''}`;
+                const active = resolved.routeKey === link.routeKey;
 
                 return (
                   <a

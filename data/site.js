@@ -1,9 +1,12 @@
 import menuData from '../menu/menu-data.json';
+import { legalCompanyConfig } from './legal-config';
+import { siteConfig } from './site-config';
 
 export const siteMeta = {
   brand: menuData.brand.name,
   slogan: 'Opening 1.5.2026',
   note: 'More info soon',
+  url: siteConfig.siteUrl,
 };
 
 export const contactInfo = {
@@ -18,6 +21,7 @@ export const legalInfo = {
   oib: menuData.business.oib,
   mbs: menuData.business.mbs,
   registrationNumber: menuData.business.registrationNumber,
-  website: menuData.business.website,
+  website: siteConfig.siteUrl,
+  legalCompanyWebsite: legalCompanyConfig.url,
   venue: menuData.business.venue,
 };

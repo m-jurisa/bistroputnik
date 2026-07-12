@@ -68,3 +68,27 @@ Before final print, verify:
 - Allergens are complete and legally verified
 - Prices are correct in base item objects
 - Placeholder prices are intentional
+
+## 7. Website Export And Contact
+
+The website is exported statically with Next:
+
+```bash
+npm run build
+```
+
+The build runs `scripts/prune-static-export.mjs` after `next build` to remove Next app-router route payload `.txt` files that are not needed for this static, normal-link site. Use `npm run build:next` only when you need the unpruned raw Next export for debugging.
+
+The public contact page shows the phone number, direct email link, and a contact form powered by Web3Forms. The form posts directly from the static page to:
+
+```text
+https://api.web3forms.com/submit
+```
+
+The Web3Forms access key is public and is stored in `components/ContactForm.js`:
+
+```text
+7bfd19b9-f0a9-429a-9d2e-8262c21ba95d
+```
+
+No SMTP variables are required for the visible contact form. After `npm run build`, the exported `out/` folder can be uploaded to static hosting. If Hostinger Node hosting is used, `npm start` serves the exported files through `server/static-server.mjs`, but form delivery does not depend on the Node server.

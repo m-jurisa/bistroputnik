@@ -5,18 +5,29 @@ import { defaultLanguage, languages, translations } from '../data/translations';
 
 const LanguageContext = createContext(null);
 
-export function LanguageProvider({ children }) {
-  const [language, setLanguageState] = useState(defaultLanguage);
+function isKnownLanguage(language) {
+  return languages.some((item) => item.code === language);
+}
+
+export function LanguageProvider({ children, initialLanguage }) {
+  const initial = isKnownLanguage(initialLanguage) ? initialLanguage : defaultLanguage;
+  const [language, setLanguageState] = useState(initial);
 
   useEffect(() => {
+    if (isKnownLanguage(initialLanguage)) {
+      setLanguageState(initialLanguage);
+      window.localStorage.setItem('bistroputnik-language', initialLanguage);
+      return;
+    }
+
     const savedLanguage = window.localStorage.getItem('bistroputnik-language');
-    if (languages.some((item) => item.code === savedLanguage)) {
+    if (isKnownLanguage(savedLanguage)) {
       setLanguageState(savedLanguage);
     }
-  }, []);
+  }, [initialLanguage]);
 
   const setLanguage = (nextLanguage) => {
-    if (!languages.some((item) => item.code === nextLanguage)) {
+    if (!isKnownLanguage(nextLanguage)) {
       return;
     }
 

@@ -1,5 +1,12 @@
 import { readFileSync } from 'fs';
 import path from 'path';
+import { siteConfig } from './site-config';
+import {
+  getLocalizedItem,
+  getLocalizedMenuText,
+  getLocalizedNotice,
+  getLocalizedStory,
+} from './translations';
 
 const menuDataPath = path.join(process.cwd(), 'menu', 'menu-data.json');
 function sortByOrder(items, key = 'sortOrder') {
@@ -105,7 +112,10 @@ function readMenuData() {
     language: data.language,
     currency: data.currency,
     brand: data.brand,
-    business: data.business,
+    business: {
+      ...data.business,
+      website: siteConfig.displayHost,
+    },
     story: data.story,
     notices: data.notices || [],
     allergens: data.allergens || [],
@@ -115,3 +125,132 @@ function readMenuData() {
 
 export const menuData = readMenuData();
 export const menuPages = menuData.pages;
+
+function compactObject(value) {
+  return Object.fromEntries(
+    Object.entries(value).filter(([, item]) => {
+      if (Array.isArray(item)) {
+        return item.length > 0;
+      }
+
+      return item !== undefined && item !== null && item !== '';
+    })
+  );
+}
+
+function localizeMenuItem(item, locale) {
+  const localized = getLocalizedItem(item, locale);
+
+  return compactObject({
+    id: item.id,
+    name: localized.name,
+    description: localized.description,
+    price: item.price,
+    priceDisplay: item.priceDisplay,
+    priceMin: item.priceMin,
+    priceMax: item.priceMax,
+    allergens: item.allergens || [],
+  });
+}
+
+function localizeMenuSection(section, locale) {
+  return compactObject({
+    id: section.id,
+    title: getLocalizedMenuText(
+      locale,
+      'sections',
+      section.id,
+      section.title,
+      section,
+      'title'
+    ),
+    note: getLocalizedMenuText(
+      locale,
+      'sectionNotes',
+      section.id,
+      section.note,
+      section,
+      'note'
+    ),
+    layout: section.layout || 'default',
+    type: section.type || null,
+    signature: section.signature || false,
+    paragraphs: getLocalizedMenuText(
+      locale,
+      'sectionParagraphs',
+      section.id,
+      section.paragraphs || [],
+      section,
+      'paragraphs'
+    ),
+    allergens: section.allergens || [],
+    items: (section.items || []).map((item) =>
+      typeof item === 'string' ? item : localizeMenuItem(item, locale)
+    ),
+  });
+}
+
+function localizeMenuPage(page, locale) {
+  return compactObject({
+    id: page.id,
+    title: getLocalizedMenuText(locale, 'pages', page.id, page.title, page, 'title'),
+    intro: getLocalizedMenuText(locale, 'pageIntro', page.id, page.intro, page, 'intro'),
+    note: getLocalizedMenuText(locale, 'pageNote', page.id, page.note, page, 'note'),
+    closing: getLocalizedMenuText(
+      locale,
+      'pageClosing',
+      page.id,
+      page.closing,
+      page,
+      'closing'
+    ),
+    type: page.type,
+    sections: (page.sections || []).map((section) => localizeMenuSection(section, locale)),
+  });
+}
+
+export function getLocalizedMenuView(locale, menu = menuData) {
+  return {
+    currency: menu.currency,
+    business: menu.business,
+    story: getLocalizedStory(menu.story, locale),
+    notices: (menu.notices || []).map((notice) => ({
+      id: notice.id,
+      text: getLocalizedNotice(notice, locale),
+    })),
+    pages: (menu.pages || []).map((page) => localizeMenuPage(page, locale)),
+  };
+}
+
+export function getLocalizedRecommendedMenuItems(locale, itemIds = [], menu = menuData) {
+  if (!itemIds?.length) {
+    return [];
+  }
+
+  const itemById = new Map();
+
+  for (const page of menu.pages || []) {
+    for (const section of page.sections || []) {
+      for (const item of section.items || []) {
+        if (!item?.id) {
+          continue;
+        }
+
+        const localized = localizeMenuItem(item, locale);
+        itemById.set(item.id, {
+          ...localized,
+          sectionTitle: getLocalizedMenuText(
+            locale,
+            'sections',
+            section.id,
+            section.title,
+            section,
+            'title'
+          ),
+        });
+      }
+    }
+  }
+
+  return itemIds.map((id) => itemById.get(id)).filter(Boolean);
+}

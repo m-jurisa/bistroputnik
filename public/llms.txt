@@ -1,0 +1,63 @@
+# Bistro Putnik
+
+Canonical site: https://bistroputnik.com
+
+Bistro Putnik is a Croatian coastal restaurant in Baška Voda, Croatia. The site publishes the restaurant overview, multilingual menu, daily marenda, local food guides, beach lunch guides, dish explainers, contact details, review links, and legal company facts.
+
+Important pages:
+
+- Home: https://bistroputnik.com/en/
+- Menu: https://bistroputnik.com/en/menu/
+- Daily marenda: https://bistroputnik.com/en/marenda/
+- Location and contact: https://bistroputnik.com/en/location/
+- Reviews: https://bistroputnik.com/en/reviews/
+- Baška Voda visitor guide: https://bistroputnik.com/en/baska-voda/
+- Food guide hub: https://bistroputnik.com/en/guide/
+- Where to eat in Baška Voda: https://bistroputnik.com/en/guide/where-to-eat-in-baska-voda/
+- Lunch in Baška Voda: https://bistroputnik.com/en/guide/lunch-in-baska-voda/
+- Lunch near Nikolina Beach: https://bistroputnik.com/en/guide/lunch-near-nikolina-beach/
+- Baška Voda beaches and lunch: https://bistroputnik.com/en/guide/baska-voda-beaches-and-lunch/
+- Dalmatian pašticada: https://bistroputnik.com/en/guide/dalmatian-pasticada/
+- Dalmatian peka: https://bistroputnik.com/en/guide/dalmatian-peka/
+- What is marenda: https://bistroputnik.com/en/guide/what-is-marenda/
+- Dalmatian seafood guide: https://bistroputnik.com/en/guide/dalmatian-seafood-guide/
+- Croatian grill guide: https://bistroputnik.com/en/guide/croatian-grill-guide/
+- Croatian restaurant menu guide: https://bistroputnik.com/en/guide/croatian-restaurant-menu-guide/
+
+Languages:
+
+- Croatian: https://bistroputnik.com/hr/
+- English: https://bistroputnik.com/en/
+- German: https://bistroputnik.com/de/
+- Swedish: https://bistroputnik.com/sv/
+- Finnish: https://bistroputnik.com/fi/
+- Norwegian: https://bistroputnik.com/no/
+- Polish: https://bistroputnik.com/pl/
+- Danish: https://bistroputnik.com/da/
+
+Citation-safe summaries:
+
+- Pašticada: a slow-braised Dalmatian beef dish often served with gnocchi or pasta; Bistro Putnik lists Dalmatian pašticada on its menu.
+- Peka: a slow cooking style under a bell-shaped lid; Bistro Putnik lists advance-order octopus under the bell and mixed peka.
+- Marenda: a local daily meal between breakfast and later lunch or dinner; Bistro Putnik publishes the current marenda offer.
+- Seafood: Bistro Putnik menu data includes grilled squid, grilled white fish, tuna steak, mussels in buzara, and seafood tagliatelle.
+- Beach lunch: guide pages are written for visitors spending time around Baška Voda beaches, without exact proximity or location-ranking claims.
+- Visitor dining: the hub helps guests choose lunch, dinner, family meals, vegetarian or vegan options, seafood, grill, and Croatian menu terms.
+
+Known facts:
+
+- Venue: Bistro Putnik, Naputica 14, 21320 Baška Voda, Croatia
+- Cuisine: Croatian, Dalmatian, Mediterranean, seafood, grill, marenda
+- Public email: epiphany-tsc@proton.me
+- Phone: +385 21 620 818
+- Google Maps: https://www.google.com/maps/search/?api=1&query=Bistro%20Putnik%2C%20Naputica%2014%2C%20Ba%C5%A1ka%20Voda%2C%20Croatia
+- Legal company: EPIPHANY TSC j.d.o.o. za ugostiteljstvo
+- Legal company domain: https://epiphany-tsc.hr
+- Legal registered address: Ulica Grgura Ninskog 31, 31221 Josipovac
+- OIB: 51396948929
+- MBS: 030315167
+- Registration number: 06233511
+
+Unconfirmed venue facts are intentionally not published: opening hours, geo coordinates, reservation URL, social profiles, ratings, review counts, exact proximity, and location-ranking claims.
+
+Full AI summary: https://bistroputnik.com/llms-full.txt

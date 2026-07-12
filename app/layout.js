@@ -1,5 +1,7 @@
 import { Cormorant_Garamond, Montserrat } from 'next/font/google';
 import './globals.css';
+import { buildMetadata } from '../data/seo';
+import { siteConfig } from '../data/site-config';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -15,14 +17,16 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
+const defaultMetadata = buildMetadata({ locale: 'en', routeKey: 'home' });
+
 export const metadata = {
-  metadataBase: new URL('https://bistroputnik.example'),
+  ...defaultMetadata,
+  metadataBase: new URL(siteConfig.siteUrl),
+  applicationName: siteConfig.brand,
   title: {
-    default: 'Bistro Putnik',
+    default: defaultMetadata.title,
     template: '%s | Bistro Putnik',
   },
-  description:
-    'Bistro Putnik opens in Baška Voda with Croatian coastal cooking, drinks, and opening details from 1.5.2026.',
 };
 
 export default function RootLayout({ children }) {

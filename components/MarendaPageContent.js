@@ -1,22 +1,13 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import BrandDivider from './BrandDivider';
 import Footer from './Footer';
 import Header from './Header';
 import LanguageSelector from './LanguageSelector';
 import LogoLockupPlaceholder from './LogoLockupPlaceholder';
 import { useLanguage } from './LanguageProvider';
-
-const marendaIntroText = {
-  hr: 'Naša dnevna marenda prati lokalni ritam: sezonska jela, jasno istaknute cijene i ponuda dostupna dok se dnevni meni ne rasproda.',
-  en: 'Our daily lunch follows the local rhythm: seasonal dishes, clear prices, and an offer available until the day’s menu is sold out.',
-  sv: 'Vår dagliga lunch följer den lokala rytmen: säsongsbetonade rätter, tydliga priser och ett erbjudande som gäller tills dagens meny är slutsåld.',
-  fi: 'Päivän lounaamme seuraa paikallista rytmiä: kauden annoksia, selkeät hinnat ja tarjonta, joka on saatavilla niin kauan kuin päivän menu riittää.',
-  no: 'Vår dagens lunsj følger den lokale rytmen: sesongbaserte retter, tydelige priser og et tilbud som gjelder til dagens meny er utsolgt.',
-  pl: 'Nasz lunch dnia podąża za lokalnym rytmem: sezonowe dania, przejrzyste ceny i oferta dostępna do wyprzedania dziennego menu.',
-  de: 'Unser tägliches Mittagsangebot folgt dem lokalen Rhythmus: saisonale Gerichte, klare Preise und ein Angebot, das verfügbar ist, bis das Tagesmenü ausverkauft ist.',
-  da: 'Vores daglige frokost følger den lokale rytme: sæsonbetonede retter, tydelige priser og et tilbud, der gælder, indtil dagens menu er udsolgt.',
-};
+import { siteConfig } from '../data/site-config';
 
 function getMarendaCopy(data, language) {
   return (
@@ -39,6 +30,8 @@ function formatDishPrice(dish, fallbackPrice) {
 }
 
 function getLocalizedDish(dish, marenda, language) {
+  const baseTranslation =
+    dish.translations?.[marenda.defaultLanguage] || dish.translations?.hr;
   const translation =
     language === marenda.defaultLanguage
       ? null
@@ -46,8 +39,11 @@ function getLocalizedDish(dish, marenda, language) {
 
   return {
     id: dish.id,
-    title: translation?.name || dish.name,
-    description: translation?.description || dish.description,
+    title: translation?.name || dish.name || baseTranslation?.name,
+    description:
+      translation?.description ||
+      dish.description ||
+      baseTranslation?.description,
     price: formatDishPrice(dish, marenda.price),
     allergens: Array.isArray(dish.allergens) ? dish.allergens : [],
   };
@@ -59,6 +55,32 @@ function getDailyOfferLabel(marenda, language) {
   }
 
   return marenda.labelTranslations?.[language] || marenda.label;
+}
+
+function formatRestaurantDate(timeZone = 'Europe/Zagreb', date = new Date()) {
+  const parts = new Intl.DateTimeFormat('hr-HR', {
+    timeZone,
+    day: '2-digit',
+    month: '2-digit',
+    year: '2-digit',
+  }).formatToParts(date);
+  const dateParts = Object.fromEntries(
+    parts
+      .filter((part) => ['day', 'month', 'year'].includes(part.type))
+      .map((part) => [part.type, part.value])
+  );
+
+  return `${dateParts.day}.${dateParts.month}.${dateParts.year}`;
+}
+
+function useRestaurantDateDisplay(timeZone) {
+  const [dateDisplay, setDateDisplay] = useState('');
+
+  useEffect(() => {
+    setDateDisplay(formatRestaurantDate(timeZone));
+  }, [timeZone]);
+
+  return dateDisplay;
 }
 
 // Draft marenda allergens must be verified with kitchen recipes, stocks, sausages, thickening, and supplier declarations before final display.
@@ -106,12 +128,14 @@ export default function MarendaPageContent({ business, marenda }) {
   const { language, t } = useLanguage();
   const copy = getMarendaCopy(marenda, language);
   const dishes = getDishes(copy, marenda, language);
-  const introText = marendaIntroText[language] || marendaIntroText.en;
+  const introText =
+    marenda.introText?.[language] || marenda.introText?.en || copy.intro;
   const printOfferLabel = t.marenda.printOffer || 'Print offer';
   const venueLabel = business.venue || 'Bistro Putnik · Baška Voda';
+  const dateDisplay = useRestaurantDateDisplay(marenda.timeZone);
   const dailyOfferMeta = [
     getDailyOfferLabel(marenda, language),
-    marenda.dateDisplay,
+    dateDisplay,
   ]
     .filter(Boolean)
     .join(' · ');
@@ -265,7 +289,7 @@ export default function MarendaPageContent({ business, marenda }) {
 
         <footer className="marenda-print-footer">
           {copy.allergenNote ? <p>{copy.allergenNote}</p> : null}
-          {business.website ? <p>{business.website}</p> : null}
+          <p>{siteConfig.displayHost}</p>
         </footer>
       </section>
 

@@ -1,5 +1,7 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
+import { getLanguageSwitchPath } from '../data/site-config';
 import { languages } from '../data/translations';
 import { useLanguage } from './LanguageProvider';
 
@@ -9,6 +11,7 @@ function joinClasses(...classes) {
 
 export default function LanguageSelector({ className }) {
   const { language, setLanguage, t } = useLanguage();
+  const pathname = usePathname();
 
   return (
     <div
@@ -20,22 +23,23 @@ export default function LanguageSelector({ className }) {
     >
       {languages.map((item) => {
         const active = item.code === language;
+        const href = getLanguageSwitchPath(pathname, item.code);
 
         return (
-          <button
+          <a
             key={item.code}
-            type="button"
+            href={href}
             className={joinClasses(
               'shrink-0 rounded-full px-2.5 py-1.5 text-[0.64rem] font-semibold uppercase tracking-[0.14em] sm:px-3 sm:text-[0.66rem] sm:tracking-[0.16em]',
               active
                 ? 'bg-brand-sand text-brand-deep'
                 : 'text-[#d5dddd] hover:text-brand-sand'
             )}
-            aria-pressed={active}
+            aria-current={active ? 'true' : undefined}
             onClick={() => setLanguage(item.code)}
           >
             {item.label}
-          </button>
+          </a>
         );
       })}
     </div>
