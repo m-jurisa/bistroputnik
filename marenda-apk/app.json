@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Bistro Putnik Marenda",
+    "slug": "bistro-putnik-marenda",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "putnikmarenda",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "hr.bistroputnik.marenda"
+    },
+    "android": {
+      "package": "hr.bistroputnik.marenda"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-file-system",
+      "expo-sharing"
+    ]
+  }
+}

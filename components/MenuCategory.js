@@ -23,10 +23,20 @@ function displayPrice(item) {
   return item.priceDisplay || '€ —';
 }
 
+function hasPlaceholderPrice(item, price) {
+  return (
+    price.includes('__') ||
+    (!item.priceDisplay &&
+      (item.price === null || typeof item.price === 'undefined') &&
+      typeof item.priceMin === 'undefined' &&
+      typeof item.priceMax === 'undefined')
+  );
+}
+
 function MenuItem({ item, labels, language }) {
   const localizedItem = getLocalizedItem(item, language);
   const price = displayPrice(item);
-  const isPlaceholder = item.price === null || typeof item.price === 'undefined';
+  const isPlaceholder = hasPlaceholderPrice(item, price);
 
   return (
     <li className="grid gap-2 border-t border-brand-line/15 pt-4 first:border-t-0 first:pt-0 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-5">

@@ -590,7 +590,7 @@ const baseMenuTranslations = {
       'djecji-meni': "Children's menu",
       'salate-kao-obrok': 'Main-course salads',
       salate: 'Salads',
-      'posebna-priprema': 'Special preparation',
+      'posebna-priprema': 'PEKA',
       'topli-napitci': 'Coffee and hot drinks',
       vode: 'Water',
       'bezalkoholna-pica': 'Soft drinks',
@@ -757,9 +757,6 @@ const baseMenuTranslations = {
       'hobotnica-ispod-peke-uz-prilog': {
         name: 'Octopus under the bell with side',
       },
-      'rolana-teletina-uz-prilog': { name: 'Rolled veal with side' },
-      'rolana-janjetina-uz-prilog': { name: 'Rolled lamb with side' },
-      'beef-wellington': { name: 'Beef Wellington' },
       'prvosvibanjska-salata-od-skuse': { name: 'Mackerel salad' },
       'prvosvibanjske-lignje-frigane': { name: 'Fried squid' },
       'prvosvibanjske-lignje-na-zaru': { name: 'Grilled squid' },
@@ -993,7 +990,7 @@ const baseMenuTranslations = {
       'djecji-meni': 'Barnmeny',
       'salate-kao-obrok': 'Matiga sallader',
       salate: 'Sallader',
-      'posebna-priprema': 'Särskild tillagning',
+      'posebna-priprema': 'PEKA',
       'topli-napitci': 'Kaffe och varma drycker',
       vode: 'Vatten',
       'bezalkoholna-pica': 'Alkoholfria drycker',
@@ -1159,9 +1156,6 @@ const baseMenuTranslations = {
       'hobotnica-ispod-peke-uz-prilog': {
         name: 'Bläckfisk under peka med tillbehör',
       },
-      'rolana-teletina-uz-prilog': { name: 'Rullad kalv med tillbehör' },
-      'rolana-janjetina-uz-prilog': { name: 'Rullat lamm med tillbehör' },
-      'beef-wellington': { name: 'Beef Wellington' },
       'prvosvibanjska-salata-od-skuse': { name: 'Makrillsallad' },
       'prvosvibanjske-lignje-frigane': { name: 'Friterad bläckfisk' },
       'prvosvibanjske-lignje-na-zaru': { name: 'Grillad bläckfisk' },
@@ -1391,7 +1385,7 @@ const baseMenuTranslations = {
       'djecji-meni': 'Barnemeny',
       'salate-kao-obrok': 'Mettende salater',
       salate: 'Salater',
-      'posebna-priprema': 'Spesiell tilberedning',
+      'posebna-priprema': 'PEKA',
       'topli-napitci': 'Kaffe og varme drikker',
       vode: 'Vann',
       'bezalkoholna-pica': 'Alkoholfri drikke',
@@ -1538,8 +1532,6 @@ const baseMenuTranslations = {
       'krastavci-u-vrhnju': { name: 'Agurk i rømme' },
       'cikla-karamelizirani-luk': { name: 'Rødbete og karamellisert løk' },
       'hobotnica-ispod-peke-uz-prilog': { name: 'Blekksprut under peka med tilbehør' },
-      'rolana-teletina-uz-prilog': { name: 'Rullet kalv med tilbehør' },
-      'rolana-janjetina-uz-prilog': { name: 'Rullet lam med tilbehør' },
       'produzena-kava': { name: 'Lang kaffe' },
       'kava-s-mlijekom-slagom': { name: 'Kaffe med melk / krem' },
       'bijela-kava': { name: 'Kaffe med melk' },
@@ -1638,7 +1630,7 @@ const baseMenuTranslations = {
       'djecji-meni': 'Menu dziecięce',
       'salate-kao-obrok': 'Sałatki jako danie',
       salate: 'Sałatki',
-      'posebna-priprema': 'Specjalne przygotowanie',
+      'posebna-priprema': 'PEKA',
       'topli-napitci': 'Kawy i gorące napoje',
       vode: 'Woda',
       'bezalkoholna-pica': 'Napoje bezalkoholowe',
@@ -1782,8 +1774,6 @@ const baseMenuTranslations = {
       'krastavci-u-vrhnju': { name: 'Ogórki w kwaśnej śmietanie' },
       'cikla-karamelizirani-luk': { name: 'Burak i karmelizowana cebula' },
       'hobotnica-ispod-peke-uz-prilog': { name: 'Ośmiornica spod peki z dodatkiem' },
-      'rolana-teletina-uz-prilog': { name: 'Rolowana cielęcina z dodatkiem' },
-      'rolana-janjetina-uz-prilog': { name: 'Rolowana jagnięcina z dodatkiem' },
       'produzena-kava': { name: 'Przedłużana kawa' },
       'ice-latte': { name: 'Latte mrożone' },
       'ice-latte-matcha': { name: 'Matcha latte mrożone' },
@@ -1882,7 +1872,7 @@ const baseMenuTranslations = {
       'djecji-meni': 'Børnemenu',
       'salate-kao-obrok': 'Måltidssalater',
       salate: 'Salater',
-      'posebna-priprema': 'Særlig tilberedning',
+      'posebna-priprema': 'PEKA',
       'topli-napitci': 'Kaffe og varme drikke',
       vode: 'Vand',
       'bezalkoholna-pica': 'Alkoholfri drikke',
@@ -2026,8 +2016,6 @@ const baseMenuTranslations = {
       'krastavci-u-vrhnju': { name: 'Agurker i cremefraiche' },
       'cikla-karamelizirani-luk': { name: 'Rødbede og karamelliseret løg' },
       'hobotnica-ispod-peke-uz-prilog': { name: 'Blæksprutte under peka med tilbehør' },
-      'rolana-teletina-uz-prilog': { name: 'Rullet kalv med tilbehør' },
-      'rolana-janjetina-uz-prilog': { name: 'Rullet lam med tilbehør' },
       'produzena-kava': { name: 'Lang kaffe' },
       'ice-latte': { name: 'Islatte' },
       'ice-latte-matcha': { name: 'Ismatcha latte' },
@@ -2129,7 +2117,7 @@ const additionalMenuTranslations = {
       'djecji-meni': 'Kindermenü',
       'salate-kao-obrok': 'Salate als Hauptgericht',
       salate: 'Salate',
-      'posebna-priprema': 'Besondere Zubereitung',
+      'posebna-priprema': 'PEKA',
       'topli-napitci': 'Kaffee und Heißgetränke',
       vode: 'Wasser',
       'bezalkoholna-pica': 'Alkoholfreie Getränke',
@@ -2284,9 +2272,6 @@ const additionalMenuTranslations = {
       'hobotnica-ispod-peke-uz-prilog': {
         name: 'Oktopus unter der Peka mit Beilage',
       },
-      'rolana-teletina-uz-prilog': { name: 'Gerolltes Kalbfleisch mit Beilage' },
-      'rolana-janjetina-uz-prilog': { name: 'Gerolltes Lamm mit Beilage' },
-      'beef-wellington': { name: 'Beef Wellington' },
       'produzena-kava': { name: 'Verlängerter Kaffee' },
       espresso: { name: 'Espresso' },
       'kava-s-mlijekom-slagom': { name: 'Kaffee mit Milch / Schlagsahne' },
@@ -2415,7 +2400,7 @@ const additionalMenuTranslations = {
       'djecji-meni': 'Lasten menu',
       'salate-kao-obrok': 'Ruokaisat salaatit',
       salate: 'Salaatit',
-      'posebna-priprema': 'Erikoisvalmistus',
+      'posebna-priprema': 'PEKA',
       'topli-napitci': 'Kahvi ja kuumat juomat',
       vode: 'Vesi',
       'bezalkoholna-pica': 'Alkoholittomat juomat',
@@ -2564,9 +2549,6 @@ const additionalMenuTranslations = {
       'hobotnica-ispod-peke-uz-prilog': {
         name: 'Mustekalaa pekan alla lisukkeella',
       },
-      'rolana-teletina-uz-prilog': { name: 'Rullattua vasikkaa lisukkeella' },
-      'rolana-janjetina-uz-prilog': { name: 'Rullattua lammasta lisukkeella' },
-      'beef-wellington': { name: 'Beef Wellington' },
       'produzena-kava': { name: 'Pitkä kahvi' },
       espresso: { name: 'Espresso' },
       'kava-s-mlijekom-slagom': { name: 'Kahvi maidolla / kermavaahdolla' },
@@ -2663,9 +2645,38 @@ export const menuTranslations = {
   ...additionalMenuTranslations,
 };
 
+function hasTranslationValue(value) {
+  if (Array.isArray(value)) {
+    return value.length > 0;
+  }
+
+  return value !== undefined && value !== null && value !== '';
+}
+
 function getEmbeddedTranslation(entity, language, field) {
   const value = entity?.translations?.[language]?.[field];
-  return typeof value === 'string' ? value : null;
+  return hasTranslationValue(value) ? value : null;
+}
+
+function getStaticMenuTranslation(language, type, id) {
+  const value = menuTranslations[language]?.[type]?.[id];
+  return hasTranslationValue(value) ? value : null;
+}
+
+function getPreferredTranslation(entity, language, staticTranslation, field, fallback) {
+  const embedded = getEmbeddedTranslation(entity, language, field);
+
+  if (embedded !== null) {
+    return embedded;
+  }
+
+  const staticValue = staticTranslation?.[field];
+
+  if (hasTranslationValue(staticValue)) {
+    return staticValue;
+  }
+
+  return fallback;
 }
 
 export function getLocalizedMenuText(
@@ -2677,45 +2688,63 @@ export function getLocalizedMenuText(
   field = 'title'
 ) {
   return (
-    menuTranslations[language]?.[type]?.[id] ||
     getEmbeddedTranslation(entity, language, field) ||
+    getStaticMenuTranslation(language, type, id) ||
     fallback
   );
 }
 
 export function getLocalizedItem(item, language) {
-  const embedded = item.translations?.[language] || {};
   const translation = menuTranslations[language]?.items?.[item.id] || {};
-  const hasDescription = Object.prototype.hasOwnProperty.call(
-    translation,
-    'description'
-  );
 
   return {
     ...item,
-    name: translation.name || embedded.name || item.name,
-    description:
-      hasDescription && typeof translation.description === 'string'
-        ? translation.description
-        : embedded.description || item.description,
+    name: getPreferredTranslation(item, language, translation, 'name', item.name),
+    description: getPreferredTranslation(
+      item,
+      language,
+      translation,
+      'description',
+      item.description
+    ),
   };
 }
 
 export function getLocalizedStory(story, language) {
   const translation = menuTranslations[language]?.story;
-  return translation || story;
+
+  return {
+    ...story,
+    title: getPreferredTranslation(story, language, translation, 'title', story.title),
+    paragraphs: getPreferredTranslation(
+      story,
+      language,
+      translation,
+      'paragraphs',
+      story.paragraphs
+    ),
+    closing: getPreferredTranslation(
+      story,
+      language,
+      translation,
+      'closing',
+      story.closing
+    ),
+  };
 }
 
 export function getLocalizedNotice(notice, language) {
   return (
-    menuTranslations[language]?.notices?.[notice.id] ||
+    getEmbeddedTranslation(notice, language, 'text') ||
+    getStaticMenuTranslation(language, 'notices', notice.id) ||
     notice.text
   );
 }
 
 export function getLocalizedAllergen(allergen, language) {
   return (
-    menuTranslations[language]?.allergens?.[allergen.code] ||
+    getEmbeddedTranslation(allergen, language, 'name') ||
+    getStaticMenuTranslation(language, 'allergens', allergen.code) ||
     allergen.name ||
     allergen.label
   );

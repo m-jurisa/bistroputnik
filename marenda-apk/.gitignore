@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+.codex
+dist/
+build/
+*.apk
+*.aab
+npm-debug.log*
