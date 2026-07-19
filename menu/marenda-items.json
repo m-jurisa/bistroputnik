@@ -1,116 +1,116 @@
 {
- "items": [
+"items": [
   {
-    "id": "lazanje",
-    "name": "Lazanje",
-    "description": "Domaće lazanje, zapečene i poslužene kao zasitno dnevno jelo.",
-    "price": 13,
-    "priceDisplay": "13 €",
-    "allergens": ["G", "J", "M", "C"],
-    "translations": {
-      "en": {
-        "name": "Lasagne",
-        "description": "Homemade lasagne, oven-baked and served as a hearty daily dish."
-      },
-      "sv": {
-        "name": "Lasagne",
-        "description": "Hemlagad lasagne, ugnsbakad och serverad som en mättande dagens rätt."
-      },
-      "fi": {
-        "name": "Lasagne",
-        "description": "Kotitekoinen lasagne, uunissa paistettu ja tarjoiltu täyttävänä päivän annoksena."
-      },
-      "no": {
-        "name": "Lasagne",
-        "description": "Hjemmelaget lasagne, ovnsbakt og servert som en mettende dagens rett."
-      },
-      "pl": {
-        "name": "Lasagne",
-        "description": "Domowa lasagne, zapiekana i podawana jako sycące danie dnia."
-      },
-      "de": {
-        "name": "Lasagne",
-        "description": "Hausgemachte Lasagne, überbacken und als sättigendes Tagesgericht serviert."
-      },
-      "da": {
-        "name": "Lasagne",
-        "description": "Hjemmelavet lasagne, ovnbagt og serveret som en mættende dagens ret."
-      }
-    }
-  },
-  {
-    "id": "krpice-sa-zeljem",
-    "name": "Krpice sa zeljem",
-    "description": "Domaće krpice sa zeljem, pripremljene kao jednostavno i zasitno dnevno jelo.",
-    "price": 12,
-    "priceDisplay": "12 €",
-    "allergens": ["G", "J"],
-    "translations": {
-      "en": {
-        "name": "Pasta squares with cabbage",
-        "description": "Homemade pasta squares with cabbage, prepared as a simple yet hearty daily dish."
-      },
-      "sv": {
-        "name": "Pastarutor med kål",
-        "description": "Hemlagade pastarutor med kål, tillagade som en enkel men mättande dagens rätt."
-      },
-      "fi": {
-        "name": "Pastaneliöt kaalin kanssa",
-        "description": "Kotitekoiset pastaneliöt kaalin kanssa, valmistettu yksinkertaiseksi mutta täyttäväksi päivän annokseksi."
-      },
-      "no": {
-        "name": "Pastaruter med kål",
-        "description": "Hjemmelagde pastaruter med kål, tilberedt som en enkel men mettende dagens rett."
-      },
-      "pl": {
-        "name": "Łazanki z kapustą",
-        "description": "Domowe łazanki z kapustą, przygotowane jako proste, ale sycące danie dnia."
-      },
-      "de": {
-        "name": "Fleckerl mit Kohl",
-        "description": "Hausgemachte Fleckerl mit Kohl, als einfaches aber sättigendes Tagesgericht zubereitet."
-      },
-      "da": {
-        "name": "Pastafelter med kål",
-        "description": "Hjemmelavede pastafelter med kål, tilberedt som en enkel men mættende dagens ret."
-      }
-    }
-  },
-  {
-    "id": "sarma",
-    "name": "Sarma",
-    "description": "Domaća sarma od kiselog kupusa, punjena začinjenim mljevenim mesom i rižom, polako kuhana i poslužena kao dnevno jelo.",
+    "id": "krumpir-varivo-s-kobasicom",
+    "name": "Krumpir varivo s kobasicom",
+    "description": "Domaće krumpir varivo s kobasicom, lagano kuhano i posluženo kao zasitno dnevno jelo.",
     "price": 10,
     "priceDisplay": "10 €",
     "allergens": ["C"],
     "translations": {
       "en": {
-        "name": "Sarma",
-        "description": "Homemade stuffed sour cabbage rolls with seasoned minced meat and rice, slowly cooked and served as a daily dish."
+        "name": "Potato stew with sausage",
+        "description": "Homemade potato stew with sausage, gently cooked and served as a hearty daily dish."
       },
       "sv": {
-        "name": "Sarma",
-        "description": "Hemlagad sarma av surkål, fylld med kryddad köttfärs och ris, långsamt tillagad och serverad som dagens rätt."
+        "name": "Potatisgryta med korv",
+        "description": "Hemlagad potatisgryta med korv, varsamt tillagad och serverad som en mättande dagens rätt."
       },
       "fi": {
-        "name": "Sarma",
-        "description": "Kotitekoinen sarma hapankaalista, täytetty maustetulla jauhelihalla ja riisillä, hitaasti kypsennetty ja tarjoiltu päivän annoksena."
+        "name": "Perunapata makkaralla",
+        "description": "Kotitekoinen perunapata makkaralla, miedosti kypsennetty ja tarjoiltu täyttävänä päivän annoksena."
       },
       "no": {
-        "name": "Sarma",
-        "description": "Hjemmelaget sarma av surkål, fylt med krydret kjøttdeig og ris, langsomt tilberedt og servert som dagens rett."
+        "name": "Potetgryte med pølse",
+        "description": "Hjemmelaget potetgryte med pølse, skånsomt tilberedt og servert som en mettende dagens rett."
       },
       "pl": {
-        "name": "Sarma",
-        "description": "Domowa sarma z kiszonej kapusty, faszerowana doprawionym mięsem mielonym i ryżem, powoli gotowana i podawana jako danie dnia."
+        "name": "Gulasz ziemniaczany z kiełbasą",
+        "description": "Domowy gulasz ziemniaczany z kiełbasą, delikatnie gotowany i podawany jako sycące danie dnia."
       },
       "de": {
-        "name": "Sarma",
-        "description": "Hausgemachte Sarma aus Sauerkohl, gefüllt mit gewürztem Hackfleisch und Reis, langsam gekocht und als Tagesgericht serviert."
+        "name": "Kartoffeleintopf mit Wurst",
+        "description": "Hausgemachter Kartoffeleintopf mit Wurst, schonend gekocht und als sättigendes Tagesgericht serviert."
       },
       "da": {
-        "name": "Sarma",
-        "description": "Hjemmelavet sarma af surkål, fyldt med krydret hakket kød og ris, langsomt tilberedt og serveret som dagens ret."
+        "name": "Kartoffelgryde med pølse",
+        "description": "Hjemmelavet kartoffelgryde med pølse, nænsomt tilberedt og serveret som en mættende dagens ret."
+      }
+    }
+  },
+  {
+    "id": "pileci-becki",
+    "name": "Pileći bečki",
+    "description": "Hrskavo panirani pileći odrezak zlatne boje, poslužen kao zasitno dnevno jelo.",
+    "price": 11,
+    "priceDisplay": "11 €",
+    "allergens": ["G", "J"],
+    "translations": {
+      "en": {
+        "name": "Vienna-style chicken schnitzel",
+        "description": "A crispy, golden breaded chicken schnitzel, served as a hearty daily dish."
+      },
+      "sv": {
+        "name": "Panerad kycklingschnitzel",
+        "description": "En krispig, gyllene panerad kycklingschnitzel, serverad som en mättande dagens rätt."
+      },
+      "fi": {
+        "name": "Paneroitu kananleike",
+        "description": "Rapea, kullanruskea paneroitu kananleike, tarjoiltuna täyttävänä päivän annoksena."
+      },
+      "no": {
+        "name": "Panert kyllingschnitzel",
+        "description": "En sprø, gyllenpanert kyllingschnitzel, servert som en mettende dagens rett."
+      },
+      "pl": {
+        "name": "Panierowany kotlet z kurczaka po wiedeńsku",
+        "description": "Chrupiący, złocisty panierowany kotlet z kurczaka, podawany jako sycące danie dnia."
+      },
+      "de": {
+        "name": "Paniertes Hähnchenschnitzel Wiener Art",
+        "description": "Ein knusprig goldbraun paniertes Hähnchenschnitzel, als sättigendes Tagesgericht serviert."
+      },
+      "da": {
+        "name": "Paneret kyllingeschnitzel",
+        "description": "En sprød, gyldenpaneret kyllingeschnitzel, serveret som en mættende dagens ret."
+      }
+    }
+  },
+  {
+    "id": "punjene-pljeskavice",
+    "name": "Punjene pljeskavice",
+    "description": "Sočne punjene pljeskavice, pečene i poslužene kao zasitno dnevno jelo.",
+    "price": 13,
+    "priceDisplay": "13 €",
+    "allergens": [],
+    "translations": {
+      "en": {
+        "name": "Stuffed pljeskavice",
+        "description": "Juicy stuffed pljeskavice, grilled and served as a hearty daily dish."
+      },
+      "sv": {
+        "name": "Fyllda pljeskavice",
+        "description": "Saftiga fyllda pljeskavice, grillade och serverade som en mättande dagens rätt."
+      },
+      "fi": {
+        "name": "Täytetyt pljeskavice",
+        "description": "Mehevät täytetyt pljeskavice, grillattuina ja tarjoiltuina täyttävänä päivän annoksena."
+      },
+      "no": {
+        "name": "Fylte pljeskavice",
+        "description": "Saftige fylte pljeskavice, grillet og servert som en mettende dagens rett."
+      },
+      "pl": {
+        "name": "Nadziewane pljeskavice",
+        "description": "Soczyste nadziewane pljeskavice, grillowane i podawane jako sycące danie dnia."
+      },
+      "de": {
+        "name": "Gefüllte Pljeskavice",
+        "description": "Saftige gefüllte Pljeskavice, gegrillt und als sättigendes Tagesgericht serviert."
+      },
+      "da": {
+        "name": "Fyldte pljeskavice",
+        "description": "Saftige fyldte pljeskavice, grillet og serveret som en mættende dagens ret."
       }
     }
   }

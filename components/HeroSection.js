@@ -33,9 +33,12 @@ export default function HeroSection() {
           <BrandDivider className="mx-auto w-full max-w-sm" />
         </div>
 
-        <div className="flex w-full max-w-xs flex-col items-center gap-3 sm:w-auto sm:max-w-none sm:flex-row">
+        <div className="flex w-full max-w-xs flex-col items-center gap-3 sm:w-auto sm:max-w-none">
           <a href={getLocalizedPath(language, 'menu')} className="brand-button w-full sm:w-auto">
             {t.hero.cta}
+          </a>
+          <a href={getLocalizedPath(language, 'marenda')} className="brand-button w-full sm:w-auto">
+            {t.hero.marendaCta}
           </a>
         </div>
       </div>
