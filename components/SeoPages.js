@@ -34,6 +34,14 @@ const guideUi = {
     allGuides: 'All Guides',
     viewMenu: 'View Menu',
   },
+  hu: {
+    updated: 'Frissítve',
+    recommendations: 'Ajánlatok az étlapról',
+    visitLinks: 'Látogatás tervezése',
+    relatedGuides: 'Kapcsolódó útmutatók',
+    allGuides: 'Összes útmutató',
+    viewMenu: 'Étlap megtekintése',
+  },
   de: {
     updated: 'Aktualisiert',
     recommendations: 'Empfehlungen aus der Speisekarte',
@@ -99,6 +107,13 @@ const directContactCopy = {
     emailHint: 'The email is written out for copy and paste, and the link opens a new message.',
     emailAction: 'Send Email',
   },
+  hu: {
+    eyebrow: 'Közvetlen kapcsolat',
+    phoneHint: 'A leggyorsabb válaszért hívja az éttermet.',
+    email: 'E-mail',
+    emailHint: 'Az e-mail cím másolható formában látható, a link új üzenetet nyit.',
+    emailAction: 'E-mail küldése',
+  },
   de: {
     eyebrow: 'Direkter Kontakt',
     phoneHint: 'Für die schnellste Antwort rufen Sie das Lokal an.',
@@ -140,6 +155,27 @@ const directContactCopy = {
     email: 'E-mail',
     emailHint: 'E-mailadressen vises til kopiering, og linket åbner en ny besked.',
     emailAction: 'Send e-mail',
+  },
+};
+
+const locationDetailCopy = {
+  en: {
+    contact: 'Contact',
+    venue: 'Venue',
+    address: 'Address',
+    phone: 'Phone',
+    email: 'Email',
+    website: 'Website',
+    openMap: 'Open Google Maps',
+  },
+  hu: {
+    contact: 'Kapcsolat',
+    venue: 'Hely',
+    address: 'Cím',
+    phone: 'Telefon',
+    email: 'E-mail',
+    website: 'Weboldal',
+    openMap: 'Google Maps megnyitása',
   },
 };
 
@@ -235,6 +271,11 @@ function RecommendedMenuItems({ locale, items = [] }) {
               <div className="flex items-start justify-between gap-4">
                 <div className="min-w-0">
                   <p className="break-words text-base font-semibold leading-6 text-[#f4eee0]">
+                    {item.staffCode ? (
+                      <span className="mr-2 inline-flex rounded-full border border-brand-line/25 px-2 py-0.5 align-middle text-[0.58rem] font-semibold leading-4 tracking-[0.08em] text-[#aebdc0]">
+                        {item.staffCode}
+                      </span>
+                    ) : null}
                     {item.name}
                   </p>
                   {item.description ? (
@@ -319,6 +360,7 @@ export function MenuStandalonePage({ locale, menu }) {
 export function LocationPage({ locale, business }) {
   const copy = localeCopy(pageContent.location, locale);
   const directCopy = directContactCopy[locale] || directContactCopy.en;
+  const detailCopy = locationDetailCopy[locale] || locationDetailCopy.en;
   const locationPath = getLocalizedPath(locale, 'location');
   const contactRedirectUrl = `${siteConfig.siteUrl}${locationPath}?contact=sent#contact-form`;
   const telHref = venueFacts.phone ? `tel:${venueFacts.phone.replace(/[^\d+]/g, '')}` : '';
@@ -330,16 +372,16 @@ export function LocationPage({ locale, business }) {
         <div className="container-shell grid gap-8 lg:grid-cols-[0.82fr_1.18fr]">
           <div className="space-y-7">
             <div className="panel-surface p-6 sm:p-8">
-              <p className="fine-print">Contact</p>
+              <p className="fine-print">{detailCopy.contact}</p>
               <dl className="mt-5 grid gap-5 text-sm leading-6 text-[#d8dfdf]">
                 <div>
-                  <dt className="text-brand-sand/80">Venue</dt>
+                  <dt className="text-brand-sand/80">{detailCopy.venue}</dt>
                   <dd className="mt-1 font-semibold text-[#f4eee0]">
                     {siteConfig.venueDisplayName}
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-brand-sand/80">Address</dt>
+                  <dt className="text-brand-sand/80">{detailCopy.address}</dt>
                   <dd className="mt-1">
                     <a
                       className="font-semibold text-[#f4eee0] hover:text-brand-sand"
@@ -353,7 +395,7 @@ export function LocationPage({ locale, business }) {
                 </div>
                 {venueFacts.phone ? (
                   <div>
-                    <dt className="text-brand-sand/80">Phone</dt>
+                    <dt className="text-brand-sand/80">{detailCopy.phone}</dt>
                     <dd className="mt-1">
                       <a className="font-semibold text-[#f4eee0] hover:text-brand-sand" href={telHref}>
                         {venueFacts.phone}
@@ -362,7 +404,7 @@ export function LocationPage({ locale, business }) {
                   </div>
                 ) : null}
                 <div>
-                  <dt className="text-brand-sand/80">Email</dt>
+                  <dt className="text-brand-sand/80">{detailCopy.email}</dt>
                   <dd className="mt-1">
                     <a className="font-semibold text-[#f4eee0] hover:text-brand-sand" href={`mailto:${business.email}`}>
                       {business.email}
@@ -370,7 +412,7 @@ export function LocationPage({ locale, business }) {
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-brand-sand/80">Website</dt>
+                  <dt className="text-brand-sand/80">{detailCopy.website}</dt>
                   <dd className="mt-1">
                     <a className="font-semibold text-[#f4eee0] hover:text-brand-sand" href={siteConfig.siteUrl}>
                       {siteConfig.displayHost}
@@ -407,7 +449,7 @@ export function LocationPage({ locale, business }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Open Google Maps
+                  {detailCopy.openMap}
                 </a>
               </div>
             </div>

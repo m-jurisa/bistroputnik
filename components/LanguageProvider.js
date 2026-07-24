@@ -14,6 +14,10 @@ export function LanguageProvider({ children, initialLanguage }) {
   const [language, setLanguageState] = useState(initial);
 
   useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
+
+  useEffect(() => {
     if (isKnownLanguage(initialLanguage)) {
       setLanguageState(initialLanguage);
       window.localStorage.setItem('bistroputnik-language', initialLanguage);

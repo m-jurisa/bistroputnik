@@ -293,6 +293,22 @@ button:active,
   font-weight: 600;
 }
 
+.staff-code {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.45rem;
+  border: 1px solid rgba(16, 63, 77, 0.2);
+  border-radius: 999px;
+  padding: 0.08rem 0.34rem;
+  color: rgba(16, 63, 77, 0.62);
+  font-family: var(--body-font);
+  font-size: 0.54rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  vertical-align: middle;
+}
+
 .item-description {
   margin: 0.18rem 0 0;
   color: rgba(16, 63, 77, 0.68);

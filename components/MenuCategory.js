@@ -28,6 +28,18 @@ function hasPlaceholderPrice(item, price) {
   );
 }
 
+function StaffCode({ code }) {
+  if (!code) {
+    return null;
+  }
+
+  return (
+    <span className="inline-flex shrink-0 rounded-full border border-brand-line/25 px-2 py-0.5 text-[0.58rem] font-semibold leading-4 tracking-[0.08em] text-[#aebdc0]">
+      {code}
+    </span>
+  );
+}
+
 function MenuItem({ item, labels }) {
   const price = displayPrice(item);
   const isPlaceholder = hasPlaceholderPrice(item, price);
@@ -35,8 +47,9 @@ function MenuItem({ item, labels }) {
   return (
     <li className="grid gap-2 border-t border-brand-line/15 pt-4 first:border-t-0 first:pt-0 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-5">
       <div className="min-w-0">
-        <p className="break-words text-sm font-semibold leading-6 text-[#f4eee0]">
-          {item.name}
+        <p className="flex min-w-0 flex-wrap items-baseline gap-x-2 gap-y-1 text-sm font-semibold leading-6 text-[#f4eee0]">
+          <StaffCode code={item.staffCode} />
+          <span className="min-w-0 break-words">{item.name}</span>
         </p>
         {item.description ? (
           <p className="mt-1 max-w-2xl text-sm leading-6 text-[#cdd8d9]">

@@ -22,6 +22,7 @@ const localeMap = {
   no: 'nb_NO',
   pl: 'pl_PL',
   da: 'da_DK',
+  hu: 'hu_HU',
 };
 
 function compactObject(value) {

@@ -3,6 +3,7 @@ export const DEFAULT_LANGUAGE = "hr";
 export const SUPPORTED_LANGUAGES = [
   { code: "hr", label: "Hrvatski", printLabel: "HR" },
   { code: "en", label: "English", printLabel: "EN" },
+  { code: "hu", label: "Magyar", printLabel: "HU" },
   { code: "sv", label: "Svenska", printLabel: "SV" },
   { code: "fi", label: "Suomi", printLabel: "FI" },
   { code: "no", label: "Norsk", printLabel: "NO" },
@@ -33,6 +34,17 @@ export const UI_TRANSLATIONS = {
     allergens: "Allergens",
     importComplete: "Translations were merged into the working copy. Export the full JSON to save changes.",
     noMissingTranslations: "No missing translations were found."
+  },
+  hu: {
+    printPdf: "Nyomtatás / PDF",
+    exportJson: "JSON exportálása",
+    exportCurrentJson: "Aktuális nyelv JSON exportálása",
+    exportMissingTranslations: "Hiányzó fordítások exportálása",
+    importTranslations: "Fordítások importálása",
+    notices: "Vendéginformációk",
+    allergens: "Allergének",
+    importComplete: "A fordítások bekerültek a munkapéldányba. A módosítások mentéséhez exportálja a teljes JSON-t.",
+    noMissingTranslations: "Nem találhatók hiányzó fordítások."
   },
   sv: {
     printPdf: "Skriv ut / PDF",

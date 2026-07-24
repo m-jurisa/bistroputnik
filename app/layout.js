@@ -23,6 +23,13 @@ export const metadata = {
   ...defaultMetadata,
   metadataBase: new URL(siteConfig.siteUrl),
   applicationName: siteConfig.brand,
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.ico',
+  },
   title: {
     default: defaultMetadata.title,
     template: '%s | Bistro Putnik',

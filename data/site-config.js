@@ -1,6 +1,6 @@
 import { guideArticles } from './guide-articles';
 
-export const supportedLocales = ['hr', 'en', 'de', 'sv', 'fi', 'no', 'pl', 'da'];
+export const supportedLocales = ['hr', 'en', 'de', 'sv', 'fi', 'no', 'pl', 'da', 'hu'];
 
 export const defaultLocale = 'en';
 
@@ -43,6 +43,7 @@ const routeMeta = {
       no: '',
       pl: '',
       da: '',
+      hu: '',
     },
     title: {
       hr: 'Bistro Putnik u Baškoj Vodi',
@@ -53,6 +54,7 @@ const routeMeta = {
       no: 'Bistro Putnik i Baška Voda',
       pl: 'Bistro Putnik w Baškiej Vodzie',
       da: 'Bistro Putnik i Baška Voda',
+      hu: 'Bistro Putnik Baška Vodában',
     },
     description: {
       hr: 'Bistro Putnik u Baškoj Vodi priprema hrvatsku obalnu kuhinju, marendu, ribu, grill, pića i jelovnik za goste Makarske rivijere.',
@@ -63,6 +65,7 @@ const routeMeta = {
       no: 'Bistro Putnik i Baška Voda serverer kroatisk kystmat, dagens marenda, sjømat, grillretter, drikke og en meny for gjester på Makarska-rivieraen.',
       pl: 'Bistro Putnik w Baškiej Vodzie oferuje chorwacką kuchnię wybrzeża, marendę dnia, ryby, grill, napoje i menu dla gości Riwiery Makarskiej.',
       da: 'Bistro Putnik i Baška Voda serverer kroatisk kystmad, dagens marenda, fisk, grillretter, drikkevarer og en menu til gæster på Makarska-rivieraen.',
+      hu: 'A baška vodai Bistro Putnik horvát tengerparti ételeket, napi marendát, halat, grillfogásokat, italokat és vendégbarát étlapot kínál a Makarska-riviérán.',
     },
   },
   menu: {
@@ -78,6 +81,7 @@ const routeMeta = {
       no: 'meny',
       pl: 'menu',
       da: 'menu',
+      hu: 'etlap',
     },
     title: {
       hr: 'Jelovnik Bistro Putnik',
@@ -88,6 +92,7 @@ const routeMeta = {
       no: 'Bistro Putnik meny',
       pl: 'Menu Bistro Putnik',
       da: 'Bistro Putnik menu',
+      hu: 'Bistro Putnik étlap',
     },
     description: {
       hr: 'Pregledajte jelovnik Bistro Putnik u Baškoj Vodi: hrvatska jela, riba, grill, pića, alergeni i cijene u eurima.',
@@ -98,6 +103,7 @@ const routeMeta = {
       no: 'Se Bistro Putnik-menyen i Baška Voda: kroatiske retter, sjømat, grill, drikke, allergener og priser i euro.',
       pl: 'Zobacz menu Bistro Putnik w Baškiej Vodzie: chorwackie dania, ryby, grill, napoje, alergeny i ceny w euro.',
       da: 'Se Bistro Putniks menu i Baška Voda: kroatiske retter, fisk, grill, drikkevarer, allergener og priser i euro.',
+      hu: 'Tekintse meg a Bistro Putnik étlapját Baška Vodában: horvát ételek, halak, grillfogások, italok, allergének és euróárak.',
     },
   },
   marenda: {
@@ -113,6 +119,7 @@ const routeMeta = {
       no: 'marenda',
       pl: 'marenda',
       da: 'marenda',
+      hu: 'marenda',
     },
     title: {
       hr: 'Marenda u Baškoj Vodi',
@@ -123,6 +130,7 @@ const routeMeta = {
       no: 'Dagens marenda i Baška Voda',
       pl: 'Codzienna marenda w Baškiej Vodzie',
       da: 'Dagens marenda i Baška Voda',
+      hu: 'Napi marenda Baška Vodában',
     },
     description: {
       hr: 'Dnevna marenda Bistro Putnik s lokalnim jelima, jasnim cijenama i ponudom dostupnom dok se dnevna količina ne rasproda.',
@@ -133,6 +141,7 @@ const routeMeta = {
       no: 'Bistro Putniks daglige marenda med lokale retter, tydelige priser og tilbud så lenge dagens mengde varer.',
       pl: 'Codzienna marenda Bistro Putnik z lokalnymi daniami, jasnymi cenami i ofertą dostępną do wyczerpania dziennej porcji.',
       da: 'Bistro Putniks daglige marenda med lokale retter, tydelige priser og tilbud, så længe dagens portion rækker.',
+      hu: 'A Bistro Putnik napi marendája helyi ételekkel, egyértelmű árakkal és a napi adag elfogyásáig elérhető kínálattal.',
     },
   },
   location: {
@@ -148,6 +157,7 @@ const routeMeta = {
       no: 'beliggenhet',
       pl: 'lokalizacja',
       da: 'beliggenhed',
+      hu: 'kapcsolat',
     },
     title: {
       hr: 'Lokacija i kontakt',
@@ -158,6 +168,7 @@ const routeMeta = {
       no: 'Beliggenhet og kontakt',
       pl: 'Lokalizacja i kontakt',
       da: 'Beliggenhed og kontakt',
+      hu: 'Helyszín és kapcsolat',
     },
     description: {
       hr: 'Kontakt informacije za Bistro Putnik na adresi Naputica 14 u Baškoj Vodi: karta, telefon, e-pošta i obrazac za upit.',
@@ -168,6 +179,7 @@ const routeMeta = {
       no: 'Kontaktinformasjon for Bistro Putnik på Naputica 14 i Baška Voda: kart, telefon, e-post og kontaktskjema.',
       pl: 'Informacje kontaktowe Bistro Putnik przy Naputica 14 w Baškiej Vodzie: mapa, telefon, e-mail i formularz kontaktowy.',
       da: 'Kontaktinformation for Bistro Putnik på Naputica 14 i Baška Voda: kort, telefon, e-mail og kontaktformular.',
+      hu: 'Kapcsolati információk a Bistro Putnikhoz, Naputica 14, Baška Voda: térkép, telefon, e-mail és kapcsolatfelvételi űrlap.',
     },
   },
   reviews: {
@@ -183,6 +195,7 @@ const routeMeta = {
       no: 'anmeldelser',
       pl: 'opinie',
       da: 'anmeldelser',
+      hu: 'ertekelesek',
     },
     title: {
       hr: 'Recenzije Bistro Putnik',
@@ -193,6 +206,7 @@ const routeMeta = {
       no: 'Bistro Putnik anmeldelser',
       pl: 'Opinie Bistro Putnik',
       da: 'Bistro Putnik anmeldelser',
+      hu: 'Bistro Putnik értékelések',
     },
     description: {
       hr: 'Poveznice za recenzije i izravan kontakt s Bistro Putnik u Baškoj Vodi.',
@@ -203,6 +217,7 @@ const routeMeta = {
       no: 'Anmeldelseslenker og direkte kontakt for Bistro Putnik i Baška Voda.',
       pl: 'Linki do opinii i bezpośredni kontakt z Bistro Putnik w Baškiej Vodzie.',
       da: 'Anmeldelseslinks og direkte kontakt til Bistro Putnik i Baška Voda.',
+      hu: 'Értékelési linkek és közvetlen kapcsolat a baška vodai Bistro Putnikhoz.',
     },
   },
   visit: {
@@ -218,6 +233,7 @@ const routeMeta = {
       no: 'baska-voda',
       pl: 'baska-voda',
       da: 'baska-voda',
+      hu: 'baska-voda',
     },
     title: {
       hr: 'Baška Voda za goste',
@@ -228,6 +244,7 @@ const routeMeta = {
       no: 'Baška Voda for gjester',
       pl: 'Baška Voda dla gości',
       da: 'Baška Voda for gæster',
+      hu: 'Baška Voda vendégeknek',
     },
     description: {
       hr: 'Kratki vodič za goste koji traže ručak, večeru, marendu i hrvatsku obalnu hranu u Baškoj Vodi.',
@@ -238,6 +255,7 @@ const routeMeta = {
       no: 'En kort guide for lunsj, middag, marenda og kroatisk kystmat i Baška Voda.',
       pl: 'Krótki przewodnik po lunchu, kolacji, marendzie i chorwackiej kuchni wybrzeża w Baškiej Vodzie.',
       da: 'En kort guide til frokost, middag, marenda og kroatisk kystmad i Baška Voda.',
+      hu: 'Rövid vendégútmutató ebédhez, vacsorához, marendához és horvát tengerparti ételekhez Baška Vodában.',
     },
   },
   blog: {
@@ -253,6 +271,7 @@ const routeMeta = {
       no: 'guide',
       pl: 'przewodnik',
       da: 'guide',
+      hu: 'utmutatok',
     },
     title: {
       hr: 'Vodič za hranu u Baškoj Vodi',
@@ -263,6 +282,7 @@ const routeMeta = {
       no: 'Matguide for Baška Voda',
       pl: 'Przewodnik kulinarny po Baškiej Vodzie',
       da: 'Madguide til Baška Voda',
+      hu: 'Baška Voda ételútmutató',
     },
     description: {
       hr: 'Lokalni vodiči za ručak, plaže, marendu, dalmatinska jela, morsku hranu, grill i hrvatski restoranski jelovnik u Baškoj Vodi.',
@@ -273,6 +293,7 @@ const routeMeta = {
       no: 'Lokale guider til lunsj, strender, marenda, dalmatiske retter, sjømat, grill og kroatiske restaurantmenyer i Baška Voda.',
       pl: 'Lokalne przewodniki po lunchu, plażach, marendzie, daniach dalmatyńskich, owocach morza, grillu i chorwackim menu w Baškiej Vodzie.',
       da: 'Lokale guides til frokost, strande, marenda, dalmatiske retter, fisk, grill og kroatiske restaurantmenuer i Baška Voda.',
+      hu: 'Helyi útmutatók ebédhez, strandokhoz, marendához, dalmát ételekhez, tengeri fogásokhoz, grillhez és horvát éttermi étlaphoz Baška Vodában.',
     },
   },
 };
@@ -371,6 +392,17 @@ export const pageContent = {
         'Menu, marenda og lokale guides findes på restaurantens sider.',
       ],
     },
+    hu: {
+      eyebrow: 'Helyszín',
+      title: 'Bistro Putnik Baška Vodában',
+      intro:
+        'A Bistro Putnik a baška vodai Naputica 14 alatt található. Nyissa meg a térképet, hívja az éttermet, küldjön érdeklődést, vagy írjon nekünk közvetlenül e-mailben.',
+      notes: [
+        'Az étterem címe: Naputica 14, 21320 Baška Voda.',
+        'Kapcsolatfelvételhez használja a telefonszámot, az űrlapot vagy a közvetlen e-mail címet.',
+        'Az étlap, a marenda és a helyi útmutatók az étterem oldalain érhetők el.',
+      ],
+    },
   },
   visit: {
     hr: {
@@ -429,6 +461,13 @@ export const pageContent = {
         'Baška Voda fungerer bedst i en rolig dagsrytme: strand, gåtur, marenda, kystretter og aftendrikke. Bistro Putnik gør denne rytme tydelig for lokale gæster og rejsende.',
       points: ['Marenda som dagens frokost', 'Kroatiske kystretter og grill', 'Tydelige priser og allergener'],
     },
+    hu: {
+      eyebrow: 'Baška Voda',
+      title: 'Ebéd, vacsora és marenda Baška Voda vendégeinek',
+      intro:
+        'Baška Voda legjobban nyugodt napi ritmusban működik: strand, séta, marenda, tengerparti ételek és esti italok. A Bistro Putnik ezt a ritmust teszi átláthatóvá a helyi vendégeknek és az utazóknak.',
+      points: ['Marenda napi ebédhez', 'Horvát tengerparti ételek és grill', 'Egyértelmű árak és allergénjelölések'],
+    },
   },
   blog: {
     hr: { eyebrow: 'Vodiči', title: 'Vodiči za hranu u Baškoj Vodi' },
@@ -439,6 +478,7 @@ export const pageContent = {
     no: { eyebrow: 'Guider', title: 'Matguider for Baška Voda' },
     pl: { eyebrow: 'Przewodniki', title: 'Przewodniki kulinarne po Baškiej Vodzie' },
     da: { eyebrow: 'Guides', title: 'Madguides til Baška Voda' },
+    hu: { eyebrow: 'Útmutatók', title: 'Ételútmutatók Baška Vodához' },
   },
 };
 

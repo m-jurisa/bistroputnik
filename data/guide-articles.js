@@ -1,4 +1,4 @@
-const locales = ['hr', 'en', 'de', 'sv', 'fi', 'no', 'pl', 'da'];
+const locales = ['hr', 'en', 'de', 'sv', 'fi', 'no', 'pl', 'da', 'hu'];
 
 const publishedDate = '2026-07-12';
 
@@ -34,6 +34,10 @@ const ogLabels = {
   da: {
     ogCta: 'Se Bistro Putnik-guiden',
     ogDescriptionCta: 'Læs guiden og åbn Bistro Putniks menu.',
+  },
+  hu: {
+    ogCta: 'Bistro Putnik útmutató megtekintése',
+    ogDescriptionCta: 'Olvassa el az útmutatót, és nyissa meg a Bistro Putnik étlapját.',
   },
 };
 
@@ -913,16 +917,468 @@ const articleSectionBlueprints = {
   ],
 };
 
+function huGuide(path, title, description, intro, recommendation, sections) {
+  return { path, title, description, intro, recommendation, sections };
+}
+
+const huGuideTranslations = {
+  'where-to-eat-baska-voda': huGuide(
+    'hol-egyunk-baska-vodaban',
+    'Hol együnk Baška Vodában',
+    'Gyakorlati útmutató ebédhez, vacsorához, marendához és horvát tengerparti ételekhez Baška Vodában.',
+    'Baška Vodában akkor a legegyszerűbb étkezést választani, ha az étel követi a nap ritmusát: marenda, ebéd strand után, lassabb vacsora vagy egy egyszerű tányér séta előtt.',
+    'A Bistro Putnik azt javasolja, hogy étvágy szerint válasszon: dalmát pašticada helyi tányérként, hal és tintahal tengerparti ebédhez, illetve vegetáriánus vagy vegán fogások, ha könnyebb ételre vágyik.',
+    [
+      {
+        title: 'Igazítsa az étkezést a naphoz',
+        paragraphs: [
+          'Baška Vodában akkor a legegyszerűbb étkezést választani, ha az étel követi a nap ritmusát: marenda, ebéd strand után, lassabb vacsora vagy egy egyszerű tányér séta előtt.',
+        ],
+      },
+      {
+        title: 'Mit érdemes nézni az étlapon',
+        paragraphs: [
+          'Rövidebb étkezéshez hasonlítsa össze a marendát és a salátákat; lassabb asztalhoz nézze meg a halakat, a grillt és a dalmát ételeket. A közzétett árak és allergénjelölések segítenek a személyzettel történő végső egyeztetés előtt.',
+        ],
+      },
+      {
+        title: 'Mit ajánl a Bistro Putnik',
+        paragraphs: [
+          'A Bistro Putnik azt javasolja, hogy étvágy szerint válasszon: dalmát pašticada helyi tányérként, hal és tintahal tengerparti ebédhez, illetve vegetáriánus vagy vegán fogások, ha könnyebb ételre vágyik.',
+        ],
+      },
+    ]
+  ),
+  'lunch-in-baska-voda': huGuide(
+    'ebed-baska-vodaban',
+    'Ebéd Baška Vodában',
+    'Hogyan válasszon napi ebédet, marendát vagy tengerparti fogást Baška Vodában.',
+    'Egy jó ebéd Baška Vodában legyen átlátható: ár, ételstílus, allergének, és hogy a marenda vagy a teljes étlap illik-e jobban az adott naphoz.',
+    'Ebédhez a Bistro Putnik először az aktuális napi marendát ajánlja, ha elérhető, majd a pašticadát, a tengeri tagliatellét, a köretes csirkét vagy a vegán tésztát az étlapról.',
+    [
+      {
+        title: 'Marenda vagy teljes ebédétlap',
+        paragraphs: [
+          'Egy jó ebéd Baška Vodában legyen átlátható: ár, ételstílus, allergének, és hogy a marenda vagy a teljes étlap illik-e jobban az adott naphoz.',
+        ],
+      },
+      {
+        title: 'Napi ajánlat és állandó étlap',
+        paragraphs: [
+          'A marenda akkor hasznos, ha napi ételt szeretne korlátozott mennyiségben, míg az állandó étlap halat, tésztát, grillt, gyerekételeket, valamint vegetáriánus és vegán lehetőségeket kínál. Ha allergia vagy étrendi korlátozás fontos, rendelés előtt ellenőrizze az összetevőket.',
+        ],
+      },
+      {
+        title: 'Mit rendeljen ebédre',
+        paragraphs: [
+          'Ebédhez a Bistro Putnik először az aktuális napi marendát ajánlja, ha elérhető, majd a pašticadát, a tengeri tagliatellét, a köretes csirkét vagy a vegán tésztát az étlapról.',
+        ],
+      },
+    ]
+  ),
+  'dinner-after-beach-baska-voda': huGuide(
+    'vacsora-strand-utan-baska-vodaban',
+    'Vacsora strand után Baška Vodában',
+    'Ötletek nyugodtabb vacsorához úszás vagy egy baška vodai strandnap után.',
+    'Strand után a vacsora gyakran akkor működik a legjobban, ha nem bonyolult: hal, grill, helyi tányér vagy saláta egy itallal.',
+    'A Bistro Putnik strand után fehér halat, tonhal steaket, rump steaket vagy dalmát tálat javasol, attól függően, hogy könnyebb tengerparti fogást vagy tartalmasabb étkezést szeretne.',
+    [
+      {
+        title: 'Vacsora, amely egyszerűen tartja a napot',
+        paragraphs: [
+          'Strand után a vacsora gyakran akkor működik a legjobban, ha nem bonyolult: hal, grill, helyi tányér vagy saláta egy itallal.',
+        ],
+      },
+      {
+        title: 'Hogyan válasszon úszás után',
+        paragraphs: [
+          'Egy tengerparti nap után az étvágy a legegyszerűbb iránytű: hal és saláta könnyebb tányérnak, grill vagy dalmát étel tartalmasabb étkezéshez, illetve tál, ha az asztal megosztaná az ételt. Ez az oldal nem állít pontos távolságot vagy kilátást az étteremről.',
+        ],
+      },
+      {
+        title: 'Étlapötletek strand után',
+        paragraphs: [
+          'A Bistro Putnik strand után fehér halat, tonhal steaket, rump steaket vagy dalmát tálat javasol, attól függően, hogy könnyebb tengerparti fogást vagy tartalmasabb étkezést szeretne.',
+        ],
+      },
+    ]
+  ),
+  'family-lunch-baska-voda': huGuide(
+    'csaladi-ebed-baska-vodaban',
+    'Családi ebéd Baška Vodában',
+    'Hogyan válasszon családi ebédet, ha gyerekételekre, egyszerű tányérokra és egyértelmű allergénjelölésekre van szükség.',
+    'A családi ebédhez rugalmasság kell: az egyik vendég gyerekmenüt kérhet, a másik halat vagy grillt, a harmadik pedig ismerős tésztát.',
+    'A Bistro Putnik a gyerekmenüt, a bolognesét, a ćevapit és a palacsintát a szélesebb felnőtt étlappal kapcsolja össze, így az asztal hosszú magyarázat nélkül választhat.',
+    [
+      {
+        title: 'Rugalmas asztal különböző étvágyakhoz',
+        paragraphs: [
+          'A családi ebédhez rugalmasság kell: az egyik vendég gyerekmenüt kérhet, a másik halat vagy grillt, a harmadik pedig ismerős tésztát.',
+        ],
+      },
+      {
+        title: 'Hogyan álljon össze a családi rendelés',
+        paragraphs: [
+          'Érdemes a gyerekételekkel, az egyszerű tésztákkal és az ismerős grillfogásokkal kezdeni, majd halat, salátát vagy helyi ételt hozzáadni a felnőtteknek. Az allergénjelöléseket használja tájékozódásra, és kérjen megerősítést a személyzettől.',
+        ],
+      },
+      {
+        title: 'Egyszerű választások a Bistro Putnikban',
+        paragraphs: [
+          'A Bistro Putnik a gyerekmenüt, a bolognesét, a ćevapit és a palacsintát a szélesebb felnőtt étlappal kapcsolja össze, így az asztal hosszú magyarázat nélkül választhat.',
+        ],
+      },
+    ]
+  ),
+  'vegetarian-vegan-baska-voda': huGuide(
+    'vegetarianus-vegan-baska-vodaban',
+    'Vegetáriánus és vegán lehetőségek Baška Vodában',
+    'Útmutató könnyebb vegetáriánus és vegán választásokhoz a Bistro Putnik étlapjáról.',
+    'A tengerparton a vegetáriánus vagy vegán ebéd könnyebb, ha az étlapon egyértelmű jelölések vannak, és az allergének újra ellenőrizhetők a személyzettel.',
+    'A Bistro Putnik a vegán tészták, a karfiol steak, a tofu steak, a zöldségsaláta és a vegetáriánus arancini ellenőrzését ajánlja, étrendi korlátozás esetén személyzeti megerősítéssel.',
+    [
+      {
+        title: 'Kezdje az egyértelmű jelölésekkel',
+        paragraphs: [
+          'A tengerparton a vegetáriánus vagy vegán ebéd könnyebb, ha az étlapon egyértelmű jelölések vannak, és az allergének újra ellenőrizhetők a személyzettel.',
+        ],
+      },
+      {
+        title: 'Mit ellenőrizzen újra',
+        paragraphs: [
+          'Vegán rendelésnél külön ellenőrizze a sajtot, tojást, tejszínt, alapleveket és olyan kiegészítőket, amelyek az étel nevéből nem mindig látszanak. Vegetáriánus választásnál étvágy szerint hasonlítsa össze a tésztákat, salátákat és meleg tányérokat.',
+        ],
+      },
+      {
+        title: 'Növényi alapú választások az étlapról',
+        paragraphs: [
+          'A Bistro Putnik a vegán tészták, a karfiol steak, a tofu steak, a zöldségsaláta és a vegetáriánus arancini ellenőrzését ajánlja, étrendi korlátozás esetén személyzeti megerősítéssel.',
+        ],
+      },
+    ]
+  ),
+  'seafood-grill-baska-voda': huGuide(
+    'tengeri-etelek-grill-baska-vodaban',
+    'Tengeri ételek és grill Baška Vodában',
+    'Hogyan válasszon hal, tintahal, tonhal, kagyló és grillezett húsételek között Baška Vodában.',
+    'A tengeri ételek és a grill két gyakori tengerparti étvágyat fednek le: könnyebb halas tányért vagy tartalmasabb grillezett étkezést.',
+    'A Bistro Putnik tengeri fogásként grillezett tintahalat, fehér halat, tonhal steaket és buzara kagylót emel ki, a grillről pedig ćevapit, rump steaket és bélszínt.',
+    [
+      {
+        title: 'Tengeri tányér vagy grillétel',
+        paragraphs: [
+          'A tengeri ételek és a grill két gyakori tengerparti étvágyat fednek le: könnyebb halas tányért vagy tartalmasabb grillezett étkezést.',
+        ],
+      },
+      {
+        title: 'Az elkészítési mód számít',
+        paragraphs: [
+          'A tintahal, a fehér hal és a tonhal általában könnyebb tengerparti választás, míg a ćevapi, a rump steak és a bélszín tartalmasabb étkezés felé visz. A kagyló és a tengeri tészta más ritmust ad, ezért rendelés előtt érdemes összehasonlítani az elkészítést.',
+        ],
+      },
+      {
+        title: 'Tengeri és grill választások a Bistro Putnikban',
+        paragraphs: [
+          'A Bistro Putnik tengeri fogásként grillezett tintahalat, fehér halat, tonhal steaket és buzara kagylót emel ki, a grillről pedig ćevapit, rump steaket és bélszínt.',
+        ],
+      },
+    ]
+  ),
+  'lunch-near-nikolina-beach': huGuide(
+    'ebed-nikolina-strand-kozeleben',
+    'Ebéd a Nikolina strand közelében',
+    'Óvatos útmutató azoknak, akik a Nikolina strand környékén töltik a napot, és egyértelmű ebédválasztást keresnek.',
+    'A Nikolina strand gyakran központi tájékozódási pont egy baška vodai strandnapon, ezért az ebédet jó könnyen kiválasztani, mielőtt a nap folytatódik.',
+    'A Bistro Putnik olyan ebédet javasol, amely nem lassítja le a napot: polipsaláta, tengeri tagliatelle, grillezett tintahal vagy vegán tészta.',
+    [
+      {
+        title: 'Nikolina mint tájékozódási pont',
+        paragraphs: [
+          'A Nikolina strand gyakran központi tájékozódási pont egy baška vodai strandnapon, ezért az ebédet jó könnyen kiválasztani, mielőtt a nap folytatódik.',
+        ],
+      },
+      {
+        title: 'Óvatosan a helyszíni állításokkal',
+        paragraphs: [
+          'A Nikolina hasznos tájékozódási szó Baška Vodában, de ez az oldal nem állítja, hogy az étterem első, közvetlenül a strand mellett van, vagy a strand alapján rangsorolt. Használja az útmutatót ételválasztáshoz, ha a napját a város ezen részén tölti.',
+        ],
+      },
+      {
+        title: 'Ebédválasztások, amelyek tisztán tartják a napot',
+        paragraphs: [
+          'A Bistro Putnik olyan ebédet javasol, amely nem lassítja le a napot: polipsaláta, tengeri tagliatelle, grillezett tintahal vagy vegán tészta.',
+        ],
+      },
+    ]
+  ),
+  'food-after-baska-voda-beach': huGuide(
+    'etel-strand-utan-baska-vodaban',
+    'Étel a baška vodai strand után',
+    'Ötletek ebédhez vagy korai vacsorához úszás és baška vodai strandolás után.',
+    'Strand után sok vendég olyan ételt szeretne, amely elég tartalmas, de nem válik hosszú vacsorává.',
+    'A Bistro Putnik erre a pillanatra grillezett tintahalat, fehér halat, csirkemellfilét vagy karfiol steaket ajánl, attól függően, hogy tengeri, húsos vagy vegán étel illik-e jobban.',
+    [
+      {
+        title: 'Amikor strand után enne valamit',
+        paragraphs: [
+          'Strand után sok vendég olyan ételt szeretne, amely elég tartalmas, de nem válik hosszú vacsorává.',
+        ],
+      },
+      {
+        title: 'Könnyebb tányér vagy hosszabb étkezés',
+        paragraphs: [
+          'Ha a nap még tart, válasszon olyan tányért, amely egyszerűen tartja a tervet: halat, csirkét, vegán tányért vagy tésztát. Hosszabb étkezéshez az állandó étlap nagyobb választékot ad anélkül, hogy kilátásra vagy az étterem elhelyezkedésére vonatkozó állításokat tenne.',
+        ],
+      },
+      {
+        title: 'Ételek a strand utáni pillanathoz',
+        paragraphs: [
+          'A Bistro Putnik erre a pillanatra grillezett tintahalat, fehér halat, csirkemellfilét vagy karfiol steaket ajánl, attól függően, hogy tengeri, húsos vagy vegán étel illik-e jobban.',
+        ],
+      },
+    ]
+  ),
+  'promenade-walk-food-baska-voda': huGuide(
+    'etel-setany-utan-baska-vodaban',
+    'Hol együnk a parti séta után',
+    'Étkezés egy baška vodai séta után: könnyű tányér, helyi étel, hal vagy ital az esti ritmushoz.',
+    'Egy parti séta után gyakran jól illik egy könnyen megosztható tányér vagy egy étel, amely lassan zárja le a napot.',
+    'A Bistro Putnik ehhez a ritmushoz a dalmát tálat, a pašticadát, a tengeri tagliatellét vagy az egyik tartalmas salátát javasolja.',
+    [
+      {
+        title: 'Étkezés egy könnyű séta után',
+        paragraphs: [
+          'Egy parti séta után gyakran jól illik egy könnyen megosztható tányér vagy egy étel, amely lassan zárja le a napot.',
+        ],
+      },
+      {
+        title: 'Megosztható tál, saláta vagy helyi étel',
+        paragraphs: [
+          'A sétány után gyakran jól működik egy megosztható tál, egy tartalmas saláta vagy egy lassan elfogyasztott helyi étel. Allergénekhez és összetevőkhöz használja az étlap jegyzeteit és a személyzet végső megerősítését.',
+        ],
+      },
+      {
+        title: 'Választások az esti ritmushoz',
+        paragraphs: [
+          'A Bistro Putnik ehhez a ritmushoz a dalmát tálat, a pašticadát, a tengeri tagliatellét vagy az egyik tartalmas salátát javasolja.',
+        ],
+      },
+    ]
+  ),
+  'baska-voda-beaches-and-lunch': huGuide(
+    'baska-voda-strandok-es-ebed',
+    'Baška Voda strandok és ebéd útmutató',
+    'Hogyan kapcsoljon össze egy strandnapot marendával, ebéddel vagy korai vacsorával Baška Vodában.',
+    'Egy Baška Voda strandjai körüli nap gyakran kétféle étkezés egyikét igényli: egyszerű marendát vagy későbbi ebédet nagyobb választékkal.',
+    'A Bistro Putnik azt ajánlja, hogy először nézze meg az aktuális marendát, majd halat, csirkét, vegán lehetőségeket vagy gyerekmenüt válasszon, ha családdal érkezik.',
+    [
+      {
+        title: 'Igazítsa az ebédet a strandnaphoz',
+        paragraphs: [
+          'Egy Baška Voda strandjai körüli nap gyakran kétféle étkezés egyikét igényli: egyszerű marendát vagy későbbi ebédet nagyobb választékkal.',
+        ],
+      },
+      {
+        title: 'Először ellenőrizze a marendát',
+        paragraphs: [
+          'Először nézze meg a marendát, mert napi és korlátozott kínálat, majd váltson az állandó étlapra, ha későbbi ebédre, gyerekételre, vegán választásra vagy tartalmasabb grillre van szüksége. Ez az útmutató nem rangsorolja a strandokat vagy éttermi helyszíneket.',
+        ],
+      },
+      {
+        title: 'Mi illik egy strandnaphoz',
+        paragraphs: [
+          'A Bistro Putnik azt ajánlja, hogy először nézze meg az aktuális marendát, majd halat, csirkét, vegán lehetőségeket vagy gyerekmenüt válasszon, ha családdal érkezik.',
+        ],
+      },
+    ]
+  ),
+  'dalmatian-pasticada': huGuide(
+    'dalmat-pasticada',
+    'Mi az a dalmát pašticada?',
+    'A pašticada magyarázata: lassan párolt dalmát marhahúsétel, amelyet gyakran gnocchival vagy tésztával tálalnak.',
+    'A dalmát pašticada lassan párolt marhahúsétel gazdag mártással, Dalmáciában ünnepibb, házias fogásként ismert.',
+    'A Bistro Putnik a dalmát pašticadát hagyományos marhahúsételként, házi köretekkel kínálja; jó választás, ha könnyű tányér helyett helyi dalmát ízt szeretne.',
+    [
+      {
+        title: 'Mi a pašticada',
+        paragraphs: [
+          'A dalmát pašticada lassan párolt marhahúsétel gazdag mártással, Dalmáciában ünnepibb, házias fogásként ismert.',
+        ],
+      },
+      {
+        title: 'Milyen az íze és hogyan tálalják',
+        paragraphs: [
+          'A pašticada gazdag, omlós marhahúsétel, mártásában édes-savanyú és fűszeres mélységgel. Dalmáciában gyakran gnocchival vagy tésztával eszik, ezért inkább tartalmas étkezéshez illik, mint könnyű falathoz.',
+        ],
+      },
+      {
+        title: 'Miért illik a Bistro Putnik étlapjára',
+        paragraphs: [
+          'A Bistro Putnik a dalmát pašticadát hagyományos marhahúsételként, házi köretekkel kínálja; jó választás, ha könnyű tányér helyett helyi dalmát ízt szeretne.',
+        ],
+      },
+    ]
+  ),
+  'dalmatian-peka': huGuide(
+    'dalmat-peka',
+    'Mi az a dalmát peka?',
+    'A peka lassú sütési mód harang alakú fedő alatt, gyakran hússal, polippal, burgonyával és zöldségekkel.',
+    'A peka nehéz, harang alakú fedő alatti sütést jelent, ahol a hő körülveszi az alapanyagokat, és lassan megsüti őket.',
+    'A Bistro Putnik polipot peka alatt és vegyes pekát kínál előrendeléssel, legalább 24 órával korábban és a vendégszám egyeztetésével.',
+    [
+      {
+        title: 'Hogyan készül a peka',
+        paragraphs: [
+          'A peka nehéz, harang alakú fedő alatti sütést jelent, ahol a hő körülveszi az alapanyagokat, és lassan megsüti őket.',
+        ],
+      },
+      {
+        title: 'Miért kell előre rendelni',
+        paragraphs: [
+          'A peka időt, alapanyag-előkészítést és mennyiségi egyeztetést igényel, ezért az étlapon külön rendelésként szerepel. A Bistro Putnik legalább 24 órával korábbi rendelést és a vendégszám egyeztetését jelzi.',
+        ],
+      },
+      {
+        title: 'Mit rendelhet a Bistro Putnikban',
+        paragraphs: [
+          'A Bistro Putnik polipot peka alatt és vegyes pekát kínál előrendeléssel, legalább 24 órával korábban és a vendégszám egyeztetésével.',
+        ],
+      },
+    ]
+  ),
+  'what-is-marenda': huGuide(
+    'mi-a-marenda',
+    'Mi a marenda Horvátországban?',
+    'A marenda helyi napi étkezés reggeli és későbbi ebéd vagy vacsora között.',
+    'A horvát tengerparton a marenda gyakran egyszerű napi ételt jelent, amely korlátozott mennyiségben készül, és addig kapható, amíg a kínálat tart.',
+    'A Bistro Putnik a marendát az aktuális napi ajánlathoz kapcsolja egy külön oldalon, ahol a vendégek döntés előtt megnézhetik a mai ételeket és árakat.',
+    [
+      {
+        title: 'Marenda mint napi étkezés',
+        paragraphs: [
+          'A horvát tengerparton a marenda gyakran egyszerű napi ételt jelent, amely korlátozott mennyiségben készül, és addig kapható, amíg a kínálat tart.',
+        ],
+      },
+      {
+        title: 'Miért fogyhat el az ajánlat',
+        paragraphs: [
+          'A marenda napi mennyiségben készül, ezért érdemes először az aktuális oldalt és árakat ellenőrizni. Amikor a napi ajánlat elfogy, későbbi étkezéshez az állandó étlap lesz a jobb választás.',
+        ],
+      },
+      {
+        title: 'Hol ellenőrizze a mai marendát',
+        paragraphs: [
+          'A Bistro Putnik a marendát az aktuális napi ajánlathoz kapcsolja egy külön oldalon, ahol a vendégek döntés előtt megnézhetik a mai ételeket és árakat.',
+        ],
+      },
+    ]
+  ),
+  'dalmatian-seafood': huGuide(
+    'dalmat-tengeri-etelek',
+    'Dalmát tengeri ételek útmutató',
+    'Hogyan olvassa az étlap tengeri oldalát: tintahal, fehér hal, tonhal steak, kagyló és tengeri tészta.',
+    'A dalmát tengeri étlapot a legegyszerűbb az elkészítési mód szerint érteni: grillezett, sült, buzara vagy tésztába forgatott.',
+    'A Bistro Putnik grillezett tintahalat, fehér halat, tonhal steaket, buzara kagylót és zöld tagliatellét ajánl tenger gyümölcseivel, ha az aktuális étlapról szeretne tengeri fogást.',
+    [
+      {
+        title: 'Olvassa a tengeri ételeket elkészítés szerint',
+        paragraphs: [
+          'A dalmát tengeri étlapot a legegyszerűbb az elkészítési mód szerint érteni: grillezett, sült, buzara vagy tésztába forgatott.',
+        ],
+      },
+      {
+        title: 'Mit jelentenek a gyakori választások',
+        paragraphs: [
+          'A grill az egyszerű halat emeli ki, a buzara mártás és kagylók felé visz, a sült ételek közvetlenebb választások, a tengeri tészta pedig a mártást és a tenger gyümölcseit egy tányéron hozza össze. Allergének esetén mindig kérjen megerősítést.',
+        ],
+      },
+      {
+        title: 'Tengeri ételek a Bistro Putnik étlapjáról',
+        paragraphs: [
+          'A Bistro Putnik grillezett tintahalat, fehér halat, tonhal steaket, buzara kagylót és zöld tagliatellét ajánl tenger gyümölcseivel, ha az aktuális étlapról szeretne tengeri fogást.',
+        ],
+      },
+    ]
+  ),
+  'croatian-grill': huGuide(
+    'horvat-grill',
+    'Horvát grill útmutató',
+    'Alapvető grillválasztások vendégeknek: ćevapi, pljeskavica, csirke, rump steak és bélszín.',
+    'A horvát grill egy vendégétlapon gyakran ismerős regionális ételeket és egyszerű steakeket kapcsol össze köretekkel.',
+    'A Bistro Putnik ćevapit, töltött pljeskavicát, csirkemellfilét, rump steaket vagy bélszínt javasol, attól függően, hogy laza tányért vagy tartalmasabb grillétkezést szeretne.',
+    [
+      {
+        title: 'Mit jelent a grill az étlapon',
+        paragraphs: [
+          'A horvát grill egy vendégétlapon gyakran ismerős regionális ételeket és egyszerű steakeket kapcsol össze köretekkel.',
+        ],
+      },
+      {
+        title: 'A ćevapitól a steakig',
+        paragraphs: [
+          'A ćevapi és a pljeskavica lazább regionális választások, a csirkemellfilé egyszerűbb tányér, a rump steak vagy a bélszín pedig tartalmasabb steakétkezés. A köretek, mártások és allergének megváltoztathatják a rendelés élményét.',
+        ],
+      },
+      {
+        title: 'Grillválasztások a Bistro Putnikban',
+        paragraphs: [
+          'A Bistro Putnik ćevapit, töltött pljeskavicát, csirkemellfilét, rump steaket vagy bélszínt javasol, attól függően, hogy laza tányért vagy tartalmasabb grillétkezést szeretne.',
+        ],
+      },
+    ]
+  ),
+  'croatian-restaurant-menu-guide': huGuide(
+    'horvat-ettermi-etlap-utmutato',
+    'Horvát éttermi étlap útmutató',
+    'Alapfogalmak vendégeknek: előételek, levesek, grill, halak, saláták, allergének és árak.',
+    'Egy horvát étlap általában előételekre, levesekre, tésztákra, grillre, halakra, vegetáriánus ételekre, salátákra, desszertekre és italokra tagolódik.',
+    'A Bistro Putnik strukturált étlapot használ euróárakkal, allergénkódokkal és külön szekciókkal, így a vendégek összehasonlíthatják a tengeri ételeket, a grillt, a marendát és az előrendeléses fogásokat.',
+    [
+      {
+        title: 'Hogyan épül fel az étlap',
+        paragraphs: [
+          'Egy horvát étlap általában előételekre, levesekre, tésztákra, grillre, halakra, vegetáriánus ételekre, salátákra, desszertekre és italokra tagolódik.',
+        ],
+      },
+      {
+        title: 'Árak, allergének és külön rendelések',
+        paragraphs: [
+          'Az árak euróban láthatók, az allergének pedig kódokat használnak, amelyek rendelés előtt segítenek. A külön rendeléseket, például a pekát, az étlap megjegyzései alapján kell tervezni, majd a személyzettel megerősíteni.',
+        ],
+      },
+      {
+        title: 'Példák gyors tájékozódáshoz',
+        paragraphs: [
+          'A Bistro Putnik strukturált étlapot használ euróárakkal, allergénkódokkal és külön szekciókkal, így a vendégek összehasonlíthatják a tengeri ételeket, a grillt, a marendát és az előrendeléses fogásokat.',
+        ],
+      },
+    ]
+  ),
+};
+
 function article(config) {
+  const hu = huGuideTranslations[config.key];
+  const localizedConfig = hu
+    ? {
+        ...config,
+        paths: { ...config.paths, hu: hu.path },
+        title: { ...config.title, hu: hu.title },
+        description: { ...config.description, hu: hu.description },
+        intro: { ...config.intro, hu: hu.intro },
+        recommendation: { ...config.recommendation, hu: hu.recommendation },
+      }
+    : config;
+  const sections = localizedConfig.sections || buildArticleSections(localizedConfig);
+
   return {
     datePublished: publishedDate,
     dateModified: publishedDate,
     priority: 0.55,
     relatedRouteKeys: ['menu', 'marenda', 'location', 'reviews'],
-    ...config,
-    ogTitle: buildOgTitle(config.title),
-    ogDescription: buildOgDescription(config.description),
-    sections: config.sections || buildArticleSections(config),
+    ...localizedConfig,
+    ogTitle: buildOgTitle(localizedConfig.title),
+    ogDescription: buildOgDescription(localizedConfig.description),
+    sections: hu?.sections ? { ...sections, hu: hu.sections } : sections,
   };
 }
 

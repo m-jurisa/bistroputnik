@@ -1,6 +1,7 @@
 export const languages = [
   { code: 'hr', label: 'HR' },
   { code: 'en', label: 'EN' },
+  { code: 'hu', label: 'HU' },
   { code: 'sv', label: 'SV' },
   { code: 'fi', label: 'FI' },
   { code: 'no', label: 'NO' },
@@ -150,6 +151,76 @@ export const translations = {
       thanks: 'Thank you for your time and support.',
       contactPrompt: 'Prefer to contact us directly?',
       contactLink: 'Send us a note',
+    },
+  },
+  hu: {
+    nav: {
+      about: 'Rólunk',
+      menu: 'Étlap',
+      guides: 'Útmutatók',
+      marenda: 'Marenda',
+      contact: 'Kapcsolat',
+    },
+    ui: {
+      languageSelector: 'Nyelvválasztó',
+      logoHome: 'Bistro Putnik kezdőlap',
+      navigation: 'Navigáció',
+      menuPages: 'Étlap oldalai',
+    },
+    hero: {
+      opening: 'Nyitás: 2026. 5. 1.',
+      title: 'Bistro Putnik Baška Vodában',
+      text:
+        'Horvát tengerparti konyha, gondosan összeállított italválaszték és nyugodt esti ritmus a Makarska-riviérán.',
+      cta: 'Étlap megtekintése',
+      marendaCta: 'Marenda megtekintése',
+    },
+    about: {
+      eyebrow: 'Baška Voda',
+      facts: {
+        opening: 'Nyitás',
+        venue: 'Hely',
+        contact: 'Kapcsolat',
+      },
+    },
+    menu: {
+      eyebrow: 'Étlap',
+      title: 'Nyitó étlap',
+      description:
+        'Horvát ételek, halak, grillfogások, italok és egy rövid lista előrendeléssel készülő ételekből.',
+      itemCount: (count) => `${count} tétel`,
+      allergens: 'Allergének',
+      section: 'Rész',
+      noticesTitle: 'Információk',
+      noticesIntro: 'Rövid vendégjegyzetek rendelés előtt.',
+      allergenLegendTitle: 'EU allergénlista',
+      allergenLegendIntro:
+        'Kötelező allergénkategóriák az 1169/2011/EU rendelet II. melléklete alapján.',
+    },
+    footer: {
+      contact: 'Kapcsolat',
+      company: 'Cég',
+      location: 'Helyszín',
+      address: 'Székhely',
+      oib: 'OIB',
+      mbs: 'MBS',
+      registrationNumber: 'Cégjegyzékszám',
+      website: 'Web',
+    },
+    marenda: {
+      backToHome: 'Vissza a kezdőlapra',
+      printOffer: 'Ajánlat nyomtatása',
+    },
+    review: {
+      eyebrow: 'Köszönjük a látogatást',
+      title: 'Ossza meg tapasztalatát',
+      intro:
+        'Ha jól érezte magát nálunk, hálásak lennénk egy rövid értékelésért.',
+      googleCta: 'Értékelés írása a Google-on',
+      tripadvisorCta: 'Értékelés írása a Tripadvisoron',
+      thanks: 'Köszönjük az idejét és a támogatását.',
+      contactPrompt: 'Inkább közvetlenül írna nekünk?',
+      contactLink: 'Üzenet küldése',
     },
   },
   sv: {
@@ -2105,6 +2176,627 @@ const baseMenuTranslations = {
 };
 
 const additionalMenuTranslations = {
+  hu: {
+      story: {
+          title: "TÖRTÉNETÜNK AZ ASZTALNÁL",
+          paragraphs: [
+              "A Bistro Putnikban ápoljuk a horvát recepteket, szokásokat és vendégszeretetet. Étlapunk ismerős házias ízeket, hagyományos elkészítést és Baška Voda mediterrán hangulatát kapcsolja össze.",
+              "A kiválasztott ételekhez saját házi kenyerünket kínáljuk, különös gonddal készítve. Az alapanyagokat átgondoltan választjuk, és amikor csak lehet, helyi horvát beszállítókkal dolgozunk."
+          ],
+          closing: "Egyszerű, őszinte, és tele van otthonos ízekkel."
+      },
+      pages: {
+          food: "ÉTLAP",
+          "special-order": "KÜLÖN AJÁNLAT",
+          information: "INFORMÁCIÓK",
+          drinks: "ITALOK",
+          "wines-spirits-cocktails": "BOROK, RÖVIDITALOK ÉS KOKTÉLOK"
+      },
+      pageIntro: {
+          "special-order": "Előzetes rendeléssel érhető el, legalább 24 órával korábban, az érkező vendégek számának egyeztetésével."
+      },
+      pageClosing: {
+          "special-order": "Nagyobb társaságokhoz és különleges alkalmakhoz szívesen ajánlunk tálalási módot és szezonális köreteket."
+      },
+      sections: {
+          "hladna-predjela": "HIDEG ELŐÉTELEK",
+          juhe: "LEVESEK",
+          "tjestenine-rizoti": "TÉSZTÁK ÉS RIZOTTÓK",
+          "arancini-putnik": "PUTNIK ARANCINI",
+          "grill-mesna-jela": "GRILL ÉS HÚSÉTELEK",
+          "dalmatinski-specijaliteti": "DALMÁT KÜLÖNLEGESSÉGEK",
+          "pohana-jela": "RÁNTOTT ÉTELEK",
+          "riba-morska-jela": "HALAK ÉS TENGERI ÉTELEK",
+          "vegetarijansko-vegansko": "VEGETÁRIÁNUS ÉS VEGÁN",
+          "djecji-meni": "GYEREKMENÜ",
+          "salate-kao-obrok": "TARTALMAS SALÁTÁK",
+          salate: "SALÁTÁK",
+          deserti: "DESSZERTEK",
+          "posebna-priprema": "PEKA",
+          "topli-napitci": "KÁVÉK ÉS FORRÓ ITALOK",
+          vode: "VIZEK",
+          "bezalkoholna-pica": "ALKOHOLMENTES ITALOK",
+          "sokovi-ledeni-cajevi": "ÜDÍTŐK ÉS JEGES TEÁK",
+          "piva-cider": "SÖRÖK ÉS CIDER",
+          "mix-pica": "KEVERT ITALOK",
+          "vina-na-case": "BOROK POHÁRRAL",
+          "vina-u-boci": "PRÉMIUM BOROK",
+          pjenusci: "PEZSGŐK",
+          "aperitivi-rakije-likeri": "APERITÍVEK, PÁLINKÁK ÉS LIKŐRÖK",
+          "whiskey-cognac-zestoka": "WHISKEY, COGNAC ÉS EGYÉB RÖVIDITALOK",
+          gin: "GIN",
+          kokteli: "KOKTÉLOK"
+      },
+      sectionNotes: {
+          "salate-kao-obrok": "meleg házi kenyérrel tálalva"
+      },
+      notices: {
+          "prices-eur": "Minden ár euróban (€) értendő.",
+          "vat-included": "Az áfa az árban benne van.",
+          "allergen-on-request": "Részletes allergéninformáció kérésre elérhető.",
+          "ask-staff-ingredients": "Az összetevőkről és allergénekről kérjük, érdeklődjön a személyzetnél.",
+          "frozen-products": "Egyes ételek a rendelkezésre állástól és a szezontól függően fagyasztott terméket tartalmazhatnak.",
+          "offer-changes": "Fenntartjuk a jogot, hogy a kínálatot az alapanyagok elérhetősége szerint módosítsuk.",
+          "allergen-warning": "Az allergéninformációkat a standard receptúra és a rendelkezésre álló adatok alapján jelöljük. Mivel az elkészítés, a szezonális elérhetőség, a beszállítók és az allergénnyomok változhatnak, rendelés előtt kérjen pontos tájékoztatást a személyzettől.",
+          "bread-gluten": "A házi kenyér glutént tartalmaz (G)."
+      },
+      allergens: {
+          G: "Glutént tartalmazó gabonafélék",
+          R: "Rákfélék",
+          J: "Tojás",
+          RI: "Hal",
+          K: "Földimogyoró",
+          S: "Szója",
+          M: "Tej és laktóz",
+          O: "Diófélék",
+          C: "Zeller",
+          GU: "Mustár",
+          SE: "Szezám",
+          "SO₂": "Kén-dioxid és szulfitok",
+          L: "Csillagfürt",
+          ME: "Puhatestűek"
+      },
+      items: {
+          "slavonska-plata": {
+              name: "Szlavón tál",
+              description: "Szlavón sonka, kulen, szalonna, töpörtyű, tehénsajt, savanyított zöldségek és házi kenyér"
+          },
+          "dalmatinska-plata": {
+              name: "Dalmát tál",
+              description: "Pršut, kecskesajt, olívabogyó, házi kenyér"
+          },
+          "salata-od-hobotnice": {
+              name: "Polipsaláta",
+              description: "Hagyományos dalmát módon készítve."
+          },
+          "krem-juha-od-rajcice": {
+              name: "Paradicsomkrémleves"
+          },
+          "krem-juha-od-celera-i-kokosa": {
+              name: "Zelleres-kókuszos krémleves"
+          },
+          "bistra-riblja-juha": {
+              name: "Tiszta halleves"
+          },
+          "bistra-goveda-juha": {
+              name: "Tiszta marhahúsleves"
+          },
+          "krem-juha-od-cvjetace": {
+              name: "Karfiolkrémleves"
+          },
+          bolognese: {
+              name: "Bolognese"
+          },
+          carbonara: {
+              name: "Carbonara"
+          },
+          "zelene-tagliatelle-s-morskim-plodovima": {
+              name: "Zöld tagliatelle tenger gyümölcseivel"
+          },
+          "arancini-od-crnog-rizota": {
+              name: "Fekete rizottós és tintahalas arancini",
+              description: "házi arancini fekete rizottóból tintahallal"
+          },
+          "vege-arancini": {
+              name: "Zöldséges arancini",
+              description: "vegetáriánus"
+          },
+          "cevapi-uz-dollar-chips-i-vrhnje": {
+              name: "Ćevapi dollar chipsszel és tejföllel"
+          },
+          "punjena-pljeskavica-sir-uz-dollar-chips-i-vrhnje": {
+              name: "Töltött pljeskavica (sajttal) dollar chipsszel és tejföllel"
+          },
+          "punjena-pljeskavica-uz-dollar-chips-i-vrhnje": {
+              name: "Szalonnába tekert hús dollar chipsszel és tejföllel"
+          },
+          "dvije-kobasice-uz-krumpir-s-povrcem": {
+              name: "Házi szlavón grillkolbász körettel"
+          },
+          "pileci-file-uz-dollar-chips": {
+              name: "Csirkemellfilé dollar chipsszel"
+          },
+          "ramstek-uz-krumpir-i-wok-povrce": {
+              name: "Rump steak burgonyával és wok zöldségekkel"
+          },
+          "biftek-uz-krumpir-i-wok-povrce": {
+              name: "Bélszín burgonyával és wok zöldségekkel"
+          },
+          "dalmatinska-pasticada": {
+              name: "Dalmát pašticada",
+              description: "hagyományos dalmát étel házi köretekkel"
+          },
+          "pileci-becki-uz-prilog": {
+              name: "Rántott csirkeszelet körettel"
+          },
+          "svinjski-becki-uz-prilog": {
+              name: "Rántott sertésszelet körettel"
+          },
+          "teleci-becki-uz-prilog": {
+              name: "Rántott borjúszelet körettel"
+          },
+          "pileci-punjeni-odrezak-uz-prilog": {
+              name: "Töltött csirkeszelet körettel"
+          },
+          "lignje-na-zaru-uz-blitvu-i-krumpir": {
+              name: "Grillezett tintahal mángolddal és burgonyával"
+          },
+          "lignje-przene-s-pommesom": {
+              name: "Sült tintahal hasábburgonyával"
+          },
+          "bijela-riba-na-grillu": {
+              name: "Grillezett fehér hal",
+              description: "aranydurbincs, tengeri sügér · mángold és burgonya"
+          },
+          "losos-na-zaru-uz-blitvu-i-krumpir": {
+              name: "Grillezett lazac dollar chipsszel és grillezett zöldségekkel"
+          },
+          "tuna-steak-na-zaru-uz-blitvu-i-krumpir": {
+              name: "Grillezett tonhal steak mángolddal és burgonyával"
+          },
+          "dagnje-na-buzaru": {
+              name: "Kagyló hagyományos buzara módra 0,5 kg"
+          },
+          "pasta-napolitano": {
+              name: "Pasta Napolitano",
+              description: "vegán"
+          },
+          "aglio-olio": {
+              name: "Aglio & Olio",
+              description: "vegán"
+          },
+          "steak-od-karfiola": {
+              name: "Karfiol steak",
+              description: "vegán"
+          },
+          "tofu-steak": {
+              name: "Tofu steak",
+              description: "vegán"
+          },
+          "vege-salata": {
+              name: "Zöldségsaláta",
+              description: "tofu steak · vegán"
+          },
+          "pileci-nuggets-pommes": {
+              name: "Csirke nuggets + hasábburgonya"
+          },
+          "mali-bolognese": {
+              name: "Kis bolognese"
+          },
+          "mali-cevapi-uz-dollar-chips-i-vrhnje": {
+              name: "Kis ćevapi dollar chipsszel és tejföllel"
+          },
+          "salata-od-skuse-tunjevine": {
+              name: "Makréla / tonhal saláta"
+          },
+          "slavonska-salata": {
+              name: "Szlavón saláta",
+              description: "grillezett szalonna"
+          },
+          "salata-piletina": {
+              name: "Csirkesaláta",
+              description: "csirkemellfilé"
+          },
+          "sezonska-salata-mix": {
+              name: "Szezonális vegyes saláta"
+          },
+          "kupus-salata": {
+              name: "Káposztasaláta"
+          },
+          "krastavci-u-vrhnju": {
+              name: "Uborka tejfölben"
+          },
+          "cikla-karamelizirani-luk": {
+              name: "Cékla"
+          },
+          "grcka-salata": {
+              name: "Görög saláta"
+          },
+          "palacinke-dzem-linolada": {
+              name: "Palacsinta",
+              description: "lekvárral vagy Linoladával"
+          },
+          "palacinke-sa-sladoledom": {
+              name: "Palacsinta fagylalttal"
+          },
+          "lava-cake-sa-sladoledom": {
+              name: "Lava cake fagylalttal"
+          },
+          "cokoladni-brownie-sa-sladoledom": {
+              name: "Csokoládés brownie fagylalttal"
+          },
+          "hobotnica-ispod-peke-uz-prilog": {
+              name: "Polip peka alatt, körettel"
+          },
+          "peka-mix": {
+              name: "Peka mix",
+              description: "vegyes peka körettel"
+          },
+          espresso: {
+              name: "Espresso"
+          },
+          "kava-s-mlijekom-slagom": {
+              name: "Kávé tejjel / tejszínhabbal"
+          },
+          cappuccino: {
+              name: "Cappuccino"
+          },
+          "bijela-kava": {
+              name: "Tejeskávé"
+          },
+          "latte-macchiato": {
+              name: "Latte macchiato"
+          },
+          nescafe: {
+              name: "Nescafé"
+          },
+          caj: {
+              name: "Tea"
+          },
+          "instant-cappuccino": {
+              name: "Instant cappuccino"
+          },
+          "ice-latte": {
+              name: "Jeges latte"
+          },
+          "ice-latte-matcha": {
+              name: "Jeges matcha latte"
+          },
+          "ice-latte-matcha-s-okusom": {
+              name: "Ízesített jeges matcha latte"
+          },
+          "espresso-tonic": {
+              name: "Espresso tonic"
+          },
+          affogato: {
+              name: "Affogato"
+          },
+          "irish-baileys-coffee": {
+              name: "Irish / Baileys coffee"
+          },
+          "ice-coffee": {
+              name: "Jegeskávé"
+          },
+          "romerquelle-negazirana-033": {
+              name: "Römerquelle szénsavmentes 0,33 l"
+          },
+          "romerquelle-gazirana-033": {
+              name: "Römerquelle szénsavas 0,33 l"
+          },
+          "romerquelle-negazirana-075": {
+              name: "Römerquelle szénsavmentes 0,75 l"
+          },
+          "romerquelle-gazirana-075": {
+              name: "Römerquelle szénsavas 0,75 l"
+          },
+          "romerquelle-limunska-trava": {
+              name: "Römerquelle citromfű"
+          },
+          "coca-cola-025": {
+              name: "Coca-Cola 0,25 l"
+          },
+          "coca-cola-zero-025": {
+              name: "Coca-Cola Zero 0,25 l"
+          },
+          "fanta-025": {
+              name: "Fanta 0,25 l"
+          },
+          "fanta-lemon-025": {
+              name: "Fanta Lemon 0,25 l"
+          },
+          "sprite-025": {
+              name: "Sprite 0,25 l"
+          },
+          "schweppes-tonic-025": {
+              name: "Schweppes Tonic 0,25 l"
+          },
+          "schweppes-bitter-lemon-025": {
+              name: "Schweppes Bitter Lemon 0,25 l"
+          },
+          "schweppes-tangerina-025": {
+              name: "Schweppes Tangerina 0,25 l"
+          },
+          "schweppes-cherry-025": {
+              name: "Schweppes Cherry 0,25 l"
+          },
+          "thomas-henry-spicy-ginger-beer-020": {
+              name: "Thomas Henry Spicy Ginger Beer 0,20 l"
+          },
+          "cedevita-limun": {
+              name: "Cedevita citrom"
+          },
+          "cedevita-naranca": {
+              name: "Cedevita narancs"
+          },
+          limunada: {
+              name: "Limonádé"
+          },
+          narancada: {
+              name: "Narancslé"
+          },
+          "hidra-limun-050": {
+              name: "Hidra ISO citrom 0,50 l"
+          },
+          "hidra-naranca-050": {
+              name: "Hidra ISO narancs 0,50 l"
+          },
+          "ledeni-caj-breskva": {
+              name: "Jeges tea őszibarack"
+          },
+          "ledeni-caj-sumsko-voce": {
+              name: "Jeges tea erdei gyümölcs"
+          },
+          "somersby-00-jagoda-limeta": {
+              name: "Somersby 0.0 eper-lime"
+          },
+          "pago-jabuka-020": {
+              name: "Pago alma 0,20 l"
+          },
+          "pago-naranca-020": {
+              name: "Pago narancs 0,20 l"
+          },
+          "pago-visnja-020": {
+              name: "Pago meggy 0,20 l"
+          },
+          "pago-marelica-020": {
+              name: "Pago sárgabarack 0,20 l"
+          },
+          "pago-ananas-020": {
+              name: "Pago ananász 0,20 l"
+          },
+          "pago-crni-ribiz-020": {
+              name: "Pago fekete ribizli 0,20 l"
+          },
+          "pan-toceni-030": {
+              name: "Pan csapolt 0,30 l"
+          },
+          "pan-toceni-050": {
+              name: "Pan csapolt 0,50 l"
+          },
+          "pan-zlatni-033": {
+              name: "Pan Zlatni 0,33 l"
+          },
+          "carlsberg-033": {
+              name: "Carlsberg 0,33 l"
+          },
+          "tuborg-033": {
+              name: "Tuborg 0,33 l"
+          },
+          "pan-radler-050": {
+              name: "Pan Radler 0,50 l"
+          },
+          "pan-bezalkoholni-033": {
+              name: "Pan alkoholmentes 0,33 l"
+          },
+          "budweiser-dark-050": {
+              name: "Budweiser Dark 0,50 l"
+          },
+          "somersby-jabuka": {
+              name: "Somersby alma"
+          },
+          "somersby-kruska": {
+              name: "Somersby körte"
+          },
+          "radla-030": {
+              name: "Radla 0,30 l"
+          },
+          "radla-050": {
+              name: "Radla 0,50 l"
+          },
+          "mis-mas-030": {
+              name: "Miš-maš 0,30 l"
+          },
+          "mis-mas-050": {
+              name: "Miš-maš 0,50 l"
+          },
+          "gemist-020": {
+              name: "Gemišt 0,20 l"
+          },
+          "bambus-030": {
+              name: "Bambus 0,30 l"
+          },
+          "bambus-050": {
+              name: "Bambus 0,50 l"
+          },
+          "turska-kola": {
+              name: "Török kóla"
+          },
+          "malvazija-1dcl": {
+              name: "Malvazija 1 dcl"
+          },
+          "peljesac-1dcl": {
+              name: "Pelješac 1 dcl"
+          },
+          "rose-benkovac-1dcl": {
+              name: "Rosé Benkovac 1 dcl"
+          },
+          "zlatan-plavac-1dcl": {
+              name: "Zlatan Plavac 1 dcl"
+          },
+          "zlatan-posip-1dcl": {
+              name: "Zlatan Pošip 1 dcl"
+          },
+          "galic-rose-1dcl": {
+              name: "Galić Rosé 1 dcl"
+          },
+          "dalmatinski-prosek-1dcl": {
+              name: "Dalmát prošek 1 dcl"
+          },
+          "muskat-bric-1dcl": {
+              name: "Muškat BRIČ 1 dcl"
+          },
+          "zlatan-posip-075": {
+              name: "Zlatan Pošip 0,75 l"
+          },
+          "galic-sauvignon-blanc-075": {
+              name: "Galić Sauvignon Blanc 0,75 l"
+          },
+          "muskat-bric-075": {
+              name: "Muškat BRIČ 0,75 l"
+          },
+          "korta-katarina-rose-075": {
+              name: "Korta Katarina Rosé 0,75 l"
+          },
+          "zlatan-plavac-075": {
+              name: "Zlatan Plavac 0,75 l"
+          },
+          "zlatan-crljenak-075": {
+              name: "Zlatan Crljenak 0,75 l"
+          },
+          "prosecco-1dcl": {
+              name: "Prosecco 1 dcl"
+          },
+          "prosecco-075": {
+              name: "Prosecco 0,75 l"
+          },
+          "pelinkovac-dalmacija": {
+              name: "Pelinkovac Dalmacija"
+          },
+          "pelinkovac-antik": {
+              name: "Pelinkovac Antique"
+          },
+          "sibenska-travarica": {
+              name: "Šibenska travarica"
+          },
+          "williams-viljamovka": {
+              name: "Williams viljamovka"
+          },
+          "maraska-visnjevac": {
+              name: "Maraska meggylikőr"
+          },
+          "maraska-orahovac": {
+              name: "Maraska diólikőr"
+          },
+          "teranino-korlat": {
+              name: "Teranino Korlat"
+          },
+          "dalmatinski-prosek": {
+              name: "Dalmát prošek"
+          },
+          jagermeister: {
+              name: "Jägermeister"
+          },
+          limoncello: {
+              name: "Limoncello"
+          },
+          baileys: {
+              name: "Baileys"
+          },
+          aperol: {
+              name: "Aperol"
+          },
+          campari: {
+              name: "Campari"
+          },
+          "martini-bianco": {
+              name: "Martini Bianco"
+          },
+          "martini-rosso": {
+              name: "Martini Rosso"
+          },
+          jameson: {
+              name: "Jameson"
+          },
+          "jim-beam": {
+              name: "Jim Beam"
+          },
+          hennessy: {
+              name: "Hennessy"
+          },
+          "smirnoff-vodka": {
+              name: "Smirnoff Vodka"
+          },
+          "sierra-tequila": {
+              name: "Sierra Tequila"
+          },
+          "bacardi-white": {
+              name: "Bacardi White"
+          },
+          "bacardi-black": {
+              name: "Bacardi Black"
+          },
+          malibu: {
+              name: "Malibu"
+          },
+          "sax-gin": {
+              name: "SAX Gin"
+          },
+          "bulldog-gin": {
+              name: "Bulldog Gin"
+          },
+          "hendricks-gin": {
+              name: "Hendrick’s Gin"
+          },
+          "aperol-spritz": {
+              name: "Aperol Spritz",
+              description: "Aperol, prosecco, szóda, narancs"
+          },
+          hugo: {
+              name: "Hugo",
+              description: "prosecco, bodza, szóda, lime, menta"
+          },
+          mojito: {
+              name: "Mojito",
+              description: "fehér rum, lime, menta, cukorszirup, szóda"
+          },
+          "gin-tonic": {
+              name: "Gin Tonic",
+              description: "gin, tonic, citrusok"
+          },
+          "cuba-libre": {
+              name: "Cuba Libre",
+              description: "rum, Coca-Cola, lime"
+          },
+          "moscow-mule": {
+              name: "Moscow Mule",
+              description: "vodka, fűszeres gyömbérsör, lime"
+          },
+          "espresso-martini": {
+              name: "Espresso Martini",
+              description: "vodka, Kahlúa, espresso"
+          },
+          negroni: {
+              name: "Negroni",
+              description: "gin, Campari, Martini Rosso"
+          },
+          "mojito-strawberry-passion": {
+              name: "Mojito Strawberry / Passion",
+              description: "fehér rum, lime, menta, eper vagy passiógyümölcs"
+          },
+          "limoncello-spritz": {
+              name: "Limoncello Spritz",
+              description: "limoncello, prosecco, szóda, citrusok"
+          },
+          "london-mule": {
+              name: "London Mule",
+              description: "gin, fűszeres gyömbérsör, lime"
+          },
+          "my-favourite-spritz": {
+              name: "My Favourite Spritz",
+              description: "Malibu, passiógyümölcs-püré, prosecco, citrusmix"
+          }
+      }
+  },
   de: {
     story: {
       title: 'Unsere Geschichte am Tisch',

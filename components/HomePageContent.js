@@ -34,6 +34,7 @@ const homeContactLabels = {
   no: { phone: 'Telefon', email: 'E-post', location: 'Beliggenhet' },
   pl: { phone: 'Telefon', email: 'E-mail', location: 'Lokalizacja' },
   da: { phone: 'Telefon', email: 'E-mail', location: 'Beliggenhed' },
+  hu: { phone: 'Telefon', email: 'E-mail', location: 'Helyszín' },
 };
 
 export default function HomePageContent({ locale = defaultLocale, menu }) {

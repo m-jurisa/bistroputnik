@@ -293,6 +293,21 @@ body {
     line-height: 1;
   }
 
+  .marenda-print-staff-code {
+    display: inline-block;
+    margin-right: 3mm;
+    border: 0.5pt solid rgba(16, 63, 77, 0.3);
+    border-radius: 999px;
+    padding: 1mm 2mm;
+    color: rgba(16, 63, 77, 0.72);
+    font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    vertical-align: middle;
+  }
+
   .marenda-print-item h2 + p {
     margin: 3mm 0 0;
     color: #103F4D;

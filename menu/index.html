@@ -230,7 +230,7 @@
       return `
         <article class="menu-item${price ? "" : " no-price"}">
           <div class="menu-item-main">
-            ${name ? `<h3 class="item-name">${escapeHtml(name)}</h3>` : ""}
+            ${name ? `<h3 class="item-name">${item.staffCode ? `<span class="staff-code">${escapeHtml(item.staffCode)}</span>` : ""}${escapeHtml(name)}</h3>` : ""}
             ${description ? `<p class="item-description">${escapeHtml(description)}</p>` : ""}
             ${allergenMarkup}
           </div>

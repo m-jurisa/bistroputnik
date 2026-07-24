@@ -41,6 +41,11 @@
       "code": "da",
       "label": "Dansk",
       "printLabel": "DA"
+    },
+    {
+      "code": "hu",
+      "label": "Magyar",
+      "printLabel": "HU"
     }
   ],
   "language": "hr",
@@ -116,6 +121,9 @@
         },
         "da": {
           "name": "Kornprodukter, der indeholder gluten"
+        },
+        "hu": {
+          "name": "Glutént tartalmazó gabonafélék"
         }
       }
     },
@@ -143,6 +151,9 @@
         },
         "da": {
           "name": "Krebsdyr"
+        },
+        "hu": {
+          "name": "Rákfélék"
         }
       }
     },
@@ -170,6 +181,9 @@
         },
         "da": {
           "name": "Æg"
+        },
+        "hu": {
+          "name": "Tojás"
         }
       }
     },
@@ -197,6 +211,9 @@
         },
         "da": {
           "name": "Fisk"
+        },
+        "hu": {
+          "name": "Hal"
         }
       }
     },
@@ -224,6 +241,9 @@
         },
         "da": {
           "name": "Jordnødder"
+        },
+        "hu": {
+          "name": "Földimogyoró"
         }
       }
     },
@@ -251,6 +271,9 @@
         },
         "da": {
           "name": "Soja"
+        },
+        "hu": {
+          "name": "Szója"
         }
       }
     },
@@ -278,6 +301,9 @@
         },
         "da": {
           "name": "Mælk og laktose"
+        },
+        "hu": {
+          "name": "Tej és laktóz"
         }
       }
     },
@@ -305,6 +331,9 @@
         },
         "da": {
           "name": "Nødder"
+        },
+        "hu": {
+          "name": "Diófélék"
         }
       }
     },
@@ -332,6 +361,9 @@
         },
         "da": {
           "name": "Selleri"
+        },
+        "hu": {
+          "name": "Zeller"
         }
       }
     },
@@ -359,6 +391,9 @@
         },
         "da": {
           "name": "Sennep"
+        },
+        "hu": {
+          "name": "Mustár"
         }
       }
     },
@@ -386,6 +421,9 @@
         },
         "da": {
           "name": "Sesam"
+        },
+        "hu": {
+          "name": "Szezám"
         }
       }
     },
@@ -413,6 +451,9 @@
         },
         "da": {
           "name": "Svovldioxid og sulfitter"
+        },
+        "hu": {
+          "name": "Kén-dioxid és szulfitok"
         }
       }
     },
@@ -440,6 +481,9 @@
         },
         "da": {
           "name": "Lupin"
+        },
+        "hu": {
+          "name": "Csillagfürt"
         }
       }
     },
@@ -467,6 +511,9 @@
         },
         "da": {
           "name": "Bløddyr"
+        },
+        "hu": {
+          "name": "Puhatestűek"
         }
       }
     }
@@ -496,6 +543,9 @@
         },
         "da": {
           "text": "Alle priser er angivet i euro (€)."
+        },
+        "hu": {
+          "text": "Minden ár euróban (€) értendő."
         }
       }
     },
@@ -523,6 +573,9 @@
         },
         "da": {
           "text": "Moms er inkluderet i prisen."
+        },
+        "hu": {
+          "text": "Az áfa az árban benne van."
         }
       }
     },
@@ -550,6 +603,9 @@
         },
         "da": {
           "text": "Detaljerede allergenoplysninger fås på forespørgsel."
+        },
+        "hu": {
+          "text": "Részletes allergéninformáció kérésre elérhető."
         }
       }
     },
@@ -577,6 +633,9 @@
         },
         "da": {
           "text": "Spørg venligst personalet om oplysninger om ingredienser og allergener."
+        },
+        "hu": {
+          "text": "Az összetevőkről és allergénekről kérjük, érdeklődjön a személyzetnél."
         }
       }
     },
@@ -604,6 +663,9 @@
         },
         "da": {
           "text": "Nogle retter kan indeholde frosne produkter afhængigt af tilgængelighed og sæson."
+        },
+        "hu": {
+          "text": "Egyes ételek a rendelkezésre állástól és a szezontól függően fagyasztott terméket tartalmazhatnak."
         }
       }
     },
@@ -631,6 +693,9 @@
         },
         "da": {
           "text": "Vi forbeholder os retten til at ændre tilbuddet afhængigt af råvarernes tilgængelighed."
+        },
+        "hu": {
+          "text": "Fenntartjuk a jogot, hogy a kínálatot az alapanyagok elérhetősége szerint módosítsuk."
         }
       }
     },
@@ -658,6 +723,9 @@
         },
         "da": {
           "text": "Allergenoplysninger er markeret efter standardopskriften og tilgængelige data. På grund af mulige ændringer i tilberedning, sæsonudbud, leverandører og spor af allergener bedes du spørge personalet om præcise oplysninger før bestilling."
+        },
+        "hu": {
+          "text": "Az allergéninformációkat a standard receptúra és a rendelkezésre álló adatok alapján jelöljük. Mivel az elkészítés, a szezonális elérhetőség, a beszállítók és az allergénnyomok változhatnak, rendelés előtt kérjen pontos tájékoztatást a személyzettől."
         }
       }
     },
@@ -685,6 +753,9 @@
         },
         "da": {
           "text": "Hjemmelavet brød indeholder gluten (G)."
+        },
+        "hu": {
+          "text": "A házi kenyér glutént tartalmaz (G)."
         }
       }
     }
@@ -752,6 +823,14 @@
           "Til udvalgte retter serverer vi vores hjemmelavede brød, tilberedt med særlig omhu. Vi vælger råvarerne med omtanke og samarbejder så vidt muligt med lokale kroatiske leverandører."
         ],
         "closing": "Enkelt, ærligt og fuldt af smage, der føles som hjemme."
+      },
+      "hu": {
+        "title": "TÖRTÉNETÜNK AZ ASZTALNÁL",
+        "paragraphs": [
+          "A Bistro Putnikban ápoljuk a horvát recepteket, szokásokat és vendégszeretetet. Étlapunk ismerős házias ízeket, hagyományos elkészítést és Baška Voda mediterrán hangulatát kapcsolja össze.",
+          "A kiválasztott ételekhez saját házi kenyerünket kínáljuk, különös gonddal készítve. Az alapanyagokat átgondoltan választjuk, és amikor csak lehet, helyi horvát beszállítókkal dolgozunk."
+        ],
+        "closing": "Egyszerű, őszinte, és tele van otthonos ízekkel."
       }
     }
   },
@@ -817,8 +896,13 @@
                 "da": {
                   "name": "Slavonsk tallerken",
                   "description": "Slavonsk skinke, kulen, bacon, flæskesvær, komælksost, syltede grøntsager og hjemmelavet brød"
+                },
+                "hu": {
+                  "name": "Szlavón tál",
+                  "description": "Szlavón sonka, kulen, szalonna, töpörtyű, tehénsajt, savanyított zöldségek és házi kenyér"
                 }
-              }
+              },
+              "staffCode": "#001"
             },
             {
               "id": "dalmatinska-plata",
@@ -866,8 +950,13 @@
                 "da": {
                   "name": "Dalmatisk tallerken",
                   "description": "Prosciutto, gedeost, oliven, hjemmebagt brød"
+                },
+                "hu": {
+                  "name": "Dalmát tál",
+                  "description": "Pršut, kecskesajt, olívabogyó, házi kenyér"
                 }
-              }
+              },
+              "staffCode": "#002"
             },
             {
               "id": "salata-od-hobotnice",
@@ -915,8 +1004,13 @@
                 "da": {
                   "name": "Blækspruttesalat",
                   "description": "Tilberedt på traditionel dalmatisk vis."
+                },
+                "hu": {
+                  "name": "Polipsaláta",
+                  "description": "Hagyományos dalmát módon készítve."
                 }
-              }
+              },
+              "staffCode": "#003"
             }
           ],
           "translations": {
@@ -940,6 +1034,9 @@
             },
             "da": {
               "title": "KOLDE FORRETTER"
+            },
+            "hu": {
+              "title": "HIDEG ELŐÉTELEK"
             }
           }
         },
@@ -988,8 +1085,12 @@
                 },
                 "da": {
                   "name": "Cremet tomatsuppe"
+                },
+                "hu": {
+                  "name": "Paradicsomkrémleves"
                 }
-              }
+              },
+              "staffCode": "#004"
             },
             {
               "id": "krem-juha-od-celera-i-kokosa",
@@ -1029,8 +1130,12 @@
                 },
                 "da": {
                   "name": "Cremet selleri- og kokossuppe"
+                },
+                "hu": {
+                  "name": "Zelleres-kókuszos krémleves"
                 }
-              }
+              },
+              "staffCode": "#005"
             },
             {
               "id": "bistra-riblja-juha",
@@ -1071,8 +1176,12 @@
                 },
                 "da": {
                   "name": "Klar fiskesuppe"
+                },
+                "hu": {
+                  "name": "Tiszta halleves"
                 }
-              }
+              },
+              "staffCode": "#006"
             },
             {
               "id": "bistra-goveda-juha",
@@ -1112,8 +1221,12 @@
                 },
                 "da": {
                   "name": "Klar oksekødssuppe"
+                },
+                "hu": {
+                  "name": "Tiszta marhahúsleves"
                 }
-              }
+              },
+              "staffCode": "#007"
             },
             {
               "id": "krem-juha-od-cvjetace",
@@ -1155,8 +1268,12 @@
                 },
                 "da": {
                   "name": "Cremet blomkålssuppe"
+                },
+                "hu": {
+                  "name": "Karfiolkrémleves"
                 }
-              }
+              },
+              "staffCode": "#008"
             }
           ],
           "translations": {
@@ -1180,6 +1297,9 @@
             },
             "da": {
               "title": "SUPPER"
+            },
+            "hu": {
+              "title": "LEVESEK"
             }
           }
         },
@@ -1230,8 +1350,12 @@
                 },
                 "da": {
                   "name": "Bolognese"
+                },
+                "hu": {
+                  "name": "Bolognese"
                 }
-              }
+              },
+              "staffCode": "#009"
             },
             {
               "id": "carbonara",
@@ -1273,8 +1397,12 @@
                 },
                 "da": {
                   "name": "Carbonara"
+                },
+                "hu": {
+                  "name": "Carbonara"
                 }
-              }
+              },
+              "staffCode": "#010"
             },
             {
               "id": "zelene-tagliatelle-s-morskim-plodovima",
@@ -1321,8 +1449,12 @@
                 },
                 "da": {
                   "name": "Grøn tagliatelle med skaldyr"
+                },
+                "hu": {
+                  "name": "Zöld tagliatelle tenger gyümölcseivel"
                 }
-              }
+              },
+              "staffCode": "#011"
             }
           ],
           "translations": {
@@ -1346,6 +1478,9 @@
             },
             "da": {
               "title": "PASTA OG RISOTTO"
+            },
+            "hu": {
+              "title": "TÉSZTÁK ÉS RIZOTTÓK"
             }
           }
         },
@@ -1405,8 +1540,13 @@
                 "da": {
                   "name": "Arancini med sort risotto og blæksprutte",
                   "description": "hjemmelavede arancini med sort risotto og blæksprutte"
+                },
+                "hu": {
+                  "name": "Fekete rizottós és tintahalas arancini",
+                  "description": "házi arancini fekete rizottóból tintahallal"
                 }
-              }
+              },
+              "staffCode": "#012"
             },
             {
               "id": "vege-arancini",
@@ -1456,8 +1596,13 @@
                 "da": {
                   "name": "Vegetariske arancini",
                   "description": "vegetarisk"
+                },
+                "hu": {
+                  "name": "Zöldséges arancini",
+                  "description": "vegetáriánus"
                 }
-              }
+              },
+              "staffCode": "#013"
             }
           ],
           "translations": {
@@ -1480,6 +1625,9 @@
               "title": "PUTNIK ARANCINI"
             },
             "da": {
+              "title": "PUTNIK ARANCINI"
+            },
+            "hu": {
               "title": "PUTNIK ARANCINI"
             }
           }
@@ -1531,8 +1679,12 @@
                 },
                 "da": {
                   "name": "Ćevapi med dollar chips og cremefraiche"
+                },
+                "hu": {
+                  "name": "Ćevapi dollar chipsszel és tejföllel"
                 }
-              }
+              },
+              "staffCode": "#014"
             },
             {
               "id": "punjena-pljeskavica-sir-uz-dollar-chips-i-vrhnje",
@@ -1574,8 +1726,12 @@
                 },
                 "da": {
                   "name": "Fyldt pljeskavica (ost) med dollar chips og cremefraiche"
+                },
+                "hu": {
+                  "name": "Töltött pljeskavica (sajttal) dollar chipsszel és tejföllel"
                 }
-              }
+              },
+              "staffCode": "#015"
             },
             {
               "id": "punjena-pljeskavica-uz-dollar-chips-i-vrhnje",
@@ -1617,8 +1773,12 @@
                 },
                 "da": {
                   "name": "Rullet kød i bacon med dollar chips og cremefraiche"
+                },
+                "hu": {
+                  "name": "Szalonnába tekert hús dollar chipsszel és tejföllel"
                 }
-              }
+              },
+              "staffCode": "#016"
             },
             {
               "id": "dvije-kobasice-uz-krumpir-s-povrcem",
@@ -1658,8 +1818,12 @@
                 },
                 "da": {
                   "name": "Slavonsk hjemmelavet grillpølse med tilbehør"
+                },
+                "hu": {
+                  "name": "Házi szlavón grillkolbász körettel"
                 }
-              }
+              },
+              "staffCode": "#017"
             },
             {
               "id": "pileci-file-uz-dollar-chips",
@@ -1699,8 +1863,12 @@
                 },
                 "da": {
                   "name": "Kyllingefilet med dollar chips"
+                },
+                "hu": {
+                  "name": "Csirkemellfilé dollar chipsszel"
                 }
-              }
+              },
+              "staffCode": "#018"
             },
             {
               "id": "ramstek-uz-krumpir-i-wok-povrce",
@@ -1740,8 +1908,12 @@
                 },
                 "da": {
                   "name": "Rump steak med kartofler og wokgrøntsager"
+                },
+                "hu": {
+                  "name": "Rump steak burgonyával és wok zöldségekkel"
                 }
-              }
+              },
+              "staffCode": "#019"
             },
             {
               "id": "biftek-uz-krumpir-i-wok-povrce",
@@ -1781,8 +1953,12 @@
                 },
                 "da": {
                   "name": "Oksemørbrad med kartofler og wokgrøntsager"
+                },
+                "hu": {
+                  "name": "Bélszín burgonyával és wok zöldségekkel"
                 }
-              }
+              },
+              "staffCode": "#020"
             }
           ],
           "translations": {
@@ -1806,6 +1982,9 @@
             },
             "da": {
               "title": "GRILL- OG KØDRETTER"
+            },
+            "hu": {
+              "title": "GRILL ÉS HÚSÉTELEK"
             }
           }
         },
@@ -1864,8 +2043,13 @@
                 "da": {
                   "name": "Dalmatisk pašticada",
                   "description": "traditionel dalmatisk oksekødsret med hjemmelavet tilbehør"
+                },
+                "hu": {
+                  "name": "Dalmát pašticada",
+                  "description": "hagyományos dalmát étel házi köretekkel"
                 }
-              }
+              },
+              "staffCode": "#021"
             }
           ],
           "translations": {
@@ -1889,6 +2073,9 @@
             },
             "da": {
               "title": "DALMATISKE SPECIALITETER"
+            },
+            "hu": {
+              "title": "DALMÁT KÜLÖNLEGESSÉGEK"
             }
           }
         },
@@ -1938,8 +2125,12 @@
                 },
                 "da": {
                   "name": "Kyllingeschnitzel med tilbehør"
+                },
+                "hu": {
+                  "name": "Rántott csirkeszelet körettel"
                 }
-              }
+              },
+              "staffCode": "#022"
             },
             {
               "id": "svinjski-becki-uz-prilog",
@@ -1980,8 +2171,12 @@
                 },
                 "da": {
                   "name": "Svineschnitzel med tilbehør"
+                },
+                "hu": {
+                  "name": "Rántott sertésszelet körettel"
                 }
-              }
+              },
+              "staffCode": "#023"
             },
             {
               "id": "teleci-becki-uz-prilog",
@@ -2022,8 +2217,12 @@
                 },
                 "da": {
                   "name": "Kalveschnitzel med tilbehør"
+                },
+                "hu": {
+                  "name": "Rántott borjúszelet körettel"
                 }
-              }
+              },
+              "staffCode": "#024"
             },
             {
               "id": "pileci-punjeni-odrezak-uz-prilog",
@@ -2065,8 +2264,12 @@
                 },
                 "da": {
                   "name": "Fyldt kyllingekotelet med tilbehør"
+                },
+                "hu": {
+                  "name": "Töltött csirkeszelet körettel"
                 }
-              }
+              },
+              "staffCode": "#025"
             }
           ],
           "translations": {
@@ -2090,6 +2293,9 @@
             },
             "da": {
               "title": "PANEREDE RETTER"
+            },
+            "hu": {
+              "title": "RÁNTOTT ÉTELEK"
             }
           }
         },
@@ -2139,8 +2345,12 @@
                 },
                 "da": {
                   "name": "Grillet blæksprutte med bladbede og kartofler"
+                },
+                "hu": {
+                  "name": "Grillezett tintahal mángolddal és burgonyával"
                 }
-              }
+              },
+              "staffCode": "#026"
             },
             {
               "id": "lignje-przene-s-pommesom",
@@ -2182,8 +2392,12 @@
                 },
                 "da": {
                   "name": "Friteret blæksprutte med pommes frites"
+                },
+                "hu": {
+                  "name": "Sült tintahal hasábburgonyával"
                 }
-              }
+              },
+              "staffCode": "#027"
             },
             {
               "id": "bijela-riba-na-grillu",
@@ -2233,8 +2447,13 @@
                 "da": {
                   "name": "Grillet hvid fisk",
                   "description": "havbrasen, havbars · bladbede og kartofler"
+                },
+                "hu": {
+                  "name": "Grillezett fehér hal",
+                  "description": "aranydurbincs, tengeri sügér · mángold és burgonya"
                 }
-              }
+              },
+              "staffCode": "#028"
             },
             {
               "id": "losos-na-zaru-uz-blitvu-i-krumpir",
@@ -2275,8 +2494,12 @@
                 },
                 "da": {
                   "name": "Grillet laks med dollar chips og grillede grøntsager"
+                },
+                "hu": {
+                  "name": "Grillezett lazac dollar chipsszel és grillezett zöldségekkel"
                 }
-              }
+              },
+              "staffCode": "#029"
             },
             {
               "id": "tuna-steak-na-zaru-uz-blitvu-i-krumpir",
@@ -2317,8 +2540,12 @@
                 },
                 "da": {
                   "name": "Grillet tunsteak med bladbede og kartofler"
+                },
+                "hu": {
+                  "name": "Grillezett tonhal steak mángolddal és burgonyával"
                 }
-              }
+              },
+              "staffCode": "#030"
             },
             {
               "id": "dagnje-na-buzaru",
@@ -2364,8 +2591,12 @@
                 },
                 "da": {
                   "name": "Muslinger i traditionel buzara-sauce 0,5 kg"
+                },
+                "hu": {
+                  "name": "Kagyló hagyományos buzara módra 0,5 kg"
                 }
-              }
+              },
+              "staffCode": "#031"
             }
           ],
           "translations": {
@@ -2389,6 +2620,9 @@
             },
             "da": {
               "title": "FISK OG SKALDYR"
+            },
+            "hu": {
+              "title": "HALAK ÉS TENGERI ÉTELEK"
             }
           }
         },
@@ -2444,8 +2678,13 @@
                 "da": {
                   "name": "Pasta Napolitano",
                   "description": "vegansk"
+                },
+                "hu": {
+                  "name": "Pasta Napolitano",
+                  "description": "vegán"
                 }
-              }
+              },
+              "staffCode": "#032"
             },
             {
               "id": "aglio-olio",
@@ -2492,8 +2731,13 @@
                 "da": {
                   "name": "Aglio & Olio",
                   "description": "vegansk"
+                },
+                "hu": {
+                  "name": "Aglio & Olio",
+                  "description": "vegán"
                 }
-              }
+              },
+              "staffCode": "#033"
             },
             {
               "id": "steak-od-karfiola",
@@ -2540,8 +2784,13 @@
                 "da": {
                   "name": "Blomkålssteak",
                   "description": "vegansk"
+                },
+                "hu": {
+                  "name": "Karfiol steak",
+                  "description": "vegán"
                 }
-              }
+              },
+              "staffCode": "#034"
             },
             {
               "id": "tofu-steak",
@@ -2588,8 +2837,13 @@
                 "da": {
                   "name": "Tofu steak",
                   "description": "vegansk"
+                },
+                "hu": {
+                  "name": "Tofu steak",
+                  "description": "vegán"
                 }
-              }
+              },
+              "staffCode": "#035"
             },
             {
               "id": "vege-salata",
@@ -2636,8 +2890,13 @@
                 "da": {
                   "name": "Vegetarisk salat",
                   "description": "tofu steak · vegansk"
+                },
+                "hu": {
+                  "name": "Zöldségsaláta",
+                  "description": "tofu steak · vegán"
                 }
-              }
+              },
+              "staffCode": "#036"
             }
           ],
           "translations": {
@@ -2661,6 +2920,9 @@
             },
             "da": {
               "title": "VEGETARISK OG VEGANSK"
+            },
+            "hu": {
+              "title": "VEGETÁRIÁNUS ÉS VEGÁN"
             }
           }
         },
@@ -2711,8 +2973,12 @@
                 },
                 "da": {
                   "name": "Kyllingenuggets + pommes frites"
+                },
+                "hu": {
+                  "name": "Csirke nuggets + hasábburgonya"
                 }
-              }
+              },
+              "staffCode": "#037"
             },
             {
               "id": "mali-bolognese",
@@ -2755,8 +3021,12 @@
                 },
                 "da": {
                   "name": "Lille Bolognese"
+                },
+                "hu": {
+                  "name": "Kis bolognese"
                 }
-              }
+              },
+              "staffCode": "#038"
             },
             {
               "id": "mali-cevapi-uz-dollar-chips-i-vrhnje",
@@ -2799,8 +3069,12 @@
                 },
                 "da": {
                   "name": "Små ćevapi med dollar chips og cremefraiche"
+                },
+                "hu": {
+                  "name": "Kis ćevapi dollar chipsszel és tejföllel"
                 }
-              }
+              },
+              "staffCode": "#039"
             }
           ],
           "translations": {
@@ -2824,6 +3098,9 @@
             },
             "da": {
               "title": "BØRNEMENU"
+            },
+            "hu": {
+              "title": "GYEREKMENÜ"
             }
           }
         },
@@ -2874,8 +3151,12 @@
                 },
                 "da": {
                   "name": "Makrel- / tunsalat"
+                },
+                "hu": {
+                  "name": "Makréla / tonhal saláta"
                 }
-              }
+              },
+              "staffCode": "#040"
             },
             {
               "id": "slavonska-salata",
@@ -2922,8 +3203,13 @@
                 "da": {
                   "name": "Slavonsk salat",
                   "description": "grillet bacon"
+                },
+                "hu": {
+                  "name": "Szlavón saláta",
+                  "description": "grillezett szalonna"
                 }
-              }
+              },
+              "staffCode": "#041"
             },
             {
               "id": "salata-piletina",
@@ -2973,8 +3259,13 @@
                 "da": {
                   "name": "Kyllingesalat",
                   "description": "kyllingefilet"
+                },
+                "hu": {
+                  "name": "Csirkesaláta",
+                  "description": "csirkemellfilé"
                 }
-              }
+              },
+              "staffCode": "#042"
             }
           ],
           "translations": {
@@ -3005,6 +3296,10 @@
             "da": {
               "title": "SALATER SOM MÅLTID",
               "note": "serveres med varmt hjemmelavet brød"
+            },
+            "hu": {
+              "title": "TARTALMAS SALÁTÁK",
+              "note": "meleg házi kenyérrel tálalva"
             }
           }
         },
@@ -3051,8 +3346,12 @@
                 },
                 "da": {
                   "name": "Sæsonens blandede salat"
+                },
+                "hu": {
+                  "name": "Szezonális vegyes saláta"
                 }
-              }
+              },
+              "staffCode": "#043"
             },
             {
               "id": "kupus-salata",
@@ -3090,8 +3389,12 @@
                 },
                 "da": {
                   "name": "Kålsalat"
+                },
+                "hu": {
+                  "name": "Káposztasaláta"
                 }
-              }
+              },
+              "staffCode": "#044"
             },
             {
               "id": "krastavci-u-vrhnju",
@@ -3131,8 +3434,12 @@
                 },
                 "da": {
                   "name": "Agurker i cremefraiche"
+                },
+                "hu": {
+                  "name": "Uborka tejfölben"
                 }
-              }
+              },
+              "staffCode": "#045"
             },
             {
               "id": "cikla-karamelizirani-luk",
@@ -3170,8 +3477,12 @@
                 },
                 "da": {
                   "name": "Rødbede"
+                },
+                "hu": {
+                  "name": "Cékla"
                 }
-              }
+              },
+              "staffCode": "#046"
             },
             {
               "id": "grcka-salata",
@@ -3211,8 +3522,12 @@
                 },
                 "da": {
                   "name": "Græsk salat"
+                },
+                "hu": {
+                  "name": "Görög saláta"
                 }
-              }
+              },
+              "staffCode": "#047"
             }
           ],
           "translations": {
@@ -3236,6 +3551,9 @@
             },
             "da": {
               "title": "SALATER"
+            },
+            "hu": {
+              "title": "SALÁTÁK"
             }
           }
         },
@@ -3297,8 +3615,13 @@
                 "da": {
                   "name": "Pandekager",
                   "description": "marmelade eller Linolada"
+                },
+                "hu": {
+                  "name": "Palacsinta",
+                  "description": "lekvárral vagy Linoladával"
                 }
-              }
+              },
+              "staffCode": "#048"
             },
             {
               "id": "palacinke-sa-sladoledom",
@@ -3342,8 +3665,12 @@
                 },
                 "da": {
                   "name": "Pandekager med is"
+                },
+                "hu": {
+                  "name": "Palacsinta fagylalttal"
                 }
-              }
+              },
+              "staffCode": "#049"
             },
             {
               "id": "lava-cake-sa-sladoledom",
@@ -3387,8 +3714,12 @@
                 },
                 "da": {
                   "name": "Lava cake med is"
+                },
+                "hu": {
+                  "name": "Lava cake fagylalttal"
                 }
-              }
+              },
+              "staffCode": "#050"
             },
             {
               "id": "cokoladni-brownie-sa-sladoledom",
@@ -3432,8 +3763,12 @@
                 },
                 "da": {
                   "name": "Chokoladebrownie med is"
+                },
+                "hu": {
+                  "name": "Csokoládés brownie fagylalttal"
                 }
-              }
+              },
+              "staffCode": "#051"
             }
           ],
           "translations": {
@@ -3457,6 +3792,9 @@
             },
             "da": {
               "title": "DESSERTER"
+            },
+            "hu": {
+              "title": "DESSZERTEK"
             }
           }
         }
@@ -3482,6 +3820,9 @@
         },
         "da": {
           "title": "MENU"
+        },
+        "hu": {
+          "title": "ÉTLAP"
         }
       }
     },
@@ -3542,8 +3883,12 @@
                 },
                 "da": {
                   "name": "Blæksprutte under peka med tilbehør"
+                },
+                "hu": {
+                  "name": "Polip peka alatt, körettel"
                 }
-              }
+              },
+              "staffCode": "#169"
             },
             {
               "id": "peka-mix",
@@ -3590,8 +3935,13 @@
                 "da": {
                   "name": "Blandet peka",
                   "description": "blandet peka med tilbehør"
+                },
+                "hu": {
+                  "name": "Peka mix",
+                  "description": "vegyes peka körettel"
                 }
-              }
+              },
+              "staffCode": "#170"
             }
           ],
           "translations": {
@@ -3614,6 +3964,9 @@
               "title": "PEKA"
             },
             "da": {
+              "title": "PEKA"
+            },
+            "hu": {
               "title": "PEKA"
             }
           }
@@ -3654,6 +4007,11 @@
           "title": "SÆRTILBUD",
           "intro": "Kan bestilles på forhånd, mindst 24 timer i forvejen, efter aftale om antal gæster.",
           "closing": "Til større grupper og særlige lejligheder anbefaler vi gerne serveringsform og sæsonens tilbehør."
+        },
+        "hu": {
+          "title": "KÜLÖN AJÁNLAT",
+          "intro": "Előzetes rendeléssel érhető el, legalább 24 órával korábban, az érkező vendégek számának egyeztetésével.",
+          "closing": "Nagyobb társaságokhoz és különleges alkalmakhoz szívesen ajánlunk tálalási módot és szezonális köreteket."
         }
       }
     },
@@ -3686,6 +4044,9 @@
         },
         "da": {
           "title": "INFORMATION"
+        },
+        "hu": {
+          "title": "INFORMÁCIÓK"
         }
       }
     },
@@ -3738,8 +4099,12 @@
                 },
                 "da": {
                   "name": "Espresso"
+                },
+                "hu": {
+                  "name": "Espresso"
                 }
-              }
+              },
+              "staffCode": "#052"
             },
             {
               "id": "kava-s-mlijekom-slagom",
@@ -3777,8 +4142,12 @@
                 },
                 "da": {
                   "name": "Kaffe med mælk / flødeskum"
+                },
+                "hu": {
+                  "name": "Kávé tejjel / tejszínhabbal"
                 }
-              }
+              },
+              "staffCode": "#053"
             },
             {
               "id": "cappuccino",
@@ -3816,8 +4185,12 @@
                 },
                 "da": {
                   "name": "Cappuccino"
+                },
+                "hu": {
+                  "name": "Cappuccino"
                 }
-              }
+              },
+              "staffCode": "#054"
             },
             {
               "id": "bijela-kava",
@@ -3855,8 +4228,12 @@
                 },
                 "da": {
                   "name": "Kaffe med mælk"
+                },
+                "hu": {
+                  "name": "Tejeskávé"
                 }
-              }
+              },
+              "staffCode": "#055"
             },
             {
               "id": "latte-macchiato",
@@ -3894,8 +4271,12 @@
                 },
                 "da": {
                   "name": "Latte macchiato"
+                },
+                "hu": {
+                  "name": "Latte macchiato"
                 }
-              }
+              },
+              "staffCode": "#056"
             },
             {
               "id": "nescafe",
@@ -3931,8 +4312,12 @@
                 },
                 "da": {
                   "name": "Nescafé"
+                },
+                "hu": {
+                  "name": "Nescafé"
                 }
-              }
+              },
+              "staffCode": "#057"
             },
             {
               "id": "caj",
@@ -3968,8 +4353,12 @@
                 },
                 "da": {
                   "name": "Te"
+                },
+                "hu": {
+                  "name": "Tea"
                 }
-              }
+              },
+              "staffCode": "#058"
             },
             {
               "id": "instant-cappuccino",
@@ -4007,8 +4396,12 @@
                 },
                 "da": {
                   "name": "Instant cappuccino"
+                },
+                "hu": {
+                  "name": "Instant cappuccino"
                 }
-              }
+              },
+              "staffCode": "#059"
             },
             {
               "id": "ice-latte",
@@ -4046,8 +4439,12 @@
                 },
                 "da": {
                   "name": "Islatte"
+                },
+                "hu": {
+                  "name": "Jeges latte"
                 }
-              }
+              },
+              "staffCode": "#060"
             },
             {
               "id": "ice-latte-matcha",
@@ -4085,8 +4482,12 @@
                 },
                 "da": {
                   "name": "Ismatcha latte"
+                },
+                "hu": {
+                  "name": "Jeges matcha latte"
                 }
-              }
+              },
+              "staffCode": "#061"
             },
             {
               "id": "ice-latte-matcha-s-okusom",
@@ -4124,8 +4525,12 @@
                 },
                 "da": {
                   "name": "Ismatcha latte med smag"
+                },
+                "hu": {
+                  "name": "Ízesített jeges matcha latte"
                 }
-              }
+              },
+              "staffCode": "#062"
             },
             {
               "id": "espresso-tonic",
@@ -4161,8 +4566,12 @@
                 },
                 "da": {
                   "name": "Espresso tonic"
+                },
+                "hu": {
+                  "name": "Espresso tonic"
                 }
-              }
+              },
+              "staffCode": "#063"
             },
             {
               "id": "affogato",
@@ -4200,8 +4609,12 @@
                 },
                 "da": {
                   "name": "Affogato"
+                },
+                "hu": {
+                  "name": "Affogato"
                 }
-              }
+              },
+              "staffCode": "#064"
             },
             {
               "id": "irish-baileys-coffee",
@@ -4239,8 +4652,12 @@
                 },
                 "da": {
                   "name": "Irish / Baileys coffee"
+                },
+                "hu": {
+                  "name": "Irish / Baileys coffee"
                 }
-              }
+              },
+              "staffCode": "#065"
             },
             {
               "id": "ice-coffee",
@@ -4278,8 +4695,12 @@
                 },
                 "da": {
                   "name": "Iskaffe"
+                },
+                "hu": {
+                  "name": "Jegeskávé"
                 }
-              }
+              },
+              "staffCode": "#066"
             }
           ],
           "translations": {
@@ -4303,6 +4724,9 @@
             },
             "da": {
               "title": "KAFFE OG VARME DRIKKE"
+            },
+            "hu": {
+              "title": "KÁVÉK ÉS FORRÓ ITALOK"
             }
           }
         },
@@ -4347,8 +4771,12 @@
                 },
                 "da": {
                   "name": "Römerquelle uden brus 0,33 l"
+                },
+                "hu": {
+                  "name": "Römerquelle szénsavmentes 0,33 l"
                 }
-              }
+              },
+              "staffCode": "#067"
             },
             {
               "id": "romerquelle-gazirana-033",
@@ -4384,8 +4812,12 @@
                 },
                 "da": {
                   "name": "Römerquelle med brus 0,33 l"
+                },
+                "hu": {
+                  "name": "Römerquelle szénsavas 0,33 l"
                 }
-              }
+              },
+              "staffCode": "#068"
             },
             {
               "id": "romerquelle-negazirana-075",
@@ -4421,8 +4853,12 @@
                 },
                 "da": {
                   "name": "Römerquelle uden brus 0,75 l"
+                },
+                "hu": {
+                  "name": "Römerquelle szénsavmentes 0,75 l"
                 }
-              }
+              },
+              "staffCode": "#069"
             },
             {
               "id": "romerquelle-gazirana-075",
@@ -4458,8 +4894,12 @@
                 },
                 "da": {
                   "name": "Römerquelle med brus 0,75 l"
+                },
+                "hu": {
+                  "name": "Römerquelle szénsavas 0,75 l"
                 }
-              }
+              },
+              "staffCode": "#070"
             },
             {
               "id": "romerquelle-limunska-trava",
@@ -4495,8 +4935,12 @@
                 },
                 "da": {
                   "name": "Römerquelle citrongræs"
+                },
+                "hu": {
+                  "name": "Römerquelle citromfű"
                 }
-              }
+              },
+              "staffCode": "#071"
             }
           ],
           "translations": {
@@ -4520,6 +4964,9 @@
             },
             "da": {
               "title": "VAND"
+            },
+            "hu": {
+              "title": "VIZEK"
             }
           }
         },
@@ -4564,8 +5011,12 @@
                 },
                 "da": {
                   "name": "Coca-Cola 0.25 l"
+                },
+                "hu": {
+                  "name": "Coca-Cola 0,25 l"
                 }
-              }
+              },
+              "staffCode": "#072"
             },
             {
               "id": "coca-cola-zero-025",
@@ -4601,8 +5052,12 @@
                 },
                 "da": {
                   "name": "Coca-Cola Zero 0.25 l"
+                },
+                "hu": {
+                  "name": "Coca-Cola Zero 0,25 l"
                 }
-              }
+              },
+              "staffCode": "#073"
             },
             {
               "id": "fanta-025",
@@ -4638,8 +5093,12 @@
                 },
                 "da": {
                   "name": "Fanta 0.25 l"
+                },
+                "hu": {
+                  "name": "Fanta 0,25 l"
                 }
-              }
+              },
+              "staffCode": "#074"
             },
             {
               "id": "fanta-lemon-025",
@@ -4675,8 +5134,12 @@
                 },
                 "da": {
                   "name": "Fanta Lemon 0.25 l"
+                },
+                "hu": {
+                  "name": "Fanta Lemon 0,25 l"
                 }
-              }
+              },
+              "staffCode": "#075"
             },
             {
               "id": "sprite-025",
@@ -4712,8 +5175,12 @@
                 },
                 "da": {
                   "name": "Sprite 0.25 l"
+                },
+                "hu": {
+                  "name": "Sprite 0,25 l"
                 }
-              }
+              },
+              "staffCode": "#076"
             },
             {
               "id": "schweppes-tonic-025",
@@ -4749,8 +5216,12 @@
                 },
                 "da": {
                   "name": "Schweppes Tonic 0.25 l"
+                },
+                "hu": {
+                  "name": "Schweppes Tonic 0,25 l"
                 }
-              }
+              },
+              "staffCode": "#077"
             },
             {
               "id": "schweppes-bitter-lemon-025",
@@ -4786,8 +5257,12 @@
                 },
                 "da": {
                   "name": "Schweppes Bitter Lemon 0.25 l"
+                },
+                "hu": {
+                  "name": "Schweppes Bitter Lemon 0,25 l"
                 }
-              }
+              },
+              "staffCode": "#078"
             },
             {
               "id": "schweppes-tangerina-025",
@@ -4823,8 +5298,12 @@
                 },
                 "da": {
                   "name": "Schweppes Tangerine 0.25 l"
+                },
+                "hu": {
+                  "name": "Schweppes Tangerina 0,25 l"
                 }
-              }
+              },
+              "staffCode": "#079"
             },
             {
               "id": "schweppes-cherry-025",
@@ -4860,8 +5339,12 @@
                 },
                 "da": {
                   "name": "Schweppes Cherry 0.25 l"
+                },
+                "hu": {
+                  "name": "Schweppes Cherry 0,25 l"
                 }
-              }
+              },
+              "staffCode": "#080"
             },
             {
               "id": "thomas-henry-spicy-ginger-beer-020",
@@ -4897,8 +5380,12 @@
                 },
                 "da": {
                   "name": "Thomas Henry Spicy Ginger Beer 0.20 l"
+                },
+                "hu": {
+                  "name": "Thomas Henry Spicy Ginger Beer 0,20 l"
                 }
-              }
+              },
+              "staffCode": "#081"
             }
           ],
           "translations": {
@@ -4922,6 +5409,9 @@
             },
             "da": {
               "title": "ALKOHOLFRIE DRIKKE"
+            },
+            "hu": {
+              "title": "ALKOHOLMENTES ITALOK"
             }
           }
         },
@@ -4966,8 +5456,12 @@
                 },
                 "da": {
                   "name": "Cedevita citron"
+                },
+                "hu": {
+                  "name": "Cedevita citrom"
                 }
-              }
+              },
+              "staffCode": "#082"
             },
             {
               "id": "cedevita-naranca",
@@ -5003,8 +5497,12 @@
                 },
                 "da": {
                   "name": "Cedevita appelsin"
+                },
+                "hu": {
+                  "name": "Cedevita narancs"
                 }
-              }
+              },
+              "staffCode": "#083"
             },
             {
               "id": "limunada",
@@ -5040,8 +5538,12 @@
                 },
                 "da": {
                   "name": "Limonade"
+                },
+                "hu": {
+                  "name": "Limonádé"
                 }
-              }
+              },
+              "staffCode": "#084"
             },
             {
               "id": "narancada",
@@ -5077,8 +5579,12 @@
                 },
                 "da": {
                   "name": "Appelsinlimonade"
+                },
+                "hu": {
+                  "name": "Narancslé"
                 }
-              }
+              },
+              "staffCode": "#085"
             },
             {
               "id": "hidra-limun-050",
@@ -5114,8 +5620,12 @@
                 },
                 "da": {
                   "name": "Hidra ISO citron 0,50 l"
+                },
+                "hu": {
+                  "name": "Hidra ISO citrom 0,50 l"
                 }
-              }
+              },
+              "staffCode": "#086"
             },
             {
               "id": "hidra-naranca-050",
@@ -5151,8 +5661,12 @@
                 },
                 "da": {
                   "name": "Hidra ISO appelsin 0,50 l"
+                },
+                "hu": {
+                  "name": "Hidra ISO narancs 0,50 l"
                 }
-              }
+              },
+              "staffCode": "#087"
             },
             {
               "id": "ledeni-caj-breskva",
@@ -5188,8 +5702,12 @@
                 },
                 "da": {
                   "name": "Iste fersken"
+                },
+                "hu": {
+                  "name": "Jeges tea őszibarack"
                 }
-              }
+              },
+              "staffCode": "#088"
             },
             {
               "id": "ledeni-caj-sumsko-voce",
@@ -5225,8 +5743,12 @@
                 },
                 "da": {
                   "name": "Iste skovbær"
+                },
+                "hu": {
+                  "name": "Jeges tea erdei gyümölcs"
                 }
-              }
+              },
+              "staffCode": "#089"
             },
             {
               "id": "somersby-00-jagoda-limeta",
@@ -5262,8 +5784,12 @@
                 },
                 "da": {
                   "name": "Somersby 0.0 jordbær-lime"
+                },
+                "hu": {
+                  "name": "Somersby 0.0 eper-lime"
                 }
-              }
+              },
+              "staffCode": "#090"
             },
             {
               "id": "pago-jabuka-020",
@@ -5299,8 +5825,12 @@
                 },
                 "da": {
                   "name": "Pago æble 0,20 l"
+                },
+                "hu": {
+                  "name": "Pago alma 0,20 l"
                 }
-              }
+              },
+              "staffCode": "#091"
             },
             {
               "id": "pago-naranca-020",
@@ -5336,8 +5866,12 @@
                 },
                 "da": {
                   "name": "Pago appelsin 0,20 l"
+                },
+                "hu": {
+                  "name": "Pago narancs 0,20 l"
                 }
-              }
+              },
+              "staffCode": "#092"
             },
             {
               "id": "pago-visnja-020",
@@ -5373,8 +5907,12 @@
                 },
                 "da": {
                   "name": "Pago kirsebær 0,20 l"
+                },
+                "hu": {
+                  "name": "Pago meggy 0,20 l"
                 }
-              }
+              },
+              "staffCode": "#093"
             },
             {
               "id": "pago-marelica-020",
@@ -5410,8 +5948,12 @@
                 },
                 "da": {
                   "name": "Pago abrikos 0,20 l"
+                },
+                "hu": {
+                  "name": "Pago sárgabarack 0,20 l"
                 }
-              }
+              },
+              "staffCode": "#094"
             },
             {
               "id": "pago-ananas-020",
@@ -5447,8 +5989,12 @@
                 },
                 "da": {
                   "name": "Pago ananas 0,20 l"
+                },
+                "hu": {
+                  "name": "Pago ananász 0,20 l"
                 }
-              }
+              },
+              "staffCode": "#095"
             },
             {
               "id": "pago-crni-ribiz-020",
@@ -5484,8 +6030,12 @@
                 },
                 "da": {
                   "name": "Pago solbær 0,20 l"
+                },
+                "hu": {
+                  "name": "Pago fekete ribizli 0,20 l"
                 }
-              }
+              },
+              "staffCode": "#096"
             }
           ],
           "translations": {
@@ -5509,6 +6059,9 @@
             },
             "da": {
               "title": "JUICE OG ISTE"
+            },
+            "hu": {
+              "title": "ÜDÍTŐK ÉS JEGES TEÁK"
             }
           }
         },
@@ -5536,7 +6089,7 @@
               "sortOrder": 1,
               "translations": {
                 "en": {
-                  "name": "Pan draft 0.30 l"
+                  "name": "Pan draught 0.30 l"
                 },
                 "sv": {
                   "name": "Pan fatöl 0,30 l"
@@ -5555,8 +6108,12 @@
                 },
                 "da": {
                   "name": "Pan fadøl 0,30 l"
+                },
+                "hu": {
+                  "name": "Pan csapolt 0,30 l"
                 }
-              }
+              },
+              "staffCode": "#097"
             },
             {
               "id": "pan-toceni-050",
@@ -5575,7 +6132,7 @@
               "sortOrder": 2,
               "translations": {
                 "en": {
-                  "name": "Pan draft 0.50 l"
+                  "name": "Pan draught 0.50 l"
                 },
                 "sv": {
                   "name": "Pan fatöl 0,50 l"
@@ -5594,8 +6151,12 @@
                 },
                 "da": {
                   "name": "Pan fadøl 0,50 l"
+                },
+                "hu": {
+                  "name": "Pan csapolt 0,50 l"
                 }
-              }
+              },
+              "staffCode": "#098"
             },
             {
               "id": "pan-zlatni-033",
@@ -5633,8 +6194,12 @@
                 },
                 "da": {
                   "name": "Pan Zlatni 0,33 l"
+                },
+                "hu": {
+                  "name": "Pan Zlatni 0,33 l"
                 }
-              }
+              },
+              "staffCode": "#099"
             },
             {
               "id": "carlsberg-033",
@@ -5672,8 +6237,12 @@
                 },
                 "da": {
                   "name": "Carlsberg 0,33 l"
+                },
+                "hu": {
+                  "name": "Carlsberg 0,33 l"
                 }
-              }
+              },
+              "staffCode": "#100"
             },
             {
               "id": "tuborg-033",
@@ -5711,8 +6280,12 @@
                 },
                 "da": {
                   "name": "Tuborg 0,33 l"
+                },
+                "hu": {
+                  "name": "Tuborg 0,33 l"
                 }
-              }
+              },
+              "staffCode": "#101"
             },
             {
               "id": "pan-radler-050",
@@ -5750,8 +6323,12 @@
                 },
                 "da": {
                   "name": "Pan Radler 0.50 l"
+                },
+                "hu": {
+                  "name": "Pan Radler 0,50 l"
                 }
-              }
+              },
+              "staffCode": "#102"
             },
             {
               "id": "pan-bezalkoholni-033",
@@ -5789,8 +6366,12 @@
                 },
                 "da": {
                   "name": "Pan alkoholfri 0,33 l"
+                },
+                "hu": {
+                  "name": "Pan alkoholmentes 0,33 l"
                 }
-              }
+              },
+              "staffCode": "#103"
             },
             {
               "id": "budweiser-dark-050",
@@ -5828,8 +6409,12 @@
                 },
                 "da": {
                   "name": "Budweiser Dark 0.50 l"
+                },
+                "hu": {
+                  "name": "Budweiser Dark 0,50 l"
                 }
-              }
+              },
+              "staffCode": "#104"
             },
             {
               "id": "somersby-jabuka",
@@ -5865,8 +6450,12 @@
                 },
                 "da": {
                   "name": "Somersby æble"
+                },
+                "hu": {
+                  "name": "Somersby alma"
                 }
-              }
+              },
+              "staffCode": "#105"
             },
             {
               "id": "somersby-kruska",
@@ -5902,8 +6491,12 @@
                 },
                 "da": {
                   "name": "Somersby pære"
+                },
+                "hu": {
+                  "name": "Somersby körte"
                 }
-              }
+              },
+              "staffCode": "#106"
             }
           ],
           "translations": {
@@ -5927,6 +6520,9 @@
             },
             "da": {
               "title": "ØL OG CIDER"
+            },
+            "hu": {
+              "title": "SÖRÖK ÉS CIDER"
             }
           }
         },
@@ -5973,8 +6569,12 @@
                 },
                 "da": {
                   "name": "Radler 0.30 l"
+                },
+                "hu": {
+                  "name": "Radla 0,30 l"
                 }
-              }
+              },
+              "staffCode": "#107"
             },
             {
               "id": "radla-050",
@@ -6012,8 +6612,12 @@
                 },
                 "da": {
                   "name": "Radler 0.50 l"
+                },
+                "hu": {
+                  "name": "Radla 0,50 l"
                 }
-              }
+              },
+              "staffCode": "#108"
             },
             {
               "id": "mis-mas-030",
@@ -6051,8 +6655,12 @@
                 },
                 "da": {
                   "name": "Miš-maš 0.30 l"
+                },
+                "hu": {
+                  "name": "Miš-maš 0,30 l"
                 }
-              }
+              },
+              "staffCode": "#109"
             },
             {
               "id": "mis-mas-050",
@@ -6090,8 +6698,12 @@
                 },
                 "da": {
                   "name": "Miš-maš 0.50 l"
+                },
+                "hu": {
+                  "name": "Miš-maš 0,50 l"
                 }
-              }
+              },
+              "staffCode": "#110"
             },
             {
               "id": "gemist-020",
@@ -6129,8 +6741,12 @@
                 },
                 "da": {
                   "name": "Gemišt 0.20 l"
+                },
+                "hu": {
+                  "name": "Gemišt 0,20 l"
                 }
-              }
+              },
+              "staffCode": "#111"
             },
             {
               "id": "bambus-030",
@@ -6168,8 +6784,12 @@
                 },
                 "da": {
                   "name": "Bambus 0.30 l"
+                },
+                "hu": {
+                  "name": "Bambus 0,30 l"
                 }
-              }
+              },
+              "staffCode": "#112"
             },
             {
               "id": "bambus-050",
@@ -6207,8 +6827,12 @@
                 },
                 "da": {
                   "name": "Bambus 0.50 l"
+                },
+                "hu": {
+                  "name": "Bambus 0,50 l"
                 }
-              }
+              },
+              "staffCode": "#113"
             },
             {
               "id": "turska-kola",
@@ -6244,8 +6868,12 @@
                 },
                 "da": {
                   "name": "Turska kola"
+                },
+                "hu": {
+                  "name": "Török kóla"
                 }
-              }
+              },
+              "staffCode": "#114"
             }
           ],
           "translations": {
@@ -6269,6 +6897,9 @@
             },
             "da": {
               "title": "BLANDEDE DRIKKE"
+            },
+            "hu": {
+              "title": "KEVERT ITALOK"
             }
           }
         }
@@ -6294,6 +6925,9 @@
         },
         "da": {
           "title": "DRIKKEVARER"
+        },
+        "hu": {
+          "title": "ITALOK"
         }
       }
     },
@@ -6348,8 +6982,12 @@
                 },
                 "da": {
                   "name": "Malvazija 1 dcl"
+                },
+                "hu": {
+                  "name": "Malvazija 1 dcl"
                 }
-              }
+              },
+              "staffCode": "#115"
             },
             {
               "id": "peljesac-1dcl",
@@ -6387,8 +7025,12 @@
                 },
                 "da": {
                   "name": "Pelješac 1 dcl"
+                },
+                "hu": {
+                  "name": "Pelješac 1 dcl"
                 }
-              }
+              },
+              "staffCode": "#116"
             },
             {
               "id": "rose-benkovac-1dcl",
@@ -6426,8 +7068,12 @@
                 },
                 "da": {
                   "name": "Rosé Benkovac 1 dcl"
+                },
+                "hu": {
+                  "name": "Rosé Benkovac 1 dcl"
                 }
-              }
+              },
+              "staffCode": "#117"
             },
             {
               "id": "zlatan-plavac-1dcl",
@@ -6465,8 +7111,12 @@
                 },
                 "da": {
                   "name": "Zlatan Plavac 1 dcl"
+                },
+                "hu": {
+                  "name": "Zlatan Plavac 1 dcl"
                 }
-              }
+              },
+              "staffCode": "#118"
             },
             {
               "id": "zlatan-posip-1dcl",
@@ -6504,8 +7154,12 @@
                 },
                 "da": {
                   "name": "Zlatan Pošip 1 dcl"
+                },
+                "hu": {
+                  "name": "Zlatan Pošip 1 dcl"
                 }
-              }
+              },
+              "staffCode": "#119"
             },
             {
               "id": "galic-rose-1dcl",
@@ -6543,8 +7197,12 @@
                 },
                 "da": {
                   "name": "Galić Rosé 1 dcl"
+                },
+                "hu": {
+                  "name": "Galić Rosé 1 dcl"
                 }
-              }
+              },
+              "staffCode": "#120"
             },
             {
               "id": "dalmatinski-prosek-1dcl",
@@ -6582,8 +7240,12 @@
                 },
                 "da": {
                   "name": "Dalmatisk prošek 1 dcl"
+                },
+                "hu": {
+                  "name": "Dalmát prošek 1 dcl"
                 }
-              }
+              },
+              "staffCode": "#121"
             },
             {
               "id": "muskat-bric-1dcl",
@@ -6621,8 +7283,12 @@
                 },
                 "da": {
                   "name": "Muškat BRIČ 1 dcl"
+                },
+                "hu": {
+                  "name": "Muškat BRIČ 1 dcl"
                 }
-              }
+              },
+              "staffCode": "#122"
             }
           ],
           "translations": {
@@ -6646,6 +7312,9 @@
             },
             "da": {
               "title": "VIN PÅ GLAS"
+            },
+            "hu": {
+              "title": "BOROK POHÁRRAL"
             }
           }
         },
@@ -6692,8 +7361,12 @@
                 },
                 "da": {
                   "name": "Zlatan Pošip 0.75 l"
+                },
+                "hu": {
+                  "name": "Zlatan Pošip 0,75 l"
                 }
-              }
+              },
+              "staffCode": "#123"
             },
             {
               "id": "galic-sauvignon-blanc-075",
@@ -6731,8 +7404,12 @@
                 },
                 "da": {
                   "name": "Galić Sauvignon Blanc 0.75 l"
+                },
+                "hu": {
+                  "name": "Galić Sauvignon Blanc 0,75 l"
                 }
-              }
+              },
+              "staffCode": "#124"
             },
             {
               "id": "muskat-bric-075",
@@ -6770,8 +7447,12 @@
                 },
                 "da": {
                   "name": "Muškat BRIČ 0.75 l"
+                },
+                "hu": {
+                  "name": "Muškat BRIČ 0,75 l"
                 }
-              }
+              },
+              "staffCode": "#125"
             },
             {
               "id": "korta-katarina-rose-075",
@@ -6809,8 +7490,12 @@
                 },
                 "da": {
                   "name": "Korta Katarina Rosé 0.75 l"
+                },
+                "hu": {
+                  "name": "Korta Katarina Rosé 0,75 l"
                 }
-              }
+              },
+              "staffCode": "#126"
             },
             {
               "id": "zlatan-plavac-075",
@@ -6848,8 +7533,12 @@
                 },
                 "da": {
                   "name": "Zlatan Plavac 0.75 l"
+                },
+                "hu": {
+                  "name": "Zlatan Plavac 0,75 l"
                 }
-              }
+              },
+              "staffCode": "#127"
             },
             {
               "id": "zlatan-crljenak-075",
@@ -6887,8 +7576,12 @@
                 },
                 "da": {
                   "name": "Zlatan Crljenak 0.75 l"
+                },
+                "hu": {
+                  "name": "Zlatan Crljenak 0,75 l"
                 }
-              }
+              },
+              "staffCode": "#128"
             }
           ],
           "translations": {
@@ -6912,6 +7605,9 @@
             },
             "da": {
               "title": "PREMIUMVINE"
+            },
+            "hu": {
+              "title": "PRÉMIUM BOROK"
             }
           }
         },
@@ -6958,8 +7654,12 @@
                 },
                 "da": {
                   "name": "Prosecco 1 dcl"
+                },
+                "hu": {
+                  "name": "Prosecco 1 dcl"
                 }
-              }
+              },
+              "staffCode": "#129"
             },
             {
               "id": "prosecco-075",
@@ -6997,8 +7697,12 @@
                 },
                 "da": {
                   "name": "Prosecco 0.75 l"
+                },
+                "hu": {
+                  "name": "Prosecco 0,75 l"
                 }
-              }
+              },
+              "staffCode": "#130"
             }
           ],
           "translations": {
@@ -7022,6 +7726,9 @@
             },
             "da": {
               "title": "MOUSSERENDE VINE"
+            },
+            "hu": {
+              "title": "PEZSGŐK"
             }
           }
         },
@@ -7066,8 +7773,12 @@
                 },
                 "da": {
                   "name": "Pelinkovac Dalmacija"
+                },
+                "hu": {
+                  "name": "Pelinkovac Dalmacija"
                 }
-              }
+              },
+              "staffCode": "#131"
             },
             {
               "id": "pelinkovac-antik",
@@ -7103,8 +7814,12 @@
                 },
                 "da": {
                   "name": "Pelinkovac Antique"
+                },
+                "hu": {
+                  "name": "Pelinkovac Antique"
                 }
-              }
+              },
+              "staffCode": "#132"
             },
             {
               "id": "sibenska-travarica",
@@ -7140,8 +7855,12 @@
                 },
                 "da": {
                   "name": "Urtebrandy fra Šibenik"
+                },
+                "hu": {
+                  "name": "Šibenska travarica"
                 }
-              }
+              },
+              "staffCode": "#133"
             },
             {
               "id": "williams-viljamovka",
@@ -7177,8 +7896,12 @@
                 },
                 "da": {
                   "name": "Williams pærebrandy"
+                },
+                "hu": {
+                  "name": "Williams viljamovka"
                 }
-              }
+              },
+              "staffCode": "#134"
             },
             {
               "id": "maraska-visnjevac",
@@ -7214,8 +7937,12 @@
                 },
                 "da": {
                   "name": "Maraska kirsebærlikør"
+                },
+                "hu": {
+                  "name": "Maraska meggylikőr"
                 }
-              }
+              },
+              "staffCode": "#135"
             },
             {
               "id": "maraska-orahovac",
@@ -7251,8 +7978,12 @@
                 },
                 "da": {
                   "name": "Maraska valnøddelikør"
+                },
+                "hu": {
+                  "name": "Maraska diólikőr"
                 }
-              }
+              },
+              "staffCode": "#136"
             },
             {
               "id": "teranino-korlat",
@@ -7288,8 +8019,12 @@
                 },
                 "da": {
                   "name": "Teranino Korlat"
+                },
+                "hu": {
+                  "name": "Teranino Korlat"
                 }
-              }
+              },
+              "staffCode": "#137"
             },
             {
               "id": "dalmatinski-prosek",
@@ -7327,8 +8062,12 @@
                 },
                 "da": {
                   "name": "Dalmatisk prošek"
+                },
+                "hu": {
+                  "name": "Dalmát prošek"
                 }
-              }
+              },
+              "staffCode": "#138"
             },
             {
               "id": "jagermeister",
@@ -7364,8 +8103,12 @@
                 },
                 "da": {
                   "name": "Jägermeister"
+                },
+                "hu": {
+                  "name": "Jägermeister"
                 }
-              }
+              },
+              "staffCode": "#139"
             },
             {
               "id": "limoncello",
@@ -7401,8 +8144,12 @@
                 },
                 "da": {
                   "name": "Limoncello"
+                },
+                "hu": {
+                  "name": "Limoncello"
                 }
-              }
+              },
+              "staffCode": "#140"
             },
             {
               "id": "baileys",
@@ -7440,8 +8187,12 @@
                 },
                 "da": {
                   "name": "Baileys"
+                },
+                "hu": {
+                  "name": "Baileys"
                 }
-              }
+              },
+              "staffCode": "#141"
             },
             {
               "id": "aperol",
@@ -7477,8 +8228,12 @@
                 },
                 "da": {
                   "name": "Aperol"
+                },
+                "hu": {
+                  "name": "Aperol"
                 }
-              }
+              },
+              "staffCode": "#142"
             },
             {
               "id": "campari",
@@ -7514,8 +8269,12 @@
                 },
                 "da": {
                   "name": "Campari"
+                },
+                "hu": {
+                  "name": "Campari"
                 }
-              }
+              },
+              "staffCode": "#143"
             },
             {
               "id": "martini-bianco",
@@ -7553,8 +8312,12 @@
                 },
                 "da": {
                   "name": "Martini Bianco"
+                },
+                "hu": {
+                  "name": "Martini Bianco"
                 }
-              }
+              },
+              "staffCode": "#144"
             },
             {
               "id": "martini-rosso",
@@ -7592,8 +8355,12 @@
                 },
                 "da": {
                   "name": "Martini Rosso"
+                },
+                "hu": {
+                  "name": "Martini Rosso"
                 }
-              }
+              },
+              "staffCode": "#145"
             }
           ],
           "translations": {
@@ -7617,6 +8384,9 @@
             },
             "da": {
               "title": "APERITIF, BRANDY OG LIKØRER"
+            },
+            "hu": {
+              "title": "APERITÍVEK, PÁLINKÁK ÉS LIKŐRÖK"
             }
           }
         },
@@ -7661,8 +8431,12 @@
                 },
                 "da": {
                   "name": "Jameson"
+                },
+                "hu": {
+                  "name": "Jameson"
                 }
-              }
+              },
+              "staffCode": "#146"
             },
             {
               "id": "jim-beam",
@@ -7698,8 +8472,12 @@
                 },
                 "da": {
                   "name": "Jim Beam"
+                },
+                "hu": {
+                  "name": "Jim Beam"
                 }
-              }
+              },
+              "staffCode": "#147"
             },
             {
               "id": "hennessy",
@@ -7735,8 +8513,12 @@
                 },
                 "da": {
                   "name": "Hennessy"
+                },
+                "hu": {
+                  "name": "Hennessy"
                 }
-              }
+              },
+              "staffCode": "#148"
             },
             {
               "id": "smirnoff-vodka",
@@ -7772,8 +8554,12 @@
                 },
                 "da": {
                   "name": "Smirnoff Vodka"
+                },
+                "hu": {
+                  "name": "Smirnoff Vodka"
                 }
-              }
+              },
+              "staffCode": "#149"
             },
             {
               "id": "sierra-tequila",
@@ -7809,8 +8595,12 @@
                 },
                 "da": {
                   "name": "Sierra Tequila"
+                },
+                "hu": {
+                  "name": "Sierra Tequila"
                 }
-              }
+              },
+              "staffCode": "#150"
             },
             {
               "id": "bacardi-white",
@@ -7846,8 +8636,12 @@
                 },
                 "da": {
                   "name": "Bacardi White"
+                },
+                "hu": {
+                  "name": "Bacardi White"
                 }
-              }
+              },
+              "staffCode": "#151"
             },
             {
               "id": "bacardi-black",
@@ -7883,8 +8677,12 @@
                 },
                 "da": {
                   "name": "Bacardi Black"
+                },
+                "hu": {
+                  "name": "Bacardi Black"
                 }
-              }
+              },
+              "staffCode": "#152"
             },
             {
               "id": "malibu",
@@ -7920,8 +8718,12 @@
                 },
                 "da": {
                   "name": "Malibu"
+                },
+                "hu": {
+                  "name": "Malibu"
                 }
-              }
+              },
+              "staffCode": "#153"
             }
           ],
           "translations": {
@@ -7945,6 +8747,9 @@
             },
             "da": {
               "title": "WHISKEY, COGNAC OG ANDEN SPIRITUS"
+            },
+            "hu": {
+              "title": "WHISKEY, COGNAC ÉS EGYÉB RÖVIDITALOK"
             }
           }
         },
@@ -7989,8 +8794,12 @@
                 },
                 "da": {
                   "name": "SAX Gin"
+                },
+                "hu": {
+                  "name": "SAX Gin"
                 }
-              }
+              },
+              "staffCode": "#154"
             },
             {
               "id": "bulldog-gin",
@@ -8026,8 +8835,12 @@
                 },
                 "da": {
                   "name": "Bulldog Gin"
+                },
+                "hu": {
+                  "name": "Bulldog Gin"
                 }
-              }
+              },
+              "staffCode": "#155"
             },
             {
               "id": "hendricks-gin",
@@ -8063,8 +8876,12 @@
                 },
                 "da": {
                   "name": "Hendrick’s Gin"
+                },
+                "hu": {
+                  "name": "Hendrick’s Gin"
                 }
-              }
+              },
+              "staffCode": "#156"
             }
           ],
           "translations": {
@@ -8087,6 +8904,9 @@
               "title": "GIN"
             },
             "da": {
+              "title": "GIN"
+            },
+            "hu": {
               "title": "GIN"
             }
           }
@@ -8141,8 +8961,13 @@
                 "da": {
                   "name": "Aperol Spritz",
                   "description": "Aperol, prosecco, soda, appelsin"
+                },
+                "hu": {
+                  "name": "Aperol Spritz",
+                  "description": "Aperol, prosecco, szóda, narancs"
                 }
-              }
+              },
+              "staffCode": "#157"
             },
             {
               "id": "hugo",
@@ -8187,8 +9012,13 @@
                 "da": {
                   "name": "Hugo",
                   "description": "prosecco, hyldeblomst, soda, lime, mynte"
+                },
+                "hu": {
+                  "name": "Hugo",
+                  "description": "prosecco, bodza, szóda, lime, menta"
                 }
-              }
+              },
+              "staffCode": "#158"
             },
             {
               "id": "mojito",
@@ -8231,8 +9061,13 @@
                 "da": {
                   "name": "Mojito",
                   "description": "hvid rom, lime, mynte, sukkersirup, soda"
+                },
+                "hu": {
+                  "name": "Mojito",
+                  "description": "fehér rum, lime, menta, cukorszirup, szóda"
                 }
-              }
+              },
+              "staffCode": "#159"
             },
             {
               "id": "gin-tonic",
@@ -8275,8 +9110,13 @@
                 "da": {
                   "name": "Gin Tonic",
                   "description": "gin, tonic, citrus"
+                },
+                "hu": {
+                  "name": "Gin Tonic",
+                  "description": "gin, tonic, citrusok"
                 }
-              }
+              },
+              "staffCode": "#160"
             },
             {
               "id": "cuba-libre",
@@ -8319,8 +9159,13 @@
                 "da": {
                   "name": "Cuba Libre",
                   "description": "rom, Coca-Cola, lime"
+                },
+                "hu": {
+                  "name": "Cuba Libre",
+                  "description": "rum, Coca-Cola, lime"
                 }
-              }
+              },
+              "staffCode": "#161"
             },
             {
               "id": "moscow-mule",
@@ -8363,8 +9208,13 @@
                 "da": {
                   "name": "Moscow Mule",
                   "description": "vodka, spicy ginger beer, lime"
+                },
+                "hu": {
+                  "name": "Moscow Mule",
+                  "description": "vodka, fűszeres gyömbérsör, lime"
                 }
-              }
+              },
+              "staffCode": "#162"
             },
             {
               "id": "espresso-martini",
@@ -8409,8 +9259,13 @@
                 "da": {
                   "name": "Espresso Martini",
                   "description": "vodka, Kahlúa, espresso"
+                },
+                "hu": {
+                  "name": "Espresso Martini",
+                  "description": "vodka, Kahlúa, espresso"
                 }
-              }
+              },
+              "staffCode": "#163"
             },
             {
               "id": "negroni",
@@ -8455,8 +9310,13 @@
                 "da": {
                   "name": "Negroni",
                   "description": "gin, Campari, Martini Rosso"
+                },
+                "hu": {
+                  "name": "Negroni",
+                  "description": "gin, Campari, Martini Rosso"
                 }
-              }
+              },
+              "staffCode": "#164"
             },
             {
               "id": "mojito-strawberry-passion",
@@ -8499,8 +9359,13 @@
                 "da": {
                   "name": "Strawberry / Passion Mojito",
                   "description": "hvid rom, lime, mynte, jordbær eller passionsfrugt"
+                },
+                "hu": {
+                  "name": "Mojito Strawberry / Passion",
+                  "description": "fehér rum, lime, menta, eper vagy passiógyümölcs"
                 }
-              }
+              },
+              "staffCode": "#165"
             },
             {
               "id": "limoncello-spritz",
@@ -8545,8 +9410,13 @@
                 "da": {
                   "name": "Limoncello Spritz",
                   "description": "limoncello, prosecco, soda, citrus"
+                },
+                "hu": {
+                  "name": "Limoncello Spritz",
+                  "description": "limoncello, prosecco, szóda, citrusok"
                 }
-              }
+              },
+              "staffCode": "#166"
             },
             {
               "id": "london-mule",
@@ -8589,8 +9459,13 @@
                 "da": {
                   "name": "London Mule",
                   "description": "gin, spicy ginger beer, lime"
+                },
+                "hu": {
+                  "name": "London Mule",
+                  "description": "gin, fűszeres gyömbérsör, lime"
                 }
-              }
+              },
+              "staffCode": "#167"
             },
             {
               "id": "my-favourite-spritz",
@@ -8635,8 +9510,13 @@
                 "da": {
                   "name": "My Favourite Spritz",
                   "description": "Malibu, passionsfrugtpuré, prosecco, citrusmix"
+                },
+                "hu": {
+                  "name": "My Favourite Spritz",
+                  "description": "Malibu, passiógyümölcs-püré, prosecco, citrusmix"
                 }
-              }
+              },
+              "staffCode": "#168"
             }
           ],
           "translations": {
@@ -8660,6 +9540,9 @@
             },
             "da": {
               "title": "COCKTAILS"
+            },
+            "hu": {
+              "title": "KOKTÉLOK"
             }
           }
         }
@@ -8685,6 +9568,9 @@
         },
         "da": {
           "title": "VIN, SPIRITUS OG COCKTAILS"
+        },
+        "hu": {
+          "title": "BOROK, RÖVIDITALOK ÉS KOKTÉLOK"
         }
       }
     }

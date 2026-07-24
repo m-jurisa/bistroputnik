@@ -39,6 +39,7 @@ function getLocalizedDish(dish, marenda, language) {
 
   return {
     id: dish.id,
+    staffCode: dish.staffCode,
     title: translation?.name || dish.name || baseTranslation?.name,
     description:
       translation?.description ||
@@ -83,7 +84,7 @@ function useRestaurantDateDisplay(timeZone) {
   return dateDisplay;
 }
 
-// Draft marenda allergens must be verified with kitchen recipes, stocks, sausages, thickening, and supplier declarations before final display.
+// Marenda allergens must be verified with kitchen recipes, stocks, sausages, thickening, and supplier declarations before final display.
 function getDishes(copy, marenda, language) {
   if (Array.isArray(marenda.items) && marenda.items.length) {
     return marenda.items
@@ -188,6 +189,11 @@ export default function MarendaPageContent({ business, marenda }) {
                   >
                     <div className="min-w-0">
                       <h2 className="font-display text-3xl leading-none text-brand-sand sm:text-4xl">
+                        {dish.staffCode ? (
+                          <span className="mr-2 inline-flex rounded-full border border-brand-line/25 px-2 py-0.5 align-middle font-sans text-[0.62rem] font-semibold leading-4 tracking-[0.08em] text-[#aebdc0]">
+                            {dish.staffCode}
+                          </span>
+                        ) : null}
                         {dish.title}
                       </h2>
                       {dish.description ? (
@@ -262,7 +268,12 @@ export default function MarendaPageContent({ business, marenda }) {
                 className="marenda-print-item"
               >
                 <div>
-                  <h2>{dish.title}</h2>
+                  <h2>
+                    {dish.staffCode ? (
+                      <span className="marenda-print-staff-code">{dish.staffCode}</span>
+                    ) : null}
+                    {dish.title}
+                  </h2>
                   {dish.description ? <p>{dish.description}</p> : null}
                   {dish.allergens?.length ? (
                     <ul className="marenda-print-allergens">

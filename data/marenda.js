@@ -11,6 +11,7 @@ export const marendaConfig = {
     no: 'Dagens tilbud',
     pl: 'Oferta dnia',
     da: 'Dagens tilbud',
+    hu: 'Napi ajánlat',
   },
   noteEnabled: true,
   introText: {
@@ -30,6 +31,8 @@ export const marendaConfig = {
       'Unser tägliches Mittagsangebot folgt dem lokalen Rhythmus: saisonale Gerichte, klare Preise und ein Angebot, das verfügbar ist, bis das Tagesmenü ausverkauft ist.',
     da:
       'Vores daglige frokost følger den lokale rytme: sæsonbetonede retter, tydelige priser og et tilbud, der gælder, indtil dagens menu er udsolgt.',
+    hu:
+      'Napi marendánk a helyi ritmust követi: szezonális ételek, egyértelmű árak és a napi menü elfogyásáig elérhető kínálat.',
   },
   translations: {
     hr: {
@@ -136,6 +139,19 @@ export const marendaConfig = {
       note: 'Gælder i dag eller indtil dagens portioner er udsolgt.',
       allergenNote:
         'Allergener er markeret med koder. Spørg personalet for præcise oplysninger.',
+    },
+    hu: {
+      eyebrow: 'Napi marenda',
+      pageTitle: 'Marenda',
+      intro:
+        'Itt találja napi marenda ajánlatunk minden részletét, amelyet minden nap frissítünk és változtatunk.',
+      explanation:
+        'A marenda egyszerű napi ebéd helyi ritmusban: szezonális ételek, egyértelmű árak és a napi elkészített mennyiség erejéig elérhető kínálat.',
+      dishLabel: 'Ma ezt főzzük',
+      priceLabel: 'Ár',
+      note: 'Az ajánlat ma érvényes, vagy a napi adag elfogyásáig.',
+      allergenNote:
+        'Az allergének kódokkal vannak jelölve. Pontos információért kérdezze a személyzetet.',
     },
   },
 };
