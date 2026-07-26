@@ -144,6 +144,44 @@ const routeMeta = {
       hu: 'A Bistro Putnik napi marendája helyi ételekkel, egyértelmű árakkal és a napi adag elfogyásáig elérhető kínálattal.',
     },
   },
+  reservations: {
+    kind: 'reservations',
+    priority: 0.86,
+    changeFrequency: 'daily',
+    paths: {
+      hr: 'rezervacije',
+      en: 'reservations',
+      de: 'reservierungen',
+      sv: 'bokning',
+      fi: 'varaukset',
+      no: 'reservasjoner',
+      pl: 'rezerwacje',
+      da: 'reservationer',
+      hu: 'asztalfoglalas',
+    },
+    title: {
+      hr: 'Rezervacije u Bistro Putnik',
+      en: 'Bistro Putnik Reservations',
+      de: 'Reservierungen bei Bistro Putnik',
+      sv: 'Boka bord på Bistro Putnik',
+      fi: 'Bistro Putnik varaukset',
+      no: 'Reservasjoner hos Bistro Putnik',
+      pl: 'Rezerwacje w Bistro Putnik',
+      da: 'Reservationer hos Bistro Putnik',
+      hu: 'Asztalfoglalás a Bistro Putnikban',
+    },
+    description: {
+      hr: 'Pošaljite online upit za stol u Bistro Putnik u Baškoj Vodi. Rezervacija je potvrđena tek nakon odgovora tima.',
+      en: 'Send an online table request for Bistro Putnik in Baška Voda. A reservation is confirmed only after the team replies.',
+      de: 'Senden Sie eine Online-Tischanfrage für Bistro Putnik in Baška Voda. Die Reservierung ist erst nach Antwort des Teams bestätigt.',
+      sv: 'Skicka en onlineförfrågan om bord på Bistro Putnik i Baška Voda. Bokningen är bekräftad först när teamet svarar.',
+      fi: 'Lähetä online-pöytäpyyntö Bistro Putnikiin Baška Vodassa. Varaus on vahvistettu vasta tiimin vastauksen jälkeen.',
+      no: 'Send en online bordforespørsel til Bistro Putnik i Baška Voda. Reservasjonen er først bekreftet når teamet svarer.',
+      pl: 'Wyślij online prośbę o stolik w Bistro Putnik w Baškiej Vodzie. Rezerwacja jest potwierdzona dopiero po odpowiedzi zespołu.',
+      da: 'Send en online bordforespørgsel til Bistro Putnik i Baška Voda. Reservationen er først bekræftet, når teamet svarer.',
+      hu: 'Küldjön online asztaligényt a baška vodai Bistro Putnikba. A foglalás csak a csapat válasza után visszaigazolt.',
+    },
+  },
   location: {
     kind: 'location',
     priority: 0.82,
@@ -303,6 +341,116 @@ export const routeDefinitions = routeMeta;
 export const blogArticles = guideArticles;
 
 export const pageContent = {
+  reservations: {
+    hr: {
+      eyebrow: 'Rezervacije',
+      title: 'Upit za stol u Bistro Putnik',
+      intro:
+        'Pošaljite željeni datum, vrijeme i broj osoba. Ovo je upit za rezervaciju, a stol je potvrđen tek nakon odgovora Bistro Putnik tima.',
+      detailsTitle: 'Prije slanja',
+      details: [
+        'Online upit šalje se izravno timu lokala.',
+        'Za više od 12 osoba koristite telefon ili e-poštu.',
+        'Upiti su dostupni za termine od 11:00 do 21:30.',
+      ],
+    },
+    en: {
+      eyebrow: 'Reservations',
+      title: 'Table request for Bistro Putnik',
+      intro:
+        'Send your preferred date, time, and guest count. This is a reservation request, and your table is confirmed only after the Bistro Putnik team replies.',
+      detailsTitle: 'Before sending',
+      details: [
+        'The online request goes directly to the restaurant team.',
+        'For more than 12 guests, use phone or email instead.',
+        'Requests are available for times from 11:00 to 21:30.',
+      ],
+    },
+    de: {
+      eyebrow: 'Reservierungen',
+      title: 'Tischanfrage für Bistro Putnik',
+      intro:
+        'Senden Sie Ihr gewünschtes Datum, die Uhrzeit und die Personenzahl. Dies ist eine Reservierungsanfrage; der Tisch ist erst nach Antwort des Bistro Putnik Teams bestätigt.',
+      detailsTitle: 'Vor dem Senden',
+      details: [
+        'Die Online-Anfrage geht direkt an das Restaurantteam.',
+        'Für mehr als 12 Personen nutzen Sie bitte Telefon oder E-Mail.',
+        'Anfragen sind für Zeiten von 11:00 bis 21:30 möglich.',
+      ],
+    },
+    sv: {
+      eyebrow: 'Bokning',
+      title: 'Bordsförfrågan till Bistro Putnik',
+      intro:
+        'Skicka önskat datum, tid och antal gäster. Detta är en bokningsförfrågan, och bordet är bekräftat först när Bistro Putnik-teamet svarar.',
+      detailsTitle: 'Innan du skickar',
+      details: [
+        'Onlineförfrågan går direkt till restaurangteamet.',
+        'För fler än 12 gäster, använd telefon eller e-post i stället.',
+        'Förfrågningar är möjliga för tider från 11:00 till 21:30.',
+      ],
+    },
+    fi: {
+      eyebrow: 'Varaukset',
+      title: 'Pöytäpyyntö Bistro Putnikiin',
+      intro:
+        'Lähetä toivottu päivä, aika ja henkilömäärä. Tämä on varauspyyntö, ja pöytä on vahvistettu vasta, kun Bistro Putnik -tiimi vastaa.',
+      detailsTitle: 'Ennen lähettämistä',
+      details: [
+        'Online-pyyntö menee suoraan ravintolan tiimille.',
+        'Jos henkilöitä on yli 12, käytä puhelinta tai sähköpostia.',
+        'Pyyntöjä voi tehdä ajoille 11:00-21:30.',
+      ],
+    },
+    no: {
+      eyebrow: 'Reservasjoner',
+      title: 'Bordforespørsel til Bistro Putnik',
+      intro:
+        'Send ønsket dato, tid og antall gjester. Dette er en reservasjonsforespørsel, og bordet er først bekreftet når Bistro Putnik-teamet svarer.',
+      detailsTitle: 'Før du sender',
+      details: [
+        'Onlineforespørselen går direkte til restaurantteamet.',
+        'For flere enn 12 gjester, bruk telefon eller e-post i stedet.',
+        'Forespørsler er tilgjengelige for tider fra 11:00 til 21:30.',
+      ],
+    },
+    pl: {
+      eyebrow: 'Rezerwacje',
+      title: 'Prośba o stolik w Bistro Putnik',
+      intro:
+        'Wyślij preferowaną datę, godzinę i liczbę osób. To jest prośba o rezerwację, a stolik jest potwierdzony dopiero po odpowiedzi zespołu Bistro Putnik.',
+      detailsTitle: 'Przed wysłaniem',
+      details: [
+        'Prośba online trafia bezpośrednio do zespołu restauracji.',
+        'Dla więcej niż 12 osób użyj telefonu lub e-maila.',
+        'Prośby są dostępne dla godzin od 11:00 do 21:30.',
+      ],
+    },
+    da: {
+      eyebrow: 'Reservationer',
+      title: 'Bordforespørgsel til Bistro Putnik',
+      intro:
+        'Send ønsket dato, tid og antal gæster. Dette er en reservationsforespørgsel, og bordet er først bekræftet, når Bistro Putnik-teamet svarer.',
+      detailsTitle: 'Før du sender',
+      details: [
+        'Onlineforespørgslen går direkte til restaurantteamet.',
+        'For flere end 12 gæster, brug telefon eller e-mail i stedet.',
+        'Forespørgsler er mulige for tider fra 11:00 til 21:30.',
+      ],
+    },
+    hu: {
+      eyebrow: 'Asztalfoglalás',
+      title: 'Asztaligény a Bistro Putnikba',
+      intro:
+        'Küldje el a kívánt dátumot, időpontot és vendégszámot. Ez asztalfoglalási igény, az asztal csak a Bistro Putnik válasza után visszaigazolt.',
+      detailsTitle: 'Küldés előtt',
+      details: [
+        'Az online igény közvetlenül az étterem csapatához érkezik.',
+        '12 fő felett használja a telefont vagy az e-mailt.',
+        'Igények 11:00 és 21:30 közötti időpontokra küldhetők.',
+      ],
+    },
+  },
   location: {
     hr: {
       eyebrow: 'Lokacija',

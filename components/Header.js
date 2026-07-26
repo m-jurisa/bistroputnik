@@ -11,6 +11,7 @@ const links = [
   { key: 'menu', routeKey: 'menu' },
   { key: 'guides', routeKey: 'blog' },
   { key: 'marenda', routeKey: 'marenda' },
+  { key: 'reservations', routeKey: 'reservations' },
   { key: 'contact', routeKey: 'location' },
 ];
 

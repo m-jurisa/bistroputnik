@@ -10,6 +10,7 @@ import {
   BlogIndexPage,
   LocationPage,
   MenuStandalonePage,
+  ReservationsPage,
   VisitPage,
 } from '../../../components/SeoPages';
 import { marendaConfig } from '../../../data/marenda';
@@ -161,6 +162,7 @@ export default async function LocalizedPage({ params }) {
 
   const pageByRoute = {
     menu: <MenuStandalonePage locale={locale} menu={getLocalizedMenuView(locale)} />,
+    reservations: <ReservationsPage locale={locale} business={menuData.business} />,
     location: <LocationPage locale={locale} business={menuData.business} />,
     visit: <VisitPage locale={locale} />,
     blog: <BlogIndexPage locale={locale} />,

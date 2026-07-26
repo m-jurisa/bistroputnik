@@ -3,6 +3,7 @@ import Footer from './Footer';
 import Header from './Header';
 import HeroSection from './HeroSection';
 import MenuBook from './MenuBook';
+import ReservationEntry from './ReservationEntry';
 import SectionHeading from './SectionHeading';
 import { translations } from '../data/translations';
 import {
@@ -202,6 +203,11 @@ export default function HomePageContent({ locale = defaultLocale, menu }) {
                   </div>
                 </dl>
               </div>
+              <ReservationEntry
+                locale={locale}
+                email={businessEmail}
+                phone={phone}
+              />
               <div className="overflow-hidden rounded-lg border border-brand-line/20 bg-brand-deep/40">
                 <iframe
                   title={`${siteConfig.venueName} Google Map`}

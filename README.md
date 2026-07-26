@@ -91,4 +91,14 @@ The Web3Forms access key is public and is stored in `components/ContactForm.js`:
 7bfd19b9-f0a9-429a-9d2e-8262c21ba95d
 ```
 
-No SMTP variables are required for the visible contact form. After `npm run build`, the exported `out/` folder can be uploaded to static hosting. If Hostinger Node hosting is used, `npm start` serves the exported files through `server/static-server.mjs`, but form delivery does not depend on the Node server.
+No SMTP variables are required for the visible contact form.
+
+The reservations page stays fully static and posts JSON directly from the browser to n8n. Set this public build-time variable before exporting:
+
+```bash
+NEXT_PUBLIC_N8N_RESERVATION_WEBHOOK_URL=https://your-n8n.example/webhook/reservations npm run build
+```
+
+The webhook should accept `POST` requests with `Content-Type: application/json`, allow CORS for `https://bistroputnik.com` and local development origins, and return JSON such as `{ "success": true }` for accepted requests. If the variable is missing, the static form shows a phone/email fallback instead of sending.
+
+After `npm run build`, the exported `out/` folder can be uploaded to static hosting. If Hostinger Node hosting is used, `npm start` serves the exported files through `server/static-server.mjs`, but form delivery does not depend on the Node server.

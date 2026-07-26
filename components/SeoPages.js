@@ -1,5 +1,7 @@
 import MenuBook from './MenuBook';
 import ContactForm from './ContactForm';
+import ReservationEntry from './ReservationEntry';
+import ReservationForm from './ReservationForm';
 import SectionHeading from './SectionHeading';
 import {
   blogArticles,
@@ -198,6 +200,7 @@ function RouteLinks({ locale }) {
   const links = [
     ['menu', getLocalizedValue(routeDefinitions.menu.title, locale)],
     ['marenda', getLocalizedValue(routeDefinitions.marenda.title, locale)],
+    ['reservations', getLocalizedValue(routeDefinitions.reservations.title, locale)],
     ['location', getLocalizedValue(routeDefinitions.location.title, locale)],
   ];
 
@@ -432,6 +435,11 @@ export function LocationPage({ locale, business }) {
           </div>
 
           <div className="space-y-6">
+            <ReservationEntry
+              locale={locale}
+              email={business.email}
+              phone={venueFacts.phone}
+            />
             <div className="overflow-hidden rounded-lg border border-brand-line/20 bg-brand-deep/40">
               <iframe
                 title={`${siteConfig.venueName} Google Map`}
@@ -494,6 +502,69 @@ export function LocationPage({ locale, business }) {
               redirectUrl={contactRedirectUrl}
             />
           </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export function ReservationsPage({ locale, business }) {
+  const copy = localeCopy(pageContent.reservations, locale);
+  const directCopy = directContactCopy[locale] || directContactCopy.en;
+  const telHref = venueFacts.phone ? `tel:${venueFacts.phone.replace(/[^\d+]/g, '')}` : '';
+
+  return (
+    <>
+      <PageIntro eyebrow={copy.eyebrow} title={copy.title} description={copy.intro} />
+      <section className="section-shell pt-0">
+        <div className="container-shell grid gap-8 lg:grid-cols-[0.82fr_1.18fr]">
+          <div className="space-y-6">
+            <div className="panel-surface p-6 sm:p-8">
+              <p className="fine-print">{copy.detailsTitle}</p>
+              <ul className="mt-5 grid gap-4 text-sm leading-6 text-[#d8dfdf]">
+                {copy.details.map((detail) => (
+                  <li key={detail} className="border-t border-brand-line/20 pt-4">
+                    {detail}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="panel-surface p-6 sm:p-8">
+              <p className="fine-print">{directCopy.eyebrow}</p>
+              {venueFacts.phone ? (
+                <>
+                  <a
+                    className="mt-4 block break-words font-display text-4xl leading-none text-brand-sand hover:text-[#f4eee0] sm:text-5xl"
+                    href={telHref}
+                  >
+                    {venueFacts.phone}
+                  </a>
+                  <p className="mt-3 text-sm leading-6 text-[#d8dfdf]">
+                    {directCopy.phoneHint}
+                  </p>
+                </>
+              ) : null}
+              <div className="mt-7 border-t border-brand-line/20 pt-6">
+                <p className="fine-print">{directCopy.email}</p>
+                <a
+                  className="mt-3 block break-all font-display text-3xl leading-tight text-[#f4eee0] hover:text-brand-sand"
+                  href={`mailto:${business.email}`}
+                >
+                  {business.email}
+                </a>
+                <p className="mt-3 text-sm leading-6 text-[#d8dfdf]">
+                  {directCopy.emailHint}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <ReservationForm
+            email={business.email}
+            phone={venueFacts.phone}
+            locale={locale}
+          />
         </div>
       </section>
     </>

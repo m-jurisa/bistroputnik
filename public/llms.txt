@@ -58,6 +58,6 @@ Known facts:
 - MBS: 030315167
 - Registration number: 06233511
 
-Unconfirmed venue facts are intentionally not published: opening hours, geo coordinates, reservation URL, social profiles, ratings, review counts, exact proximity, and location-ranking claims.
+Unconfirmed venue facts are intentionally not published: opening hours, geo coordinates, social profiles, ratings, review counts, exact proximity, and location-ranking claims.
 
 Full AI summary: https://bistroputnik.com/llms-full.txt

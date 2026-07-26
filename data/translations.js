@@ -19,6 +19,7 @@ export const translations = {
       menu: 'Jelovnik',
       guides: 'Vodiči',
       marenda: 'Marenda',
+      reservations: 'Rezervacije',
       contact: 'Kontakt',
     },
     ui: {
@@ -89,6 +90,7 @@ export const translations = {
       menu: 'Menu',
       guides: 'Guides',
       marenda: 'Daily Lunch',
+      reservations: 'Reservations',
       contact: 'Contact',
     },
     ui: {
@@ -159,6 +161,7 @@ export const translations = {
       menu: 'Étlap',
       guides: 'Útmutatók',
       marenda: 'Marenda',
+      reservations: 'Asztalfoglalás',
       contact: 'Kapcsolat',
     },
     ui: {
@@ -229,6 +232,7 @@ export const translations = {
       menu: 'Meny',
       guides: 'Guider',
       marenda: 'Dagens lunch',
+      reservations: 'Bokning',
       contact: 'Kontakt',
     },
     ui: {
@@ -299,6 +303,7 @@ export const translations = {
       menu: 'Menu',
       guides: 'Oppaat',
       marenda: 'Päivän lounas',
+      reservations: 'Varaukset',
       contact: 'Yhteys',
     },
     ui: {
@@ -369,6 +374,7 @@ export const translations = {
       menu: 'Meny',
       guides: 'Guider',
       marenda: 'Dagens lunsj',
+      reservations: 'Reservasjoner',
       contact: 'Kontakt',
     },
     ui: {
@@ -439,6 +445,7 @@ export const translations = {
       menu: 'Menu',
       guides: 'Przewodniki',
       marenda: 'Lunch dnia',
+      reservations: 'Rezerwacje',
       contact: 'Kontakt',
     },
     ui: {
@@ -509,6 +516,7 @@ export const translations = {
       menu: 'Speisekarte',
       guides: 'Guides',
       marenda: 'Mittagstisch',
+      reservations: 'Reservierungen',
       contact: 'Kontakt',
     },
     ui: {
@@ -579,6 +587,7 @@ export const translations = {
       menu: 'Menu',
       guides: 'Guides',
       marenda: 'Dagens frokost',
+      reservations: 'Reservationer',
       contact: 'Kontakt',
     },
     ui: {
