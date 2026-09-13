@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'fs';
+import { existsSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'fs';
 import { basename, join, relative, resolve, sep } from 'path';
 
 const outDir = resolve(process.env.STATIC_DIR || 'out');
@@ -18,25 +18,93 @@ function getLocaleForFile(filePath) {
 
 function updateHtmlLang(filePath) {
   if (!filePath.endsWith('.html')) {
-    return 0;
+    return { updated: 0, removedBytes: 0 };
   }
 
   const locale = getLocaleForFile(filePath);
   const html = readFileSync(filePath, 'utf8');
-  const nextHtml = html.replace(/<html lang="[^"]*"/, `<html lang="${locale}"`);
+  let removedBytes = 0;
+  let nextHtml = html.replace(/<html lang="[^"]*"/, `<html lang="${locale}"`);
+
+  nextHtml = nextHtml.replace(/<link\b[^>]*>/g, (tag) => {
+    const isNextScriptPreload =
+      /rel="preload"/.test(tag) &&
+      /as="script"/.test(tag) &&
+      /href="\/_next\/static\/chunks\//.test(tag);
+
+    if (!isNextScriptPreload) {
+      return tag;
+    }
+
+    removedBytes += tag.length;
+    return '';
+  });
+
+  nextHtml = nextHtml.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, (tag) => {
+    const isNextRuntimeScript =
+      /src="\/_next\/static\/chunks\//.test(tag) ||
+      /__next_f/.test(tag);
+
+    if (!isNextRuntimeScript) {
+      return tag;
+    }
+
+    removedBytes += tag.length;
+    return '';
+  });
+
+  nextHtml = nextHtml.replace(/<meta name="next-size-adjust" content=""\/>/g, (tag) => {
+    removedBytes += tag.length;
+    return '';
+  });
+
+  nextHtml = nextHtml.replace(/<div hidden=""><!--\$--><!--\/\$--><\/div>/g, (tag) => {
+    removedBytes += tag.length;
+    return '';
+  });
+
+  nextHtml = nextHtml.replace(/<!--\$--><!--\/\$-->/g, (tag) => {
+    removedBytes += tag.length;
+    return '';
+  });
 
   if (nextHtml === html) {
-    return 0;
+    return { updated: 0, removedBytes };
   }
 
   writeFileSync(filePath, nextHtml);
-  return 1;
+  return { updated: 1, removedBytes };
+}
+
+function getDirectorySize(directory) {
+  if (!existsSync(directory)) {
+    return 0;
+  }
+
+  let bytes = 0;
+
+  for (const entry of readdirSync(directory)) {
+    const filePath = join(directory, entry);
+    const stats = statSync(filePath);
+
+    if (stats.isDirectory()) {
+      bytes += getDirectorySize(filePath);
+      continue;
+    }
+
+    if (stats.isFile()) {
+      bytes += stats.size;
+    }
+  }
+
+  return bytes;
 }
 
 function pruneDirectory(directory) {
   let removedFiles = 0;
   let removedBytes = 0;
   let updatedLangFiles = 0;
+  let strippedHtmlBytes = 0;
 
   for (const entry of readdirSync(directory)) {
     const filePath = join(directory, entry);
@@ -47,6 +115,7 @@ function pruneDirectory(directory) {
       removedFiles += childResult.removedFiles;
       removedBytes += childResult.removedBytes;
       updatedLangFiles += childResult.updatedLangFiles;
+      strippedHtmlBytes += childResult.strippedHtmlBytes;
       continue;
     }
 
@@ -58,17 +127,30 @@ function pruneDirectory(directory) {
     }
 
     if (stats.isFile()) {
-      updatedLangFiles += updateHtmlLang(filePath);
+      const htmlResult = updateHtmlLang(filePath);
+      updatedLangFiles += htmlResult.updated;
+      strippedHtmlBytes += htmlResult.removedBytes;
     }
   }
 
-  return { removedFiles, removedBytes, updatedLangFiles };
+  return { removedFiles, removedBytes, updatedLangFiles, strippedHtmlBytes };
 }
 
 const result = pruneDirectory(outDir);
+const chunksDir = join(outDir, '_next', 'static', 'chunks');
+const removedChunkBytes = getDirectorySize(chunksDir);
+
+if (removedChunkBytes) {
+  rmSync(chunksDir, { recursive: true, force: true });
+}
+
 const removedMiB = (result.removedBytes / 1024 / 1024).toFixed(2);
+const strippedHtmlMiB = (result.strippedHtmlBytes / 1024 / 1024).toFixed(2);
+const removedChunksMiB = (removedChunkBytes / 1024 / 1024).toFixed(2);
 
 console.log(
   `Pruned ${result.removedFiles} Next route payload files from ${outDir} (${removedMiB} MiB).`
 );
+console.log(`Stripped Next runtime scripts from static HTML (${strippedHtmlMiB} MiB).`);
+console.log(`Removed unreferenced Next JS chunks (${removedChunksMiB} MiB).`);
 console.log(`Updated lang attributes in ${result.updatedLangFiles} static HTML files.`);

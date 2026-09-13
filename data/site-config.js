@@ -144,6 +144,44 @@ const routeMeta = {
       hu: 'A Bistro Putnik napi marendája helyi ételekkel, egyértelmű árakkal és a napi adag elfogyásáig elérhető kínálattal.',
     },
   },
+  breakfast: {
+    kind: 'content',
+    priority: 0.87,
+    changeFrequency: 'weekly',
+    paths: {
+      hr: 'dorucak',
+      en: 'breakfast',
+      de: 'fruehstueck',
+      sv: 'frukost',
+      fi: 'aamiainen',
+      no: 'frokost',
+      pl: 'sniadanie',
+      da: 'morgenmad',
+      hu: 'reggeli',
+    },
+    title: {
+      hr: 'All-you-can-eat doručak buffet u Baškoj Vodi',
+      en: 'All-you-can-eat Breakfast Buffet in Baška Voda',
+      de: 'All-you-can-eat Frühstücksbuffet in Baška Voda',
+      sv: 'All-you-can-eat frukostbuffé i Baška Voda',
+      fi: 'All-you-can-eat aamiaisbuffet Baška Vodassa',
+      no: 'All-you-can-eat frokostbuffé i Baška Voda',
+      pl: 'Bufet śniadaniowy all-you-can-eat w Baškiej Vodzie',
+      da: 'All-you-can-eat morgenmadsbuffet i Baška Voda',
+      hu: 'All-you-can-eat reggeli büfé Baška Vodában',
+    },
+    description: {
+      hr: 'All-you-can-eat doručak buffet u Bistro Putnik u Baškoj Vodi za 10 € po osobi, svaki dan 07:00-10:00, uz voće, jaja, bacon, kavu i 100% sokove.',
+      en: 'All-you-can-eat breakfast buffet at Bistro Putnik in Baška Voda for €10 per person, every day 07:00-10:00 with fruit, eggs, bacon, coffee, and 100% juices.',
+      de: 'All-you-can-eat Frühstücksbuffet bei Bistro Putnik in Baška Voda für 10 € pro Person, täglich 07:00-10:00 Uhr mit Obst, Eiern, Bacon, Kaffee und 100% Säften.',
+      sv: 'All-you-can-eat frukostbuffé på Bistro Putnik i Baška Voda för 10 € per person, varje dag 07:00-10:00 med frukt, ägg, bacon, kaffe och 100% juice.',
+      fi: 'All-you-can-eat aamiaisbuffet Bistro Putnikissa Baška Vodassa 10 € per henkilö, joka päivä 07:00-10:00: hedelmiä, munia, pekonia, kahvia ja 100% mehuja.',
+      no: 'All-you-can-eat frokostbuffé hos Bistro Putnik i Baška Voda for 10 € per person, hver dag 07:00-10:00 med frukt, egg, bacon, kaffe og 100% juice.',
+      pl: 'Bufet śniadaniowy all-you-can-eat w Bistro Putnik w Baškiej Vodzie za 10 € od osoby, codziennie 07:00-10:00 z owocami, jajkami, baconem, kawą i 100% sokami.',
+      da: 'All-you-can-eat morgenmadsbuffet hos Bistro Putnik i Baška Voda for 10 € pr. person, hver dag 07:00-10:00 med frugt, æg, bacon, kaffe og 100% juice.',
+      hu: 'All-you-can-eat reggeli büfé a baška vodai Bistro Putnikban 10 € személyenként, minden nap 07:00-10:00 között gyümölccsel, tojással, baconnel, kávéval és 100% gyümölcslevekkel.',
+    },
+  },
   reservations: {
     kind: 'reservations',
     priority: 0.86,
@@ -323,15 +361,15 @@ const routeMeta = {
       hu: 'Baška Voda ételútmutató',
     },
     description: {
-      hr: 'Lokalni vodiči za ručak, plaže, marendu, dalmatinska jela, morsku hranu, grill i hrvatski restoranski jelovnik u Baškoj Vodi.',
-      en: 'Local guides for lunch, beaches, marenda, Dalmatian dishes, seafood, grill, and Croatian restaurant menus in Baška Voda.',
-      de: 'Lokale Guides zu Mittagessen, Stränden, Marenda, dalmatinischen Gerichten, Fisch, Grill und kroatischen Restaurantkarten in Baška Voda.',
-      sv: 'Lokala guider till lunch, stränder, marenda, dalmatiska rätter, fisk, grill och kroatiska restaurangmenyer i Baška Voda.',
-      fi: 'Paikallisia oppaita lounaasta, rannoista, marendasta, dalmatialaisista ruoista, kalasta, grillistä ja kroatialaisista menuista Baška Vodassa.',
-      no: 'Lokale guider til lunsj, strender, marenda, dalmatiske retter, sjømat, grill og kroatiske restaurantmenyer i Baška Voda.',
-      pl: 'Lokalne przewodniki po lunchu, plażach, marendzie, daniach dalmatyńskich, owocach morza, grillu i chorwackim menu w Baškiej Vodzie.',
-      da: 'Lokale guides til frokost, strande, marenda, dalmatiske retter, fisk, grill og kroatiske restaurantmenuer i Baška Voda.',
-      hu: 'Helyi útmutatók ebédhez, strandokhoz, marendához, dalmát ételekhez, tengeri fogásokhoz, grillhez és horvát éttermi étlaphoz Baška Vodában.',
+      hr: 'Vodiči za Baška Voda restorane, doručak buffet, marendu, hranu uz plažu, hrvatski grill i Putnik jelovnik.',
+      en: 'Guides for Baška Voda restaurants, breakfast buffet, marenda, beach food, Croatian grill, and the Putnik menu.',
+      de: 'Guides für Restaurants in Baška Voda, Frühstücksbuffet, Marenda, Strandessen, kroatischen Grill und die Putnik Speisekarte.',
+      sv: 'Guider till restauranger i Baška Voda, frukostbuffé, marenda, strandmat, kroatisk grill och Putniks meny.',
+      fi: 'Oppaat Baška Vodan ravintoloihin, aamiaisbuffetiin, marendaan, rantaruoan valintaan, kroatialaiseen grilliin ja Putnikin menuun.',
+      no: 'Guider til restauranter i Baška Voda, frokostbuffé, marenda, strandmat, kroatisk grill og Putnik-menyen.',
+      pl: 'Przewodniki po restauracjach w Baškiej Vodzie, bufecie śniadaniowym, marendzie, jedzeniu przy plaży, chorwackim grillu i menu Putnik.',
+      da: 'Guides til restauranter i Baška Voda, morgenmadsbuffet, marenda, strandmad, kroatisk grill og Putniks menu.',
+      hu: 'Útmutatók Baška Voda éttermeihez, reggeli büféhez, marendához, strandételekhez, horvát grillhez és a Putnik étlaphoz.',
     },
   },
 };
@@ -340,7 +378,300 @@ export const routeDefinitions = routeMeta;
 
 export const blogArticles = guideArticles;
 
+const breakfastInclusionGroups = {
+  hr: [
+    {
+      label: 'Svježe',
+      items: ['sezonsko voće', 'žitarice', 'lokalno nabavljeno povrće'],
+    },
+    {
+      label: 'Topli i hladni doručak',
+      items: ['varijacije jaja', 'bacon', 'šunka u ovitku', 'pečenica'],
+    },
+    {
+      label: 'Pića',
+      items: ['kava', 'čaj', '100% sokovi'],
+    },
+  ],
+  en: [
+    {
+      label: 'Fresh',
+      items: ['seasonal fruit', 'cereals', 'locally sourced vegetables'],
+    },
+    {
+      label: 'Hot and cold breakfast',
+      items: ['egg variations', 'bacon', 'ham'],
+    },
+    {
+      label: 'Drinks',
+      items: ['coffee', 'tea', '100% juices'],
+    },
+  ],
+  de: [
+    {
+      label: 'Frisch',
+      items: ['saisonales Obst', 'Cerealien', 'Gemüse von lokalen Lieferanten'],
+    },
+    {
+      label: 'Warm und kalt',
+      items: ['Ei-Variationen', 'Bacon', 'šunka u ovitku, kroatischer Wickelschinken', 'pečenica, kroatischer Bratenaufschnitt'],
+    },
+    {
+      label: 'Getränke',
+      items: ['Kaffee', 'Tee', '100% Säfte'],
+    },
+  ],
+  sv: [
+    {
+      label: 'Fräscht',
+      items: ['säsongens frukt', 'cerealier', 'lokalt inköpta grönsaker'],
+    },
+    {
+      label: 'Varmt och kallt',
+      items: ['äggvariationer', 'bacon', 'šunka u ovitku, kroatisk inlindad skinka', 'pečenica, kroatisk stekt fläskbit'],
+    },
+    {
+      label: 'Drycker',
+      items: ['kaffe', 'te', '100% juicer'],
+    },
+  ],
+  fi: [
+    {
+      label: 'Tuoretta',
+      items: ['sesongin hedelmät', 'viljatuotteet', 'paikallisesti hankitut vihannekset'],
+    },
+    {
+      label: 'Lämmin ja kylmä aamiainen',
+      items: ['kananmunavaihtoehdot', 'pekoni', 'šunka u ovitku, kroatialainen kääritty kinkku', 'pečenica, kroatialainen paistettu porsas'],
+    },
+    {
+      label: 'Juomat',
+      items: ['kahvi', 'tee', '100% mehut'],
+    },
+  ],
+  no: [
+    {
+      label: 'Ferskt',
+      items: ['sesongens frukt', 'frokostblandinger', 'lokalt innkjøpte grønnsaker'],
+    },
+    {
+      label: 'Varm og kald frokost',
+      items: ['eggvariasjoner', 'bacon', 'šunka u ovitku, kroatisk innpakket skinke', 'pečenica, kroatisk stekt svinekjøtt'],
+    },
+    {
+      label: 'Drikke',
+      items: ['kaffe', 'te', '100% juice'],
+    },
+  ],
+  pl: [
+    {
+      label: 'Świeże',
+      items: ['sezonowe owoce', 'płatki śniadaniowe', 'warzywa od lokalnych dostawców'],
+    },
+    {
+      label: 'Na ciepło i zimno',
+      items: ['wariacje jaj', 'bacon', 'šunka u ovitku, chorwacka zawijana szynka', 'pečenica, chorwacka pieczeń wieprzowa'],
+    },
+    {
+      label: 'Napoje',
+      items: ['kawa', 'herbata', '100% soki'],
+    },
+  ],
+  da: [
+    {
+      label: 'Frisk',
+      items: ['sæsonens frugt', 'cerealier', 'lokalt indkøbte grøntsager'],
+    },
+    {
+      label: 'Varm og kold morgenmad',
+      items: ['æggevariationer', 'bacon', 'šunka u ovitku, kroatisk indpakket skinke', 'pečenica, kroatisk stegt svinekød'],
+    },
+    {
+      label: 'Drikkevarer',
+      items: ['kaffe', 'te', '100% juice'],
+    },
+  ],
+  hu: [
+    {
+      label: 'Friss',
+      items: ['szezonális gyümölcs', 'gabonafélék', 'helyi forrásból származó zöldségek'],
+    },
+    {
+      label: 'Meleg és hideg reggeli',
+      items: ['tojásvariációk', 'bacon', 'šunka u ovitku, horvát göngyölt sonka', 'pečenica, horvát sült sertés'],
+    },
+    {
+      label: 'Italok',
+      items: ['kávé', 'tea', '100% gyümölcslevek'],
+    },
+  ],
+};
+
 export const pageContent = {
+  breakfast: {
+    hr: {
+      eyebrow: 'Doručak buffet',
+      title: 'All-you-can-eat doručak buffet u Baškoj Vodi',
+      intro:
+        'Započnite jutro u Bistro Putnik uz all-you-can-eat doručak buffet u Baškoj Vodi za 10 € po osobi, poslužen svaki dan 07:00-10:00 uz svježe, tople, hladne i piće izbore.',
+      homeTitle: 'Doručak buffet svaki dan',
+      homeIntro:
+        'All-you-can-eat doručak buffet za 10 € po osobi, svaki dan 07:00-10:00 u Baškoj Vodi.',
+      priceLabel: 'Cijena',
+      price: '10 € po osobi',
+      timeLabel: 'Vrijeme',
+      time: 'Svaki dan 07:00-10:00',
+      inclusionsTitle: 'U ponudi',
+      inclusions: breakfastInclusionGroups.hr.flatMap((group) => group.items),
+      inclusionGroups: breakfastInclusionGroups.hr,
+      cta: 'Detalji doručka',
+      locationCta: 'Pogledaj lokaciju',
+    },
+    en: {
+      eyebrow: 'Breakfast buffet',
+      title: 'All-you-can-eat breakfast buffet in Baška Voda',
+      intro:
+        'Start the morning at Bistro Putnik with an all-you-can-eat breakfast buffet in Baška Voda for €10 per person, served every day 07:00-10:00 with fresh, hot, cold, and drink choices.',
+      homeTitle: 'Breakfast buffet every day',
+      homeIntro:
+        'All-you-can-eat breakfast buffet for €10 per person, served every day 07:00-10:00 in Baška Voda.',
+      priceLabel: 'Price',
+      price: '€10 per person',
+      timeLabel: 'Time',
+      time: 'Every day 07:00-10:00',
+      inclusionsTitle: 'Included',
+      inclusions: breakfastInclusionGroups.en.flatMap((group) => group.items),
+      inclusionGroups: breakfastInclusionGroups.en,
+      cta: 'Breakfast Details',
+      locationCta: 'View Location',
+    },
+    de: {
+      eyebrow: 'Frühstücksbuffet',
+      title: 'All-you-can-eat Frühstücksbuffet in Baška Voda',
+      intro:
+        'Starten Sie den Morgen bei Bistro Putnik mit einem All-you-can-eat Frühstücksbuffet in Baška Voda für 10 € pro Person, täglich 07:00-10:00 Uhr mit frischen, warmen, kalten und Getränke-Auswahlen.',
+      homeTitle: 'Frühstücksbuffet jeden Tag',
+      homeIntro:
+        'All-you-can-eat Frühstücksbuffet für 10 € pro Person, täglich 07:00-10:00 Uhr in Baška Voda.',
+      priceLabel: 'Preis',
+      price: '10 € pro Person',
+      timeLabel: 'Zeit',
+      time: 'Täglich 07:00-10:00 Uhr',
+      inclusionsTitle: 'Inklusive',
+      inclusions: breakfastInclusionGroups.de.flatMap((group) => group.items),
+      inclusionGroups: breakfastInclusionGroups.de,
+      cta: 'Frühstück ansehen',
+      locationCta: 'Lage ansehen',
+    },
+    sv: {
+      eyebrow: 'Frukostbuffé',
+      title: 'All-you-can-eat frukostbuffé i Baška Voda',
+      intro:
+        'Börja morgonen på Bistro Putnik med en all-you-can-eat frukostbuffé i Baška Voda för 10 € per person, serverad varje dag 07:00-10:00 med färska, varma, kalla och dryckesval.',
+      homeTitle: 'Frukostbuffé varje dag',
+      homeIntro:
+        'All-you-can-eat frukostbuffé för 10 € per person, serverad varje dag 07:00-10:00 i Baška Voda.',
+      priceLabel: 'Pris',
+      price: '10 € per person',
+      timeLabel: 'Tid',
+      time: 'Varje dag 07:00-10:00',
+      inclusionsTitle: 'Ingår',
+      inclusions: breakfastInclusionGroups.sv.flatMap((group) => group.items),
+      inclusionGroups: breakfastInclusionGroups.sv,
+      cta: 'Frukostdetaljer',
+      locationCta: 'Visa plats',
+    },
+    fi: {
+      eyebrow: 'Aamiaisbuffet',
+      title: 'All-you-can-eat aamiaisbuffet Baška Vodassa',
+      intro:
+        'Aloita aamu Bistro Putnikissa all-you-can-eat aamiaisbuffetilla Baška Vodassa hintaan 10 € per henkilö, tarjolla joka päivä 07:00-10:00 tuoreilla, lämpimillä, kylmillä ja juomavaihtoehdoilla.',
+      homeTitle: 'Aamiaisbuffet joka päivä',
+      homeIntro:
+        'All-you-can-eat aamiaisbuffet 10 € per henkilö, tarjolla joka päivä 07:00-10:00 Baška Vodassa.',
+      priceLabel: 'Hinta',
+      price: '10 € per henkilö',
+      timeLabel: 'Aika',
+      time: 'Joka päivä 07:00-10:00',
+      inclusionsTitle: 'Sisältyy',
+      inclusions: breakfastInclusionGroups.fi.flatMap((group) => group.items),
+      inclusionGroups: breakfastInclusionGroups.fi,
+      cta: 'Aamiaisen tiedot',
+      locationCta: 'Katso sijainti',
+    },
+    no: {
+      eyebrow: 'Frokostbuffé',
+      title: 'All-you-can-eat frokostbuffé i Baška Voda',
+      intro:
+        'Start morgenen hos Bistro Putnik med en all-you-can-eat frokostbuffé i Baška Voda for 10 € per person, servert hver dag 07:00-10:00 med ferske, varme, kalde og drikkevalg.',
+      homeTitle: 'Frokostbuffé hver dag',
+      homeIntro:
+        'All-you-can-eat frokostbuffé for 10 € per person, servert hver dag 07:00-10:00 i Baška Voda.',
+      priceLabel: 'Pris',
+      price: '10 € per person',
+      timeLabel: 'Tid',
+      time: 'Hver dag 07:00-10:00',
+      inclusionsTitle: 'Inkludert',
+      inclusions: breakfastInclusionGroups.no.flatMap((group) => group.items),
+      inclusionGroups: breakfastInclusionGroups.no,
+      cta: 'Frokostdetaljer',
+      locationCta: 'Se beliggenhet',
+    },
+    pl: {
+      eyebrow: 'Bufet śniadaniowy',
+      title: 'Bufet śniadaniowy all-you-can-eat w Baškiej Vodzie',
+      intro:
+        'Zacznij poranek w Bistro Putnik od bufetu śniadaniowego all-you-can-eat w Baškiej Vodzie za 10 € od osoby, serwowanego codziennie 07:00-10:00 z wyborami świeżymi, ciepłymi, zimnymi i napojami.',
+      homeTitle: 'Bufet śniadaniowy codziennie',
+      homeIntro:
+        'Bufet śniadaniowy all-you-can-eat za 10 € od osoby, codziennie 07:00-10:00 w Baškiej Vodzie.',
+      priceLabel: 'Cena',
+      price: '10 € od osoby',
+      timeLabel: 'Godziny',
+      time: 'Codziennie 07:00-10:00',
+      inclusionsTitle: 'W cenie',
+      inclusions: breakfastInclusionGroups.pl.flatMap((group) => group.items),
+      inclusionGroups: breakfastInclusionGroups.pl,
+      cta: 'Szczegóły śniadania',
+      locationCta: 'Zobacz lokalizację',
+    },
+    da: {
+      eyebrow: 'Morgenmadsbuffet',
+      title: 'All-you-can-eat morgenmadsbuffet i Baška Voda',
+      intro:
+        'Start morgenen hos Bistro Putnik med en all-you-can-eat morgenmadsbuffet i Baška Voda for 10 € pr. person, serveret hver dag 07:00-10:00 med friske, varme, kolde og drikkevalg.',
+      homeTitle: 'Morgenmadsbuffet hver dag',
+      homeIntro:
+        'All-you-can-eat morgenmadsbuffet for 10 € pr. person, serveret hver dag 07:00-10:00 i Baška Voda.',
+      priceLabel: 'Pris',
+      price: '10 € pr. person',
+      timeLabel: 'Tid',
+      time: 'Hver dag 07:00-10:00',
+      inclusionsTitle: 'Inkluderet',
+      inclusions: breakfastInclusionGroups.da.flatMap((group) => group.items),
+      inclusionGroups: breakfastInclusionGroups.da,
+      cta: 'Morgenmadsdetaljer',
+      locationCta: 'Se beliggenhed',
+    },
+    hu: {
+      eyebrow: 'Reggeli büfé',
+      title: 'All-you-can-eat reggeli büfé Baška Vodában',
+      intro:
+        'Indítsa a reggelt a Bistro Putnikban all-you-can-eat reggeli büfével Baška Vodában, 10 € személyenként, minden nap 07:00-10:00 között friss, meleg, hideg és italválasztékkal.',
+      homeTitle: 'Reggeli büfé minden nap',
+      homeIntro:
+        'All-you-can-eat reggeli büfé 10 € személyenként, minden nap 07:00-10:00 között Baška Vodában.',
+      priceLabel: 'Ár',
+      price: '10 € személyenként',
+      timeLabel: 'Idő',
+      time: 'Minden nap 07:00-10:00',
+      inclusionsTitle: 'Tartalmazza',
+      inclusions: breakfastInclusionGroups.hu.flatMap((group) => group.items),
+      inclusionGroups: breakfastInclusionGroups.hu,
+      cta: 'Reggeli részletek',
+      locationCta: 'Helyszín megtekintése',
+    },
+  },
   reservations: {
     hr: {
       eyebrow: 'Rezervacije',

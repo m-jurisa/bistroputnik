@@ -1,8 +1,8 @@
 import MarendaPageContent from '../../components/MarendaPageContent';
 import JsonLd from '../../components/JsonLd';
-import { LanguageProvider } from '../../components/LanguageProvider';
 import { marendaConfig } from '../../data/marenda';
 import { menuData } from '../../data/menu';
+import { getPageChrome } from '../../data/page-chrome';
 import {
   buildBreadcrumbSchema,
   buildJsonLdGraph,
@@ -17,6 +17,8 @@ import marendaItemsData from '../../menu/marenda-items.json';
 export const metadata = buildMetadata({ locale: 'en', routeKey: 'marenda' });
 
 export default function MarendaPage() {
+  const chrome = getPageChrome('en', 'marenda');
+
   return (
     <>
       <JsonLd
@@ -30,15 +32,14 @@ export default function MarendaPage() {
           ]),
         ])}
       />
-      <LanguageProvider initialLanguage="en">
-        <MarendaPageContent
-          business={menuData.business}
-          marenda={{
-            ...marendaConfig,
-            items: marendaItemsData.items,
-          }}
-        />
-      </LanguageProvider>
+      <MarendaPageContent
+        business={menuData.business}
+        marenda={{
+          ...marendaConfig,
+          items: marendaItemsData.items,
+        }}
+        chrome={chrome}
+      />
     </>
   );
 }

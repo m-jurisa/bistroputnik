@@ -27,6 +27,7 @@ const guideUi = {
     relatedGuides: 'Povezani vodiči',
     allGuides: 'Svi vodiči',
     viewMenu: 'Pogledaj jelovnik',
+    faqs: 'Česta pitanja',
   },
   en: {
     updated: 'Updated',
@@ -35,6 +36,7 @@ const guideUi = {
     relatedGuides: 'Related Guides',
     allGuides: 'All Guides',
     viewMenu: 'View Menu',
+    faqs: 'FAQs',
   },
   hu: {
     updated: 'Frissítve',
@@ -43,6 +45,7 @@ const guideUi = {
     relatedGuides: 'Kapcsolódó útmutatók',
     allGuides: 'Összes útmutató',
     viewMenu: 'Étlap megtekintése',
+    faqs: 'Gyakori kérdések',
   },
   de: {
     updated: 'Aktualisiert',
@@ -51,6 +54,7 @@ const guideUi = {
     relatedGuides: 'Verwandte Guides',
     allGuides: 'Alle Guides',
     viewMenu: 'Speisekarte ansehen',
+    faqs: 'Häufige Fragen',
   },
   sv: {
     updated: 'Uppdaterad',
@@ -59,6 +63,7 @@ const guideUi = {
     relatedGuides: 'Relaterade guider',
     allGuides: 'Alla guider',
     viewMenu: 'Visa meny',
+    faqs: 'Vanliga frågor',
   },
   fi: {
     updated: 'Päivitetty',
@@ -67,6 +72,7 @@ const guideUi = {
     relatedGuides: 'Aiheeseen liittyvät oppaat',
     allGuides: 'Kaikki oppaat',
     viewMenu: 'Katso menu',
+    faqs: 'Usein kysytyt kysymykset',
   },
   no: {
     updated: 'Oppdatert',
@@ -75,6 +81,7 @@ const guideUi = {
     relatedGuides: 'Relaterte guider',
     allGuides: 'Alle guider',
     viewMenu: 'Se meny',
+    faqs: 'Vanlige spørsmål',
   },
   pl: {
     updated: 'Zaktualizowano',
@@ -83,6 +90,7 @@ const guideUi = {
     relatedGuides: 'Powiązane przewodniki',
     allGuides: 'Wszystkie przewodniki',
     viewMenu: 'Zobacz menu',
+    faqs: 'Najczęstsze pytania',
   },
   da: {
     updated: 'Opdateret',
@@ -91,6 +99,7 @@ const guideUi = {
     relatedGuides: 'Relaterede guides',
     allGuides: 'Alle guides',
     viewMenu: 'Se menu',
+    faqs: 'Ofte stillede spørgsmål',
   },
 };
 
@@ -304,6 +313,35 @@ function RecommendedMenuItems({ locale, items = [] }) {
   );
 }
 
+function ArticleFaqs({ locale, faqs = [] }) {
+  const ui = guideUi[locale] || guideUi.en;
+
+  if (!faqs.length) {
+    return null;
+  }
+
+  return (
+    <section className="mt-10 border-t border-brand-line/20 pt-7">
+      <p className="fine-print">{ui.faqs}</p>
+      <div className="mt-5 grid gap-4">
+        {faqs.map((faq) => (
+          <details
+            key={faq.question}
+            className="rounded-lg border border-brand-line/20 bg-brand-deep/20 p-5 open:border-brand-sand/60 open:bg-brand-deep/35"
+          >
+            <summary className="cursor-pointer list-none font-display text-2xl leading-none text-brand-sand">
+              {faq.question}
+            </summary>
+            <p className="mt-4 text-sm leading-6 text-[#d8dfdf]">
+              {faq.answer}
+            </p>
+          </details>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function RelatedGuides({ locale, article }) {
   const ui = guideUi[locale] || guideUi.en;
   const related = (article.relatedGuideKeys || [])
@@ -337,7 +375,7 @@ function RelatedGuides({ locale, article }) {
   );
 }
 
-export function MenuStandalonePage({ locale, menu }) {
+export function MenuStandalonePage({ locale, menu, chrome }) {
   const t = translations[locale] || translations.en;
 
   return (
@@ -353,7 +391,85 @@ export function MenuStandalonePage({ locale, menu }) {
             locale={locale}
             pages={menu.pages}
             notices={menu.notices}
+            languageLinks={chrome.languageLinks}
+            languageSelectorLabel={chrome.languageSelectorLabel}
           />
+        </div>
+      </section>
+    </>
+  );
+}
+
+export function BreakfastPage({ locale }) {
+  const copy = localeCopy(pageContent.breakfast, locale);
+  const inclusionGroups = Array.isArray(copy.inclusionGroups) ? copy.inclusionGroups : [];
+
+  return (
+    <>
+      <PageIntro eyebrow={copy.eyebrow} title={copy.title} description={copy.intro} />
+      <section className="section-shell pt-0">
+        <div className="container-shell grid gap-8 lg:grid-cols-[0.78fr_1.22fr]">
+          <div className="space-y-6">
+            <div className="panel-surface p-6 sm:p-8">
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-1">
+                <div>
+                  <p className="fine-print">{copy.priceLabel}</p>
+                  <p className="mt-3 font-display text-5xl leading-none text-brand-sand">
+                    {copy.price}
+                  </p>
+                </div>
+                <div className="border-t border-brand-line/20 pt-6 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0 lg:border-l-0 lg:border-t lg:pl-0 lg:pt-6">
+                  <p className="fine-print">{copy.timeLabel}</p>
+                  <p className="mt-3 text-lg font-semibold leading-7 text-[#f4eee0]">
+                    {copy.time}
+                  </p>
+                </div>
+              </div>
+              <a
+                href={getLocalizedPath(locale, 'location')}
+                className="brand-button mt-8 w-full whitespace-normal text-center leading-5 sm:w-auto"
+              >
+                {copy.locationCta}
+              </a>
+            </div>
+          </div>
+
+          <div className="space-y-7">
+            <div>
+              <p className="fine-print">{copy.inclusionsTitle}</p>
+              {inclusionGroups.length ? (
+                <div className="mt-5 grid gap-4 sm:grid-cols-3">
+                  {inclusionGroups.map((group) => (
+                    <div
+                      key={group.label}
+                      className="rounded-lg border border-brand-line/20 bg-brand-deep/20 p-5"
+                    >
+                      <h2 className="font-display text-2xl leading-none text-brand-sand">
+                        {group.label}
+                      </h2>
+                      <ul className="mt-4 grid gap-3 text-sm font-semibold leading-6 text-[#f4eee0]">
+                        {group.items.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <ul className="mt-5 grid gap-4 sm:grid-cols-2">
+                  {copy.inclusions.map((item) => (
+                    <li
+                      key={item}
+                      className="border-t border-brand-line/20 pt-4 text-sm font-semibold leading-6 text-[#f4eee0]"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            <RouteLinks locale={locale} />
+          </div>
         </div>
       </section>
     </>
@@ -640,6 +756,8 @@ export function ArticlePage({ locale, article, recommendedItems = [] }) {
   const bodyParagraphs = Array.isArray(body) ? body : [];
   const localizedSections = getLocalizedValue(article.sections, locale);
   const sections = Array.isArray(localizedSections) ? localizedSections : [];
+  const localizedFaqs = getLocalizedValue(article.faqs, locale);
+  const faqs = Array.isArray(localizedFaqs) ? localizedFaqs : [];
   const title = getLocalizedValue(article.title, locale);
 
   return (
@@ -689,6 +807,7 @@ export function ArticlePage({ locale, article, recommendedItems = [] }) {
             locale={locale}
             items={recommendedItems}
           />
+          <ArticleFaqs locale={locale} faqs={faqs} />
           <ArticleRouteLinks
             locale={locale}
             routeKeys={article.relatedRouteKeys || ['menu', 'marenda', 'location', 'reviews']}

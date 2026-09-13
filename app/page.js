@@ -1,7 +1,7 @@
 import HomePageContent from '../components/HomePageContent';
 import JsonLd from '../components/JsonLd';
-import { LanguageProvider } from '../components/LanguageProvider';
 import { getLocalizedMenuView } from '../data/menu';
+import { getPageChrome } from '../data/page-chrome';
 import {
   buildBreadcrumbSchema,
   buildJsonLdGraph,
@@ -16,6 +16,7 @@ export const metadata = buildMetadata({ locale: 'en', routeKey: 'home' });
 
 export default function HomePage() {
   const menu = getLocalizedMenuView('en');
+  const chrome = getPageChrome('en', 'home');
 
   return (
     <>
@@ -29,9 +30,7 @@ export default function HomePage() {
           ]),
         ])}
       />
-      <LanguageProvider initialLanguage="en">
-        <HomePageContent locale="en" menu={menu} />
-      </LanguageProvider>
+      <HomePageContent locale="en" menu={menu} chrome={chrome} />
     </>
   );
 }

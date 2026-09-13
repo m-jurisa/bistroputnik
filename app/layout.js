@@ -18,6 +18,7 @@ const montserrat = Montserrat({
 });
 
 const defaultMetadata = buildMetadata({ locale: 'en', routeKey: 'home' });
+const includeStaticSiteScript = process.env.NODE_ENV === 'production';
 
 export const metadata = {
   ...defaultMetadata,
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
     >
       <body className="bg-brand-deep font-sans text-brand-pearl antialiased">
         {children}
+        {includeStaticSiteScript ? <script src="/static-site.js" defer /> : null}
       </body>
     </html>
   );

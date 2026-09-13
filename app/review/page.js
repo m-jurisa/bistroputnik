@@ -1,7 +1,7 @@
 import JsonLd from '../../components/JsonLd';
 import ReviewPageContent from '../../components/ReviewPageContent';
-import { LanguageProvider } from '../../components/LanguageProvider';
 import { menuData } from '../../data/menu';
+import { getPageChrome } from '../../data/page-chrome';
 import { reviewLinks } from '../../data/review-links';
 import {
   buildBreadcrumbSchema,
@@ -16,6 +16,8 @@ import { getAbsoluteUrl, getLocalizedPath, siteConfig } from '../../data/site-co
 export const metadata = buildMetadata({ locale: 'en', routeKey: 'reviews' });
 
 export default function ReviewPage() {
+  const chrome = getPageChrome('en', 'reviews');
+
   return (
     <>
       <JsonLd
@@ -29,9 +31,11 @@ export default function ReviewPage() {
           ]),
         ])}
       />
-      <LanguageProvider initialLanguage="en">
-        <ReviewPageContent business={menuData.business} links={reviewLinks} />
-      </LanguageProvider>
+      <ReviewPageContent
+        business={menuData.business}
+        links={reviewLinks}
+        chrome={chrome}
+      />
     </>
   );
 }

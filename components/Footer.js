@@ -1,11 +1,7 @@
-'use client';
-
-import { siteConfig } from '../data/site-config';
-import { venueFacts } from '../data/venue-facts';
-import { useLanguage } from './LanguageProvider';
-
-export default function Footer({ business }) {
-  const { t } = useLanguage();
+export default function Footer({ business, chrome }) {
+  const labels = chrome?.labels || {};
+  const phone = chrome?.phone || '';
+  const telHref = phone ? `tel:${phone.replace(/[^\d+]/g, '')}` : '';
 
   return (
     <footer id="contact" className="relative z-10 border-t border-brand-line/20">
@@ -16,24 +12,24 @@ export default function Footer({ business }) {
           </p>
           <address className="mt-5 space-y-1 text-sm not-italic leading-6 text-[#d8dfdf]">
             <p>
-              <span className="text-brand-sand/80">{t.footer.company}: </span>
+              <span className="text-brand-sand/80">{labels.company}: </span>
               {business.companyName}
             </p>
             <p>
-              <span className="text-brand-sand/80">{t.footer.address}: </span>
+              <span className="text-brand-sand/80">{labels.address}: </span>
               {business.registeredAddress}
             </p>
             <p>
-              <span className="text-brand-sand/80">{t.footer.oib}: </span>
+              <span className="text-brand-sand/80">{labels.oib}: </span>
               {business.oib}
             </p>
             <p>
-              <span className="text-brand-sand/80">{t.footer.mbs}: </span>
+              <span className="text-brand-sand/80">{labels.mbs}: </span>
               {business.mbs}
             </p>
             <p>
               <span className="text-brand-sand/80">
-                {t.footer.registrationNumber}:{' '}
+                {labels.registrationNumber}:{' '}
               </span>
               {business.registrationNumber}
             </p>
@@ -42,40 +38,40 @@ export default function Footer({ business }) {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:text-right">
           <div>
-            <p className="fine-print">{t.footer.location}</p>
+            <p className="fine-print">{labels.location}</p>
             <a
-              href={venueFacts.googleMapsUrl}
+              href={chrome?.googleMapsUrl}
               target="_blank"
               rel="noreferrer"
               className="mt-2 inline-block text-sm font-semibold text-[#f4eee0] hover:text-brand-sand"
             >
-              {venueFacts.fullAddress}
+              {chrome?.fullAddress}
             </a>
           </div>
           <div>
-            <p className="fine-print">{t.footer.contact}</p>
+            <p className="fine-print">{labels.contact}</p>
             <a
               href={`mailto:${business.email}`}
               className="mt-2 inline-block text-sm font-semibold text-[#f4eee0] hover:text-brand-sand"
             >
               {business.email}
             </a>
-            {venueFacts.phone ? (
+            {phone ? (
               <a
-                href={`tel:${venueFacts.phone.replace(/[^\d+]/g, '')}`}
+                href={telHref}
                 className="mt-2 block text-sm font-semibold text-[#f4eee0] hover:text-brand-sand"
               >
-                {venueFacts.phone}
+                {phone}
               </a>
             ) : null}
           </div>
           <div>
-            <p className="fine-print">{t.footer.website}</p>
+            <p className="fine-print">{labels.website}</p>
             <a
-              href={siteConfig.siteUrl}
+              href={chrome?.siteUrl}
               className="mt-2 inline-block text-sm font-semibold text-[#f4eee0] hover:text-brand-sand"
             >
-              {siteConfig.displayHost}
+              {chrome?.displayHost}
             </a>
           </div>
         </div>

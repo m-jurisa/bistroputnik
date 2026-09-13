@@ -4,7 +4,7 @@ import { siteConfig } from './site-config';
 
 export const siteMeta = {
   brand: menuData.brand.name,
-  slogan: 'Opening 1.5.2026',
+  slogan: 'Open 07:00-23:00',
   note: 'More info soon',
   url: siteConfig.siteUrl,
 };

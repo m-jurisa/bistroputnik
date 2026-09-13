@@ -28,20 +28,31 @@ export const translations = {
       navigation: 'Navigacija',
       menuPages: 'Stranice jelovnika',
     },
+    announcement: {
+      augustHoliday: {
+        label: 'Obavijest o radnom vremenu',
+        text:
+          '15. kolovoza: zbog blagdana u Hrvatskoj poslužujemo samo doručak i zatvaramo nakon toga.',
+      },
+    },
     hero: {
-      opening: 'Otvaranje 1.5.2026',
+      opening: 'Otvoreno 07:00-23:00',
       title: 'Bistro Putnik u Baškoj Vodi',
       text:
         'Hrvatska obalna kuhinja, pažljivo odabrana pića i miran večernji ritam na Makarskoj rivijeri.',
       cta: 'Pogledaj jelovnik',
       marendaCta: 'Pogledaj marendu',
+      breakfastCta: 'Doručak 10 €',
     },
     about: {
       eyebrow: 'Baška Voda',
       facts: {
-        opening: 'Otvaranje',
-        venue: 'Objekt',
-        contact: 'Kontakt',
+        hours: 'Radno vrijeme',
+        open: 'Otvoreno 07:00-23:00',
+        service: 'Kuhinja',
+        kitchen: 'Kuhinja do 22:00',
+        morning: 'Doručak',
+        breakfast: 'Doručak 07:00-10:00',
       },
     },
     menu: {
@@ -99,20 +110,31 @@ export const translations = {
       navigation: 'Navigation',
       menuPages: 'Menu pages',
     },
+    announcement: {
+      augustHoliday: {
+        label: 'Opening hours notice',
+        text:
+          'August 15: due to a public holiday in Croatia, we serve breakfast only and close afterwards.',
+      },
+    },
     hero: {
-      opening: 'Opening 1.5.2026',
+      opening: 'Open 07:00-23:00',
       title: 'Bistro Putnik in Baška Voda',
       text:
         'Croatian coastal cooking, a careful bar, and an easy evening rhythm on the Makarska Riviera.',
       cta: 'View Menu',
       marendaCta: 'View Daily Lunch',
+      breakfastCta: 'Breakfast €10',
     },
     about: {
       eyebrow: 'Baška Voda',
       facts: {
-        opening: 'Opening',
-        venue: 'Venue',
-        contact: 'Contact',
+        hours: 'Hours',
+        open: 'Open 07:00-23:00',
+        service: 'Kitchen',
+        kitchen: 'Kitchen until 22:00',
+        morning: 'Breakfast',
+        breakfast: 'Breakfast 07:00-10:00',
       },
     },
     menu: {
@@ -170,20 +192,31 @@ export const translations = {
       navigation: 'Navigáció',
       menuPages: 'Étlap oldalai',
     },
+    announcement: {
+      augustHoliday: {
+        label: 'Nyitvatartási értesítés',
+        text:
+          'Augusztus 15.: a horvátországi ünnep miatt csak reggelit szolgálunk fel, utána zárva tartunk.',
+      },
+    },
     hero: {
-      opening: 'Nyitás: 2026. 5. 1.',
+      opening: 'Nyitva 07:00-23:00',
       title: 'Bistro Putnik Baška Vodában',
       text:
         'Horvát tengerparti konyha, gondosan összeállított italválaszték és nyugodt esti ritmus a Makarska-riviérán.',
       cta: 'Étlap megtekintése',
       marendaCta: 'Marenda megtekintése',
+      breakfastCta: 'Reggeli 10 €',
     },
     about: {
       eyebrow: 'Baška Voda',
       facts: {
-        opening: 'Nyitás',
-        venue: 'Hely',
-        contact: 'Kapcsolat',
+        hours: 'Nyitvatartás',
+        open: 'Nyitva 07:00-23:00',
+        service: 'Konyha',
+        kitchen: 'Konyha 22:00-ig',
+        morning: 'Reggeli',
+        breakfast: 'Reggeli 07:00-10:00',
       },
     },
     menu: {
@@ -241,20 +274,31 @@ export const translations = {
       navigation: 'Navigering',
       menuPages: 'Menysidor',
     },
+    announcement: {
+      augustHoliday: {
+        label: 'Information om öppettider',
+        text:
+          '15 augusti: på grund av en helgdag i Kroatien serverar vi endast frukost och stänger därefter.',
+      },
+    },
     hero: {
-      opening: 'Öppnar 1.5.2026',
+      opening: 'Öppet 07:00-23:00',
       title: 'Bistro Putnik i Baška Voda',
       text:
         'Kroatisk kustmat, en omsorgsfull bar och en lugn kvällsrytm vid Makarska rivieran.',
       cta: 'Visa meny',
       marendaCta: 'Visa dagens lunch',
+      breakfastCta: 'Frukost 10 €',
     },
     about: {
       eyebrow: 'Baška Voda',
       facts: {
-        opening: 'Öppning',
-        venue: 'Plats',
-        contact: 'Kontakt',
+        hours: 'Öppettider',
+        open: 'Öppet 07:00-23:00',
+        service: 'Kök',
+        kitchen: 'Kök till 22:00',
+        morning: 'Frukost',
+        breakfast: 'Frukost 07:00-10:00',
       },
     },
     menu: {
@@ -312,20 +356,31 @@ export const translations = {
       navigation: 'Navigaatio',
       menuPages: 'Menun sivut',
     },
+    announcement: {
+      augustHoliday: {
+        label: 'Aukiolotiedote',
+        text:
+          '15. elokuuta: Kroatian yleisen vapaapäivän vuoksi tarjoilemme vain aamiaista ja suljemme sen jälkeen.',
+      },
+    },
     hero: {
-      opening: 'Avataan 1.5.2026',
+      opening: 'Avoinna 07:00-23:00',
       title: 'Bistro Putnik Baška Vodassa',
       text:
         'Kroatialaista rannikkoruokaa, huolella koottu juomavalikoima ja rauhallinen iltatunnelma Makarskan rivieralla.',
       cta: 'Katso menu',
       marendaCta: 'Katso päivän lounas',
+      breakfastCta: 'Aamiainen 10 €',
     },
     about: {
       eyebrow: 'Baška Voda',
       facts: {
-        opening: 'Avajaiset',
-        venue: 'Paikka',
-        contact: 'Yhteys',
+        hours: 'Aukiolo',
+        open: 'Avoinna 07:00-23:00',
+        service: 'Keittiö',
+        kitchen: 'Keittiö klo 22:00 asti',
+        morning: 'Aamiainen',
+        breakfast: 'Aamiainen 07:00-10:00',
       },
     },
     menu: {
@@ -383,20 +438,31 @@ export const translations = {
       navigation: 'Navigasjon',
       menuPages: 'Menysider',
     },
+    announcement: {
+      augustHoliday: {
+        label: 'Informasjon om åpningstid',
+        text:
+          '15. august: på grunn av en helligdag i Kroatia serverer vi kun frokost og stenger deretter.',
+      },
+    },
     hero: {
-      opening: 'Åpner 1.5.2026',
+      opening: 'Åpent 07:00-23:00',
       title: 'Bistro Putnik i Baška Voda',
       text:
         'Kroatisk kystmat, en nøye utvalgt bar og en rolig kveldsrytme på Makarska-rivieraen.',
       cta: 'Se menyen',
       marendaCta: 'Se dagens lunsj',
+      breakfastCta: 'Frokost 10 €',
     },
     about: {
       eyebrow: 'Baška Voda',
       facts: {
-        opening: 'Åpning',
-        venue: 'Sted',
-        contact: 'Kontakt',
+        hours: 'Åpningstid',
+        open: 'Åpent 07:00-23:00',
+        service: 'Kjøkken',
+        kitchen: 'Kjøkken til 22:00',
+        morning: 'Frokost',
+        breakfast: 'Frokost 07:00-10:00',
       },
     },
     menu: {
@@ -454,20 +520,31 @@ export const translations = {
       navigation: 'Nawigacja',
       menuPages: 'Strony menu',
     },
+    announcement: {
+      augustHoliday: {
+        label: 'Informacja o godzinach otwarcia',
+        text:
+          '15 sierpnia: z powodu święta w Chorwacji serwujemy tylko śniadanie, a potem zamykamy.',
+      },
+    },
     hero: {
-      opening: 'Otwarcie 1.5.2026',
+      opening: 'Otwarte 07:00-23:00',
       title: 'Bistro Putnik w Baškiej Vodzie',
       text:
         'Chorwacka kuchnia wybrzeża, starannie dobrany bar i spokojny wieczorny rytm Riwiery Makarskiej.',
       cta: 'Zobacz menu',
       marendaCta: 'Zobacz lunch dnia',
+      breakfastCta: 'Śniadanie 10 €',
     },
     about: {
       eyebrow: 'Baška Voda',
       facts: {
-        opening: 'Otwarcie',
-        venue: 'Lokal',
-        contact: 'Kontakt',
+        hours: 'Godziny',
+        open: 'Otwarte 07:00-23:00',
+        service: 'Kuchnia',
+        kitchen: 'Kuchnia do 22:00',
+        morning: 'Śniadanie',
+        breakfast: 'Śniadanie 07:00-10:00',
       },
     },
     menu: {
@@ -525,20 +602,31 @@ export const translations = {
       navigation: 'Navigation',
       menuPages: 'Speisekartenseiten',
     },
+    announcement: {
+      augustHoliday: {
+        label: 'Hinweis zu den Öffnungszeiten',
+        text:
+          '15. August: Aufgrund eines Feiertags in Kroatien servieren wir nur Frühstück und schließen danach.',
+      },
+    },
     hero: {
-      opening: 'Eröffnung am 1.5.2026',
+      opening: 'Geöffnet 07:00-23:00',
       title: 'Bistro Putnik in Baška Voda',
       text:
         'Kroatische Küstenküche, eine sorgfältig kuratierte Bar und ein ruhiger Abendrhythmus an der Makarska Riviera.',
       cta: 'Speisekarte ansehen',
       marendaCta: 'Mittagstisch ansehen',
+      breakfastCta: 'Frühstück 10 €',
     },
     about: {
       eyebrow: 'Baška Voda',
       facts: {
-        opening: 'Eröffnung',
-        venue: 'Lokal',
-        contact: 'Kontakt',
+        hours: 'Öffnungszeiten',
+        open: 'Geöffnet 07:00-23:00',
+        service: 'Küche',
+        kitchen: 'Küche bis 22:00',
+        morning: 'Frühstück',
+        breakfast: 'Frühstück 07:00-10:00',
       },
     },
     menu: {
@@ -596,20 +684,31 @@ export const translations = {
       navigation: 'Navigation',
       menuPages: 'Menusider',
     },
+    announcement: {
+      augustHoliday: {
+        label: 'Information om åbningstid',
+        text:
+          '15. august: på grund af en helligdag i Kroatien serverer vi kun morgenmad og lukker derefter.',
+      },
+    },
     hero: {
-      opening: 'Åbner 1.5.2026',
+      opening: 'Åbent 07:00-23:00',
       title: 'Bistro Putnik i Baška Voda',
       text:
         'Kroatisk kystkøkken, en nøje udvalgt bar og en rolig aftenrytme på Makarska-rivieraen.',
       cta: 'Se menu',
       marendaCta: 'Se dagens frokost',
+      breakfastCta: 'Morgenmad 10 €',
     },
     about: {
       eyebrow: 'Baška Voda',
       facts: {
-        opening: 'Åbning',
-        venue: 'Sted',
-        contact: 'Kontakt',
+        hours: 'Åbningstid',
+        open: 'Åbent 07:00-23:00',
+        service: 'Køkken',
+        kitchen: 'Køkken til 22:00',
+        morning: 'Morgenmad',
+        breakfast: 'Morgenmad 07:00-10:00',
       },
     },
     menu: {

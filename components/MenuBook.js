@@ -74,7 +74,13 @@ function MenuNotices({ notices, labels }) {
   );
 }
 
-export default function MenuBook({ locale = 'en', pages, notices }) {
+export default function MenuBook({
+  locale = 'en',
+  pages,
+  notices,
+  languageLinks,
+  languageSelectorLabel,
+}) {
   const t = translations[locale] || translations.en;
 
   return (
@@ -96,7 +102,11 @@ export default function MenuBook({ locale = 'en', pages, notices }) {
             ))}
           </div>
         </nav>
-        <LanguageSelector className="w-fit" />
+        <LanguageSelector
+          className="w-fit"
+          label={languageSelectorLabel || t.ui.languageSelector}
+          links={languageLinks}
+        />
       </div>
 
       {pages.map((page, pageIndex) => (

@@ -1,136 +1,138 @@
 {
- "items": [
+"items": [
   {
-    "id": "bolognese",
-    "name": "Bolognese",
-    "description": "Tjestenina s bogatim umakom od mljevenog mesa i rajčice, poslužena kao zasitno dnevno jelo.",
+    "id": "grasak-varivo",
+    "name": "Grašak varivo",
+    "description": "Domaće varivo od graška, lagano kuhano i posluženo kao zasitno dnevno jelo.",
     "price": 10,
     "priceDisplay": "10 €",
     "allergens": [
-      "G",
       "C"
     ],
     "translations": {
       "en": {
-        "name": "Bolognese",
-        "description": "Pasta with a rich minced meat and tomato sauce, served as a hearty daily dish."
+        "name": "Pea stew",
+        "description": "Homemade pea stew, gently cooked and served as a hearty daily dish."
       },
       "sv": {
-        "name": "Bolognese",
-        "description": "Pasta med en fyllig sås av köttfärs och tomat, serverad som en mättande dagens rätt."
+        "name": "Ärtgryta",
+        "description": "Hemlagad ärtgryta, varsamt tillagad och serverad som en mättande dagens rätt."
       },
       "fi": {
-        "name": "Bolognese",
-        "description": "Pastaa täyteläisessä jauheliha-tomaattikastikkeessa, tarjoiltuna täyttävänä päivän annoksena."
+        "name": "Hernepata",
+        "description": "Kotitekoinen hernepata, miedosti kypsennetty ja tarjoiltu täyttävänä päivän annoksena."
       },
       "no": {
-        "name": "Bolognese",
-        "description": "Pasta med en fyldig saus av kjøttdeig og tomat, servert som en mettende dagens rett."
+        "name": "Ertegryte",
+        "description": "Hjemmelaget ertegryte, skånsomt tilberedt og servert som en mettende dagens rett."
       },
       "pl": {
-        "name": "Bolognese",
-        "description": "Makaron z bogatym sosem z mięsa mielonego i pomidorów, podawany jako sycące danie dnia."
+        "name": "Gulasz z groszku",
+        "description": "Domowy gulasz z groszku, delikatnie gotowany i podawany jako sycące danie dnia."
       },
       "de": {
-        "name": "Bolognese",
-        "description": "Pasta mit einer kräftigen Hackfleisch-Tomatensauce, als sättigendes Tagesgericht serviert."
+        "name": "Erbseneintopf",
+        "description": "Hausgemachter Erbseneintopf, schonend gekocht und als sättigendes Tagesgericht serviert."
       },
       "da": {
-        "name": "Bolognese",
-        "description": "Pasta med en fyldig sauce af hakket kød og tomat, serveret som en mættende dagens ret."
+        "name": "Ærtegryde",
+        "description": "Hjemmelavet ærtegryde, nænsomt tilberedt og serveret som en mættende dagens ret."
       },
       "hu": {
-        "name": "Bolognai tészta",
-        "description": "Tészta gazdag darált húsos-paradicsomos szósszal, laktató napi fogásként tálalva."
+        "name": "Borsófőzelék",
+        "description": "Házi borsófőzelék, kíméletesen főzve és laktató napi fogásként tálalva."
       }
     },
     "staffCode": ""
   },
   {
-    "id": "piletina-na-grillu",
-    "name": "Piletina na grillu",
-    "description": "Sočna piletina pečena na grillu, pripremljena i poslužena kao zasitno dnevno jelo.",
-    "price": 12,
-    "priceDisplay": "12 €",
-    "allergens": [],
-    "translations": {
-      "en": {
-        "name": "Grilled chicken",
-        "description": "Juicy grilled chicken, prepared and served as a hearty daily dish."
-      },
-      "sv": {
-        "name": "Grillad kyckling",
-        "description": "Saftig grillad kyckling, tillagad och serverad som en mättande dagens rätt."
-      },
-      "fi": {
-        "name": "Grillattu kana",
-        "description": "Mehevä grillattu kana, valmistettu ja tarjoiltu täyttävänä päivän annoksena."
-      },
-      "no": {
-        "name": "Grillet kylling",
-        "description": "Saftig grillet kylling, tilberedt og servert som en mettende dagens rett."
-      },
-      "pl": {
-        "name": "Grillowany kurczak",
-        "description": "Soczysty grillowany kurczak, przygotowany i podawany jako sycące danie dnia."
-      },
-      "de": {
-        "name": "Gegrilltes Hähnchen",
-        "description": "Saftiges gegrilltes Hähnchen, zubereitet und als sättigendes Tagesgericht serviert."
-      },
-      "da": {
-        "name": "Grillet kylling",
-        "description": "Saftig grillet kylling, tilberedt og serveret som en mættende dagens ret."
-      },
-      "hu": {
-        "name": "Grillezett csirke",
-        "description": "Szaftos grillezett csirke, laktató napi fogásként elkészítve és tálalva."
-      }
-    },
-    "staffCode": ""
-  },
-  {
-    "id": "svinjski-becki",
-    "name": "Svinjski bečki",
-    "description": "Hrskavo panirani svinjski odrezak zlatne boje, poslužen kao zasitno dnevno jelo.",
+    "id": "gurmanska-pljeskavica",
+    "name": "Gurmanska pljeskavica",
+    "description": "Sočna gurmanska pljeskavica, bogato začinjena i pečena na roštilju, poslužena kao zasitno dnevno jelo.",
     "price": 13,
     "priceDisplay": "13 €",
     "allergens": [
-      "G",
-      "J"
+      "M"
     ],
     "translations": {
       "en": {
-        "name": "Vienna-style pork schnitzel",
-        "description": "A crispy, golden breaded pork schnitzel, served as a hearty daily dish."
+        "name": "Gourmet pljeskavica",
+        "description": "Juicy gourmet pljeskavica, richly seasoned and grilled, served as a hearty daily dish."
       },
       "sv": {
-        "name": "Panerad fläskschnitzel",
-        "description": "En krispig, gyllene panerad fläskschnitzel, serverad som en mättande dagens rätt."
+        "name": "Gourmet-pljeskavica",
+        "description": "Saftig gourmet-pljeskavica, välkryddad och grillad, serverad som en mättande dagens rätt."
       },
       "fi": {
-        "name": "Paneroitu porsaanleike",
-        "description": "Rapea, kullanruskea paneroitu porsaanleike, tarjoiltuna täyttävänä päivän annoksena."
+        "name": "Gourmet-pljeskavica",
+        "description": "Mehevä ja runsaasti maustettu gourmet-pljeskavica, grillattuna ja tarjoiltuna täyttävänä päivän annoksena."
       },
       "no": {
-        "name": "Panert svineschnitzel",
-        "description": "En sprø, gyllenpanert svineschnitzel, servert som en mettende dagens rett."
+        "name": "Gourmet-pljeskavica",
+        "description": "Saftig gourmet-pljeskavica, godt krydret og grillet, servert som en mettende dagens rett."
       },
       "pl": {
-        "name": "Panierowany kotlet wieprzowy po wiedeńsku",
-        "description": "Chrupiący, złocisty panierowany kotlet wieprzowy, podawany jako sycące danie dnia."
+        "name": "Gurmeńska pljeskavica",
+        "description": "Soczysta, bogato doprawiona pljeskavica z grilla, podawana jako sycące danie dnia."
       },
       "de": {
-        "name": "Schweineschnitzel Wiener Art",
-        "description": "Ein knusprig goldbraun paniertes Schweineschnitzel, als sättigendes Tagesgericht serviert."
+        "name": "Gourmet-Pljeskavica",
+        "description": "Saftige, kräftig gewürzte Pljeskavica vom Grill, als sättigendes Tagesgericht serviert."
       },
       "da": {
-        "name": "Paneret svineschnitzel",
-        "description": "En sprød, gyldenpaneret svineschnitzel, serveret som en mættende dagens ret."
+        "name": "Gourmet-pljeskavica",
+        "description": "Saftig gourmet-pljeskavica, godt krydret og grillet, serveret som en mættende dagens ret."
       },
       "hu": {
-        "name": "Bécsi sertésszelet",
-        "description": "Ropogós, aranybarnára panírozott sertésszelet, laktató napi fogásként tálalva."
+        "name": "Gourmet pljeskavica",
+        "description": "Szaftos, gazdagon fűszerezett pljeskavica, grillezve és laktató napi fogásként tálalva."
+      }
+    },
+    "staffCode": ""
+  },
+  {
+    "id": "carbonara",
+    "name": "Carbonara",
+    "description": "Tjestenina carbonara u kremastom umaku, poslužena kao zasitno dnevno jelo.",
+    "price": 12,
+    "priceDisplay": "12 €",
+    "allergens": [
+      "G",
+      "J",
+      "M"
+    ],
+    "translations": {
+      "en": {
+        "name": "Carbonara",
+        "description": "Pasta carbonara in a creamy sauce, served as a hearty daily dish."
+      },
+      "sv": {
+        "name": "Carbonara",
+        "description": "Pasta carbonara i en krämig sås, serverad som en mättande dagens rätt."
+      },
+      "fi": {
+        "name": "Carbonara",
+        "description": "Pasta carbonara kermaisessa kastikkeessa, tarjoiltuna täyttävänä päivän annoksena."
+      },
+      "no": {
+        "name": "Carbonara",
+        "description": "Pasta carbonara i en kremet saus, servert som en mettende dagens rett."
+      },
+      "pl": {
+        "name": "Carbonara",
+        "description": "Makaron carbonara w kremowym sosie, podawany jako sycące danie dnia."
+      },
+      "de": {
+        "name": "Carbonara",
+        "description": "Pasta Carbonara in einer cremigen Sauce, als sättigendes Tagesgericht serviert."
+      },
+      "da": {
+        "name": "Carbonara",
+        "description": "Pasta carbonara i en cremet sauce, serveret som en mættende dagens ret."
+      },
+      "hu": {
+        "name": "Carbonara",
+        "description": "Carbonara tészta krémes mártással, laktató napi fogásként tálalva."
       }
     },
     "staffCode": ""

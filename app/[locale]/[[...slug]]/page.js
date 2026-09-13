@@ -1,13 +1,13 @@
 import { notFound } from 'next/navigation';
 import HomePageContent from '../../../components/HomePageContent';
 import JsonLd from '../../../components/JsonLd';
-import { LanguageProvider } from '../../../components/LanguageProvider';
 import LocalizedPageFrame from '../../../components/LocalizedPageFrame';
 import MarendaPageContent from '../../../components/MarendaPageContent';
 import ReviewPageContent from '../../../components/ReviewPageContent';
 import {
   ArticlePage,
   BlogIndexPage,
+  BreakfastPage,
   LocationPage,
   MenuStandalonePage,
   ReservationsPage,
@@ -19,10 +19,13 @@ import {
   getLocalizedRecommendedMenuItems,
   menuData,
 } from '../../../data/menu';
+import { getPageChrome } from '../../../data/page-chrome';
 import { reviewLinks } from '../../../data/review-links';
 import {
   buildArticleSchema,
+  buildBreakfastOfferSchema,
   buildBreadcrumbSchema,
+  buildFaqSchema,
   buildJsonLdGraph,
   buildMenuSchema,
   buildMetadata,
@@ -97,7 +100,9 @@ function buildPageGraph(locale, routeKey, article = null) {
     buildOrganizationSchema(),
     buildRestaurantSchema(),
     routeKey === 'menu' ? buildMenuSchema(menuData, locale) : null,
+    routeKey === 'breakfast' ? buildBreakfastOfferSchema(locale) : null,
     routeKey === 'article' ? buildArticleSchema(article, locale) : null,
+    routeKey === 'article' ? buildFaqSchema(article, locale) : null,
     buildBreadcrumbSchema(buildBreadcrumbs(locale, routeKey, article)),
   ];
 
@@ -118,6 +123,7 @@ export default async function LocalizedPage({ params }) {
   }
 
   const jsonLd = buildPageGraph(locale, match.routeKey, match.article);
+  const chrome = getPageChrome(locale, match.routeKey, match.article?.key);
 
   if (match.routeKey === 'home') {
     const menu = getLocalizedMenuView(locale);
@@ -125,9 +131,7 @@ export default async function LocalizedPage({ params }) {
     return (
       <>
         <JsonLd data={jsonLd} />
-        <LanguageProvider initialLanguage={locale}>
-          <HomePageContent locale={locale} menu={menu} />
-        </LanguageProvider>
+        <HomePageContent locale={locale} menu={menu} chrome={chrome} />
       </>
     );
   }
@@ -136,15 +140,14 @@ export default async function LocalizedPage({ params }) {
     return (
       <>
         <JsonLd data={jsonLd} />
-        <LanguageProvider initialLanguage={locale}>
-          <MarendaPageContent
-            business={menuData.business}
-            marenda={{
-              ...marendaConfig,
-              items: marendaItemsData.items,
-            }}
-          />
-        </LanguageProvider>
+        <MarendaPageContent
+          business={menuData.business}
+          marenda={{
+            ...marendaConfig,
+            items: marendaItemsData.items,
+          }}
+          chrome={chrome}
+        />
       </>
     );
   }
@@ -153,15 +156,24 @@ export default async function LocalizedPage({ params }) {
     return (
       <>
         <JsonLd data={jsonLd} />
-        <LanguageProvider initialLanguage={locale}>
-          <ReviewPageContent business={menuData.business} links={reviewLinks} />
-        </LanguageProvider>
+        <ReviewPageContent
+          business={menuData.business}
+          links={reviewLinks}
+          chrome={chrome}
+        />
       </>
     );
   }
 
   const pageByRoute = {
-    menu: <MenuStandalonePage locale={locale} menu={getLocalizedMenuView(locale)} />,
+    menu: (
+      <MenuStandalonePage
+        locale={locale}
+        menu={getLocalizedMenuView(locale)}
+        chrome={chrome}
+      />
+    ),
+    breakfast: <BreakfastPage locale={locale} />,
     reservations: <ReservationsPage locale={locale} business={menuData.business} />,
     location: <LocationPage locale={locale} business={menuData.business} />,
     visit: <VisitPage locale={locale} />,
@@ -181,7 +193,7 @@ export default async function LocalizedPage({ params }) {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <LocalizedPageFrame business={menuData.business} locale={locale}>
+      <LocalizedPageFrame business={menuData.business} chrome={chrome}>
         {pageByRoute[match.routeKey] || null}
       </LocalizedPageFrame>
     </>

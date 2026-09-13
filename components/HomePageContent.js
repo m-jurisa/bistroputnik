@@ -18,12 +18,12 @@ import {
 import { venueFacts } from '../data/venue-facts';
 
 const featuredGuideKeys = [
-  'where-to-eat-baska-voda',
-  'lunch-in-baska-voda',
-  'lunch-near-nikolina-beach',
-  'dalmatian-pasticada',
-  'what-is-marenda',
-  'croatian-restaurant-menu-guide',
+  'breakfast-in-baska-voda',
+  'baska-voda-restaurants',
+  'best-restaurants-baska-voda',
+  'marenda-u-baskoj-vodi',
+  'putnik-jelovnik',
+  'croatian-grill-baska-voda',
 ];
 
 const homeContactLabels = {
@@ -38,7 +38,47 @@ const homeContactLabels = {
   hu: { phone: 'Telefon', email: 'E-mail', location: 'Helyszín' },
 };
 
-export default function HomePageContent({ locale = defaultLocale, menu }) {
+function BreakfastHomeCallout({ locale }) {
+  const copy = pageContent.breakfast[locale] || pageContent.breakfast.en;
+
+  return (
+    <section
+      id="breakfast"
+      className="section-shell scroll-mt-28 border-y border-brand-line/15 bg-brand-deep/20 py-12 sm:py-14"
+    >
+      <div className="container-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <SectionHeading
+          eyebrow={copy.eyebrow}
+          title={copy.homeTitle}
+          description={copy.homeIntro}
+          className="max-w-2xl"
+        />
+        <div className="grid gap-5 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
+          <div className="border-t border-brand-line/25 pt-4">
+            <p className="fine-print">{copy.priceLabel}</p>
+            <p className="mt-2 font-display text-4xl leading-none text-brand-sand">
+              {copy.price}
+            </p>
+          </div>
+          <div className="border-t border-brand-line/25 pt-4">
+            <p className="fine-print">{copy.timeLabel}</p>
+            <p className="mt-2 text-base font-semibold leading-6 text-[#f4eee0]">
+              {copy.time}
+            </p>
+          </div>
+          <a
+            href={getLocalizedPath(locale, 'breakfast')}
+            className="brand-button w-full whitespace-normal text-center leading-5 sm:w-auto"
+          >
+            {copy.cta}
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default function HomePageContent({ locale = defaultLocale, menu, chrome }) {
   const t = translations[locale] || translations.en;
   const story = menu.story;
   const contactLabels = homeContactLabels[locale] || homeContactLabels.en;
@@ -56,10 +96,12 @@ export default function HomePageContent({ locale = defaultLocale, menu }) {
     <div className="relative min-h-svh overflow-hidden">
       <div className="absolute inset-0 hero-wash" />
       <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-deep/70 to-transparent" />
-      <Header />
+      <Header {...chrome.header} />
 
       <main className="relative z-10">
-        <HeroSection />
+        <HeroSection chrome={{ ...chrome.hero, languageLinks: chrome.languageLinks, languageSelectorLabel: chrome.languageSelectorLabel }} />
+
+        <BreakfastHomeCallout locale={locale} />
 
         <section id="about" className="section-shell scroll-mt-28">
           <div className="container-shell grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
@@ -82,25 +124,22 @@ export default function HomePageContent({ locale = defaultLocale, menu }) {
 
               <div className="grid gap-4 border-t border-brand-line/20 pt-6 sm:grid-cols-3">
                 <div>
-                  <p className="fine-print">{t.about.facts.opening}</p>
+                  <p className="fine-print">{t.about.facts.hours}</p>
                   <p className="mt-2 text-sm font-semibold text-[#f4eee0]">
-                    1.5.2026
+                    {t.about.facts.open}
                   </p>
                 </div>
                 <div>
-                  <p className="fine-print">{t.about.facts.venue}</p>
+                  <p className="fine-print">{t.about.facts.service}</p>
                   <p className="mt-2 text-sm font-semibold text-[#f4eee0]">
-                    {menu.business.venue}
+                    {t.about.facts.kitchen}
                   </p>
                 </div>
                 <div>
-                  <p className="fine-print">{t.about.facts.contact}</p>
-                  <a
-                    href={`mailto:${businessEmail}`}
-                    className="mt-2 inline-block break-words text-sm font-semibold text-[#f4eee0] hover:text-brand-sand"
-                  >
-                    {businessEmail}
-                  </a>
+                  <p className="fine-print">{t.about.facts.morning}</p>
+                  <p className="mt-2 text-sm font-semibold text-[#f4eee0]">
+                    {t.about.facts.breakfast}
+                  </p>
                 </div>
               </div>
             </div>
@@ -119,6 +158,8 @@ export default function HomePageContent({ locale = defaultLocale, menu }) {
               locale={locale}
               pages={menu.pages}
               notices={menu.notices}
+              languageLinks={chrome.languageLinks}
+              languageSelectorLabel={chrome.languageSelectorLabel}
             />
           </div>
         </section>
@@ -241,7 +282,7 @@ export default function HomePageContent({ locale = defaultLocale, menu }) {
         </section>
       </main>
 
-      <Footer business={menu.business} />
+      <Footer business={menu.business} chrome={chrome.footer} />
     </div>
   );
 }

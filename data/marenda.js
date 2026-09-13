@@ -47,6 +47,8 @@ export const marendaConfig = {
       note: 'Ponuda vrijedi danas ili do isteka dnevne količine.',
       allergenNote:
         'Alergeni su označeni kodovima. Za točne informacije obratite se osoblju.',
+      availabilityDisclaimer:
+        'Dnevnu ponudu ažuriramo i mijenjamo svaki dan. U rijetkim slučajevima, zbog tehničkih poteškoća ili dostupnosti namirnica, ponuda na stranici možda nije ažurna; za konačnu dnevno dostupnu ponudu provjerite s osobljem u objektu.',
     },
     en: {
       eyebrow: 'Daily lunch',
@@ -60,6 +62,8 @@ export const marendaConfig = {
       note: 'Available today or until the daily quantity is sold out.',
       allergenNote:
         'Allergens are marked with codes. For accurate information, please ask our staff.',
+      availabilityDisclaimer:
+        'We update and change this daily offer every day. In rare cases, due to technical difficulties or ingredient availability, the page may not be up to date; for the final daily available items, please check with our staff on location.',
     },
     sv: {
       eyebrow: 'Dagens lunch',
@@ -73,6 +77,8 @@ export const marendaConfig = {
       note: 'Gäller idag eller tills dagens portioner är slut.',
       allergenNote:
         'Allergener markeras med koder. För korrekt information, fråga personalen.',
+      availabilityDisclaimer:
+        'Vi uppdaterar och ändrar dagens erbjudande varje dag. I sällsynta fall kan sidan vara inaktuell på grund av tekniska problem eller råvarutillgång; kontrollera den slutliga dagliga tillgängligheten med personalen på plats.',
     },
     fi: {
       eyebrow: 'Päivän lounas',
@@ -86,6 +92,8 @@ export const marendaConfig = {
       note: 'Saatavilla tänään tai kunnes päivän annokset loppuvat.',
       allergenNote:
         'Allergeenit on merkitty koodeilla. Tarkat tiedot saat henkilökunnalta.',
+      availabilityDisclaimer:
+        'Päivitämme ja muutamme päivän tarjousta joka päivä. Harvinaisissa tapauksissa sivu ei välttämättä ole ajan tasalla teknisten vaikeuksien tai raaka-aineiden saatavuuden vuoksi; varmista päivän lopullinen saatavuus henkilökunnalta paikan päällä.',
     },
     no: {
       eyebrow: 'Dagens lunsj',
@@ -99,6 +107,8 @@ export const marendaConfig = {
       note: 'Gjelder i dag eller til dagens porsjoner er utsolgt.',
       allergenNote:
         'Allergener er merket med koder. Spør personalet for nøyaktig informasjon.',
+      availabilityDisclaimer:
+        'Vi oppdaterer og endrer dagens tilbud hver dag. I sjeldne tilfeller kan siden være utdatert på grunn av tekniske problemer eller råvaretilgang; sjekk endelig daglig tilgjengelighet med personalet på stedet.',
     },
     pl: {
       eyebrow: 'Lunch dnia',
@@ -113,6 +123,8 @@ export const marendaConfig = {
         'Oferta ważna dzisiaj lub do wyczerpania dziennej liczby porcji.',
       allergenNote:
         'Alergeny są oznaczone kodami. Aby uzyskać dokładne informacje, zapytaj obsługę.',
+      availabilityDisclaimer:
+        'Aktualizujemy i zmieniamy ofertę dnia każdego dnia. W rzadkich przypadkach, z powodu problemów technicznych lub dostępności składników, strona może nie być aktualna; ostateczną dostępność dań w danym dniu prosimy potwierdzić z obsługą na miejscu.',
     },
     de: {
       eyebrow: 'Tagesmittagessen',
@@ -126,6 +138,8 @@ export const marendaConfig = {
       note: 'Gilt heute oder bis die Tagesportionen ausverkauft sind.',
       allergenNote:
         'Allergene sind mit Codes gekennzeichnet. Für genaue Informationen wenden Sie sich bitte an unser Personal.',
+      availabilityDisclaimer:
+        'Wir aktualisieren und ändern dieses Tagesangebot jeden Tag. In seltenen Fällen kann die Seite wegen technischer Schwierigkeiten oder der Verfügbarkeit von Zutaten nicht aktuell sein; bitte bestätigen Sie die endgültig verfügbaren Tagesgerichte beim Personal vor Ort.',
     },
     da: {
       eyebrow: 'Dagens frokost',
@@ -139,6 +153,8 @@ export const marendaConfig = {
       note: 'Gælder i dag eller indtil dagens portioner er udsolgt.',
       allergenNote:
         'Allergener er markeret med koder. Spørg personalet for præcise oplysninger.',
+      availabilityDisclaimer:
+        'Vi opdaterer og ændrer dagens tilbud hver dag. I sjældne tilfælde kan siden være uaktuel på grund af tekniske problemer eller råvaretilgængelighed; bekræft den endelige daglige tilgængelighed med personalet på stedet.',
     },
     hu: {
       eyebrow: 'Napi marenda',
@@ -152,6 +168,8 @@ export const marendaConfig = {
       note: 'Az ajánlat ma érvényes, vagy a napi adag elfogyásáig.',
       allergenNote:
         'Az allergének kódokkal vannak jelölve. Pontos információért kérdezze a személyzetet.',
+      availabilityDisclaimer:
+        'A napi ajánlatot minden nap frissítjük és módosítjuk. Ritka esetekben technikai nehézségek vagy az alapanyagok elérhetősége miatt az oldal nem feltétlenül naprakész; a véglegesen elérhető napi ételekről kérdezze a helyszíni személyzetet.',
     },
   },
 };

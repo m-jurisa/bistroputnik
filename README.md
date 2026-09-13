@@ -77,7 +77,13 @@ The website is exported statically with Next:
 npm run build
 ```
 
-The build runs `scripts/prune-static-export.mjs` after `next build` to remove Next app-router route payload `.txt` files that are not needed for this static, normal-link site. Use `npm run build:next` only when you need the unpruned raw Next export for debugging.
+The build first generates a 1080 x 1920 story image at `public/marenda-story.png` from `menu/marenda-items.json`, then runs `next build`, then runs `scripts/prune-static-export.mjs` to remove Next app-router route payload `.txt` files that are not needed for this static, normal-link site. Use `npm run build:next` only when you need the unpruned raw Next export for debugging.
+
+To regenerate only the story image:
+
+```bash
+npm run generate:marenda-story
+```
 
 The public contact page shows the phone number, direct email link, and a contact form powered by Web3Forms. The form posts directly from the static page to:
 

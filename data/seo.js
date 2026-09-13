@@ -6,6 +6,7 @@ import {
   getLocalizedPath,
   getLocalizedValue,
   getStaticRouteParams,
+  pageContent,
   routeDefinitions,
   siteConfig,
   supportedLocales,
@@ -272,6 +273,46 @@ export function buildMenuSchema(menu, locale = defaultLocale) {
   };
 }
 
+export function buildBreakfastOfferSchema(locale = defaultLocale) {
+  const copy = pageContent.breakfast?.[locale] || pageContent.breakfast?.en;
+  const url = getAbsoluteUrl(getLocalizedPath(locale, 'breakfast'));
+
+  if (!copy) {
+    return null;
+  }
+
+  const inclusionText = copy.inclusionGroups?.length
+    ? copy.inclusionGroups
+        .map((group) => `${group.label}: ${(group.items || []).join(', ')}`)
+        .join('; ')
+    : (copy.inclusions || []).join(', ');
+
+  return compactObject({
+    '@type': 'Offer',
+    '@id': `${url}#breakfast-buffet-offer`,
+    url,
+    name: copy.title,
+    description: `${copy.intro} ${copy.inclusionsTitle}: ${inclusionText}.`,
+    price: 10,
+    priceCurrency: 'EUR',
+    availability: 'https://schema.org/InStock',
+    businessFunction: 'https://schema.org/Sell',
+    areaServed: siteConfig.areaServed,
+    seller: {
+      '@id': `${siteConfig.siteUrl}/#restaurant`,
+    },
+    availableAtOrFrom: {
+      '@id': `${siteConfig.siteUrl}/#restaurant`,
+    },
+    itemOffered: {
+      '@type': 'MenuItem',
+      '@id': `${url}#breakfast-buffet`,
+      name: copy.title,
+      description: copy.intro,
+    },
+  });
+}
+
 export function buildBreadcrumbSchema(items) {
   return {
     '@type': 'BreadcrumbList',
@@ -287,6 +328,7 @@ export function buildBreadcrumbSchema(items) {
 export function buildArticleSchema(article, locale) {
   const articlePath = getLocalizedPath(locale, 'article', { articleKey: article.key });
   const url = getAbsoluteUrl(articlePath);
+  const keywords = article.intentTags?.filter(Boolean).join(', ');
 
   return compactObject({
     '@type': 'Article',
@@ -297,8 +339,8 @@ export function buildArticleSchema(article, locale) {
     datePublished: article.datePublished,
     dateModified: article.dateModified,
     inLanguage: locale,
-    articleSection: article.intentTags?.join(', '),
-    keywords: article.intentTags?.join(', '),
+    articleSection: keywords,
+    keywords,
     author: {
       '@id': `${siteConfig.siteUrl}/#organization`,
     },
@@ -314,6 +356,33 @@ export function buildArticleSchema(article, locale) {
       name,
     })),
   });
+}
+
+export function buildFaqSchema(article, locale) {
+  const localizedFaqs = getLocalizedValue(article?.faqs, locale);
+  const faqs = Array.isArray(localizedFaqs)
+    ? localizedFaqs.filter((faq) => faq?.question && faq?.answer)
+    : [];
+
+  if (!faqs.length) {
+    return null;
+  }
+
+  const articlePath = getLocalizedPath(locale, 'article', { articleKey: article.key });
+  const url = getAbsoluteUrl(articlePath);
+
+  return {
+    '@type': 'FAQPage',
+    '@id': `${url}#faq`,
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
 }
 
 export function buildJsonLdGraph(schemas) {

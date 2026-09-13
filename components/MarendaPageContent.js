@@ -1,13 +1,8 @@
-'use client';
-
-import { useEffect, useState } from 'react';
 import BrandDivider from './BrandDivider';
 import Footer from './Footer';
 import Header from './Header';
 import LanguageSelector from './LanguageSelector';
 import LogoLockupPlaceholder from './LogoLockupPlaceholder';
-import { useLanguage } from './LanguageProvider';
-import { siteConfig } from '../data/site-config';
 
 function getMarendaCopy(data, language) {
   return (
@@ -58,32 +53,6 @@ function getDailyOfferLabel(marenda, language) {
   return marenda.labelTranslations?.[language] || marenda.label;
 }
 
-function formatRestaurantDate(timeZone = 'Europe/Zagreb', date = new Date()) {
-  const parts = new Intl.DateTimeFormat('hr-HR', {
-    timeZone,
-    day: '2-digit',
-    month: '2-digit',
-    year: '2-digit',
-  }).formatToParts(date);
-  const dateParts = Object.fromEntries(
-    parts
-      .filter((part) => ['day', 'month', 'year'].includes(part.type))
-      .map((part) => [part.type, part.value])
-  );
-
-  return `${dateParts.day}.${dateParts.month}.${dateParts.year}`;
-}
-
-function useRestaurantDateDisplay(timeZone) {
-  const [dateDisplay, setDateDisplay] = useState('');
-
-  useEffect(() => {
-    setDateDisplay(formatRestaurantDate(timeZone));
-  }, [timeZone]);
-
-  return dateDisplay;
-}
-
 // Marenda allergens must be verified with kitchen recipes, stocks, sausages, thickening, and supplier declarations before final display.
 function getDishes(copy, marenda, language) {
   if (Array.isArray(marenda.items) && marenda.items.length) {
@@ -125,28 +94,44 @@ function AllergenTags({ allergens }) {
   );
 }
 
-export default function MarendaPageContent({ business, marenda }) {
-  const { language, t } = useLanguage();
+function RestaurantDateText({ timeZone, prefix = '' }) {
+  return (
+    <span
+      data-restaurant-date=""
+      data-time-zone={timeZone}
+      data-prefix={prefix}
+    />
+  );
+}
+
+function PrintButton({ label }) {
+  return (
+    <button
+      type="button"
+      className="brand-button"
+      data-print-button=""
+    >
+      {label}
+    </button>
+  );
+}
+
+export default function MarendaPageContent({ business, marenda, chrome }) {
+  const language = chrome.locale;
   const copy = getMarendaCopy(marenda, language);
   const dishes = getDishes(copy, marenda, language);
   const introText =
     marenda.introText?.[language] || marenda.introText?.en || copy.intro;
-  const printOfferLabel = t.marenda.printOffer || 'Print offer';
+  const printOfferLabel = chrome.marenda.printOffer || 'Print offer';
   const venueLabel = business.venue || 'Bistro Putnik · Baška Voda';
-  const dateDisplay = useRestaurantDateDisplay(marenda.timeZone);
-  const dailyOfferMeta = [
-    getDailyOfferLabel(marenda, language),
-    dateDisplay,
-  ]
-    .filter(Boolean)
-    .join(' · ');
+  const dailyOfferLabel = getDailyOfferLabel(marenda, language);
 
   return (
     <div className="marenda-page relative min-h-svh overflow-hidden">
       <div className="marenda-screen-only absolute inset-0 hero-wash" />
       <div className="marenda-screen-only absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-deep/70 to-transparent" />
       <div className="marenda-screen-only">
-        <Header />
+        <Header {...chrome.header} />
       </div>
 
       <main className="marenda-screen-only relative z-10">
@@ -155,7 +140,10 @@ export default function MarendaPageContent({ business, marenda }) {
           className="relative flex min-h-[calc(100svh-5rem)] items-start justify-center overflow-hidden px-4 pb-16 pt-8 sm:min-h-[90svh] sm:items-center sm:px-8 sm:py-16 lg:px-12"
         >
           <div className="absolute right-4 top-4 z-20 sm:right-8 sm:top-8">
-            <LanguageSelector />
+            <LanguageSelector
+              label={chrome.languageSelectorLabel}
+              links={chrome.languageLinks}
+            />
           </div>
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(228,201,149,0.08),transparent_28%)]" />
           <div className="absolute left-1/2 top-[36%] h-[22rem] w-[22rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-brand-line/15 sm:top-[42%] sm:h-[40rem] sm:w-[40rem]" />
@@ -168,9 +156,13 @@ export default function MarendaPageContent({ business, marenda }) {
               <h1 className="display-title mx-auto max-w-3xl text-balance">
                 {copy.pageTitle}
               </h1>
-              {dailyOfferMeta ? (
+              {dailyOfferLabel ? (
                 <p className="fine-print text-brand-sand">
-                  {dailyOfferMeta}
+                  {dailyOfferLabel}
+                  <RestaurantDateText
+                    timeZone={marenda.timeZone}
+                    prefix=" · "
+                  />
                 </p>
               ) : null}
               <p className="mx-auto max-w-2xl text-balance text-base leading-7 text-[#e8e3da] sm:text-lg sm:leading-8">
@@ -228,17 +220,17 @@ export default function MarendaPageContent({ business, marenda }) {
             <p className="body-copy max-w-2xl text-sm">{copy.explanation}</p>
 
             <div className="flex flex-col items-center gap-3 sm:flex-row">
-              <button
-                type="button"
-                className="brand-button"
-                onClick={() => window.print()}
-              >
-                {printOfferLabel}
-              </button>
-              <a href="/" className="brand-button-secondary">
-                {t.marenda.backToHome}
+              <PrintButton label={printOfferLabel} />
+              <a href={chrome.header.homeHref} className="brand-button-secondary">
+                {chrome.marenda.backToHome}
               </a>
             </div>
+
+            {copy.availabilityDisclaimer ? (
+              <p className="max-w-2xl border-t border-brand-line/20 pt-5 text-center text-[0.72rem] leading-6 text-[#d8dfdf]/65">
+                {copy.availabilityDisclaimer}
+              </p>
+            ) : null}
           </div>
         </section>
       </main>
@@ -246,8 +238,14 @@ export default function MarendaPageContent({ business, marenda }) {
       <section className="marenda-print-sheet" aria-label={printOfferLabel}>
         <header className="marenda-print-header">
           <p className="marenda-print-brand">{venueLabel}</p>
-          {dailyOfferMeta ? (
-            <p className="marenda-print-meta">{dailyOfferMeta}</p>
+          {dailyOfferLabel ? (
+            <p className="marenda-print-meta">
+              {dailyOfferLabel}
+              <RestaurantDateText
+                timeZone={marenda.timeZone}
+                prefix=" · "
+              />
+            </p>
           ) : null}
         </header>
 
@@ -298,14 +296,18 @@ export default function MarendaPageContent({ business, marenda }) {
           <p className="marenda-print-note">{copy.note}</p>
         ) : null}
 
+        {copy.availabilityDisclaimer ? (
+          <p className="marenda-print-note">{copy.availabilityDisclaimer}</p>
+        ) : null}
+
         <footer className="marenda-print-footer">
           {copy.allergenNote ? <p>{copy.allergenNote}</p> : null}
-          <p>{siteConfig.displayHost}</p>
+          <p>{chrome.footer.displayHost}</p>
         </footer>
       </section>
 
       <div className="marenda-screen-only">
-        <Footer business={business} />
+        <Footer business={business} chrome={chrome.footer} />
       </div>
     </div>
   );

@@ -144,11 +144,90 @@ body {
   .soft-rule {
     @apply h-px w-full bg-gradient-to-r from-transparent via-brand-line to-transparent;
   }
+
+  .holiday-announcement {
+    margin-top: 0.75rem;
+    overflow: hidden;
+    border-top: 1px solid rgb(228 201 149 / 0.24);
+    border-bottom: 1px solid rgb(228 201 149 / 0.24);
+    background:
+      linear-gradient(90deg, rgb(228 201 149 / 0.14), rgb(42 106 120 / 0.2));
+    color: #fcfaf6;
+  }
+
+  .holiday-announcement__viewport {
+    overflow: hidden;
+    padding: 0.48rem 0.8rem;
+  }
+
+  .holiday-announcement__track {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    white-space: nowrap;
+  }
+
+  .holiday-announcement__message {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    line-height: 1.35;
+    text-transform: uppercase;
+  }
+
+  .holiday-announcement__message--duplicate {
+    display: none;
+  }
+
+  .holiday-announcement--scroll .holiday-announcement__viewport {
+    mask-image: linear-gradient(90deg, transparent, #000 1rem, #000 calc(100% - 1rem), transparent);
+  }
+
+  .holiday-announcement--scroll .holiday-announcement__track {
+    width: max-content;
+    min-width: 0;
+    animation: holiday-announcement-scroll 22s linear infinite;
+  }
+
+  .holiday-announcement--scroll .holiday-announcement__message {
+    padding-right: 2.25rem;
+  }
+
+  .holiday-announcement--scroll .holiday-announcement__message--duplicate {
+    display: inline-flex;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@keyframes holiday-announcement-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .holiday-announcement--scroll .holiday-announcement__track {
+    animation: none;
+    width: auto;
+  }
+
+  .holiday-announcement--scroll .holiday-announcement__message {
+    white-space: normal;
+  }
+
+  .holiday-announcement--scroll .holiday-announcement__message--duplicate {
+    display: none;
   }
 }
 
