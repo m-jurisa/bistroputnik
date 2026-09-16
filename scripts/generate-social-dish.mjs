@@ -231,8 +231,8 @@ function usage() {
 Generate social PNGs for one menu dish.
 
 Usage:
-  npm run generate:social-dish -- --dish salata-od-hobotnice
-  npm run generate:social-dish -- --dish "Octopus salad" --image social/assets/dishes/octopus.jpg
+  npm run generate:social-dish -- --dish salata-od-tunjevine
+  npm run generate:social-dish -- --dish "Tuna salad" --image social/assets/dishes/salata-od-tunjevine.jpg
 
 Options:
   --dish, -d       Dish id or name to render

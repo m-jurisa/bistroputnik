@@ -5,19 +5,19 @@ Generated Facebook and Instagram dish PNGs go to `social/output/`, which is igno
 Optional source photos can be placed in `social/assets/dishes/` using the menu dish id:
 
 ```text
-social/assets/dishes/salata-od-hobotnice.jpg
+social/assets/dishes/salata-od-tunjevine.jpg
 ```
 
 Generate one English dish in both formats:
 
 ```bash
-npm run generate:social-dish -- --dish salata-od-hobotnice
+npm run generate:social-dish -- --dish salata-od-tunjevine
 ```
 
 Generate with a specific image:
 
 ```bash
-npm run generate:social-dish -- --dish salata-od-hobotnice --image social/assets/dishes/salata-od-hobotnice.jpg
+npm run generate:social-dish -- --dish salata-od-tunjevine --image social/assets/dishes/salata-od-tunjevine.jpg
 ```
 
 Outputs:

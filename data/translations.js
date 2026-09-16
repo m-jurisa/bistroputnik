@@ -876,12 +876,16 @@ const baseMenuTranslations = {
       'zelene-tagliatelle-s-morskim-plodovima': {
         name: 'Green tagliatelle with seafood',
       },
+      'linguine-s-plodovima-mora': { name: 'Linguine with seafood' },
       'arancini-od-crnog-rizota': {
         name: 'Black risotto and cuttlefish arancini',
         description: 'homemade arancini with black risotto and cuttlefish',
       },
       'cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Ćevapi with dollar chips and sour cream',
+      },
+      'gurmanska-pljeskavica-uz-dollar-chips-i-vrhnje': {
+        name: 'Gourmet pljeskavica with dollar chips and sour cream',
       },
       'punjena-pljeskavica-uz-dollar-chips-i-vrhnje': {
         name: 'Rolled meat fritters in bacon with dollar chips and sour cream',
@@ -890,6 +894,7 @@ const baseMenuTranslations = {
         name: 'Slavonian homemade grill sausage with potatoes and vegetables',
       },
       'pileci-file-uz-dollar-chips': { name: 'Chicken fillet with dollar chips' },
+      'teleci-kotlet-uz-prilog': { name: 'Veal chop with side dish' },
       'ramstek-uz-krumpir-i-wok-povrce': {
         name: 'Rump steak with potatoes and wok vegetables',
       },
@@ -926,7 +931,7 @@ const baseMenuTranslations = {
       'lignje-przene-s-pommesom': { name: 'Fried squid with fries' },
       'bijela-riba-na-grillu': {
         name: 'Grilled white fish',
-        description: 'sea bream, sea bass · chard and potatoes',
+        description: 'sea bass · chard and potatoes',
       },
       'losos-na-zaru-uz-blitvu-i-krumpir': {
         name: 'Grilled salmon with chard and potatoes',
@@ -950,7 +955,7 @@ const baseMenuTranslations = {
       'mali-cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Small ćevapi with dollar chips and sour cream',
       },
-      'salata-od-skuse-tunjevine': { name: 'Mackerel / tuna salad' },
+      'salata-od-tunjevine': { name: 'Tuna salad' },
       'slavonska-salata': { name: 'Slavonian salad', description: 'grilled bacon' },
       'cezar-salata': { name: 'Caesar salad', description: 'chicken fillet' },
       'sezonska-salata-mix': { name: 'Seasonal mixed salad' },
@@ -1276,12 +1281,16 @@ const baseMenuTranslations = {
       'zelene-tagliatelle-s-morskim-plodovima': {
         name: 'Grön tagliatelle med skaldjur',
       },
+      'linguine-s-plodovima-mora': { name: 'Linguine med skaldjur' },
       'arancini-od-crnog-rizota': {
         name: 'Arancini på svart risotto och bläckfisk',
         description: 'hembakade arancini med svart risotto och bläckfisk',
       },
       'cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Ćevapi med dollar chips och gräddfil',
+      },
+      'gurmanska-pljeskavica-uz-dollar-chips-i-vrhnje': {
+        name: 'Gourmet-pljeskavica med dollar chips och gräddfil',
       },
       'punjena-pljeskavica-uz-dollar-chips-i-vrhnje': {
         name: 'Rullade köttfärsbiffar i bacon med dollar chips och gräddfil',
@@ -1290,6 +1299,7 @@ const baseMenuTranslations = {
         name: 'Slavonsk hemlagad grillkorv med potatis och grönsaker',
       },
       'pileci-file-uz-dollar-chips': { name: 'Kycklingfilé med dollar chips' },
+      'teleci-kotlet-uz-prilog': { name: 'Kalvkotlett med tillbehör' },
       'ramstek-uz-krumpir-i-wok-povrce': {
         name: 'Rumpstek med potatis och wokade grönsaker',
       },
@@ -1326,7 +1336,7 @@ const baseMenuTranslations = {
       'lignje-przene-s-pommesom': { name: 'Friterad bläckfisk med pommes' },
       'bijela-riba-na-grillu': {
         name: 'Grillad vit fisk',
-        description: 'guldsparid, havsabborre · mangold och potatis',
+        description: 'havsabborre · mangold och potatis',
       },
       'losos-na-zaru-uz-blitvu-i-krumpir': {
         name: 'Grillad lax med mangold och potatis',
@@ -1349,7 +1359,7 @@ const baseMenuTranslations = {
       'mali-cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Små ćevapi med dollar chips och gräddfil',
       },
-      'salata-od-skuse-tunjevine': { name: 'Makrill- / tonfisksallad' },
+      'salata-od-tunjevine': { name: 'Tonfisksallad' },
       'slavonska-salata': { name: 'Slavonsk sallad', description: 'grillat bacon' },
       'cezar-salata': { name: 'Caesarsallad', description: 'kycklingfilé' },
       'sezonska-salata-mix': { name: 'Säsongens blandade sallad' },
@@ -1668,6 +1678,7 @@ const baseMenuTranslations = {
       'zelene-tagliatelle-s-morskim-plodovima': {
         name: 'Grønn tagliatelle med sjømat',
       },
+      'linguine-s-plodovima-mora': { name: 'Linguine med sjømat' },
       'arancini-od-crnog-rizota': {
         name: 'Arancini med svart risotto og blekksprut',
         description: 'huslagde arancini med svart risotto og blekksprut',
@@ -1676,6 +1687,9 @@ const baseMenuTranslations = {
       'cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Ćevapi med dollar chips og rømme',
       },
+      'gurmanska-pljeskavica-uz-dollar-chips-i-vrhnje': {
+        name: 'Gourmet-pljeskavica med dollar chips og rømme',
+      },
       'punjena-pljeskavica-uz-dollar-chips-i-vrhnje': {
         name: 'Rullede kjøttkaker i bacon med dollar chips og rømme',
       },
@@ -1683,6 +1697,7 @@ const baseMenuTranslations = {
         name: 'Slavonsk hjemmelaget grillpølse med poteter og grønnsaker',
       },
       'pileci-file-uz-dollar-chips': { name: 'Kyllingfilet med dollar chips' },
+      'teleci-kotlet-uz-prilog': { name: 'Kalvekotelett med tilbehør' },
       'ramstek-uz-krumpir-i-wok-povrce': {
         name: 'Rump steak med poteter og wokgrønnsaker',
       },
@@ -1705,7 +1720,7 @@ const baseMenuTranslations = {
       'lignje-przene-s-pommesom': { name: 'Fritert blekksprut med pommes frites' },
       'bijela-riba-na-grillu': {
         name: 'Grillet hvit fisk',
-        description: 'dorade, havabbor · mangold og poteter',
+        description: 'havabbor · mangold og poteter',
       },
       'losos-na-zaru-uz-blitvu-i-krumpir': {
         name: 'Grillet laks med mangold og poteter',
@@ -1727,7 +1742,7 @@ const baseMenuTranslations = {
       'mali-cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Små ćevapi med dollar chips og rømme',
       },
-      'salata-od-skuse-tunjevine': { name: 'Makrell- / tunfisksalat' },
+      'salata-od-tunjevine': { name: 'Tunfisksalat' },
       'slavonska-salata': { name: 'Slavonsk salat', description: 'grillet bacon' },
       'cezar-salata': { name: 'Caesarsalat', description: 'kyllingfilet' },
       'sezonska-salata-mix': { name: 'Sesongens blandede salat' },
@@ -1910,6 +1925,7 @@ const baseMenuTranslations = {
       'zelene-tagliatelle-s-morskim-plodovima': {
         name: 'Zielone tagliatelle z owocami morza',
       },
+      'linguine-s-plodovima-mora': { name: 'Linguine z owocami morza' },
       'arancini-od-crnog-rizota': {
         name: 'Arancini z czarnego risotta i sepii',
         description: 'domowe arancini z czarnego risotta i sepii',
@@ -1918,6 +1934,9 @@ const baseMenuTranslations = {
       'cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Ćevapi z dollar chips i kwaśną śmietaną',
       },
+      'gurmanska-pljeskavica-uz-dollar-chips-i-vrhnje': {
+        name: 'Pljeskavica gourmet z dollar chips i kwaśną śmietaną',
+      },
       'punjena-pljeskavica-uz-dollar-chips-i-vrhnje': {
         name: 'Rolowane kotleciki mięsne w boczku z dollar chips i kwaśną śmietaną',
       },
@@ -1925,6 +1944,7 @@ const baseMenuTranslations = {
         name: 'Domowa slawońska kiełbasa z grilla z ziemniakami i warzywami',
       },
       'pileci-file-uz-dollar-chips': { name: 'Filet z kurczaka z dollar chips' },
+      'teleci-kotlet-uz-prilog': { name: 'Kotlet cielęcy z dodatkiem' },
       'ramstek-uz-krumpir-i-wok-povrce': {
         name: 'Rostbef z ziemniakami i warzywami z woka',
       },
@@ -1947,7 +1967,7 @@ const baseMenuTranslations = {
       'lignje-przene-s-pommesom': { name: 'Smażone kalmary z frytkami' },
       'bijela-riba-na-grillu': {
         name: 'Grillowana biała ryba',
-        description: 'dorada, labraks · boćwina i ziemniaki',
+        description: 'okoń morski · boćwina i ziemniaki',
       },
       'losos-na-zaru-uz-blitvu-i-krumpir': {
         name: 'Grillowany łosoś z boćwiną i ziemniakami',
@@ -1969,7 +1989,7 @@ const baseMenuTranslations = {
       'mali-cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Małe ćevapi z dollar chips i kwaśną śmietaną',
       },
-      'salata-od-skuse-tunjevine': { name: 'Sałatka z makreli / tuńczyka' },
+      'salata-od-tunjevine': { name: 'Sałatka z tuńczyka' },
       'slavonska-salata': { name: 'Sałatka slawońska', description: 'grillowany boczek' },
       'cezar-salata': { name: 'Sałatka Cezar', description: 'filet z kurczaka' },
       'sezonska-salata-mix': { name: 'Sezonowa sałatka mieszana' },
@@ -2152,6 +2172,7 @@ const baseMenuTranslations = {
       'zelene-tagliatelle-s-morskim-plodovima': {
         name: 'Grøn tagliatelle med skaldyr',
       },
+      'linguine-s-plodovima-mora': { name: 'Linguine med skaldyr' },
       'arancini-od-crnog-rizota': {
         name: 'Arancini med sort risotto og blæksprutte',
         description: 'hjemmelavede arancini med sort risotto og blæksprutte',
@@ -2160,6 +2181,9 @@ const baseMenuTranslations = {
       'cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Ćevapi med dollar chips og cremefraiche',
       },
+      'gurmanska-pljeskavica-uz-dollar-chips-i-vrhnje': {
+        name: 'Gourmet-pljeskavica med dollar chips og cremefraiche',
+      },
       'punjena-pljeskavica-uz-dollar-chips-i-vrhnje': {
         name: 'Rullede kødbøffer i bacon med dollar chips og cremefraiche',
       },
@@ -2167,6 +2191,7 @@ const baseMenuTranslations = {
         name: 'Slavonsk hjemmelavet grillpølse med kartofler og grøntsager',
       },
       'pileci-file-uz-dollar-chips': { name: 'Kyllingefilet med dollar chips' },
+      'teleci-kotlet-uz-prilog': { name: 'Kalvekotelet med tilbehør' },
       'ramstek-uz-krumpir-i-wok-povrce': {
         name: 'Rump steak med kartofler og wokgrøntsager',
       },
@@ -2189,7 +2214,7 @@ const baseMenuTranslations = {
       'lignje-przene-s-pommesom': { name: 'Friteret blæksprutte med pommes frites' },
       'bijela-riba-na-grillu': {
         name: 'Grillet hvid fisk',
-        description: 'havbrasen, havbars · bladbede og kartofler',
+        description: 'havbars · bladbede og kartofler',
       },
       'losos-na-zaru-uz-blitvu-i-krumpir': {
         name: 'Grillet laks med bladbede og kartofler',
@@ -2211,7 +2236,7 @@ const baseMenuTranslations = {
       'mali-cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Små ćevapi med dollar chips og cremefraiche',
       },
-      'salata-od-skuse-tunjevine': { name: 'Makrel- / tunsalat' },
+      'salata-od-tunjevine': { name: 'Tunsalat' },
       'slavonska-salata': { name: 'Slavonsk salat', description: 'grillet bacon' },
       'cezar-salata': { name: 'Caesarsalat', description: 'kyllingefilet' },
       'sezonska-salata-mix': { name: 'Sæsonens blandede salat' },
@@ -2373,10 +2398,6 @@ const additionalMenuTranslations = {
               name: "Dalmát tál",
               description: "Pršut, kecskesajt, olívabogyó, házi kenyér"
           },
-          "salata-od-hobotnice": {
-              name: "Polipsaláta",
-              description: "Hagyományos dalmát módon készítve."
-          },
           "krem-juha-od-rajcice": {
               name: "Paradicsomkrémleves"
           },
@@ -2401,6 +2422,9 @@ const additionalMenuTranslations = {
           "zelene-tagliatelle-s-morskim-plodovima": {
               name: "Zöld tagliatelle tenger gyümölcseivel"
           },
+          "linguine-s-plodovima-mora": {
+              name: "Linguine tenger gyümölcseivel"
+          },
           "arancini-od-crnog-rizota": {
               name: "Fekete rizottós és tintahalas arancini",
               description: "házi arancini fekete rizottóból tintahallal"
@@ -2412,8 +2436,8 @@ const additionalMenuTranslations = {
           "cevapi-uz-dollar-chips-i-vrhnje": {
               name: "Ćevapi dollar chipsszel és tejföllel"
           },
-          "punjena-pljeskavica-sir-uz-dollar-chips-i-vrhnje": {
-              name: "Töltött pljeskavica (sajttal) dollar chipsszel és tejföllel"
+          "gurmanska-pljeskavica-uz-dollar-chips-i-vrhnje": {
+              name: "Gourmet pljeskavica dollar chipsszel és tejföllel"
           },
           "punjena-pljeskavica-uz-dollar-chips-i-vrhnje": {
               name: "Szalonnába tekert hús dollar chipsszel és tejföllel"
@@ -2423,6 +2447,9 @@ const additionalMenuTranslations = {
           },
           "pileci-file-uz-dollar-chips": {
               name: "Csirkemellfilé dollar chipsszel"
+          },
+          "teleci-kotlet-uz-prilog": {
+              name: "Borjúkaraj körettel"
           },
           "ramstek-uz-krumpir-i-wok-povrce": {
               name: "Rump steak burgonyával és wok zöldségekkel"
@@ -2454,7 +2481,7 @@ const additionalMenuTranslations = {
           },
           "bijela-riba-na-grillu": {
               name: "Grillezett fehér hal",
-              description: "aranydurbincs, tengeri sügér · mángold és burgonya"
+              description: "tengeri sügér · mángold és burgonya"
           },
           "losos-na-zaru-uz-blitvu-i-krumpir": {
               name: "Grillezett lazac dollar chipsszel és grillezett zöldségekkel"
@@ -2494,8 +2521,8 @@ const additionalMenuTranslations = {
           "mali-cevapi-uz-dollar-chips-i-vrhnje": {
               name: "Kis ćevapi dollar chipsszel és tejföllel"
           },
-          "salata-od-skuse-tunjevine": {
-              name: "Makréla / tonhal saláta"
+          "salata-od-tunjevine": {
+              name: "Tonhalsaláta"
           },
           "slavonska-salata": {
               name: "Szlavón saláta",
@@ -2529,9 +2556,6 @@ const additionalMenuTranslations = {
           },
           "lava-cake-sa-sladoledom": {
               name: "Lava cake fagylalttal"
-          },
-          "cokoladni-brownie-sa-sladoledom": {
-              name: "Csokoládés brownie fagylalttal"
           },
           "hobotnica-ispod-peke-uz-prilog": {
               name: "Polip peka alatt, körettel"
@@ -3021,6 +3045,7 @@ const additionalMenuTranslations = {
       'zelene-tagliatelle-s-morskim-plodovima': {
         name: 'Grüne Tagliatelle mit Meeresfrüchten',
       },
+      'linguine-s-plodovima-mora': { name: 'Linguine mit Meeresfrüchten' },
       'arancini-od-crnog-rizota': {
         name: 'Arancini vom schwarzen Risotto mit Sepia',
         description: 'hausgemachte Arancini mit schwarzem Risotto und Sepia',
@@ -3029,6 +3054,9 @@ const additionalMenuTranslations = {
       'cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Ćevapi mit Dollar Chips und Sauerrahm',
       },
+      'gurmanska-pljeskavica-uz-dollar-chips-i-vrhnje': {
+        name: 'Gourmet-Pljeskavica mit Dollar Chips und Sauerrahm',
+      },
       'punjena-pljeskavica-uz-dollar-chips-i-vrhnje': {
         name: 'Gerollte Fleischlaibchen im Speckmantel mit Dollar Chips und Sauerrahm',
       },
@@ -3036,6 +3064,7 @@ const additionalMenuTranslations = {
         name: 'Hausgemachte slawonische Grillwurst mit Kartoffeln und Gemüse',
       },
       'pileci-file-uz-dollar-chips': { name: 'Hähnchenfilet mit Dollar Chips' },
+      'teleci-kotlet-uz-prilog': { name: 'Kalbskotelett mit Beilage' },
       'ramstek-uz-krumpir-i-wok-povrce': {
         name: 'Rumpsteak mit Kartoffeln und Wokgemüse',
       },
@@ -3064,7 +3093,7 @@ const additionalMenuTranslations = {
       'lignje-przene-s-pommesom': { name: 'Frittierte Calamari mit Pommes' },
       'bijela-riba-na-grillu': {
         name: 'Gegrillter Weißfisch',
-        description: 'Goldbrasse, Wolfsbarsch · Mangold und Kartoffeln',
+        description: 'Wolfsbarsch · Mangold und Kartoffeln',
       },
       'losos-na-zaru-uz-blitvu-i-krumpir': {
         name: 'Gegrillter Lachs mit Mangold und Kartoffeln',
@@ -3086,7 +3115,7 @@ const additionalMenuTranslations = {
       'mali-cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Kleine Ćevapi mit Dollar Chips und Sauerrahm',
       },
-      'salata-od-skuse-tunjevine': { name: 'Makrelen- / Thunfischsalat' },
+      'salata-od-tunjevine': { name: 'Thunfischsalat' },
       'slavonska-salata': { name: 'Slawonischer Salat', description: 'gegrillter Speck' },
       'cezar-salata': { name: 'Caesar Salad', description: 'Hähnchenfilet' },
       'sezonska-salata-mix': { name: 'Gemischter Saisonsalat' },
@@ -3304,6 +3333,7 @@ const additionalMenuTranslations = {
       'zelene-tagliatelle-s-morskim-plodovima': {
         name: 'Vihreää tagliatellea merenelävillä',
       },
+      'linguine-s-plodovima-mora': { name: 'Linguine merenelävillä' },
       'arancini-od-crnog-rizota': {
         name: 'Musta risotto- ja seepia-arancini',
         description: 'talon arancineja mustasta risotosta ja seepialla',
@@ -3312,6 +3342,9 @@ const additionalMenuTranslations = {
       'cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Ćevapi dollar chipsien ja smetanan kanssa',
       },
+      'gurmanska-pljeskavica-uz-dollar-chips-i-vrhnje': {
+        name: 'Gourmet-pljeskavica dollar chips -perunoilla ja smetanalla',
+      },
       'punjena-pljeskavica-uz-dollar-chips-i-vrhnje': {
         name: 'Pekoniin käärityt lihapihvit dollar chipsien ja smetanan kanssa',
       },
@@ -3319,6 +3352,7 @@ const additionalMenuTranslations = {
         name: 'Slavonialainen talon grillimakkara perunoiden ja kasvisten kanssa',
       },
       'pileci-file-uz-dollar-chips': { name: 'Kanafilee dollar chipsien kanssa' },
+      'teleci-kotlet-uz-prilog': { name: 'Vasikankyljys lisukkeella' },
       'ramstek-uz-krumpir-i-wok-povrce': {
         name: 'Rump steak perunoiden ja wok-vihannesten kanssa',
       },
@@ -3341,7 +3375,7 @@ const additionalMenuTranslations = {
       'lignje-przene-s-pommesom': { name: 'Friteerattua kalmaria ranskalaisten kanssa' },
       'bijela-riba-na-grillu': {
         name: 'Grillattu valkoinen kala',
-        description: 'meriahven, hammasahven · lehtimangoldia ja perunoita',
+        description: 'meribassi · lehtimangoldia ja perunoita',
       },
       'losos-na-zaru-uz-blitvu-i-krumpir': {
         name: 'Grillattua lohta lehtimangoldin ja perunoiden kanssa',
@@ -3363,7 +3397,7 @@ const additionalMenuTranslations = {
       'mali-cevapi-uz-dollar-chips-i-vrhnje': {
         name: 'Pienet ćevapit dollar chipsien ja smetanan kanssa',
       },
-      'salata-od-skuse-tunjevine': { name: 'Makrilli- / tonnikalasalaatti' },
+      'salata-od-tunjevine': { name: 'Tonnikalasalaatti' },
       'slavonska-salata': { name: 'Slavonialainen salaatti', description: 'grillattu pekoni' },
       'cezar-salata': { name: 'Caesar-salaatti', description: 'kanafilee' },
       'sezonska-salata-mix': { name: 'Kauden sekasalaatti' },

@@ -957,60 +957,6 @@
                 }
               },
               "staffCode": "#002"
-            },
-            {
-              "id": "salata-od-hobotnice",
-              "name": "Salata od hobotnice",
-              "description": "Pripremljena na tradicionalni dalmatinski način.",
-              "price": 12,
-              "priceDisplay": "12€",
-              "currency": "EUR",
-              "allergens": [
-                "ME"
-              ],
-              "dietary": [
-                "pescatarian",
-                "contains-seafood"
-              ],
-              "isAvailable": true,
-              "isSpecialOrder": false,
-              "notes": [],
-              "sortOrder": 3,
-              "translations": {
-                "en": {
-                  "name": "Octopus salad",
-                  "description": "Prepared in the traditional Dalmatian style."
-                },
-                "sv": {
-                  "name": "Bläckfisksallad",
-                  "description": "Tillagad på traditionellt dalmatiskt vis."
-                },
-                "fi": {
-                  "name": "Mustekalasalaatti",
-                  "description": "Valmistettu perinteiseen dalmatialaiseen tapaan."
-                },
-                "no": {
-                  "name": "Blekksprutsalat",
-                  "description": "Tilberedt på tradisjonelt dalmatisk vis."
-                },
-                "pl": {
-                  "name": "Sałatka z ośmiornicy",
-                  "description": "Przygotowana w tradycyjnym dalmatyńskim stylu."
-                },
-                "de": {
-                  "name": "Oktopussalat",
-                  "description": "Nach traditioneller dalmatinischer Art zubereitet."
-                },
-                "da": {
-                  "name": "Blækspruttesalat",
-                  "description": "Tilberedt på traditionel dalmatisk vis."
-                },
-                "hu": {
-                  "name": "Polipsaláta",
-                  "description": "Hagyományos dalmát módon készítve."
-                }
-              },
-              "staffCode": "#003"
             }
           ],
           "translations": {
@@ -1455,6 +1401,40 @@
                 }
               },
               "staffCode": "#011"
+            },
+            {
+              "id": "linguine-s-plodovima-mora",
+              "name": "Linguine s plodovima mora",
+              "description": null,
+              "price": 16,
+              "priceDisplay": "16€",
+              "currency": "EUR",
+              "allergens": [
+                "G",
+                "J",
+                "R",
+                "RI",
+                "ME"
+              ],
+              "dietary": [
+                "pescatarian",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 4,
+              "translations": {
+                "en": { "name": "Linguine with seafood" },
+                "sv": { "name": "Linguine med skaldjur" },
+                "fi": { "name": "Linguine merenelävillä" },
+                "no": { "name": "Linguine med sjømat" },
+                "pl": { "name": "Linguine z owocami morza" },
+                "de": { "name": "Linguine mit Meeresfrüchten" },
+                "da": { "name": "Linguine med skaldyr" },
+                "hu": { "name": "Linguine tenger gyümölcseivel" }
+              },
+              "staffCode": "#171"
             }
           ],
           "translations": {
@@ -1687,8 +1667,8 @@
               "staffCode": "#014"
             },
             {
-              "id": "punjena-pljeskavica-sir-uz-dollar-chips-i-vrhnje",
-              "name": "Punjena pljeskavica (sir) uz dollar chips i vrhnje",
+              "id": "gurmanska-pljeskavica-uz-dollar-chips-i-vrhnje",
+              "name": "Gurmanska pljeskavica uz dollar chips i vrhnje",
               "description": null,
               "price": 18,
               "priceDisplay": "18€",
@@ -1701,34 +1681,32 @@
               ],
               "isAvailable": true,
               "isSpecialOrder": false,
-              "notes": [
-                "Provjeriti marinadu i ulje za prženje priloga prije dodatnih oznaka."
-              ],
+              "notes": [],
               "sortOrder": 2,
               "translations": {
                 "en": {
-                  "name": "Stuffed pljeskavica (cheese) with dollar chips and sour cream"
+                  "name": "Gourmet pljeskavica with dollar chips and sour cream"
                 },
                 "sv": {
-                  "name": "Fylld pljeskavica (ost) med dollar chips och gräddfil"
+                  "name": "Gourmet-pljeskavica med dollar chips och gräddfil"
                 },
                 "fi": {
-                  "name": "Täytetty pljeskavica (juusto) dollar chips -perunoilla ja smetanalla"
+                  "name": "Gourmet-pljeskavica dollar chips -perunoilla ja smetanalla"
                 },
                 "no": {
-                  "name": "Fylt pljeskavica (ost) med dollar chips og rømme"
+                  "name": "Gourmet-pljeskavica med dollar chips og rømme"
                 },
                 "pl": {
-                  "name": "Faszerowana pljeskavica (ser) z dollar chips i kwaśną śmietaną"
+                  "name": "Pljeskavica gourmet z dollar chips i kwaśną śmietaną"
                 },
                 "de": {
-                  "name": "Gefüllte Pljeskavica (Käse) mit Dollar Chips und Sauerrahm"
+                  "name": "Gourmet-Pljeskavica mit Dollar Chips und Sauerrahm"
                 },
                 "da": {
-                  "name": "Fyldt pljeskavica (ost) med dollar chips og cremefraiche"
+                  "name": "Gourmet-pljeskavica med dollar chips og cremefraiche"
                 },
                 "hu": {
-                  "name": "Töltött pljeskavica (sajttal) dollar chipsszel és tejföllel"
+                  "name": "Gourmet pljeskavica dollar chipsszel és tejföllel"
                 }
               },
               "staffCode": "#015"
@@ -1871,6 +1849,33 @@
               "staffCode": "#018"
             },
             {
+              "id": "teleci-kotlet-uz-prilog",
+              "name": "Teleći kotlet uz prilog",
+              "description": null,
+              "price": 21,
+              "priceDisplay": "21€",
+              "currency": "EUR",
+              "allergens": [],
+              "dietary": [
+                "contains-meat"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 6,
+              "translations": {
+                "en": { "name": "Veal chop with side dish" },
+                "sv": { "name": "Kalvkotlett med tillbehör" },
+                "fi": { "name": "Vasikankyljys lisukkeella" },
+                "no": { "name": "Kalvekotelett med tilbehør" },
+                "pl": { "name": "Kotlet cielęcy z dodatkiem" },
+                "de": { "name": "Kalbskotelett mit Beilage" },
+                "da": { "name": "Kalvekotelet med tilbehør" },
+                "hu": { "name": "Borjúkaraj körettel" }
+              },
+              "staffCode": "#172"
+            },
+            {
               "id": "ramstek-uz-krumpir-i-wok-povrce",
               "name": "Ramstek uz krumpir i wok povrće",
               "description": null,
@@ -1886,7 +1891,7 @@
               "notes": [
                 "Provjeriti marinadu, umak i wok pripremu prije dodatnih oznaka."
               ],
-              "sortOrder": 6,
+              "sortOrder": 7,
               "translations": {
                 "en": {
                   "name": "Rump steak with potatoes and wok vegetables"
@@ -1931,7 +1936,7 @@
               "notes": [
                 "Provjeriti marinadu, umak i wok pripremu prije dodatnih oznaka."
               ],
-              "sortOrder": 7,
+              "sortOrder": 8,
               "translations": {
                 "en": {
                   "name": "Beef tenderloin with potatoes and wok vegetables"
@@ -2402,7 +2407,7 @@
             {
               "id": "bijela-riba-na-grillu",
               "name": "Bijela riba na grillu",
-              "description": "orada, brancin · blitva i krumpir",
+              "description": "lubin · blitva i krumpir",
               "price": null,
               "priceDisplay": "20–22€",
               "currency": "EUR",
@@ -2422,35 +2427,35 @@
               "translations": {
                 "en": {
                   "name": "Grilled white fish",
-                  "description": "sea bream, sea bass · chard and potatoes"
+                  "description": "sea bass · chard and potatoes"
                 },
                 "sv": {
                   "name": "Grillad vit fisk",
-                  "description": "guldsparid, havsabborre · mangold och potatis"
+                  "description": "havsabborre · mangold och potatis"
                 },
                 "fi": {
                   "name": "Grillattua valkoista kalaa",
-                  "description": "kultaotsa-ahven, meribassi · mangoldia ja perunoita"
+                  "description": "meribassi · mangoldia ja perunoita"
                 },
                 "no": {
                   "name": "Grillet hvit fisk",
-                  "description": "dorade, havabbor · mangold og poteter"
+                  "description": "havabbor · mangold og poteter"
                 },
                 "pl": {
                   "name": "Grillowana biała ryba",
-                  "description": "dorada, okoń morski · boćwina i ziemniaki"
+                  "description": "okoń morski · boćwina i ziemniaki"
                 },
                 "de": {
                   "name": "Gegrillter Weißfisch",
-                  "description": "Dorade, Wolfsbarsch · Mangold und Kartoffeln"
+                  "description": "Wolfsbarsch · Mangold und Kartoffeln"
                 },
                 "da": {
                   "name": "Grillet hvid fisk",
-                  "description": "havbrasen, havbars · bladbede og kartofler"
+                  "description": "havbars · bladbede og kartofler"
                 },
                 "hu": {
                   "name": "Grillezett fehér hal",
-                  "description": "aranydurbincs, tengeri sügér · mángold és burgonya"
+                  "description": "tengeri sügér · mángold és burgonya"
                 }
               },
               "staffCode": "#028"
@@ -3112,8 +3117,8 @@
           "sortOrder": 90,
           "items": [
             {
-              "id": "salata-od-skuse-tunjevine",
-              "name": "Salata od skuše / tunjevine",
+              "id": "salata-od-tunjevine",
+              "name": "Salata od tunjevine",
               "description": null,
               "price": 19,
               "priceDisplay": "19€",
@@ -3132,28 +3137,28 @@
               "sortOrder": 1,
               "translations": {
                 "en": {
-                  "name": "Mackerel / tuna salad"
+                  "name": "Tuna salad"
                 },
                 "sv": {
-                  "name": "Makrill- / tonfisksallad"
+                  "name": "Tonfisksallad"
                 },
                 "fi": {
-                  "name": "Makrilli- / tonnikalasalaatti"
+                  "name": "Tonnikalasalaatti"
                 },
                 "no": {
-                  "name": "Makrell- / tunfisksalat"
+                  "name": "Tunfisksalat"
                 },
                 "pl": {
-                  "name": "Sałatka z makreli / tuńczyka"
+                  "name": "Sałatka z tuńczyka"
                 },
                 "de": {
-                  "name": "Makrelen- / Thunfischsalat"
+                  "name": "Thunfischsalat"
                 },
                 "da": {
-                  "name": "Makrel- / tunsalat"
+                  "name": "Tunsalat"
                 },
                 "hu": {
-                  "name": "Makréla / tonhal saláta"
+                  "name": "Tonhalsaláta"
                 }
               },
               "staffCode": "#040"
@@ -3720,55 +3725,6 @@
                 }
               },
               "staffCode": "#050"
-            },
-            {
-              "id": "cokoladni-brownie-sa-sladoledom",
-              "name": "Čokoladni brownie sa sladoledom",
-              "description": null,
-              "price": 8,
-              "priceDisplay": "8€",
-              "currency": "EUR",
-              "allergens": [
-                "G",
-                "J",
-                "M"
-              ],
-              "dietary": [
-                "vegetarian"
-              ],
-              "isAvailable": true,
-              "isSpecialOrder": false,
-              "notes": [
-                "Potvrditi sadrži li brownie orašaste plodove ili soju."
-              ],
-              "sortOrder": 4,
-              "translations": {
-                "en": {
-                  "name": "Chocolate brownie with ice cream"
-                },
-                "sv": {
-                  "name": "Chokladbrownie med glass"
-                },
-                "fi": {
-                  "name": "Suklaabrownie jäätelöllä"
-                },
-                "no": {
-                  "name": "Sjokoladebrownie med iskrem"
-                },
-                "pl": {
-                  "name": "Czekoladowe brownie z lodami"
-                },
-                "de": {
-                  "name": "Schokoladen-Brownie mit Eis"
-                },
-                "da": {
-                  "name": "Chokoladebrownie med is"
-                },
-                "hu": {
-                  "name": "Csokoládés brownie fagylalttal"
-                }
-              },
-              "staffCode": "#051"
             }
           ],
           "translations": {
