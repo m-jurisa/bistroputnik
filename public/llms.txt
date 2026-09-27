@@ -9,6 +9,7 @@ Important pages:
 - Home: https://bistroputnik.com/en/
 - Menu: https://bistroputnik.com/en/menu/
 - Daily marenda: https://bistroputnik.com/en/marenda/
+- Price lists, current CSV files and archive: https://bistroputnik.com/en/price-lists/
 - Location and contact: https://bistroputnik.com/en/location/
 - Reviews: https://bistroputnik.com/en/reviews/
 - Baška Voda visitor guide: https://bistroputnik.com/en/baska-voda/

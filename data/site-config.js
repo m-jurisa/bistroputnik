@@ -1,4 +1,6 @@
 import { guideArticles } from './guide-articles';
+import { priceCopy } from '../menu/price-copy.mjs';
+import { resolveBreakfastCopy } from './breakfast-copy';
 
 export const supportedLocales = ['hr', 'en', 'de', 'sv', 'fi', 'no', 'pl', 'da', 'hu'];
 
@@ -30,6 +32,12 @@ export const siteConfig = {
 };
 
 const routeMeta = {
+  prices: {
+    kind: 'prices', priority: 0.7, changeFrequency: 'daily',
+    paths: { hr: 'cjenici', en: 'price-lists', de: 'preislisten', sv: 'prislistor', fi: 'hinnastot', no: 'prislister', pl: 'cenniki', da: 'prislister', hu: 'arlistak' },
+    title: Object.fromEntries(Object.entries(priceCopy).map(([locale, copy]) => [locale, copy.title])),
+    description: Object.fromEntries(Object.entries(priceCopy).map(([locale, copy]) => [locale, copy.explanation])),
+  },
   home: {
     kind: 'home',
     priority: 1,
@@ -171,15 +179,15 @@ const routeMeta = {
       hu: 'All-you-can-eat reggeli büfé Baška Vodában',
     },
     description: {
-      hr: 'All-you-can-eat doručak buffet u Bistro Putnik u Baškoj Vodi za 10 € po osobi, svaki dan 07:00-10:00, uz voće, jaja, bacon, kavu i 100% sokove.',
-      en: 'All-you-can-eat breakfast buffet at Bistro Putnik in Baška Voda for €10 per person, every day 07:00-10:00 with fruit, eggs, bacon, coffee, and 100% juices.',
-      de: 'All-you-can-eat Frühstücksbuffet bei Bistro Putnik in Baška Voda für 10 € pro Person, täglich 07:00-10:00 Uhr mit Obst, Eiern, Bacon, Kaffee und 100% Säften.',
-      sv: 'All-you-can-eat frukostbuffé på Bistro Putnik i Baška Voda för 10 € per person, varje dag 07:00-10:00 med frukt, ägg, bacon, kaffe och 100% juice.',
-      fi: 'All-you-can-eat aamiaisbuffet Bistro Putnikissa Baška Vodassa 10 € per henkilö, joka päivä 07:00-10:00: hedelmiä, munia, pekonia, kahvia ja 100% mehuja.',
-      no: 'All-you-can-eat frokostbuffé hos Bistro Putnik i Baška Voda for 10 € per person, hver dag 07:00-10:00 med frukt, egg, bacon, kaffe og 100% juice.',
-      pl: 'Bufet śniadaniowy all-you-can-eat w Bistro Putnik w Baškiej Vodzie za 10 € od osoby, codziennie 07:00-10:00 z owocami, jajkami, baconem, kawą i 100% sokami.',
-      da: 'All-you-can-eat morgenmadsbuffet hos Bistro Putnik i Baška Voda for 10 € pr. person, hver dag 07:00-10:00 med frugt, æg, bacon, kaffe og 100% juice.',
-      hu: 'All-you-can-eat reggeli büfé a baška vodai Bistro Putnikban 10 € személyenként, minden nap 07:00-10:00 között gyümölccsel, tojással, baconnel, kávéval és 100% gyümölcslevekkel.',
+      hr: 'All-you-can-eat doručak buffet u Bistro Putnik u Baškoj Vodi za {breakfastPrice} po osobi, svaki dan 07:00-10:00, uz voće, jaja, bacon, kavu i 100% sokove.',
+      en: 'All-you-can-eat breakfast buffet at Bistro Putnik in Baška Voda for {breakfastPrice} per person, every day 07:00-10:00 with fruit, eggs, bacon, coffee, and 100% juices.',
+      de: 'All-you-can-eat Frühstücksbuffet bei Bistro Putnik in Baška Voda für {breakfastPrice} pro Person, täglich 07:00-10:00 Uhr mit Obst, Eiern, Bacon, Kaffee und 100% Säften.',
+      sv: 'All-you-can-eat frukostbuffé på Bistro Putnik i Baška Voda för {breakfastPrice} per person, varje dag 07:00-10:00 med frukt, ägg, bacon, kaffe och 100% juice.',
+      fi: 'All-you-can-eat aamiaisbuffet Bistro Putnikissa Baška Vodassa {breakfastPrice} per henkilö, joka päivä 07:00-10:00: hedelmiä, munia, pekonia, kahvia ja 100% mehuja.',
+      no: 'All-you-can-eat frokostbuffé hos Bistro Putnik i Baška Voda for {breakfastPrice} per person, hver dag 07:00-10:00 med frukt, egg, bacon, kaffe og 100% juice.',
+      pl: 'Bufet śniadaniowy all-you-can-eat w Bistro Putnik w Baškiej Vodzie za {breakfastPrice} od osoby, codziennie 07:00-10:00 z owocami, jajkami, baconem, kawą i 100% sokami.',
+      da: 'All-you-can-eat morgenmadsbuffet hos Bistro Putnik i Baška Voda for {breakfastPrice} pr. person, hver dag 07:00-10:00 med frugt, æg, bacon, kaffe og 100% juice.',
+      hu: 'All-you-can-eat reggeli büfé a baška vodai Bistro Putnikban {breakfastPrice} személyenként, minden nap 07:00-10:00 között gyümölccsel, tojással, baconnel, kávéval és 100% gyümölcslevekkel.',
     },
   },
   reservations: {
@@ -507,18 +515,18 @@ const breakfastInclusionGroups = {
   ],
 };
 
-export const pageContent = {
+const rawPageContent = {
   breakfast: {
     hr: {
       eyebrow: 'Doručak buffet',
       title: 'All-you-can-eat doručak buffet u Baškoj Vodi',
       intro:
-        'Započnite jutro u Bistro Putnik uz all-you-can-eat doručak buffet u Baškoj Vodi za 10 € po osobi, poslužen svaki dan 07:00-10:00 uz svježe, tople, hladne i piće izbore.',
+        'Započnite jutro u Bistro Putnik uz all-you-can-eat doručak buffet u Baškoj Vodi za {breakfastPrice} po osobi, poslužen svaki dan 07:00-10:00 uz svježe, tople, hladne i piće izbore.',
       homeTitle: 'Doručak buffet svaki dan',
       homeIntro:
-        'All-you-can-eat doručak buffet za 10 € po osobi, svaki dan 07:00-10:00 u Baškoj Vodi.',
+        'All-you-can-eat doručak buffet za {breakfastPrice} po osobi, svaki dan 07:00-10:00 u Baškoj Vodi.',
       priceLabel: 'Cijena',
-      price: '10 € po osobi',
+      price: '{breakfastPrice} po osobi',
       timeLabel: 'Vrijeme',
       time: 'Svaki dan 07:00-10:00',
       inclusionsTitle: 'U ponudi',
@@ -531,12 +539,12 @@ export const pageContent = {
       eyebrow: 'Breakfast buffet',
       title: 'All-you-can-eat breakfast buffet in Baška Voda',
       intro:
-        'Start the morning at Bistro Putnik with an all-you-can-eat breakfast buffet in Baška Voda for €10 per person, served every day 07:00-10:00 with fresh, hot, cold, and drink choices.',
+        'Start the morning at Bistro Putnik with an all-you-can-eat breakfast buffet in Baška Voda for {breakfastPrice} per person, served every day 07:00-10:00 with fresh, hot, cold, and drink choices.',
       homeTitle: 'Breakfast buffet every day',
       homeIntro:
-        'All-you-can-eat breakfast buffet for €10 per person, served every day 07:00-10:00 in Baška Voda.',
+        'All-you-can-eat breakfast buffet for {breakfastPrice} per person, served every day 07:00-10:00 in Baška Voda.',
       priceLabel: 'Price',
-      price: '€10 per person',
+      price: '{breakfastPrice} per person',
       timeLabel: 'Time',
       time: 'Every day 07:00-10:00',
       inclusionsTitle: 'Included',
@@ -549,12 +557,12 @@ export const pageContent = {
       eyebrow: 'Frühstücksbuffet',
       title: 'All-you-can-eat Frühstücksbuffet in Baška Voda',
       intro:
-        'Starten Sie den Morgen bei Bistro Putnik mit einem All-you-can-eat Frühstücksbuffet in Baška Voda für 10 € pro Person, täglich 07:00-10:00 Uhr mit frischen, warmen, kalten und Getränke-Auswahlen.',
+        'Starten Sie den Morgen bei Bistro Putnik mit einem All-you-can-eat Frühstücksbuffet in Baška Voda für {breakfastPrice} pro Person, täglich 07:00-10:00 Uhr mit frischen, warmen, kalten und Getränke-Auswahlen.',
       homeTitle: 'Frühstücksbuffet jeden Tag',
       homeIntro:
-        'All-you-can-eat Frühstücksbuffet für 10 € pro Person, täglich 07:00-10:00 Uhr in Baška Voda.',
+        'All-you-can-eat Frühstücksbuffet für {breakfastPrice} pro Person, täglich 07:00-10:00 Uhr in Baška Voda.',
       priceLabel: 'Preis',
-      price: '10 € pro Person',
+      price: '{breakfastPrice} pro Person',
       timeLabel: 'Zeit',
       time: 'Täglich 07:00-10:00 Uhr',
       inclusionsTitle: 'Inklusive',
@@ -567,12 +575,12 @@ export const pageContent = {
       eyebrow: 'Frukostbuffé',
       title: 'All-you-can-eat frukostbuffé i Baška Voda',
       intro:
-        'Börja morgonen på Bistro Putnik med en all-you-can-eat frukostbuffé i Baška Voda för 10 € per person, serverad varje dag 07:00-10:00 med färska, varma, kalla och dryckesval.',
+        'Börja morgonen på Bistro Putnik med en all-you-can-eat frukostbuffé i Baška Voda för {breakfastPrice} per person, serverad varje dag 07:00-10:00 med färska, varma, kalla och dryckesval.',
       homeTitle: 'Frukostbuffé varje dag',
       homeIntro:
-        'All-you-can-eat frukostbuffé för 10 € per person, serverad varje dag 07:00-10:00 i Baška Voda.',
+        'All-you-can-eat frukostbuffé för {breakfastPrice} per person, serverad varje dag 07:00-10:00 i Baška Voda.',
       priceLabel: 'Pris',
-      price: '10 € per person',
+      price: '{breakfastPrice} per person',
       timeLabel: 'Tid',
       time: 'Varje dag 07:00-10:00',
       inclusionsTitle: 'Ingår',
@@ -585,12 +593,12 @@ export const pageContent = {
       eyebrow: 'Aamiaisbuffet',
       title: 'All-you-can-eat aamiaisbuffet Baška Vodassa',
       intro:
-        'Aloita aamu Bistro Putnikissa all-you-can-eat aamiaisbuffetilla Baška Vodassa hintaan 10 € per henkilö, tarjolla joka päivä 07:00-10:00 tuoreilla, lämpimillä, kylmillä ja juomavaihtoehdoilla.',
+        'Aloita aamu Bistro Putnikissa all-you-can-eat aamiaisbuffetilla Baška Vodassa hintaan {breakfastPrice} per henkilö, tarjolla joka päivä 07:00-10:00 tuoreilla, lämpimillä, kylmillä ja juomavaihtoehdoilla.',
       homeTitle: 'Aamiaisbuffet joka päivä',
       homeIntro:
-        'All-you-can-eat aamiaisbuffet 10 € per henkilö, tarjolla joka päivä 07:00-10:00 Baška Vodassa.',
+        'All-you-can-eat aamiaisbuffet {breakfastPrice} per henkilö, tarjolla joka päivä 07:00-10:00 Baška Vodassa.',
       priceLabel: 'Hinta',
-      price: '10 € per henkilö',
+      price: '{breakfastPrice} per henkilö',
       timeLabel: 'Aika',
       time: 'Joka päivä 07:00-10:00',
       inclusionsTitle: 'Sisältyy',
@@ -603,12 +611,12 @@ export const pageContent = {
       eyebrow: 'Frokostbuffé',
       title: 'All-you-can-eat frokostbuffé i Baška Voda',
       intro:
-        'Start morgenen hos Bistro Putnik med en all-you-can-eat frokostbuffé i Baška Voda for 10 € per person, servert hver dag 07:00-10:00 med ferske, varme, kalde og drikkevalg.',
+        'Start morgenen hos Bistro Putnik med en all-you-can-eat frokostbuffé i Baška Voda for {breakfastPrice} per person, servert hver dag 07:00-10:00 med ferske, varme, kalde og drikkevalg.',
       homeTitle: 'Frokostbuffé hver dag',
       homeIntro:
-        'All-you-can-eat frokostbuffé for 10 € per person, servert hver dag 07:00-10:00 i Baška Voda.',
+        'All-you-can-eat frokostbuffé for {breakfastPrice} per person, servert hver dag 07:00-10:00 i Baška Voda.',
       priceLabel: 'Pris',
-      price: '10 € per person',
+      price: '{breakfastPrice} per person',
       timeLabel: 'Tid',
       time: 'Hver dag 07:00-10:00',
       inclusionsTitle: 'Inkludert',
@@ -621,12 +629,12 @@ export const pageContent = {
       eyebrow: 'Bufet śniadaniowy',
       title: 'Bufet śniadaniowy all-you-can-eat w Baškiej Vodzie',
       intro:
-        'Zacznij poranek w Bistro Putnik od bufetu śniadaniowego all-you-can-eat w Baškiej Vodzie za 10 € od osoby, serwowanego codziennie 07:00-10:00 z wyborami świeżymi, ciepłymi, zimnymi i napojami.',
+        'Zacznij poranek w Bistro Putnik od bufetu śniadaniowego all-you-can-eat w Baškiej Vodzie za {breakfastPrice} od osoby, serwowanego codziennie 07:00-10:00 z wyborami świeżymi, ciepłymi, zimnymi i napojami.',
       homeTitle: 'Bufet śniadaniowy codziennie',
       homeIntro:
-        'Bufet śniadaniowy all-you-can-eat za 10 € od osoby, codziennie 07:00-10:00 w Baškiej Vodzie.',
+        'Bufet śniadaniowy all-you-can-eat za {breakfastPrice} od osoby, codziennie 07:00-10:00 w Baškiej Vodzie.',
       priceLabel: 'Cena',
-      price: '10 € od osoby',
+      price: '{breakfastPrice} od osoby',
       timeLabel: 'Godziny',
       time: 'Codziennie 07:00-10:00',
       inclusionsTitle: 'W cenie',
@@ -639,12 +647,12 @@ export const pageContent = {
       eyebrow: 'Morgenmadsbuffet',
       title: 'All-you-can-eat morgenmadsbuffet i Baška Voda',
       intro:
-        'Start morgenen hos Bistro Putnik med en all-you-can-eat morgenmadsbuffet i Baška Voda for 10 € pr. person, serveret hver dag 07:00-10:00 med friske, varme, kolde og drikkevalg.',
+        'Start morgenen hos Bistro Putnik med en all-you-can-eat morgenmadsbuffet i Baška Voda for {breakfastPrice} pr. person, serveret hver dag 07:00-10:00 med friske, varme, kolde og drikkevalg.',
       homeTitle: 'Morgenmadsbuffet hver dag',
       homeIntro:
-        'All-you-can-eat morgenmadsbuffet for 10 € pr. person, serveret hver dag 07:00-10:00 i Baška Voda.',
+        'All-you-can-eat morgenmadsbuffet for {breakfastPrice} pr. person, serveret hver dag 07:00-10:00 i Baška Voda.',
       priceLabel: 'Pris',
-      price: '10 € pr. person',
+      price: '{breakfastPrice} pr. person',
       timeLabel: 'Tid',
       time: 'Hver dag 07:00-10:00',
       inclusionsTitle: 'Inkluderet',
@@ -657,12 +665,12 @@ export const pageContent = {
       eyebrow: 'Reggeli büfé',
       title: 'All-you-can-eat reggeli büfé Baška Vodában',
       intro:
-        'Indítsa a reggelt a Bistro Putnikban all-you-can-eat reggeli büfével Baška Vodában, 10 € személyenként, minden nap 07:00-10:00 között friss, meleg, hideg és italválasztékkal.',
+        'Indítsa a reggelt a Bistro Putnikban all-you-can-eat reggeli büfével Baška Vodában, {breakfastPrice} személyenként, minden nap 07:00-10:00 között friss, meleg, hideg és italválasztékkal.',
       homeTitle: 'Reggeli büfé minden nap',
       homeIntro:
-        'All-you-can-eat reggeli büfé 10 € személyenként, minden nap 07:00-10:00 között Baška Vodában.',
+        'All-you-can-eat reggeli büfé {breakfastPrice} személyenként, minden nap 07:00-10:00 között Baška Vodában.',
       priceLabel: 'Ár',
-      price: '10 € személyenként',
+      price: '{breakfastPrice} személyenként',
       timeLabel: 'Idő',
       time: 'Minden nap 07:00-10:00',
       inclusionsTitle: 'Tartalmazza',
@@ -961,6 +969,8 @@ export const pageContent = {
   },
 };
 
+export const pageContent = resolveBreakfastCopy(rawPageContent);
+
 function trimSlashes(value = '') {
   return value.replace(/^\/+|\/+$/g, '');
 }
@@ -970,7 +980,7 @@ export function isSupportedLocale(locale) {
 }
 
 export function getLocalizedValue(values, locale) {
-  return values?.[locale] || values?.[defaultLocale] || '';
+  return resolveBreakfastCopy(values?.[locale] || values?.[defaultLocale] || '', locale);
 }
 
 export function getLocalizedPath(locale, routeKey, options = {}) {

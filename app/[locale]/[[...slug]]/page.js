@@ -4,6 +4,8 @@ import JsonLd from '../../../components/JsonLd';
 import LocalizedPageFrame from '../../../components/LocalizedPageFrame';
 import MarendaPageContent from '../../../components/MarendaPageContent';
 import ReviewPageContent from '../../../components/ReviewPageContent';
+import PricesPage from '../../../components/PricesPage';
+import { dailyOffer } from '../../../data/pricing';
 import {
   ArticlePage,
   BlogIndexPage,
@@ -43,7 +45,6 @@ import {
   routeDefinitions,
   siteConfig,
 } from '../../../data/site-config';
-import marendaItemsData from '../../../menu/marenda-items.json';
 
 export function generateStaticParams() {
   return getStaticRouteParams();
@@ -144,7 +145,7 @@ export default async function LocalizedPage({ params }) {
           business={menuData.business}
           marenda={{
             ...marendaConfig,
-            items: marendaItemsData.items,
+            ...dailyOffer,
           }}
           chrome={chrome}
         />
@@ -166,6 +167,7 @@ export default async function LocalizedPage({ params }) {
   }
 
   const pageByRoute = {
+    prices: <PricesPage locale={locale} />,
     menu: (
       <MenuStandalonePage
         locale={locale}

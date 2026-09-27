@@ -902,7 +902,11 @@
                   "description": "Szlavón sonka, kulen, szalonna, töpörtyű, tehénsajt, savanyított zöldségek és házi kenyér"
                 }
               },
-              "staffCode": "#001"
+              "staffCode": "#001",
+              "referencePrice": 15,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "dalmatinska-plata",
@@ -956,7 +960,11 @@
                   "description": "Pršut, kecskesajt, olívabogyó, házi kenyér"
                 }
               },
-              "staffCode": "#002"
+              "staffCode": "#002",
+              "referencePrice": 17,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -1036,7 +1044,11 @@
                   "name": "Paradicsomkrémleves"
                 }
               },
-              "staffCode": "#004"
+              "staffCode": "#004",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "krem-juha-od-celera-i-kokosa",
@@ -1081,7 +1093,11 @@
                   "name": "Zelleres-kókuszos krémleves"
                 }
               },
-              "staffCode": "#005"
+              "staffCode": "#005",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "bistra-riblja-juha",
@@ -1127,7 +1143,11 @@
                   "name": "Tiszta halleves"
                 }
               },
-              "staffCode": "#006"
+              "staffCode": "#006",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "bistra-goveda-juha",
@@ -1172,7 +1192,11 @@
                   "name": "Tiszta marhahúsleves"
                 }
               },
-              "staffCode": "#007"
+              "staffCode": "#007",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "krem-juha-od-cvjetace",
@@ -1219,7 +1243,11 @@
                   "name": "Karfiolkrémleves"
                 }
               },
-              "staffCode": "#008"
+              "staffCode": "#008",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -1301,7 +1329,11 @@
                   "name": "Bolognese"
                 }
               },
-              "staffCode": "#009"
+              "staffCode": "#009",
+              "referencePrice": 13,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "carbonara",
@@ -1348,7 +1380,11 @@
                   "name": "Carbonara"
                 }
               },
-              "staffCode": "#010"
+              "staffCode": "#010",
+              "referencePrice": 13,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "zelene-tagliatelle-s-morskim-plodovima",
@@ -1400,7 +1436,11 @@
                   "name": "Zöld tagliatelle tenger gyümölcseivel"
                 }
               },
-              "staffCode": "#011"
+              "staffCode": "#011",
+              "referencePrice": 19,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "linguine-s-plodovima-mora",
@@ -1425,16 +1465,36 @@
               "notes": [],
               "sortOrder": 4,
               "translations": {
-                "en": { "name": "Linguine with seafood" },
-                "sv": { "name": "Linguine med skaldjur" },
-                "fi": { "name": "Linguine merenelävillä" },
-                "no": { "name": "Linguine med sjømat" },
-                "pl": { "name": "Linguine z owocami morza" },
-                "de": { "name": "Linguine mit Meeresfrüchten" },
-                "da": { "name": "Linguine med skaldyr" },
-                "hu": { "name": "Linguine tenger gyümölcseivel" }
+                "en": {
+                  "name": "Linguine with seafood"
+                },
+                "sv": {
+                  "name": "Linguine med skaldjur"
+                },
+                "fi": {
+                  "name": "Linguine merenelävillä"
+                },
+                "no": {
+                  "name": "Linguine med sjømat"
+                },
+                "pl": {
+                  "name": "Linguine z owocami morza"
+                },
+                "de": {
+                  "name": "Linguine mit Meeresfrüchten"
+                },
+                "da": {
+                  "name": "Linguine med skaldyr"
+                },
+                "hu": {
+                  "name": "Linguine tenger gyümölcseivel"
+                }
               },
-              "staffCode": "#171"
+              "staffCode": "#171",
+              "referencePrice": 16,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -1526,7 +1586,11 @@
                   "description": "házi arancini fekete rizottóból tintahallal"
                 }
               },
-              "staffCode": "#012"
+              "staffCode": "#012",
+              "referencePrice": 25,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "vege-arancini",
@@ -1582,7 +1646,11 @@
                   "description": "vegetáriánus"
                 }
               },
-              "staffCode": "#013"
+              "staffCode": "#013",
+              "referencePrice": 19,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -1664,7 +1732,11 @@
                   "name": "Ćevapi dollar chipsszel és tejföllel"
                 }
               },
-              "staffCode": "#014"
+              "staffCode": "#014",
+              "referencePrice": 17,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "gurmanska-pljeskavica-uz-dollar-chips-i-vrhnje",
@@ -1709,7 +1781,11 @@
                   "name": "Gourmet pljeskavica dollar chipsszel és tejföllel"
                 }
               },
-              "staffCode": "#015"
+              "staffCode": "#015",
+              "referencePrice": 18,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "punjena-pljeskavica-uz-dollar-chips-i-vrhnje",
@@ -1756,7 +1832,11 @@
                   "name": "Szalonnába tekert hús dollar chipsszel és tejföllel"
                 }
               },
-              "staffCode": "#016"
+              "staffCode": "#016",
+              "referencePrice": 19,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "dvije-kobasice-uz-krumpir-s-povrcem",
@@ -1801,7 +1881,11 @@
                   "name": "Házi szlavón grillkolbász körettel"
                 }
               },
-              "staffCode": "#017"
+              "staffCode": "#017",
+              "referencePrice": 18,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pileci-file-uz-dollar-chips",
@@ -1846,7 +1930,11 @@
                   "name": "Csirkemellfilé dollar chipsszel"
                 }
               },
-              "staffCode": "#018"
+              "staffCode": "#018",
+              "referencePrice": 18,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "teleci-kotlet-uz-prilog",
@@ -1864,16 +1952,36 @@
               "notes": [],
               "sortOrder": 6,
               "translations": {
-                "en": { "name": "Veal chop with side dish" },
-                "sv": { "name": "Kalvkotlett med tillbehör" },
-                "fi": { "name": "Vasikankyljys lisukkeella" },
-                "no": { "name": "Kalvekotelett med tilbehør" },
-                "pl": { "name": "Kotlet cielęcy z dodatkiem" },
-                "de": { "name": "Kalbskotelett mit Beilage" },
-                "da": { "name": "Kalvekotelet med tilbehør" },
-                "hu": { "name": "Borjúkaraj körettel" }
+                "en": {
+                  "name": "Veal chop with side dish"
+                },
+                "sv": {
+                  "name": "Kalvkotlett med tillbehör"
+                },
+                "fi": {
+                  "name": "Vasikankyljys lisukkeella"
+                },
+                "no": {
+                  "name": "Kalvekotelett med tilbehør"
+                },
+                "pl": {
+                  "name": "Kotlet cielęcy z dodatkiem"
+                },
+                "de": {
+                  "name": "Kalbskotelett mit Beilage"
+                },
+                "da": {
+                  "name": "Kalvekotelet med tilbehør"
+                },
+                "hu": {
+                  "name": "Borjúkaraj körettel"
+                }
               },
-              "staffCode": "#172"
+              "staffCode": "#172",
+              "referencePrice": 21,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "ramstek-uz-krumpir-i-wok-povrce",
@@ -1918,7 +2026,11 @@
                   "name": "Rump steak burgonyával és wok zöldségekkel"
                 }
               },
-              "staffCode": "#019"
+              "staffCode": "#019",
+              "referencePrice": 28,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "biftek-uz-krumpir-i-wok-povrce",
@@ -1963,7 +2075,11 @@
                   "name": "Bélszín burgonyával és wok zöldségekkel"
                 }
               },
-              "staffCode": "#020"
+              "staffCode": "#020",
+              "referencePrice": 35,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -2054,7 +2170,11 @@
                   "description": "hagyományos dalmát étel házi köretekkel"
                 }
               },
-              "staffCode": "#021"
+              "staffCode": "#021",
+              "referencePrice": 19,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -2135,7 +2255,11 @@
                   "name": "Rántott csirkeszelet körettel"
                 }
               },
-              "staffCode": "#022"
+              "staffCode": "#022",
+              "referencePrice": 15,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "svinjski-becki-uz-prilog",
@@ -2181,7 +2305,11 @@
                   "name": "Rántott sertésszelet körettel"
                 }
               },
-              "staffCode": "#023"
+              "staffCode": "#023",
+              "referencePrice": 17,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "teleci-becki-uz-prilog",
@@ -2227,7 +2355,11 @@
                   "name": "Rántott borjúszelet körettel"
                 }
               },
-              "staffCode": "#024"
+              "staffCode": "#024",
+              "referencePrice": 21,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pileci-punjeni-odrezak-uz-prilog",
@@ -2274,7 +2406,11 @@
                   "name": "Töltött csirkeszelet körettel"
                 }
               },
-              "staffCode": "#025"
+              "staffCode": "#025",
+              "referencePrice": 17,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -2355,7 +2491,11 @@
                   "name": "Grillezett tintahal mángolddal és burgonyával"
                 }
               },
-              "staffCode": "#026"
+              "staffCode": "#026",
+              "referencePrice": 22,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "lignje-przene-s-pommesom",
@@ -2402,14 +2542,18 @@
                   "name": "Sült tintahal hasábburgonyával"
                 }
               },
-              "staffCode": "#027"
+              "staffCode": "#027",
+              "referencePrice": 20,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "bijela-riba-na-grillu",
-              "name": "Bijela riba na grillu",
-              "description": "lubin · blitva i krumpir",
-              "price": null,
-              "priceDisplay": "20–22€",
+              "name": "Bijela riba na grillu · <300 g",
+              "description": "Poslužujemo veličinu ribe dostupnu toga dana; veličina se ne bira. Lubin, blitva i krumpir.",
+              "price": 20,
+              "priceDisplay": "20€",
               "currency": "EUR",
               "allergens": [
                 "RI"
@@ -2422,43 +2566,161 @@
               "isSpecialOrder": false,
               "notes": [],
               "sortOrder": 3,
-              "priceMin": 20,
-              "priceMax": 22,
               "translations": {
                 "en": {
-                  "name": "Grilled white fish",
-                  "description": "sea bass · chard and potatoes"
-                },
-                "sv": {
-                  "name": "Grillad vit fisk",
-                  "description": "havsabborre · mangold och potatis"
-                },
-                "fi": {
-                  "name": "Grillattua valkoista kalaa",
-                  "description": "meribassi · mangoldia ja perunoita"
-                },
-                "no": {
-                  "name": "Grillet hvit fisk",
-                  "description": "havabbor · mangold og poteter"
-                },
-                "pl": {
-                  "name": "Grillowana biała ryba",
-                  "description": "okoń morski · boćwina i ziemniaki"
+                  "name": "Grilled white fish · <300 g",
+                  "description": "We serve the fish size available that day; size cannot be selected. Sea bass, chard and potatoes."
                 },
                 "de": {
-                  "name": "Gegrillter Weißfisch",
-                  "description": "Wolfsbarsch · Mangold und Kartoffeln"
+                  "name": "Gegrillter Weißfisch · <300 g",
+                  "description": "Wir servieren die an diesem Tag verfügbare Fischgröße; die Größe ist nicht wählbar. Wolfsbarsch, Mangold und Kartoffeln."
+                },
+                "sv": {
+                  "name": "Grillad vit fisk · <300 g",
+                  "description": "Vi serverar den fiskstorlek som finns för dagen; storleken kan inte väljas. Havsabborre, mangold och potatis."
+                },
+                "fi": {
+                  "name": "Grillattua valkoista kalaa · <300 g",
+                  "description": "Tarjoilemme päivän saatavilla olevan kalakoon; kokoa ei voi valita. Meribassia, mangoldia ja perunoita."
+                },
+                "no": {
+                  "name": "Grillet hvit fisk · <300 g",
+                  "description": "Vi serverer fiskestørrelsen som er tilgjengelig den dagen; størrelsen kan ikke velges. Havabbor, mangold og poteter."
+                },
+                "pl": {
+                  "name": "Grillowana biała ryba · <300 g",
+                  "description": "Podajemy rybę w rozmiarze dostępnym danego dnia; nie można wybrać rozmiaru. Okoń morski, boćwina i ziemniaki."
                 },
                 "da": {
-                  "name": "Grillet hvid fisk",
-                  "description": "havbars · bladbede og kartofler"
+                  "name": "Grillet hvid fisk · <300 g",
+                  "description": "Vi serverer den fiskestørrelse, der er tilgængelig den dag; størrelsen kan ikke vælges. Havbars, bladbede og kartofler."
                 },
                 "hu": {
-                  "name": "Grillezett fehér hal",
-                  "description": "tengeri sügér · mángold és burgonya"
+                  "name": "Grillezett fehér hal · <300 g",
+                  "description": "Az aznap elérhető méretű halat szolgáljuk fel; a méret nem választható. Tengeri sügér, mángold és burgonya."
                 }
               },
-              "staffCode": "#028"
+              "staffCode": "#028S",
+              "referencePrice": 20,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
+            },
+            {
+              "id": "bijela-riba-na-grillu-medium",
+              "name": "Bijela riba na grillu · 300–349 g",
+              "description": "Poslužujemo veličinu ribe dostupnu toga dana; veličina se ne bira. Lubin, blitva i krumpir.",
+              "price": 21,
+              "priceDisplay": "21€",
+              "currency": "EUR",
+              "allergens": [
+                "RI"
+              ],
+              "dietary": [
+                "pescatarian",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3.1,
+              "translations": {
+                "en": {
+                  "name": "Grilled white fish · 300–349 g",
+                  "description": "We serve the fish size available that day; size cannot be selected. Sea bass, chard and potatoes."
+                },
+                "de": {
+                  "name": "Gegrillter Weißfisch · 300–349 g",
+                  "description": "Wir servieren die an diesem Tag verfügbare Fischgröße; die Größe ist nicht wählbar. Wolfsbarsch, Mangold und Kartoffeln."
+                },
+                "sv": {
+                  "name": "Grillad vit fisk · 300–349 g",
+                  "description": "Vi serverar den fiskstorlek som finns för dagen; storleken kan inte väljas. Havsabborre, mangold och potatis."
+                },
+                "fi": {
+                  "name": "Grillattua valkoista kalaa · 300–349 g",
+                  "description": "Tarjoilemme päivän saatavilla olevan kalakoon; kokoa ei voi valita. Meribassia, mangoldia ja perunoita."
+                },
+                "no": {
+                  "name": "Grillet hvit fisk · 300–349 g",
+                  "description": "Vi serverer fiskestørrelsen som er tilgjengelig den dagen; størrelsen kan ikke velges. Havabbor, mangold og poteter."
+                },
+                "pl": {
+                  "name": "Grillowana biała ryba · 300–349 g",
+                  "description": "Podajemy rybę w rozmiarze dostępnym danego dnia; nie można wybrać rozmiaru. Okoń morski, boćwina i ziemniaki."
+                },
+                "da": {
+                  "name": "Grillet hvid fisk · 300–349 g",
+                  "description": "Vi serverer den fiskestørrelse, der er tilgængelig den dag; størrelsen kan ikke vælges. Havbars, bladbede og kartofler."
+                },
+                "hu": {
+                  "name": "Grillezett fehér hal · 300–349 g",
+                  "description": "Az aznap elérhető méretű halat szolgáljuk fel; a méret nem választható. Tengeri sügér, mángold és burgonya."
+                }
+              },
+              "staffCode": "#028M",
+              "referencePrice": 21,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
+            },
+            {
+              "id": "bijela-riba-na-grillu-large",
+              "name": "Bijela riba na grillu · ≥350 g",
+              "description": "Poslužujemo veličinu ribe dostupnu toga dana; veličina se ne bira. Lubin, blitva i krumpir.",
+              "price": 22,
+              "priceDisplay": "22€",
+              "currency": "EUR",
+              "allergens": [
+                "RI"
+              ],
+              "dietary": [
+                "pescatarian",
+                "contains-seafood"
+              ],
+              "isAvailable": true,
+              "isSpecialOrder": false,
+              "notes": [],
+              "sortOrder": 3.2,
+              "translations": {
+                "en": {
+                  "name": "Grilled white fish · ≥350 g",
+                  "description": "We serve the fish size available that day; size cannot be selected. Sea bass, chard and potatoes."
+                },
+                "de": {
+                  "name": "Gegrillter Weißfisch · ≥350 g",
+                  "description": "Wir servieren die an diesem Tag verfügbare Fischgröße; die Größe ist nicht wählbar. Wolfsbarsch, Mangold und Kartoffeln."
+                },
+                "sv": {
+                  "name": "Grillad vit fisk · ≥350 g",
+                  "description": "Vi serverar den fiskstorlek som finns för dagen; storleken kan inte väljas. Havsabborre, mangold och potatis."
+                },
+                "fi": {
+                  "name": "Grillattua valkoista kalaa · ≥350 g",
+                  "description": "Tarjoilemme päivän saatavilla olevan kalakoon; kokoa ei voi valita. Meribassia, mangoldia ja perunoita."
+                },
+                "no": {
+                  "name": "Grillet hvit fisk · ≥350 g",
+                  "description": "Vi serverer fiskestørrelsen som er tilgjengelig den dagen; størrelsen kan ikke velges. Havabbor, mangold og poteter."
+                },
+                "pl": {
+                  "name": "Grillowana biała ryba · ≥350 g",
+                  "description": "Podajemy rybę w rozmiarze dostępnym danego dnia; nie można wybrać rozmiaru. Okoń morski, boćwina i ziemniaki."
+                },
+                "da": {
+                  "name": "Grillet hvid fisk · ≥350 g",
+                  "description": "Vi serverer den fiskestørrelse, der er tilgængelig den dag; størrelsen kan ikke vælges. Havbars, bladbede og kartofler."
+                },
+                "hu": {
+                  "name": "Grillezett fehér hal · ≥350 g",
+                  "description": "Az aznap elérhető méretű halat szolgáljuk fel; a méret nem választható. Tengeri sügér, mángold és burgonya."
+                }
+              },
+              "staffCode": "#028L",
+              "referencePrice": 22,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "losos-na-zaru-uz-blitvu-i-krumpir",
@@ -2504,7 +2766,11 @@
                   "name": "Grillezett lazac dollar chipsszel és grillezett zöldségekkel"
                 }
               },
-              "staffCode": "#029"
+              "staffCode": "#029",
+              "referencePrice": 22,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "tuna-steak-na-zaru-uz-blitvu-i-krumpir",
@@ -2550,7 +2816,11 @@
                   "name": "Grillezett tonhal steak mángolddal és burgonyával"
                 }
               },
-              "staffCode": "#030"
+              "staffCode": "#030",
+              "referencePrice": 22,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "dagnje-na-buzaru",
@@ -2601,7 +2871,11 @@
                   "name": "Kagyló hagyományos buzara módra 0,5 kg"
                 }
               },
-              "staffCode": "#031"
+              "staffCode": "#031",
+              "referencePrice": 16,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -2689,7 +2963,11 @@
                   "description": "vegán"
                 }
               },
-              "staffCode": "#032"
+              "staffCode": "#032",
+              "referencePrice": 10,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "aglio-olio",
@@ -2742,7 +3020,11 @@
                   "description": "vegán"
                 }
               },
-              "staffCode": "#033"
+              "staffCode": "#033",
+              "referencePrice": 12,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "steak-od-karfiola",
@@ -2795,7 +3077,11 @@
                   "description": "vegán"
                 }
               },
-              "staffCode": "#034"
+              "staffCode": "#034",
+              "referencePrice": 15,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "tofu-steak",
@@ -2848,7 +3134,11 @@
                   "description": "vegán"
                 }
               },
-              "staffCode": "#035"
+              "staffCode": "#035",
+              "referencePrice": 16,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "vege-salata",
@@ -2901,7 +3191,11 @@
                   "description": "tofu steak · vegán"
                 }
               },
-              "staffCode": "#036"
+              "staffCode": "#036",
+              "referencePrice": 18,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -2983,7 +3277,11 @@
                   "name": "Csirke nuggets + hasábburgonya"
                 }
               },
-              "staffCode": "#037"
+              "staffCode": "#037",
+              "referencePrice": 10,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "mali-bolognese",
@@ -3031,7 +3329,11 @@
                   "name": "Kis bolognese"
                 }
               },
-              "staffCode": "#038"
+              "staffCode": "#038",
+              "referencePrice": 10,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "mali-cevapi-uz-dollar-chips-i-vrhnje",
@@ -3079,7 +3381,11 @@
                   "name": "Kis ćevapi dollar chipsszel és tejföllel"
                 }
               },
-              "staffCode": "#039"
+              "staffCode": "#039",
+              "referencePrice": 10,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -3161,7 +3467,11 @@
                   "name": "Tonhalsaláta"
                 }
               },
-              "staffCode": "#040"
+              "staffCode": "#040",
+              "referencePrice": 19,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "slavonska-salata",
@@ -3214,7 +3524,11 @@
                   "description": "grillezett szalonna"
                 }
               },
-              "staffCode": "#041"
+              "staffCode": "#041",
+              "referencePrice": 18,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "salata-piletina",
@@ -3270,7 +3584,11 @@
                   "description": "csirkemellfilé"
                 }
               },
-              "staffCode": "#042"
+              "staffCode": "#042",
+              "referencePrice": 14,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -3356,7 +3674,11 @@
                   "name": "Szezonális vegyes saláta"
                 }
               },
-              "staffCode": "#043"
+              "staffCode": "#043",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "kupus-salata",
@@ -3399,7 +3721,11 @@
                   "name": "Káposztasaláta"
                 }
               },
-              "staffCode": "#044"
+              "staffCode": "#044",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "krastavci-u-vrhnju",
@@ -3444,7 +3770,11 @@
                   "name": "Uborka tejfölben"
                 }
               },
-              "staffCode": "#045"
+              "staffCode": "#045",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "cikla-karamelizirani-luk",
@@ -3487,7 +3817,11 @@
                   "name": "Cékla"
                 }
               },
-              "staffCode": "#046"
+              "staffCode": "#046",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "grcka-salata",
@@ -3532,7 +3866,11 @@
                   "name": "Görög saláta"
                 }
               },
-              "staffCode": "#047"
+              "staffCode": "#047",
+              "referencePrice": 9,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -3626,7 +3964,11 @@
                   "description": "lekvárral vagy Linoladával"
                 }
               },
-              "staffCode": "#048"
+              "staffCode": "#048",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "palacinke-sa-sladoledom",
@@ -3675,7 +4017,11 @@
                   "name": "Palacsinta fagylalttal"
                 }
               },
-              "staffCode": "#049"
+              "staffCode": "#049",
+              "referencePrice": 8,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "lava-cake-sa-sladoledom",
@@ -3724,7 +4070,11 @@
                   "name": "Lava cake fagylalttal"
                 }
               },
-              "staffCode": "#050"
+              "staffCode": "#050",
+              "referencePrice": 8,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -3844,7 +4194,11 @@
                   "name": "Polip peka alatt, körettel"
                 }
               },
-              "staffCode": "#169"
+              "staffCode": "#169",
+              "referencePrice": 60,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "peka-mix",
@@ -3897,7 +4251,11 @@
                   "description": "vegyes peka körettel"
                 }
               },
-              "staffCode": "#170"
+              "staffCode": "#170",
+              "referencePrice": 60,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -4060,7 +4418,11 @@
                   "name": "Espresso"
                 }
               },
-              "staffCode": "#052"
+              "staffCode": "#052",
+              "referencePrice": 2,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "kava-s-mlijekom-slagom",
@@ -4103,7 +4465,11 @@
                   "name": "Kávé tejjel / tejszínhabbal"
                 }
               },
-              "staffCode": "#053"
+              "staffCode": "#053",
+              "referencePrice": 2.4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "cappuccino",
@@ -4146,7 +4512,11 @@
                   "name": "Cappuccino"
                 }
               },
-              "staffCode": "#054"
+              "staffCode": "#054",
+              "referencePrice": 2.8,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "bijela-kava",
@@ -4189,7 +4559,11 @@
                   "name": "Tejeskávé"
                 }
               },
-              "staffCode": "#055"
+              "staffCode": "#055",
+              "referencePrice": 3.2,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "latte-macchiato",
@@ -4232,7 +4606,11 @@
                   "name": "Latte macchiato"
                 }
               },
-              "staffCode": "#056"
+              "staffCode": "#056",
+              "referencePrice": 3.2,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "nescafe",
@@ -4273,7 +4651,11 @@
                   "name": "Nescafé"
                 }
               },
-              "staffCode": "#057"
+              "staffCode": "#057",
+              "referencePrice": 3,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "caj",
@@ -4314,7 +4696,11 @@
                   "name": "Tea"
                 }
               },
-              "staffCode": "#058"
+              "staffCode": "#058",
+              "referencePrice": 2,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "instant-cappuccino",
@@ -4357,7 +4743,11 @@
                   "name": "Instant cappuccino"
                 }
               },
-              "staffCode": "#059"
+              "staffCode": "#059",
+              "referencePrice": 3,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "ice-latte",
@@ -4400,7 +4790,11 @@
                   "name": "Jeges latte"
                 }
               },
-              "staffCode": "#060"
+              "staffCode": "#060",
+              "referencePrice": 3.3,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "ice-latte-matcha",
@@ -4443,7 +4837,11 @@
                   "name": "Jeges matcha latte"
                 }
               },
-              "staffCode": "#061"
+              "staffCode": "#061",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "ice-latte-matcha-s-okusom",
@@ -4486,7 +4884,11 @@
                   "name": "Ízesített jeges matcha latte"
                 }
               },
-              "staffCode": "#062"
+              "staffCode": "#062",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "espresso-tonic",
@@ -4527,7 +4929,11 @@
                   "name": "Espresso tonic"
                 }
               },
-              "staffCode": "#063"
+              "staffCode": "#063",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "affogato",
@@ -4570,7 +4976,11 @@
                   "name": "Affogato"
                 }
               },
-              "staffCode": "#064"
+              "staffCode": "#064",
+              "referencePrice": 6.5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "irish-baileys-coffee",
@@ -4613,7 +5023,11 @@
                   "name": "Irish / Baileys coffee"
                 }
               },
-              "staffCode": "#065"
+              "staffCode": "#065",
+              "referencePrice": 9,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "ice-coffee",
@@ -4656,7 +5070,11 @@
                   "name": "Jegeskávé"
                 }
               },
-              "staffCode": "#066"
+              "staffCode": "#066",
+              "referencePrice": 8,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -4732,7 +5150,11 @@
                   "name": "Römerquelle szénsavmentes 0,33 l"
                 }
               },
-              "staffCode": "#067"
+              "staffCode": "#067",
+              "referencePrice": 3,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "romerquelle-gazirana-033",
@@ -4773,7 +5195,11 @@
                   "name": "Römerquelle szénsavas 0,33 l"
                 }
               },
-              "staffCode": "#068"
+              "staffCode": "#068",
+              "referencePrice": 3,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "romerquelle-negazirana-075",
@@ -4814,7 +5240,11 @@
                   "name": "Römerquelle szénsavmentes 0,75 l"
                 }
               },
-              "staffCode": "#069"
+              "staffCode": "#069",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "romerquelle-gazirana-075",
@@ -4855,7 +5285,11 @@
                   "name": "Römerquelle szénsavas 0,75 l"
                 }
               },
-              "staffCode": "#070"
+              "staffCode": "#070",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "romerquelle-limunska-trava",
@@ -4896,7 +5330,11 @@
                   "name": "Römerquelle citromfű"
                 }
               },
-              "staffCode": "#071"
+              "staffCode": "#071",
+              "referencePrice": 3.2,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -4972,7 +5410,11 @@
                   "name": "Coca-Cola 0,25 l"
                 }
               },
-              "staffCode": "#072"
+              "staffCode": "#072",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "coca-cola-zero-025",
@@ -5013,7 +5455,11 @@
                   "name": "Coca-Cola Zero 0,25 l"
                 }
               },
-              "staffCode": "#073"
+              "staffCode": "#073",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "fanta-025",
@@ -5054,7 +5500,11 @@
                   "name": "Fanta 0,25 l"
                 }
               },
-              "staffCode": "#074"
+              "staffCode": "#074",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "fanta-lemon-025",
@@ -5095,7 +5545,11 @@
                   "name": "Fanta Lemon 0,25 l"
                 }
               },
-              "staffCode": "#075"
+              "staffCode": "#075",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "sprite-025",
@@ -5136,7 +5590,11 @@
                   "name": "Sprite 0,25 l"
                 }
               },
-              "staffCode": "#076"
+              "staffCode": "#076",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "schweppes-tonic-025",
@@ -5177,7 +5635,11 @@
                   "name": "Schweppes Tonic 0,25 l"
                 }
               },
-              "staffCode": "#077"
+              "staffCode": "#077",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "schweppes-bitter-lemon-025",
@@ -5218,7 +5680,11 @@
                   "name": "Schweppes Bitter Lemon 0,25 l"
                 }
               },
-              "staffCode": "#078"
+              "staffCode": "#078",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "schweppes-tangerina-025",
@@ -5259,7 +5725,11 @@
                   "name": "Schweppes Tangerina 0,25 l"
                 }
               },
-              "staffCode": "#079"
+              "staffCode": "#079",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "schweppes-cherry-025",
@@ -5300,7 +5770,11 @@
                   "name": "Schweppes Cherry 0,25 l"
                 }
               },
-              "staffCode": "#080"
+              "staffCode": "#080",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "thomas-henry-spicy-ginger-beer-020",
@@ -5341,7 +5815,11 @@
                   "name": "Thomas Henry Spicy Ginger Beer 0,20 l"
                 }
               },
-              "staffCode": "#081"
+              "staffCode": "#081",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -5417,7 +5895,11 @@
                   "name": "Cedevita citrom"
                 }
               },
-              "staffCode": "#082"
+              "staffCode": "#082",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "cedevita-naranca",
@@ -5458,7 +5940,11 @@
                   "name": "Cedevita narancs"
                 }
               },
-              "staffCode": "#083"
+              "staffCode": "#083",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "limunada",
@@ -5499,7 +5985,11 @@
                   "name": "Limonádé"
                 }
               },
-              "staffCode": "#084"
+              "staffCode": "#084",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "narancada",
@@ -5540,7 +6030,11 @@
                   "name": "Narancslé"
                 }
               },
-              "staffCode": "#085"
+              "staffCode": "#085",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "hidra-limun-050",
@@ -5581,7 +6075,11 @@
                   "name": "Hidra ISO citrom 0,50 l"
                 }
               },
-              "staffCode": "#086"
+              "staffCode": "#086",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "hidra-naranca-050",
@@ -5622,7 +6120,11 @@
                   "name": "Hidra ISO narancs 0,50 l"
                 }
               },
-              "staffCode": "#087"
+              "staffCode": "#087",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "ledeni-caj-breskva",
@@ -5663,7 +6165,11 @@
                   "name": "Jeges tea őszibarack"
                 }
               },
-              "staffCode": "#088"
+              "staffCode": "#088",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "ledeni-caj-sumsko-voce",
@@ -5704,7 +6210,11 @@
                   "name": "Jeges tea erdei gyümölcs"
                 }
               },
-              "staffCode": "#089"
+              "staffCode": "#089",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "somersby-00-jagoda-limeta",
@@ -5745,7 +6255,11 @@
                   "name": "Somersby 0.0 eper-lime"
                 }
               },
-              "staffCode": "#090"
+              "staffCode": "#090",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pago-jabuka-020",
@@ -5786,7 +6300,11 @@
                   "name": "Pago alma 0,20 l"
                 }
               },
-              "staffCode": "#091"
+              "staffCode": "#091",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pago-naranca-020",
@@ -5827,7 +6345,11 @@
                   "name": "Pago narancs 0,20 l"
                 }
               },
-              "staffCode": "#092"
+              "staffCode": "#092",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pago-visnja-020",
@@ -5868,7 +6390,11 @@
                   "name": "Pago meggy 0,20 l"
                 }
               },
-              "staffCode": "#093"
+              "staffCode": "#093",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pago-marelica-020",
@@ -5909,7 +6435,11 @@
                   "name": "Pago sárgabarack 0,20 l"
                 }
               },
-              "staffCode": "#094"
+              "staffCode": "#094",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pago-ananas-020",
@@ -5950,7 +6480,11 @@
                   "name": "Pago ananász 0,20 l"
                 }
               },
-              "staffCode": "#095"
+              "staffCode": "#095",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pago-crni-ribiz-020",
@@ -5991,7 +6525,11 @@
                   "name": "Pago fekete ribizli 0,20 l"
                 }
               },
-              "staffCode": "#096"
+              "staffCode": "#096",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -6069,7 +6607,11 @@
                   "name": "Pan csapolt 0,30 l"
                 }
               },
-              "staffCode": "#097"
+              "staffCode": "#097",
+              "referencePrice": 3,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pan-toceni-050",
@@ -6112,7 +6654,11 @@
                   "name": "Pan csapolt 0,50 l"
                 }
               },
-              "staffCode": "#098"
+              "staffCode": "#098",
+              "referencePrice": 4.5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pan-zlatni-033",
@@ -6155,7 +6701,11 @@
                   "name": "Pan Zlatni 0,33 l"
                 }
               },
-              "staffCode": "#099"
+              "staffCode": "#099",
+              "referencePrice": 4.5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "carlsberg-033",
@@ -6198,7 +6748,11 @@
                   "name": "Carlsberg 0,33 l"
                 }
               },
-              "staffCode": "#100"
+              "staffCode": "#100",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "tuborg-033",
@@ -6241,7 +6795,11 @@
                   "name": "Tuborg 0,33 l"
                 }
               },
-              "staffCode": "#101"
+              "staffCode": "#101",
+              "referencePrice": 4.5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pan-radler-050",
@@ -6284,7 +6842,11 @@
                   "name": "Pan Radler 0,50 l"
                 }
               },
-              "staffCode": "#102"
+              "staffCode": "#102",
+              "referencePrice": 4.5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pan-bezalkoholni-033",
@@ -6327,7 +6889,11 @@
                   "name": "Pan alkoholmentes 0,33 l"
                 }
               },
-              "staffCode": "#103"
+              "staffCode": "#103",
+              "referencePrice": 4.5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "budweiser-dark-050",
@@ -6370,7 +6936,11 @@
                   "name": "Budweiser Dark 0,50 l"
                 }
               },
-              "staffCode": "#104"
+              "staffCode": "#104",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "somersby-jabuka",
@@ -6411,7 +6981,11 @@
                   "name": "Somersby alma"
                 }
               },
-              "staffCode": "#105"
+              "staffCode": "#105",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "somersby-kruska",
@@ -6452,7 +7026,11 @@
                   "name": "Somersby körte"
                 }
               },
-              "staffCode": "#106"
+              "staffCode": "#106",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -6530,7 +7108,11 @@
                   "name": "Radla 0,30 l"
                 }
               },
-              "staffCode": "#107"
+              "staffCode": "#107",
+              "referencePrice": 3,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "radla-050",
@@ -6573,7 +7155,11 @@
                   "name": "Radla 0,50 l"
                 }
               },
-              "staffCode": "#108"
+              "staffCode": "#108",
+              "referencePrice": 4.5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "mis-mas-030",
@@ -6616,7 +7202,11 @@
                   "name": "Miš-maš 0,30 l"
                 }
               },
-              "staffCode": "#109"
+              "staffCode": "#109",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "mis-mas-050",
@@ -6659,7 +7249,11 @@
                   "name": "Miš-maš 0,50 l"
                 }
               },
-              "staffCode": "#110"
+              "staffCode": "#110",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "gemist-020",
@@ -6702,7 +7296,11 @@
                   "name": "Gemišt 0,20 l"
                 }
               },
-              "staffCode": "#111"
+              "staffCode": "#111",
+              "referencePrice": 3.2,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "bambus-030",
@@ -6745,7 +7343,11 @@
                   "name": "Bambus 0,30 l"
                 }
               },
-              "staffCode": "#112"
+              "staffCode": "#112",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "bambus-050",
@@ -6788,7 +7390,11 @@
                   "name": "Bambus 0,50 l"
                 }
               },
-              "staffCode": "#113"
+              "staffCode": "#113",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "turska-kola",
@@ -6829,7 +7435,11 @@
                   "name": "Török kóla"
                 }
               },
-              "staffCode": "#114"
+              "staffCode": "#114",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -6943,7 +7553,11 @@
                   "name": "Malvazija 1 dcl"
                 }
               },
-              "staffCode": "#115"
+              "staffCode": "#115",
+              "referencePrice": 2.2,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "peljesac-1dcl",
@@ -6986,7 +7600,11 @@
                   "name": "Pelješac 1 dcl"
                 }
               },
-              "staffCode": "#116"
+              "staffCode": "#116",
+              "referencePrice": 2.2,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "rose-benkovac-1dcl",
@@ -7029,7 +7647,11 @@
                   "name": "Rosé Benkovac 1 dcl"
                 }
               },
-              "staffCode": "#117"
+              "staffCode": "#117",
+              "referencePrice": 2.2,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "zlatan-plavac-1dcl",
@@ -7072,7 +7694,11 @@
                   "name": "Zlatan Plavac 1 dcl"
                 }
               },
-              "staffCode": "#118"
+              "staffCode": "#118",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "zlatan-posip-1dcl",
@@ -7115,7 +7741,11 @@
                   "name": "Zlatan Pošip 1 dcl"
                 }
               },
-              "staffCode": "#119"
+              "staffCode": "#119",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "galic-rose-1dcl",
@@ -7158,7 +7788,11 @@
                   "name": "Galić Rosé 1 dcl"
                 }
               },
-              "staffCode": "#120"
+              "staffCode": "#120",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "dalmatinski-prosek-1dcl",
@@ -7201,7 +7835,11 @@
                   "name": "Dalmát prošek 1 dcl"
                 }
               },
-              "staffCode": "#121"
+              "staffCode": "#121",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "muskat-bric-1dcl",
@@ -7244,7 +7882,11 @@
                   "name": "Muškat BRIČ 1 dcl"
                 }
               },
-              "staffCode": "#122"
+              "staffCode": "#122",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -7322,7 +7964,11 @@
                   "name": "Zlatan Pošip 0,75 l"
                 }
               },
-              "staffCode": "#123"
+              "staffCode": "#123",
+              "referencePrice": 32,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "galic-sauvignon-blanc-075",
@@ -7365,7 +8011,11 @@
                   "name": "Galić Sauvignon Blanc 0,75 l"
                 }
               },
-              "staffCode": "#124"
+              "staffCode": "#124",
+              "referencePrice": 35,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "muskat-bric-075",
@@ -7408,7 +8058,11 @@
                   "name": "Muškat BRIČ 0,75 l"
                 }
               },
-              "staffCode": "#125"
+              "staffCode": "#125",
+              "referencePrice": 35,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "korta-katarina-rose-075",
@@ -7451,7 +8105,11 @@
                   "name": "Korta Katarina Rosé 0,75 l"
                 }
               },
-              "staffCode": "#126"
+              "staffCode": "#126",
+              "referencePrice": 40,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "zlatan-plavac-075",
@@ -7494,7 +8152,11 @@
                   "name": "Zlatan Plavac 0,75 l"
                 }
               },
-              "staffCode": "#127"
+              "staffCode": "#127",
+              "referencePrice": 35,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "zlatan-crljenak-075",
@@ -7537,7 +8199,11 @@
                   "name": "Zlatan Crljenak 0,75 l"
                 }
               },
-              "staffCode": "#128"
+              "staffCode": "#128",
+              "referencePrice": 40,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -7615,7 +8281,11 @@
                   "name": "Prosecco 1 dcl"
                 }
               },
-              "staffCode": "#129"
+              "staffCode": "#129",
+              "referencePrice": 7,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "prosecco-075",
@@ -7658,7 +8328,11 @@
                   "name": "Prosecco 0,75 l"
                 }
               },
-              "staffCode": "#130"
+              "staffCode": "#130",
+              "referencePrice": 40,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -7734,7 +8408,11 @@
                   "name": "Pelinkovac Dalmacija"
                 }
               },
-              "staffCode": "#131"
+              "staffCode": "#131",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "pelinkovac-antik",
@@ -7775,7 +8453,11 @@
                   "name": "Pelinkovac Antique"
                 }
               },
-              "staffCode": "#132"
+              "staffCode": "#132",
+              "referencePrice": 5.5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "sibenska-travarica",
@@ -7816,7 +8498,11 @@
                   "name": "Šibenska travarica"
                 }
               },
-              "staffCode": "#133"
+              "staffCode": "#133",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "williams-viljamovka",
@@ -7857,7 +8543,11 @@
                   "name": "Williams viljamovka"
                 }
               },
-              "staffCode": "#134"
+              "staffCode": "#134",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "maraska-visnjevac",
@@ -7898,7 +8588,11 @@
                   "name": "Maraska meggylikőr"
                 }
               },
-              "staffCode": "#135"
+              "staffCode": "#135",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "maraska-orahovac",
@@ -7939,7 +8633,11 @@
                   "name": "Maraska diólikőr"
                 }
               },
-              "staffCode": "#136"
+              "staffCode": "#136",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "teranino-korlat",
@@ -7980,7 +8678,11 @@
                   "name": "Teranino Korlat"
                 }
               },
-              "staffCode": "#137"
+              "staffCode": "#137",
+              "referencePrice": 5.5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "dalmatinski-prosek",
@@ -8023,7 +8725,11 @@
                   "name": "Dalmát prošek"
                 }
               },
-              "staffCode": "#138"
+              "staffCode": "#138",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "jagermeister",
@@ -8064,7 +8770,11 @@
                   "name": "Jägermeister"
                 }
               },
-              "staffCode": "#139"
+              "staffCode": "#139",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "limoncello",
@@ -8105,7 +8815,11 @@
                   "name": "Limoncello"
                 }
               },
-              "staffCode": "#140"
+              "staffCode": "#140",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "baileys",
@@ -8148,7 +8862,11 @@
                   "name": "Baileys"
                 }
               },
-              "staffCode": "#141"
+              "staffCode": "#141",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "aperol",
@@ -8189,7 +8907,11 @@
                   "name": "Aperol"
                 }
               },
-              "staffCode": "#142"
+              "staffCode": "#142",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "campari",
@@ -8230,7 +8952,11 @@
                   "name": "Campari"
                 }
               },
-              "staffCode": "#143"
+              "staffCode": "#143",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "martini-bianco",
@@ -8273,7 +8999,11 @@
                   "name": "Martini Bianco"
                 }
               },
-              "staffCode": "#144"
+              "staffCode": "#144",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "martini-rosso",
@@ -8316,7 +9046,11 @@
                   "name": "Martini Rosso"
                 }
               },
-              "staffCode": "#145"
+              "staffCode": "#145",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -8392,7 +9126,11 @@
                   "name": "Jameson"
                 }
               },
-              "staffCode": "#146"
+              "staffCode": "#146",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "jim-beam",
@@ -8433,7 +9171,11 @@
                   "name": "Jim Beam"
                 }
               },
-              "staffCode": "#147"
+              "staffCode": "#147",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "hennessy",
@@ -8474,7 +9216,11 @@
                   "name": "Hennessy"
                 }
               },
-              "staffCode": "#148"
+              "staffCode": "#148",
+              "referencePrice": 8,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "smirnoff-vodka",
@@ -8515,7 +9261,11 @@
                   "name": "Smirnoff Vodka"
                 }
               },
-              "staffCode": "#149"
+              "staffCode": "#149",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "sierra-tequila",
@@ -8556,7 +9306,11 @@
                   "name": "Sierra Tequila"
                 }
               },
-              "staffCode": "#150"
+              "staffCode": "#150",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "bacardi-white",
@@ -8597,7 +9351,11 @@
                   "name": "Bacardi White"
                 }
               },
-              "staffCode": "#151"
+              "staffCode": "#151",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "bacardi-black",
@@ -8638,7 +9396,11 @@
                   "name": "Bacardi Black"
                 }
               },
-              "staffCode": "#152"
+              "staffCode": "#152",
+              "referencePrice": 5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "malibu",
@@ -8679,7 +9441,11 @@
                   "name": "Malibu"
                 }
               },
-              "staffCode": "#153"
+              "staffCode": "#153",
+              "referencePrice": 6,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -8755,7 +9521,11 @@
                   "name": "SAX Gin"
                 }
               },
-              "staffCode": "#154"
+              "staffCode": "#154",
+              "referencePrice": 4,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "bulldog-gin",
@@ -8796,7 +9566,11 @@
                   "name": "Bulldog Gin"
                 }
               },
-              "staffCode": "#155"
+              "staffCode": "#155",
+              "referencePrice": 5.5,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "hendricks-gin",
@@ -8837,7 +9611,11 @@
                   "name": "Hendrick’s Gin"
                 }
               },
-              "staffCode": "#156"
+              "staffCode": "#156",
+              "referencePrice": 7,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -8923,7 +9701,11 @@
                   "description": "Aperol, prosecco, szóda, narancs"
                 }
               },
-              "staffCode": "#157"
+              "staffCode": "#157",
+              "referencePrice": 11,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "hugo",
@@ -8974,7 +9756,11 @@
                   "description": "prosecco, bodza, szóda, lime, menta"
                 }
               },
-              "staffCode": "#158"
+              "staffCode": "#158",
+              "referencePrice": 12,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "mojito",
@@ -9023,7 +9809,11 @@
                   "description": "fehér rum, lime, menta, cukorszirup, szóda"
                 }
               },
-              "staffCode": "#159"
+              "staffCode": "#159",
+              "referencePrice": 13,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "gin-tonic",
@@ -9072,7 +9862,11 @@
                   "description": "gin, tonic, citrusok"
                 }
               },
-              "staffCode": "#160"
+              "staffCode": "#160",
+              "referencePrice": 10,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "cuba-libre",
@@ -9121,7 +9915,11 @@
                   "description": "rum, Coca-Cola, lime"
                 }
               },
-              "staffCode": "#161"
+              "staffCode": "#161",
+              "referencePrice": 11,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "moscow-mule",
@@ -9170,7 +9968,11 @@
                   "description": "vodka, fűszeres gyömbérsör, lime"
                 }
               },
-              "staffCode": "#162"
+              "staffCode": "#162",
+              "referencePrice": 15,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "espresso-martini",
@@ -9221,7 +10023,11 @@
                   "description": "vodka, Kahlúa, espresso"
                 }
               },
-              "staffCode": "#163"
+              "staffCode": "#163",
+              "referencePrice": 12,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "negroni",
@@ -9272,7 +10078,11 @@
                   "description": "gin, Campari, Martini Rosso"
                 }
               },
-              "staffCode": "#164"
+              "staffCode": "#164",
+              "referencePrice": 15,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "mojito-strawberry-passion",
@@ -9321,7 +10131,11 @@
                   "description": "fehér rum, lime, menta, eper vagy passiógyümölcs"
                 }
               },
-              "staffCode": "#165"
+              "staffCode": "#165",
+              "referencePrice": 15,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "limoncello-spritz",
@@ -9372,7 +10186,11 @@
                   "description": "limoncello, prosecco, szóda, citrusok"
                 }
               },
-              "staffCode": "#166"
+              "staffCode": "#166",
+              "referencePrice": 11,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "london-mule",
@@ -9421,7 +10239,11 @@
                   "description": "gin, fűszeres gyömbérsör, lime"
                 }
               },
-              "staffCode": "#167"
+              "staffCode": "#167",
+              "referencePrice": 15,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             },
             {
               "id": "my-favourite-spritz",
@@ -9472,7 +10294,11 @@
                   "description": "Malibu, passiógyümölcs-püré, prosecco, citrusmix"
                 }
               },
-              "staffCode": "#168"
+              "staffCode": "#168",
+              "referencePrice": 14,
+              "referenceDate": "2026-09-10",
+              "isPromotional": false,
+              "promotionName": ""
             }
           ],
           "translations": {
@@ -9530,5 +10356,14 @@
         }
       }
     }
-  ]
+  ],
+  "breakfast": {
+    "id": "breakfast-buffet",
+    "name": "Doručak buffet · po osobi",
+    "price": 10,
+    "referencePrice": 10,
+    "referenceDate": "2026-09-10",
+    "isPromotional": false,
+    "promotionName": ""
+  }
 }

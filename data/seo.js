@@ -13,6 +13,7 @@ import {
 } from './site-config';
 import { getLocalizedItem, getLocalizedMenuText } from './translations';
 import { venueFacts } from './venue-facts';
+import { breakfastPrice } from './pricing';
 
 const localeMap = {
   hr: 'hr_HR',
@@ -293,7 +294,7 @@ export function buildBreakfastOfferSchema(locale = defaultLocale) {
     url,
     name: copy.title,
     description: `${copy.intro} ${copy.inclusionsTitle}: ${inclusionText}.`,
-    price: 10,
+    price: breakfastPrice.price,
     priceCurrency: 'EUR',
     availability: 'https://schema.org/InStock',
     businessFunction: 'https://schema.org/Sell',

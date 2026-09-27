@@ -5,6 +5,7 @@ import {
 } from './announcements';
 import { getLocalizedPath, siteConfig } from './site-config';
 import { venueFacts } from './venue-facts';
+import { getPriceCopy } from '../menu/price-copy.mjs';
 
 const navLinks = [
   { key: 'about', routeKey: 'home', hash: '#about' },
@@ -78,6 +79,8 @@ export function getPageChrome(locale, routeKey = 'home', articleKey = null) {
     languageSelectorLabel: t.ui.languageSelector,
     header: buildHeader(locale, routeKey),
     footer: {
+      pricesHref: getLocalizedPath(locale, 'prices'),
+      pricesLabel: getPriceCopy(locale).title,
       labels: t.footer,
       googleMapsUrl: venueFacts.googleMapsUrl,
       fullAddress: venueFacts.fullAddress,

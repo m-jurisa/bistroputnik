@@ -28,6 +28,8 @@
 
   <script type="module">
     import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES, getUiLabel } from "./ui-translations.js";
+    import { formatEuro, formatReferenceDate, validatePrice } from "./pricing.mjs";
+    import { getPriceCopy } from "./price-copy.mjs";
 
     const root = document.getElementById("menu-root");
     const languageSelector = document.getElementById("language-selector");
@@ -215,6 +217,7 @@
     }
 
     function renderMenuItem(item) {
+      validatePrice(item);
       const name = getLocalizedText(item, "name", activeLanguage);
       const description = getOptionalText(item, "description", activeLanguage);
       const price = formatPrice(item, activeLanguage);
@@ -234,7 +237,7 @@
             ${description ? `<p class="item-description">${escapeHtml(description)}</p>` : ""}
             ${allergenMarkup}
           </div>
-          ${price ? `<div class="price">${escapeHtml(price)}</div>` : ""}
+          ${price ? `<div class="price">${escapeHtml(formatEuro(item.price, activeLanguage))}<div class="reference-price">${escapeHtml(getPriceCopy(activeLanguage).reference)} ${escapeHtml(formatReferenceDate(item.referenceDate, activeLanguage))}<strong>${escapeHtml(formatEuro(item.referencePrice, activeLanguage))}</strong></div></div>` : ""}
         </article>
       `;
     }
@@ -242,7 +245,7 @@
     function renderSection(section) {
       const title = getLocalizedText(section, "title", activeLanguage);
       const note = getOptionalText(section, "note", activeLanguage);
-      const items = sortByOrder(section.items || []);
+      const items = sortByOrder(section.items || []).filter(item => item.isAvailable !== false);
       const isWide = section.layout === "wide-grid" || items.length > 6;
       const noteOnly = section.layout === "divider" || (!items.length && note);
 

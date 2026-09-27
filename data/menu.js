@@ -40,6 +40,8 @@ function normalizeItem(item) {
     name: item.name,
     description: item.description,
     price: item.price,
+    referencePrice: item.referencePrice,
+    referenceDate: item.referenceDate,
     priceDisplay: normalizePrice(item),
     staffCode: item.staffCode || null,
     allergens: item.allergens || [],
@@ -78,7 +80,7 @@ function normalizeSection(section) {
     allergens: section.allergens || [],
     translations: section.translations || null,
     sortOrder: section.sortOrder ?? 0,
-    items: sortByOrder(section.items).map(normalizeItem),
+    items: sortByOrder(section.items).filter(item => item.isAvailable !== false).map(normalizeItem),
   };
 }
 
@@ -147,6 +149,8 @@ function localizeMenuItem(item, locale) {
     name: localized.name,
     description: localized.description,
     price: item.price,
+    referencePrice: item.referencePrice,
+    referenceDate: item.referenceDate,
     priceDisplay: item.priceDisplay,
     staffCode: item.staffCode,
     priceMin: item.priceMin,

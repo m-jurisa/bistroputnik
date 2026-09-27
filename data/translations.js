@@ -42,7 +42,7 @@ export const translations = {
         'Hrvatska obalna kuhinja, pažljivo odabrana pića i miran večernji ritam na Makarskoj rivijeri.',
       cta: 'Pogledaj jelovnik',
       marendaCta: 'Pogledaj marendu',
-      breakfastCta: 'Doručak 10 €',
+      breakfastCta: 'Doručak',
     },
     about: {
       eyebrow: 'Baška Voda',
@@ -124,7 +124,7 @@ export const translations = {
         'Croatian coastal cooking, a careful bar, and an easy evening rhythm on the Makarska Riviera.',
       cta: 'View Menu',
       marendaCta: 'View Daily Lunch',
-      breakfastCta: 'Breakfast €10',
+      breakfastCta: 'Breakfast',
     },
     about: {
       eyebrow: 'Baška Voda',
@@ -206,7 +206,7 @@ export const translations = {
         'Horvát tengerparti konyha, gondosan összeállított italválaszték és nyugodt esti ritmus a Makarska-riviérán.',
       cta: 'Étlap megtekintése',
       marendaCta: 'Marenda megtekintése',
-      breakfastCta: 'Reggeli 10 €',
+      breakfastCta: 'Reggeli',
     },
     about: {
       eyebrow: 'Baška Voda',
@@ -288,7 +288,7 @@ export const translations = {
         'Kroatisk kustmat, en omsorgsfull bar och en lugn kvällsrytm vid Makarska rivieran.',
       cta: 'Visa meny',
       marendaCta: 'Visa dagens lunch',
-      breakfastCta: 'Frukost 10 €',
+      breakfastCta: 'Frukost',
     },
     about: {
       eyebrow: 'Baška Voda',
@@ -370,7 +370,7 @@ export const translations = {
         'Kroatialaista rannikkoruokaa, huolella koottu juomavalikoima ja rauhallinen iltatunnelma Makarskan rivieralla.',
       cta: 'Katso menu',
       marendaCta: 'Katso päivän lounas',
-      breakfastCta: 'Aamiainen 10 €',
+      breakfastCta: 'Aamiainen',
     },
     about: {
       eyebrow: 'Baška Voda',
@@ -452,7 +452,7 @@ export const translations = {
         'Kroatisk kystmat, en nøye utvalgt bar og en rolig kveldsrytme på Makarska-rivieraen.',
       cta: 'Se menyen',
       marendaCta: 'Se dagens lunsj',
-      breakfastCta: 'Frokost 10 €',
+      breakfastCta: 'Frokost',
     },
     about: {
       eyebrow: 'Baška Voda',
@@ -534,7 +534,7 @@ export const translations = {
         'Chorwacka kuchnia wybrzeża, starannie dobrany bar i spokojny wieczorny rytm Riwiery Makarskiej.',
       cta: 'Zobacz menu',
       marendaCta: 'Zobacz lunch dnia',
-      breakfastCta: 'Śniadanie 10 €',
+      breakfastCta: 'Śniadanie',
     },
     about: {
       eyebrow: 'Baška Voda',
@@ -616,7 +616,7 @@ export const translations = {
         'Kroatische Küstenküche, eine sorgfältig kuratierte Bar und ein ruhiger Abendrhythmus an der Makarska Riviera.',
       cta: 'Speisekarte ansehen',
       marendaCta: 'Mittagstisch ansehen',
-      breakfastCta: 'Frühstück 10 €',
+      breakfastCta: 'Frühstück',
     },
     about: {
       eyebrow: 'Baška Voda',
@@ -698,7 +698,7 @@ export const translations = {
         'Kroatisk kystkøkken, en nøje udvalgt bar og en rolig aftenrytme på Makarska-rivieraen.',
       cta: 'Se menu',
       marendaCta: 'Se dagens frokost',
-      breakfastCta: 'Morgenmad 10 €',
+      breakfastCta: 'Morgenmad',
     },
     about: {
       eyebrow: 'Baška Voda',

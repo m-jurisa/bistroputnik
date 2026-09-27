@@ -454,3 +454,13 @@ body {
     margin: 0;
   }
 }
+/* Dated comparison prices stay adjacent to each current price, including in print. */
+.price-pair { display: inline-flex; flex-direction: column; gap: .4rem; font-variant-numeric: tabular-nums; max-width: 100%; }
+.price-current { color: #e4c995; font-size: 1rem; font-weight: 600; white-space: nowrap; }
+.price-current-prominent { font-family: var(--font-cormorant), serif; font-size: 2.6rem; line-height: 1.05; }
+.price-reference { color: #cdd8d9; font-size: .75rem; font-weight: 400; line-height: 1.5; }
+.price-reference-value { display: block; font-weight: 600; }
+.menu-price { text-align: right; min-width: 8rem; }
+[hidden] { display: none !important; }
+@media (max-width: 639px) { .menu-price { text-align: left; } }
+@media print { .price-current, .price-reference { color: #103f4d !important; } .price-downloads { display: none !important; } }

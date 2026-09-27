@@ -3,6 +3,10 @@ import Footer from './Footer';
 import Header from './Header';
 import LanguageSelector from './LanguageSelector';
 import LogoLockupPlaceholder from './LogoLockupPlaceholder';
+import Price from './Price';
+import PriceDownloads from './PriceDownloads';
+import { getPriceCopy } from '../menu/price-copy.mjs';
+import { restaurantDate, formatReferenceDate } from '../menu/pricing.mjs';
 
 function getMarendaCopy(data, language) {
   return (
@@ -34,13 +38,17 @@ function getLocalizedDish(dish, marenda, language) {
 
   return {
     id: dish.id,
+    tierName: dish.tierName,
+    price: dish.price,
+    referencePrice: dish.referencePrice,
+    referenceDate: dish.referenceDate,
     staffCode: dish.staffCode,
     title: translation?.name || dish.name || baseTranslation?.name,
     description:
       translation?.description ||
       dish.description ||
       baseTranslation?.description,
-    price: formatDishPrice(dish, marenda.price),
+    priceDisplay: formatDishPrice(dish, marenda.price),
     allergens: Array.isArray(dish.allergens) ? dish.allergens : [],
   };
 }
@@ -100,7 +108,9 @@ function RestaurantDateText({ timeZone, prefix = '' }) {
       data-restaurant-date=""
       data-time-zone={timeZone}
       data-prefix={prefix}
-    />
+    >
+      {prefix}{new Intl.DateTimeFormat('hr-HR', { timeZone, day: '2-digit', month: '2-digit', year: '2-digit' }).format(new Date()).replaceAll(' ', '').replace(/\.$/, '')}
+    </span>
   );
 }
 
@@ -125,6 +135,8 @@ export default function MarendaPageContent({ business, marenda, chrome }) {
   const printOfferLabel = chrome.marenda.printOffer || 'Print offer';
   const venueLabel = business.venue || 'Bistro Putnik · Baška Voda';
   const dailyOfferLabel = getDailyOfferLabel(marenda, language);
+  const priceCopy = getPriceCopy(language);
+  const isCurrent = marenda.offerDate === restaurantDate() && dishes.length > 0;
 
   return (
     <div className="marenda-page relative min-h-svh overflow-hidden">
@@ -159,10 +171,7 @@ export default function MarendaPageContent({ business, marenda, chrome }) {
               {dailyOfferLabel ? (
                 <p className="fine-print text-brand-sand">
                   {dailyOfferLabel}
-                  <RestaurantDateText
-                    timeZone={marenda.timeZone}
-                    prefix=" · "
-                  />
+                  {' · '}<RestaurantDateText timeZone="Europe/Zagreb" />
                 </p>
               ) : null}
               <p className="mx-auto max-w-2xl text-balance text-base leading-7 text-[#e8e3da] sm:text-lg sm:leading-8">
@@ -171,7 +180,12 @@ export default function MarendaPageContent({ business, marenda, chrome }) {
               <BrandDivider className="mx-auto w-full max-w-sm" />
             </div>
 
-            <div className="panel-surface w-full max-w-2xl p-6 text-left sm:p-8">
+            <div data-daily-stale="" data-offer-date={marenda.offerDate} data-offer-active={dishes.length > 0} hidden={isCurrent} className="panel-surface w-full max-w-2xl p-6 sm:p-8">
+              <p className="body-copy">{priceCopy.stale}</p>
+              <a className="brand-button mt-5" href={`tel:${business.phone.replace(/[^+\d]/g, '')}`}>{business.phone}</a>
+            </div>
+            <div data-daily-current="" data-offer-date={marenda.offerDate} data-offer-active={dishes.length > 0} hidden={!isCurrent} className="w-full space-y-6">
+            <div className="panel-surface mx-auto w-full max-w-2xl p-6 text-left sm:p-8">
               <p className="fine-print">{copy.dishLabel}</p>
               <ol className="mt-4 grid gap-5">
                 {dishes.map((dish) => (
@@ -180,6 +194,7 @@ export default function MarendaPageContent({ business, marenda, chrome }) {
                     className="grid gap-4 border-t border-brand-line/20 pt-5 first:border-t-0 first:pt-0 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-6"
                   >
                     <div className="min-w-0">
+                      <p className="fine-print mb-2">{dish.tierName}</p>
                       <h2 className="font-display text-3xl leading-none text-brand-sand sm:text-4xl">
                         {dish.staffCode ? (
                           <span className="mr-2 inline-flex rounded-full border border-brand-line/25 px-2 py-0.5 align-middle font-sans text-[0.62rem] font-semibold leading-4 tracking-[0.08em] text-[#aebdc0]">
@@ -197,9 +212,7 @@ export default function MarendaPageContent({ business, marenda, chrome }) {
                     </div>
                     <div className="shrink-0 border-t border-brand-line/20 pt-3 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0 sm:text-right">
                       <p className="fine-print">{copy.priceLabel}</p>
-                      <p className="mt-2 text-2xl font-semibold tabular-nums text-[#f4eee0] sm:text-3xl">
-                        {dish.price || marenda.price}
-                      </p>
+                      <Price item={dish} locale={language} prominent className="mt-2" />
                     </div>
                   </li>
                 ))}
@@ -211,19 +224,22 @@ export default function MarendaPageContent({ business, marenda, chrome }) {
               ) : null}
             </div>
 
+            <PriceDownloads locale={language} daily />
+
             {copy.allergenNote ? (
-              <p className="max-w-2xl text-center text-xs leading-6 text-[#d8dfdf]/75">
+              <p className="mx-auto max-w-2xl text-center text-xs leading-6 text-[#d8dfdf]/75">
                 {copy.allergenNote}
               </p>
             ) : null}
 
-            <p className="body-copy max-w-2xl text-sm">{copy.explanation}</p>
+            <p className="body-copy mx-auto max-w-2xl text-sm">{copy.explanation}</p>
 
-            <div className="flex flex-col items-center gap-3 sm:flex-row">
+            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
               <PrintButton label={printOfferLabel} />
               <a href={chrome.header.homeHref} className="brand-button-secondary">
                 {chrome.marenda.backToHome}
               </a>
+            </div>
             </div>
 
             {copy.availabilityDisclaimer ? (
@@ -235,16 +251,13 @@ export default function MarendaPageContent({ business, marenda, chrome }) {
         </section>
       </main>
 
-      <section className="marenda-print-sheet" aria-label={printOfferLabel}>
+      <section className="marenda-print-sheet" aria-label={printOfferLabel} data-daily-current="" data-offer-date={marenda.offerDate} data-offer-active={dishes.length > 0} hidden={!isCurrent}>
         <header className="marenda-print-header">
           <p className="marenda-print-brand">{venueLabel}</p>
           {dailyOfferLabel ? (
             <p className="marenda-print-meta">
               {dailyOfferLabel}
-              <RestaurantDateText
-                timeZone={marenda.timeZone}
-                prefix=" · "
-              />
+              {' · '}<time dateTime={marenda.offerDate}>{formatReferenceDate(marenda.offerDate, language)}</time>
             </p>
           ) : null}
         </header>
@@ -266,6 +279,7 @@ export default function MarendaPageContent({ business, marenda, chrome }) {
                 className="marenda-print-item"
               >
                 <div>
+                  <p>{dish.tierName}</p>
                   <h2>
                     {dish.staffCode ? (
                       <span className="marenda-print-staff-code">{dish.staffCode}</span>
@@ -285,7 +299,7 @@ export default function MarendaPageContent({ business, marenda, chrome }) {
                 </div>
                 <div className="marenda-print-price-block">
                   <p>{copy.priceLabel}</p>
-                  <strong>{dish.price || marenda.price}</strong>
+                  <Price item={dish} locale={language} />
                 </div>
               </li>
             ))}

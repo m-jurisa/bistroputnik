@@ -12,7 +12,7 @@ import {
   buildWebsiteSchema,
 } from '../../data/seo';
 import { getAbsoluteUrl, getLocalizedPath, siteConfig } from '../../data/site-config';
-import marendaItemsData from '../../menu/marenda-items.json';
+import { dailyOffer } from '../../data/pricing';
 
 export const metadata = buildMetadata({ locale: 'en', routeKey: 'marenda' });
 
@@ -36,7 +36,7 @@ export default function MarendaPage() {
         business={menuData.business}
         marenda={{
           ...marendaConfig,
-          items: marendaItemsData.items,
+          ...dailyOffer,
         }}
         chrome={chrome}
       />

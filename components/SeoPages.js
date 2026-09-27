@@ -1,4 +1,6 @@
 import MenuBook from './MenuBook';
+import Price from './Price';
+import { breakfastPrice } from '../data/pricing';
 import ContactForm from './ContactForm';
 import ReservationEntry from './ReservationEntry';
 import ReservationForm from './ReservationForm';
@@ -296,9 +298,7 @@ function RecommendedMenuItems({ locale, items = [] }) {
                     </p>
                   ) : null}
                 </div>
-                <p className="shrink-0 text-sm font-semibold tabular-nums text-brand-sand">
-                  {item.priceDisplay}
-                </p>
+                <Price item={item} locale={locale} className="menu-price" />
               </div>
               {item.sectionTitle ? (
                 <p className="mt-4 fine-print">
@@ -414,9 +414,7 @@ export function BreakfastPage({ locale }) {
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-1">
                 <div>
                   <p className="fine-print">{copy.priceLabel}</p>
-                  <p className="mt-3 font-display text-5xl leading-none text-brand-sand">
-                    {copy.price}
-                  </p>
+                  <Price item={breakfastPrice} locale={locale} prominent className="mt-3" />
                 </div>
                 <div className="border-t border-brand-line/20 pt-6 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0 lg:border-l-0 lg:border-t lg:pl-0 lg:pt-6">
                   <p className="fine-print">{copy.timeLabel}</p>

@@ -1,5 +1,6 @@
 import LanguageSelector from './LanguageSelector';
 import MenuCategory from './MenuCategory';
+import PriceDownloads from './PriceDownloads';
 import { translations } from '../data/translations';
 
 function MenuPage({ page, pageIndex, labels }) {
@@ -109,8 +110,9 @@ export default function MenuBook({
         />
       </div>
 
+      <PriceDownloads locale={locale} />
       {pages.map((page, pageIndex) => (
-        <MenuPage key={page.id} page={page} pageIndex={pageIndex} labels={t.menu} />
+        <MenuPage key={page.id} page={page} pageIndex={pageIndex} labels={{ ...t.menu, locale }} />
       ))}
 
       <MenuNotices notices={notices} labels={t.menu} />

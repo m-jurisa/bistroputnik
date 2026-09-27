@@ -137,6 +137,9 @@ function pruneDirectory(directory) {
 }
 
 const result = pruneDirectory(outDir);
+// An old locally generated social story must not be copied into a new public build.
+const unusedStory = join(outDir, 'marenda-story.png');
+if (existsSync(unusedStory)) rmSync(unusedStory);
 const chunksDir = join(outDir, '_next', 'static', 'chunks');
 const removedChunkBytes = getDirectorySize(chunksDir);
 

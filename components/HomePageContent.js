@@ -1,4 +1,6 @@
 import ContactForm from './ContactForm';
+import Price from './Price';
+import { breakfastPrice } from '../data/pricing';
 import Footer from './Footer';
 import Header from './Header';
 import HeroSection from './HeroSection';
@@ -56,9 +58,7 @@ function BreakfastHomeCallout({ locale }) {
         <div className="grid gap-5 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
           <div className="border-t border-brand-line/25 pt-4">
             <p className="fine-print">{copy.priceLabel}</p>
-            <p className="mt-2 font-display text-4xl leading-none text-brand-sand">
-              {copy.price}
-            </p>
+            <Price item={breakfastPrice} locale={locale} prominent className="mt-2" />
           </div>
           <div className="border-t border-brand-line/25 pt-4">
             <p className="fine-print">{copy.timeLabel}</p>

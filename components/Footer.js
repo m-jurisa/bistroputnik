@@ -37,6 +37,9 @@ export default function Footer({ business, chrome }) {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:text-right">
+          <div className="sm:col-span-2">
+            <a href={chrome?.pricesHref} className="text-sm text-brand-sand underline underline-offset-4">{chrome?.pricesLabel}</a>
+          </div>
           <div>
             <p className="fine-print">{labels.location}</p>
             <a

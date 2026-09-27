@@ -1,138 +1,174 @@
 {
-"items": [
-  {
-    "id": "sataras",
-    "name": "Sataraš",
-    "description": "Domaći sataraš od paprike, rajčice i luka, lagano kuhan i poslužen kao zasitno dnevno jelo.",
-    "price": 12,
-    "priceDisplay": "12 €",
-    "allergens": [
-      "C"
-    ],
-    "translations": {
-      "en": {
-        "name": "Ratatouille",
-        "description": "Homemade ratatouille with peppers, tomatoes and onions, gently cooked and served as a hearty daily dish."
+  "items": [
+    {
+      "id": "musaka",
+      "name": "Musaka",
+      "description": "Domaća musaka od krumpira i mljevenog mesa, zapečena i poslužena kao zasitno dnevno jelo.",
+      "allergens": [
+        "J",
+        "M"
+      ],
+      "translations": {
+        "en": {
+          "name": "Moussaka",
+          "description": "Homemade moussaka with potatoes and minced meat, oven-baked and served as a hearty daily dish."
+        },
+        "sv": {
+          "name": "Moussaka",
+          "description": "Hemlagad moussaka med potatis och köttfärs, ugnsbakad och serverad som en mättande dagens rätt."
+        },
+        "fi": {
+          "name": "Moussaka",
+          "description": "Kotitekoinen moussaka perunoista ja jauhelihasta, uunissa paistettu ja tarjoiltu täyttävänä päivän annoksena."
+        },
+        "no": {
+          "name": "Moussaka",
+          "description": "Hjemmelaget moussaka med poteter og kjøttdeig, ovnsbakt og servert som en mettende dagens rett."
+        },
+        "pl": {
+          "name": "Musaka",
+          "description": "Domowa musaka z ziemniakami i mięsem mielonym, zapiekana i podawana jako sycące danie dnia."
+        },
+        "de": {
+          "name": "Moussaka",
+          "description": "Hausgemachte Moussaka mit Kartoffeln und Hackfleisch, überbacken und als sättigendes Tagesgericht serviert."
+        },
+        "da": {
+          "name": "Moussaka",
+          "description": "Hjemmelavet moussaka med kartofler og hakket kød, ovnbagt og serveret som en mættende dagens ret."
+        },
+        "hu": {
+          "name": "Muszaka",
+          "description": "Házi muszaka burgonyával és darált hússal, sütőben sütve, laktató napi fogásként tálalva."
+        }
       },
-      "sv": {
-        "name": "Ratatouille",
-        "description": "Hemlagad ratatouille med paprika, tomater och lök, varsamt tillagad och serverad som en mättande dagens rätt."
-      },
-      "fi": {
-        "name": "Ratatouille",
-        "description": "Kotitekoinen ratatouille paprikasta, tomaateista ja sipulista, miedosti kypsennetty ja tarjoiltu täyttävänä päivän annoksena."
-      },
-      "no": {
-        "name": "Ratatouille",
-        "description": "Hjemmelaget ratatouille med paprika, tomater og løk, skånsomt tilberedt og servert som en mettende dagens rett."
-      },
-      "pl": {
-        "name": "Ratatouille",
-        "description": "Domowe ratatouille z papryką, pomidorami i cebulą, delikatnie gotowane i podawane jako sycące danie dnia."
-      },
-      "de": {
-        "name": "Ratatouille",
-        "description": "Hausgemachte Ratatouille mit Paprika, Tomaten und Zwiebeln, schonend gekocht und als sättigendes Tagesgericht serviert."
-      },
-      "da": {
-        "name": "Ratatouille",
-        "description": "Hjemmelavet ratatouille med peberfrugt, tomater og løg, nænsomt tilberedt og serveret som en mættende dagens ret."
-      },
-      "hu": {
-        "name": "Ratatouille",
-        "description": "Házi ratatouille paprikával, paradicsommal és hagymával, lassan főzve és laktató napi fogásként tálalva."
-      }
+      "staffCode": "",
+      "tierId": "marenda-1"
     },
-    "staffCode": ""
+    {
+      "id": "gurmanska-pljeskavica",
+      "name": "Gurmanska pljeskavica",
+      "description": "Sočna gurmanska pljeskavica, bogato začinjena i pečena na roštilju, poslužena kao zasitno dnevno jelo.",
+      "allergens": [
+        "M"
+      ],
+      "translations": {
+        "en": {
+          "name": "Gourmet pljeskavica",
+          "description": "Juicy gourmet pljeskavica, richly seasoned and grilled, served as a hearty daily dish."
+        },
+        "sv": {
+          "name": "Gourmet-pljeskavica",
+          "description": "Saftig gourmet-pljeskavica, välkryddad och grillad, serverad som en mättande dagens rätt."
+        },
+        "fi": {
+          "name": "Gourmet-pljeskavica",
+          "description": "Mehevä ja runsaasti maustettu gourmet-pljeskavica, grillattuna ja tarjoiltuna täyttävänä päivän annoksena."
+        },
+        "no": {
+          "name": "Gourmet-pljeskavica",
+          "description": "Saftig gourmet-pljeskavica, godt krydret og grillet, servert som en mettende dagens rett."
+        },
+        "pl": {
+          "name": "Gurmeńska pljeskavica",
+          "description": "Soczysta, bogato doprawiona pljeskavica z grilla, podawana jako sycące danie dnia."
+        },
+        "de": {
+          "name": "Gourmet-Pljeskavica",
+          "description": "Saftige, kräftig gewürzte Pljeskavica vom Grill, als sättigendes Tagesgericht serviert."
+        },
+        "da": {
+          "name": "Gourmet-pljeskavica",
+          "description": "Saftig gourmet-pljeskavica, godt krydret og grillet, serveret som en mættende dagens ret."
+        },
+        "hu": {
+          "name": "Gourmet pljeskavica",
+          "description": "Szaftos, gazdagon fűszerezett pljeskavica, grillezve és laktató napi fogásként tálalva."
+        }
+      },
+      "staffCode": "",
+      "tierId": "marenda-4"
+    }
+  ],
+  "offerDate": "2026-09-27",
+  "tiers": [
+    {
+      "id": "marenda-1",
+      "name": "Marenda 1",
+      "price": 10,
+      "referencePrice": 11,
+      "referenceDate": "2026-09-10",
+      "isPromotional": false,
+      "promotionName": ""
+    },
+    {
+      "id": "marenda-2",
+      "name": "Marenda 2",
+      "price": 11,
+      "referencePrice": 11,
+      "referenceDate": "2026-09-10",
+      "isPromotional": false,
+      "promotionName": ""
+    },
+    {
+      "id": "marenda-3",
+      "name": "Marenda 3",
+      "price": 12,
+      "referencePrice": 12,
+      "referenceDate": "2026-09-10",
+      "isPromotional": false,
+      "promotionName": ""
+    },
+    {
+      "id": "marenda-4",
+      "name": "Marenda 4",
+      "price": 13,
+      "referencePrice": 13,
+      "referenceDate": "2026-09-10",
+      "isPromotional": false,
+      "promotionName": ""
+    },
+    {
+      "id": "marenda-5",
+      "name": "Marenda 5",
+      "price": 14,
+      "referencePrice": 14,
+      "referenceDate": "2026-09-10",
+      "isPromotional": false,
+      "promotionName": ""
+    },
+    {
+      "id": "marenda-6",
+      "name": "Marenda 6",
+      "price": 15,
+      "referencePrice": 15,
+      "referenceDate": "2026-09-10",
+      "isPromotional": false,
+      "promotionName": ""
+    }
+  ],
+  "priceHistory": {
+    "pileci-zabatak": {
+      "referencePrice": 11,
+      "referenceDate": "2026-09-10"
+    },
+    "zelene-tagliatelle-s-morskim-plodovima": {
+      "referencePrice": 12,
+      "referenceDate": "2026-09-10"
+    },
+    "pileci-becki": {
+      "referencePrice": 13,
+      "referenceDate": "2026-09-10"
+    },
+    "musaka": {
+      "referencePrice": 11,
+      "referenceDate": "2026-09-10"
+    },
+    "gurmanska-pljeskavica": {
+      "referencePrice": 13,
+      "referenceDate": "2026-09-10"
+    }
   },
-  {
-    "id": "grill-piletina",
-    "name": "Grill piletina",
-    "description": "Sočna piletina pečena na grillu i poslužena kao zasitno dnevno jelo.",
-    "price": 13,
-    "priceDisplay": "13 €",
-    "allergens": [],
-    "translations": {
-      "en": {
-        "name": "Grilled chicken",
-        "description": "Juicy grilled chicken, prepared and served as a hearty daily dish."
-      },
-      "sv": {
-        "name": "Grillad kyckling",
-        "description": "Saftig grillad kyckling, tillagad och serverad som en mättande dagens rätt."
-      },
-      "fi": {
-        "name": "Grillattu kana",
-        "description": "Mehevä grillattu kana, valmistettu ja tarjoiltu täyttävänä päivän annoksena."
-      },
-      "no": {
-        "name": "Grillet kylling",
-        "description": "Saftig grillet kylling, tilberedt og servert som en mettende dagens rett."
-      },
-      "pl": {
-        "name": "Grillowany kurczak",
-        "description": "Soczysty grillowany kurczak, przygotowany i podawany jako sycące danie dnia."
-      },
-      "de": {
-        "name": "Gegrilltes Hähnchen",
-        "description": "Saftiges gegrilltes Hähnchen, zubereitet und als sättigendes Tagesgericht serviert."
-      },
-      "da": {
-        "name": "Grillet kylling",
-        "description": "Saftig grillet kylling, tilberedt og serveret som en mættende dagens ret."
-      },
-      "hu": {
-        "name": "Grillezett csirke",
-        "description": "Szaftos grillezett csirke, laktató napi fogásként elkészítve és tálalva."
-      }
-    },
-    "staffCode": ""
-  },
-  {
-    "id": "spageti-bolognese",
-    "name": "Špageti Bolognese",
-    "description": "Špageti s domaćim bolognese umakom od mljevenog mesa i rajčice, posluženi kao zasitno dnevno jelo.",
-    "price": 11,
-    "priceDisplay": "11 €",
-    "allergens": [
-      "G",
-      "C"
-    ],
-    "translations": {
-      "en": {
-        "name": "Spaghetti Bolognese",
-        "description": "Spaghetti with homemade Bolognese sauce made with minced meat and tomatoes, served as a hearty daily dish."
-      },
-      "sv": {
-        "name": "Spaghetti Bolognese",
-        "description": "Spaghetti med hemlagad bolognesesås med köttfärs och tomat, serverad som en mättande dagens rätt."
-      },
-      "fi": {
-        "name": "Spaghetti Bolognese",
-        "description": "Spagettia kotitekoisella bolognesekastikkeella, jossa on jauhelihaa ja tomaattia, tarjoiltuna täyttävänä päivän annoksena."
-      },
-      "no": {
-        "name": "Spaghetti Bolognese",
-        "description": "Spaghetti med hjemmelaget bolognesesaus med kjøttdeig og tomat, servert som en mettende dagens rett."
-      },
-      "pl": {
-        "name": "Spaghetti Bolognese",
-        "description": "Spaghetti z domowym sosem bolońskim z mięsem mielonym i pomidorami, podawane jako sycące danie dnia."
-      },
-      "de": {
-        "name": "Spaghetti Bolognese",
-        "description": "Spaghetti mit hausgemachter Bolognese aus Hackfleisch und Tomaten, als sättigendes Tagesgericht serviert."
-      },
-      "da": {
-        "name": "Spaghetti Bolognese",
-        "description": "Spaghetti med hjemmelavet bolognesesauce med hakket kød og tomat, serveret som en mættende dagens ret."
-      },
-      "hu": {
-        "name": "Bolognai spagetti",
-        "description": "Spagetti házi bolognai szósszal, darált hússal és paradicsommal, laktató napi fogásként tálalva."
-      }
-    },
-    "staffCode": ""
-  }
-]
+  "contentHash": "5980b9c490ccfec2cf05abe87331ff7bbc0f88c2974d5f6977dd0d1440e2dec9",
+  "lastChangedAt": "2026-09-27T11:51:05.083Z"
 }

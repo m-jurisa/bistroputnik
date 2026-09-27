@@ -1,0 +1,768 @@
+{
+  "version": 1,
+  "venue": "U-01",
+  "publications": [
+    {
+      "kind": "full",
+      "sequence": 1,
+      "filename": "bistro_Naputica-14-21320-Baska-Voda_U-01_00001_2026-09-27_12-56-08_cjenik.csv",
+      "publishedAt": "2026-09-27T10:56:08.904Z",
+      "offerDate": "2026-09-27",
+      "rows": 179,
+      "sha256": "e9d69e82028b8d117ed9de1ba414cd24402660ee258c101eb268991f827a574c"
+    },
+    {
+      "kind": "daily",
+      "sequence": 2,
+      "filename": "bistro_Naputica-14-21320-Baska-Voda_U-01_00002_2026-09-27_12-56-08_marenda.csv",
+      "publishedAt": "2026-09-27T10:56:08.904Z",
+      "offerDate": "2026-09-27",
+      "rows": 3,
+      "sha256": "8043685ee885eaf886d892c9aaedeef8b5ed4d2ba6208221ad9dc2fb64ba35cb"
+    },
+    {
+      "kind": "full",
+      "sequence": 3,
+      "filename": "bistro_Naputica-14-21320-Baska-Voda_U-01_00003_2026-09-27_13-51-05_cjenik.csv",
+      "publishedAt": "2026-09-27T11:51:05.083Z",
+      "offerDate": "2026-09-27",
+      "rows": 175,
+      "sha256": "1f8a9bcdfb17c5a9434602aee2eeb3fbc3a059467e849fd7fba20306c86d3a55"
+    },
+    {
+      "kind": "daily",
+      "sequence": 4,
+      "filename": "bistro_Naputica-14-21320-Baska-Voda_U-01_00004_2026-09-27_13-51-05_marenda.csv",
+      "publishedAt": "2026-09-27T11:51:05.083Z",
+      "offerDate": "2026-09-27",
+      "rows": 2,
+      "sha256": "b6a7d48103089efe26c6504ae849fe11a84401b102cec43ce98af03fc3b2e647"
+    }
+  ],
+  "references": {
+    "slavonska-plata": [
+      "15.00",
+      "2026-09-10"
+    ],
+    "dalmatinska-plata": [
+      "17.00",
+      "2026-09-10"
+    ],
+    "krem-juha-od-rajcice": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "krem-juha-od-celera-i-kokosa": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "bistra-riblja-juha": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "bistra-goveda-juha": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "krem-juha-od-cvjetace": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "bolognese": [
+      "13.00",
+      "2026-09-10"
+    ],
+    "carbonara": [
+      "13.00",
+      "2026-09-10"
+    ],
+    "zelene-tagliatelle-s-morskim-plodovima": [
+      "19.00",
+      "2026-09-10"
+    ],
+    "linguine-s-plodovima-mora": [
+      "16.00",
+      "2026-09-10"
+    ],
+    "arancini-od-crnog-rizota": [
+      "25.00",
+      "2026-09-10"
+    ],
+    "vege-arancini": [
+      "19.00",
+      "2026-09-10"
+    ],
+    "cevapi-uz-dollar-chips-i-vrhnje": [
+      "17.00",
+      "2026-09-10"
+    ],
+    "gurmanska-pljeskavica-uz-dollar-chips-i-vrhnje": [
+      "18.00",
+      "2026-09-10"
+    ],
+    "punjena-pljeskavica-uz-dollar-chips-i-vrhnje": [
+      "19.00",
+      "2026-09-10"
+    ],
+    "dvije-kobasice-uz-krumpir-s-povrcem": [
+      "18.00",
+      "2026-09-10"
+    ],
+    "pileci-file-uz-dollar-chips": [
+      "18.00",
+      "2026-09-10"
+    ],
+    "teleci-kotlet-uz-prilog": [
+      "21.00",
+      "2026-09-10"
+    ],
+    "ramstek-uz-krumpir-i-wok-povrce": [
+      "28.00",
+      "2026-09-10"
+    ],
+    "biftek-uz-krumpir-i-wok-povrce": [
+      "35.00",
+      "2026-09-10"
+    ],
+    "dalmatinska-pasticada": [
+      "19.00",
+      "2026-09-10"
+    ],
+    "pileci-becki-uz-prilog": [
+      "15.00",
+      "2026-09-10"
+    ],
+    "svinjski-becki-uz-prilog": [
+      "17.00",
+      "2026-09-10"
+    ],
+    "teleci-becki-uz-prilog": [
+      "21.00",
+      "2026-09-10"
+    ],
+    "pileci-punjeni-odrezak-uz-prilog": [
+      "17.00",
+      "2026-09-10"
+    ],
+    "lignje-na-zaru-uz-blitvu-i-krumpir": [
+      "22.00",
+      "2026-09-10"
+    ],
+    "lignje-przene-s-pommesom": [
+      "20.00",
+      "2026-09-10"
+    ],
+    "bijela-riba-na-grillu": [
+      "20.00",
+      "2026-09-10"
+    ],
+    "bijela-riba-na-grillu-medium": [
+      "21.00",
+      "2026-09-10"
+    ],
+    "bijela-riba-na-grillu-large": [
+      "22.00",
+      "2026-09-10"
+    ],
+    "losos-na-zaru-uz-blitvu-i-krumpir": [
+      "22.00",
+      "2026-09-10"
+    ],
+    "tuna-steak-na-zaru-uz-blitvu-i-krumpir": [
+      "22.00",
+      "2026-09-10"
+    ],
+    "dagnje-na-buzaru": [
+      "16.00",
+      "2026-09-10"
+    ],
+    "pasta-napolitano": [
+      "10.00",
+      "2026-09-10"
+    ],
+    "aglio-olio": [
+      "12.00",
+      "2026-09-10"
+    ],
+    "steak-od-karfiola": [
+      "15.00",
+      "2026-09-10"
+    ],
+    "tofu-steak": [
+      "16.00",
+      "2026-09-10"
+    ],
+    "vege-salata": [
+      "18.00",
+      "2026-09-10"
+    ],
+    "pileci-nuggets-pommes": [
+      "10.00",
+      "2026-09-10"
+    ],
+    "mali-bolognese": [
+      "10.00",
+      "2026-09-10"
+    ],
+    "mali-cevapi-uz-dollar-chips-i-vrhnje": [
+      "10.00",
+      "2026-09-10"
+    ],
+    "salata-od-tunjevine": [
+      "19.00",
+      "2026-09-10"
+    ],
+    "slavonska-salata": [
+      "18.00",
+      "2026-09-10"
+    ],
+    "salata-piletina": [
+      "14.00",
+      "2026-09-10"
+    ],
+    "sezonska-salata-mix": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "kupus-salata": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "krastavci-u-vrhnju": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "cikla-karamelizirani-luk": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "grcka-salata": [
+      "9.00",
+      "2026-09-10"
+    ],
+    "palacinke-dzem-linolada": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "palacinke-sa-sladoledom": [
+      "8.00",
+      "2026-09-10"
+    ],
+    "lava-cake-sa-sladoledom": [
+      "8.00",
+      "2026-09-10"
+    ],
+    "hobotnica-ispod-peke-uz-prilog": [
+      "60.00",
+      "2026-09-10"
+    ],
+    "peka-mix": [
+      "60.00",
+      "2026-09-10"
+    ],
+    "espresso": [
+      "2.00",
+      "2026-09-10"
+    ],
+    "kava-s-mlijekom-slagom": [
+      "2.40",
+      "2026-09-10"
+    ],
+    "cappuccino": [
+      "2.80",
+      "2026-09-10"
+    ],
+    "bijela-kava": [
+      "3.20",
+      "2026-09-10"
+    ],
+    "latte-macchiato": [
+      "3.20",
+      "2026-09-10"
+    ],
+    "nescafe": [
+      "3.00",
+      "2026-09-10"
+    ],
+    "caj": [
+      "2.00",
+      "2026-09-10"
+    ],
+    "instant-cappuccino": [
+      "3.00",
+      "2026-09-10"
+    ],
+    "ice-latte": [
+      "3.30",
+      "2026-09-10"
+    ],
+    "ice-latte-matcha": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "ice-latte-matcha-s-okusom": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "espresso-tonic": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "affogato": [
+      "6.50",
+      "2026-09-10"
+    ],
+    "irish-baileys-coffee": [
+      "9.00",
+      "2026-09-10"
+    ],
+    "ice-coffee": [
+      "8.00",
+      "2026-09-10"
+    ],
+    "romerquelle-negazirana-033": [
+      "3.00",
+      "2026-09-10"
+    ],
+    "romerquelle-gazirana-033": [
+      "3.00",
+      "2026-09-10"
+    ],
+    "romerquelle-negazirana-075": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "romerquelle-gazirana-075": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "romerquelle-limunska-trava": [
+      "3.20",
+      "2026-09-10"
+    ],
+    "coca-cola-025": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "coca-cola-zero-025": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "fanta-025": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "fanta-lemon-025": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "sprite-025": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "schweppes-tonic-025": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "schweppes-bitter-lemon-025": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "schweppes-tangerina-025": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "schweppes-cherry-025": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "thomas-henry-spicy-ginger-beer-020": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "cedevita-limun": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "cedevita-naranca": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "limunada": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "narancada": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "hidra-limun-050": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "hidra-naranca-050": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "ledeni-caj-breskva": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "ledeni-caj-sumsko-voce": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "somersby-00-jagoda-limeta": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "pago-jabuka-020": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "pago-naranca-020": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "pago-visnja-020": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "pago-marelica-020": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "pago-ananas-020": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "pago-crni-ribiz-020": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "pan-toceni-030": [
+      "3.00",
+      "2026-09-10"
+    ],
+    "pan-toceni-050": [
+      "4.50",
+      "2026-09-10"
+    ],
+    "pan-zlatni-033": [
+      "4.50",
+      "2026-09-10"
+    ],
+    "carlsberg-033": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "tuborg-033": [
+      "4.50",
+      "2026-09-10"
+    ],
+    "pan-radler-050": [
+      "4.50",
+      "2026-09-10"
+    ],
+    "pan-bezalkoholni-033": [
+      "4.50",
+      "2026-09-10"
+    ],
+    "budweiser-dark-050": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "somersby-jabuka": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "somersby-kruska": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "radla-030": [
+      "3.00",
+      "2026-09-10"
+    ],
+    "radla-050": [
+      "4.50",
+      "2026-09-10"
+    ],
+    "mis-mas-030": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "mis-mas-050": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "gemist-020": [
+      "3.20",
+      "2026-09-10"
+    ],
+    "bambus-030": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "bambus-050": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "turska-kola": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "malvazija-1dcl": [
+      "2.20",
+      "2026-09-10"
+    ],
+    "peljesac-1dcl": [
+      "2.20",
+      "2026-09-10"
+    ],
+    "rose-benkovac-1dcl": [
+      "2.20",
+      "2026-09-10"
+    ],
+    "zlatan-plavac-1dcl": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "zlatan-posip-1dcl": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "galic-rose-1dcl": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "dalmatinski-prosek-1dcl": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "muskat-bric-1dcl": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "zlatan-posip-075": [
+      "32.00",
+      "2026-09-10"
+    ],
+    "galic-sauvignon-blanc-075": [
+      "35.00",
+      "2026-09-10"
+    ],
+    "muskat-bric-075": [
+      "35.00",
+      "2026-09-10"
+    ],
+    "korta-katarina-rose-075": [
+      "40.00",
+      "2026-09-10"
+    ],
+    "zlatan-plavac-075": [
+      "35.00",
+      "2026-09-10"
+    ],
+    "zlatan-crljenak-075": [
+      "40.00",
+      "2026-09-10"
+    ],
+    "prosecco-1dcl": [
+      "7.00",
+      "2026-09-10"
+    ],
+    "prosecco-075": [
+      "40.00",
+      "2026-09-10"
+    ],
+    "pelinkovac-dalmacija": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "pelinkovac-antik": [
+      "5.50",
+      "2026-09-10"
+    ],
+    "sibenska-travarica": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "williams-viljamovka": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "maraska-visnjevac": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "maraska-orahovac": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "teranino-korlat": [
+      "5.50",
+      "2026-09-10"
+    ],
+    "dalmatinski-prosek": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "jagermeister": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "limoncello": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "baileys": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "aperol": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "campari": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "martini-bianco": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "martini-rosso": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "jameson": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "jim-beam": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "hennessy": [
+      "8.00",
+      "2026-09-10"
+    ],
+    "smirnoff-vodka": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "sierra-tequila": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "bacardi-white": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "bacardi-black": [
+      "5.00",
+      "2026-09-10"
+    ],
+    "malibu": [
+      "6.00",
+      "2026-09-10"
+    ],
+    "sax-gin": [
+      "4.00",
+      "2026-09-10"
+    ],
+    "bulldog-gin": [
+      "5.50",
+      "2026-09-10"
+    ],
+    "hendricks-gin": [
+      "7.00",
+      "2026-09-10"
+    ],
+    "aperol-spritz": [
+      "11.00",
+      "2026-09-10"
+    ],
+    "hugo": [
+      "12.00",
+      "2026-09-10"
+    ],
+    "mojito": [
+      "13.00",
+      "2026-09-10"
+    ],
+    "gin-tonic": [
+      "10.00",
+      "2026-09-10"
+    ],
+    "cuba-libre": [
+      "11.00",
+      "2026-09-10"
+    ],
+    "moscow-mule": [
+      "15.00",
+      "2026-09-10"
+    ],
+    "espresso-martini": [
+      "12.00",
+      "2026-09-10"
+    ],
+    "negroni": [
+      "15.00",
+      "2026-09-10"
+    ],
+    "mojito-strawberry-passion": [
+      "15.00",
+      "2026-09-10"
+    ],
+    "limoncello-spritz": [
+      "11.00",
+      "2026-09-10"
+    ],
+    "london-mule": [
+      "15.00",
+      "2026-09-10"
+    ],
+    "my-favourite-spritz": [
+      "14.00",
+      "2026-09-10"
+    ],
+    "breakfast-buffet": [
+      "10.00",
+      "2026-09-10"
+    ],
+    "marenda-1": [
+      "10.00",
+      "2026-09-10"
+    ],
+    "marenda-2": [
+      "11.00",
+      "2026-09-10"
+    ],
+    "marenda-3": [
+      "12.00",
+      "2026-09-10"
+    ],
+    "marenda-4": [
+      "13.00",
+      "2026-09-10"
+    ],
+    "marenda-5": [
+      "14.00",
+      "2026-09-10"
+    ],
+    "marenda-6": [
+      "15.00",
+      "2026-09-10"
+    ],
+    "marenda:musaka": [
+      "11.00",
+      "2026-09-10"
+    ],
+    "marenda:gurmanska-pljeskavica": [
+      "13.00",
+      "2026-09-10"
+    ]
+  }
+}

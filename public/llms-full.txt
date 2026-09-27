@@ -34,6 +34,7 @@ English:
 - Home: https://bistroputnik.com/en/
 - Menu: https://bistroputnik.com/en/menu/
 - Daily marenda: https://bistroputnik.com/en/marenda/
+- Price lists, dated CSV downloads and archive: https://bistroputnik.com/en/price-lists/
 - Location and contact: https://bistroputnik.com/en/location/
 - Reviews: https://bistroputnik.com/en/reviews/
 - Baška Voda visitor guide: https://bistroputnik.com/en/baska-voda/
@@ -123,7 +124,7 @@ Visitor dining:
 
 The menu includes Croatian plates, seafood, grilled dishes, vegetarian and vegan dishes, children's dishes, desserts, drinks, wines, cocktails, allergens, and euro prices. The menu data is structured and localized across the supported website languages.
 
-The marenda page publishes the current daily lunch offer from structured data. Marenda is presented as a daily local meal with clear prices and availability until the daily quantity is sold out.
+The marenda page publishes a dated daily lunch offer from structured data, with up to six named dishes assigned to Marenda 1–6 price levels (€10–€15). The offer applies only on its stated date and while the daily quantity lasts. The daily CSV lists the dishes; the full CSV includes all six tiers and dated dish descriptions. Each service displays a current price and its dated reference price. The initial reference prices match the current prices and are dated 10 September 2026.
 
 Allergen notes are provided for menu and marenda items, but guests with allergies or dietary restrictions should ask staff for final confirmation before ordering.
 

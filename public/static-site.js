@@ -103,6 +103,18 @@
   }
 
   function initStaticSite() {
+    function updateDailyOffers() {
+      hydrateRestaurantDates();
+      var today = getCurrentDateKey('Europe/Zagreb');
+      document.querySelectorAll('[data-daily-current], [data-daily-stale]').forEach(function (node) {
+        var current = node.getAttribute('data-offer-date') === today && node.getAttribute('data-offer-active') !== 'false';
+        node.hidden = node.hasAttribute('data-daily-current') ? !current : current;
+      });
+    }
+    updateDailyOffers();
+    window.setInterval(updateDailyOffers, 60000);
+    window.addEventListener('pageshow', updateDailyOffers);
+    window.addEventListener('beforeprint', updateDailyOffers);
     hydrateRestaurantDates();
     bindPrintButtons();
 

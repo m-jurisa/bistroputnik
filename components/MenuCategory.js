@@ -1,3 +1,5 @@
+import Price from './Price';
+
 function joinClasses(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -14,20 +16,6 @@ function AllergenLine({ allergens, label }) {
   );
 }
 
-function displayPrice(item) {
-  return item.priceDisplay || '€ —';
-}
-
-function hasPlaceholderPrice(item, price) {
-  return (
-    price.includes('__') ||
-    (!item.priceDisplay &&
-      (item.price === null || typeof item.price === 'undefined') &&
-      typeof item.priceMin === 'undefined' &&
-      typeof item.priceMax === 'undefined')
-  );
-}
-
 function StaffCode({ code }) {
   if (!code) {
     return null;
@@ -41,9 +29,6 @@ function StaffCode({ code }) {
 }
 
 function MenuItem({ item, labels }) {
-  const price = displayPrice(item);
-  const isPlaceholder = hasPlaceholderPrice(item, price);
-
   return (
     <li className="grid gap-2 border-t border-brand-line/15 pt-4 first:border-t-0 first:pt-0 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-5">
       <div className="min-w-0">
@@ -58,14 +43,7 @@ function MenuItem({ item, labels }) {
         ) : null}
         <AllergenLine allergens={item.allergens} label={labels.allergens} />
       </div>
-      <p
-        className={joinClasses(
-          'shrink-0 pt-1 text-right text-sm font-medium tabular-nums text-brand-sand',
-          isPlaceholder ? 'text-brand-sand/55' : ''
-        )}
-      >
-        {price}
-      </p>
+      <Price item={item} locale={labels.locale} className="menu-price" />
     </li>
   );
 }
